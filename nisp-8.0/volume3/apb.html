@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="apas04.html" title="A.4.&nbsp;Web Services Profiles">
+      <link rel="next" href="apbs02.html" title="B.2.&nbsp;Background">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Agreed Profiles">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Tactical ESB (Tact ESB) Profile">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Federated Mission Networking Interoperability Standards Profile for Mission Execution Environments">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;External Profiles">
+      <link rel="section" href="apb.html#v3b-s1" title="B.1.&nbsp;Overview">
+      <link rel="section" href="apbs02.html" title="B.2.&nbsp;Background">
+      <link rel="section" href="apbs03.html" title="B.3.&nbsp;NISP Relationship">
+      <link rel="section" href="apbs04.html" title="B.4.&nbsp;NRF Interface Profile Development">
+      <link rel="section" href="apbs05.html" title="B.5.&nbsp;Considerations">
+      <link rel="section" href="apbs06.html" title="B.6.&nbsp;Emerging Considerations">
+      <link rel="section" href="apbs07.html" title="B.7.&nbsp;NRF Interface Profile (Sample Template)">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li class="active"><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                           <li><a href="../volume4/index.html" title="Volume 4 - Design Rules">Design Rules</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apas04.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apbs02.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="appendix" id="v3-nrf">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h1 class="title">Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile</h1>
+                     </div>
+                  </div>
+               </div>
+               <section class="sect1" id="v3b-s1">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h2 class="title">B.1.&nbsp;Overview</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <p>62. The application of the NATO Interoperability Standards and Profiles (NISP) has enabled NATO to increase interoperability
+                     across Communications and Information Systems (CIS) throughout the Enterprise and across Member Nations. &nbsp;Tools employed include
+                     open system industry standards, NATO STANAGS, architectural views, interoperability points, and interface profiles. &nbsp;To fully
+                     leverage Net Centric operations into the NATO Response Force (NRF), these tools must be applied across the various commands
+                     and participants supporting an NRF.
+                  </p>
+                  <section class="sect2" id="v3b-s2">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h3 class="title">B.1.1.&nbsp;Tasking</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <p>63. This Generic NRF Interface Profile effort was established through direct tasking from the NATO C3 Board (NC3B) Information
+                        Systems Sub-Committee (ISSC) to the NATO Open Systems Working Group (NOSWG) in May 2005. &nbsp;Tasking was for the NOSWG to assist
+                        in the process of NRF interoperability through:
+                     </p>
+                     <div class="orderedlist">
+                        <ol class="orderedlist" type="1">
+                           <li class="listitem">
+                              <p>Establishment of an NRF Tiger Team,</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Continuation of NRF Interface Profile development, and</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Application of NRF Interface Profiles for operational use.</p>
+                           </li>
+                        </ol>
+                     </div>
+                  </section>
+                  <section class="sect2" id="v3b-s3">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h3 class="title">B.1.2.&nbsp;Purpose</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <p>64. The intent of this document is to develop the need for NRF interoperability initiatives, identify the interrelationships
+                        to existing efforts, and identify a process for NRF rotation specific profile development. &nbsp;The need for greater collaboration
+                        across NATO and Nations requires a shift in focus from traditional products that are not linked to the operational community.
+                        &nbsp;Therefore the NRF Interface Profiles will serve as a dynamic reference for rotating NRF communities of interest.
+                     </p>
+                  </section>
+                  <section class="sect2" id="v3b-s4">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h3 class="title">B.1.3.&nbsp;Vision</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <p>65. This document will serve as a resource for future NRF planners, to be used as a guide in achieving interoperability between
+                        NATO nations. &nbsp;NRF Interface Profiles are for use throughout the complete lifecycle of an NRF. &nbsp;The NRF profiles will leverage
+                        the robust information infrastructures of NATO and its Member Nations supporting an NRF, and will enable Net Centric operations
+                        by enhancing collaboration across the NRF operational environment. &nbsp;Subsequent NRF rotations will benefit from the modular
+                        nature of the profiles, which will allow for maximum reuse of established capabilities, while accommodating unique requirements
+                        and technology improvements through the NISP change proposal process.
+                     </p>
+                  </section>
+                  <section class="sect2" id="v3b-s5">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h3 class="title">B.1.4.&nbsp;Benefits</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <p>66. Solutions will be identified to enrich the CIS capabilities across the physical, service, and application layers of an
+                        NRF. &nbsp;Additionally it will provide a vehicle for improved data transfer and information exchange. &nbsp;Access to NATO Enterprise,
+                        Core, and Functional services will further enable the extension of strategic systems into the tactical environment. &nbsp;The ability
+                        to reach back to key capabilities, while providing greater situational awareness and collaboration for improved decision making
+                        is an anticipated benefit throughout the NATO Enterprise.
+                     </p>
+                     <p>67. Additional benefits to NRF turn-up, deployment and sustained operations include:</p>
+                     <div class="orderedlist">
+                        <ol class="orderedlist" type="1">
+                           <li class="listitem">
+                              <p>Speed of execution of information operations,</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Richer information environment,</p>
+                           </li>
+                           <li class="listitem">
+                              <p>More dynamic information exchange between NATO and Nations,</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Speedier standup of an NRF,</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Reach back to feature rich information enterprise, and</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Elimination of hierarchical information flow.</p>
+                           </li>
+                        </ol>
+                     </div>
+                     <p>68. Participating nations are encouraged to use this document as part of the planning process for coordination and establishment
+                        of connectivity and interoperability with respect to joint NATO operations.
+                     </p>
+                  </section>
+               </section>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apas04.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center">&nbsp;</td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apbs02.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2014 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

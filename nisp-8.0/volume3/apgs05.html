@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>G.5.&nbsp;FMN Architecture</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="apgs04.html" title="G.4.&nbsp;Capability Description">
+      <link rel="next" href="apgs06.html" title="G.6.&nbsp;Life-Cycle of FMN Profile Standard Entries">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Agreed Profiles">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Tactical ESB (Tact ESB) Profile">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Federated Mission Networking Interoperability Standards Profile for Mission Execution Environments">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;External Profiles">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li class="active"><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                           <li><a href="../volume4/index.html" title="Volume 4 - Design Rules">Design Rules</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apgs04.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apgs06.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="sect1" id="d0e10437">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title">G.5.&nbsp;FMN Architecture</h2>
+                     </div>
+                  </div>
+               </div>
+               <p>399. The Federated Mission Networking architecture is based on the concept of abstraction: hiding details of individual systems
+                  through encapsulation in order to better identify and sustain its properties.  Individual system on each Mission Network Element
+                  will contain many levels of abstraction, each with its own architecture. The FMN architecture represents an abstraction of
+                  system behaviour at those interface levels that are essential for successful federated mission networking.
+               </p>
+               <p>400. Service developers must assume network behaviour and performance consistent with the existing characteristics of deployed
+                  mission networks, taking bandwidth limitations, extended latency and potential unreliability into account, e.g. speed differentials
+                  between typical wired network and wireless wide area radio networks using
+                  	
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist">
+                        <li class="listitem">
+                           <p>static line of sight radio or geostationary satellite circuits are ~500 up to 4000,</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Tactical radio circuits are up to ~10<sup>6</sup>.
+                           </p>
+                        </li>
+                     </ul>
+                  </div>Within the Federated Mission Network architecture, new services shall be designed around the Request/Response, Publish/Subscribe,
+                  or Message Queue patterns.  IT capabilities used in a FMN context shall provide read or read/write services as appropriate,
+                  support dynamic bindings, and must include authentication as part of their service.
+                      
+               </p>
+               <div class="figure" id="v3i-fmn-info">
+                  <p></p>
+                  <div class="figure-contents">
+                     <div class="mediaobject"><img src="../figures/fmn-information-environment.png" alt="Sample FMN Information Environment"></div>
+                  </div>
+                  <div class="figure-title">Figure&nbsp;G.1.&nbsp;Sample FMN Information Environment</div>
+               </div><br class="figure-break"><p>401. The following FMN architecture principles have been developed: </p>
+               <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                     <li class="listitem">
+                        <p>Federation: A federated Mission Network (MN) is the episodic federation of autonomous mission network elements for the purpose
+                           of executing a mission.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Service Management and Control. A MN shall be governed and managed by a central Service Management Authority, to ensure:
+                           		
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>assured delivery of services from providers/producers to consumers/customers based on well-defined SLAs, and</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>assured change and configuration management for federation related aspects.</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </li>
+                     <li class="listitem">
+                        <p>Information Sharing: A MN shall enable information discovery and provide access to information relevant to the mission.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Shared Awareness:  A MN shall provide the ability to end-users to gain a single view of the theatre of operations.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Data Management:  A MN shall minimize the data management burden.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Security: A MN shall secure information against unauthorized access.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Mission Platform: A MN shall provide a reliable foundation for deploying applications and services as required by operational
+                           needs.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Elasticity: A MN shall provide the ability to add and remove Mission Network Contributing Participants, to scale-up or scale-down
+                           capacity and performance or increase, decrease support for operational footprints based on the mission life-cycle needs.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Robustness: Services that are deployed onto a MN shall be designed to deal with every conceivable error, no matter how unlikely<a href="#ftn.d0e10501" class="footnote"><sup class="footnote" id="d0e10501">[16]</sup></a>.
+                        </p>
+                     </li>
+                     <li class="listitem">
+                        <p>Standards: Federated Technology components of the Mission Platform shall be conformant with agreed FMN interoperability standards.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Continual Improvement: Federated Mission Networking leverages existing technology investments to generate operational benefits.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Proven Technologies:  A MN shall be based on proven technologies that are commonly available.</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Reuse:  A MN shall enable the sharing and re-using of services, common functions and systems between Mission Participants.</p>
+                     </li>
+                  </ul>
+               </div>
+               <p>402. In addition, well defined Governance and Life-cycle management capabilities (including Service Management and Control)
+                  must be in place to ensure controlled management of capability enhancements for the generic FMN configuration templates as
+                  well as the in-service MNs and to ensure assured delivery of services from providers/producers to consumers/customers based
+                  on well-defined Service Level Agreements (SLAs).
+               </p>
+               <p>403. Figure <a class="xref" href="apgs05.html#v3i-fmn-info" title="Figure&nbsp;G.1.&nbsp;Sample FMN Information Environment">Figure&nbsp;G.1</a> above depicts a high level illustration of a future federated mission execution environment with three different options
+                  for participating in the Mission (Mission Network Element, Mission Network Extension and Hosted User).
+               </p>
+               <p>404. This profile is primarily aimed to define interface standards for services provided by Mission Network Contributing Participants
+                  (Option A).  Other mission participants (Option B and C) may (initially) not meet minimum service and service interoperability
+                  requirements.  To allow participation in those cases, mission participants must establish a hosting agreement with a Mission
+                  Network Contributing Participant.  Option B mission participants must provide their local area networks incl. IP management
+                  capability within the respective physical and cyber security boundaries of the host.  Services must be able to function in
+                  a network environment containing firewalls and various routing and filtering schemes; therefore, developers must use standards
+                  and well-known ports wherever possible, and document non-standard configurations as part of their service interface.
+               </p>
+               <div class="footnotes"><br><hr class="footnote-hr">
+                  <div id="ftn.d0e10501" class="footnote">
+                     <p><a href="#d0e10501" class="para"><sup class="para">[16] </sup></a>It is best to assume that the network is filled with malevolent entities that will send requests and response messages designed
+                        to have the worst possible effect.  This assumption will lead to suitably protective design.
+                     </p>
+                  </div>
+               </div>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apgs04.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="apg.html"><i class="foundicon-up-arrow"></i></a></td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apgs06.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2014 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

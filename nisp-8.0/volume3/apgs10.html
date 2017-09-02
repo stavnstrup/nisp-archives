@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>G.10.&nbsp;Core Enterprise Services</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="apgs09.html" title="G.9.&nbsp;Communication Services">
+      <link rel="next" href="apgs11.html" title="G.11.&nbsp;COI Services and Data Standards">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Agreed Profiles">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Tactical ESB (Tact ESB) Profile">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Federated Mission Networking Interoperability Standards Profile for Mission Execution Environments">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;External Profiles">
+      <link rel="subsection" href="apgs10.html#d0e11153" title="G.10.1.&nbsp;Infrastructure Services">
+      <link rel="subsection" href="apgs10.html#d0e11370" title="G.10.2.&nbsp;SOA Platform Services">
+      <link rel="subsection" href="apgs10.html#d0e11826" title="G.10.3.&nbsp;Enterprise Support Services">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li class="active"><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                           <li><a href="../volume4/index.html" title="Volume 4 - Design Rules">Design Rules</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apgs09.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apgs11.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="sect1" id="d0e11138">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title">G.10.&nbsp;Core Enterprise Services</h2>
+                     </div>
+                  </div>
+               </div>
+               <p>417. Core Enterprise Services (CES) provide generic, domain independent, technical functionality that enables or facilitates
+                  the operation and use of Information Technology (IT) resources.  CES will be broken up further into:
+               </p>
+               <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                     <li class="listitem">
+                        <p>Infrastructure Services (incl. Information Assurance (IA) services)</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Service Oriented Architecture (SOA) Platform Services</p>
+                     </li>
+                     <li class="listitem">
+                        <p>Enterprise Support Services</p>
+                     </li>
+                  </ul>
+               </div>
+               <section class="sect2" id="d0e11153">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.10.1.&nbsp;Infrastructure Services</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>418. Infrastructure Services provide software resources required to host services in a distributed and federated environment.
+                     They include computing, storage and high-level networking capabilities.
+                  </p>
+                  <div class="table" id="v3t-id-fmn-reftable5">
+                     <div class="table-title">Table&nbsp;G.5.&nbsp;Infrastructure Services Standards</div>
+                     <div class="table-contents">
+                        <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 20%; ">
+                              <col style="width: 50%; ">
+                              <col style="width: 30%; ">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>ID:Service/Purpose</strong></span>
+                                                    
+                                 </th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Standard</strong></span>
+                                                    
+                                 </th>
+                                 <th style="border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Implementation Guidance</strong></span>
+                                                    
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1:<span class="underline">Infrastructure Processing Services</span>: Virtualized Processing Services
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Recommended</span>:
+                                                      
+                                    <p>ISO/IEC 17203:2011, Information technology -- Open Virtualization Format (OVF) specification also published as ANSI standard
+                                       INCITS 469-2010 (OVF 1.1.0)
+                                    </p>
+                                    				  
+                                    <p><span class="underline">Emerging</span>:
+                                                         
+                                    </p>
+                                    <p>Distributed Management Task Force - DSP0243  2.0.1 , Open Virtualization Format Specification (OVF 2.0.1), 30 Aug 2013</p>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Using Open Virtualization Format, Option B  Mission Participant can create single, pre-packaged appliances and Service providers
+                                    can export and import virtual machines that can run across different virtualization platforms.
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2:<span class="underline">Distributed Time Services</span>: Time synchronization
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                                      
+                                    <p>IETF RFC 5905: 2010, Network Time Protocol version 4 (NTPv4).</p>
+                                    				  
+                                    <p>Mission Network Contributing Participants must be able to provide a time server on their network element either directly connected
+                                       to a stratum-0 device or over a network path to a stratum-1 time server of another Mission Network Contributing Participant.
+                                    </p>
+                                    				  
+                                    <p>Other mission participants must use the time service of their host.</p>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">A stratum-1 time server is directly linked (not over a network path) to a reliable source of UTC time (Universal Time Coordinate)
+                                    such as GPS, WWV, or CDMA transmissions through a modem connection, satellite, or radio.
+                                                      
+                                    <p>Stratum-1 devices must implement IPv4 and IPv6 so that they can be used as timeservers for IPv4 and IPv6 Mission Network Elements.</p>
+                                    				  
+                                    <p>The W32Time service on all Windows Domain Controllers is synchronizing time through the Domain hierarchy (NT5DS type).</p>
+                                    				
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3:<span class="underline">Domain Name Services</span>: Naming and Addressing on a FMN instance
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF STD 13: 1987 /IETF RFC 1034: 1987, Domain Names &#8211; Concepts and Facilities.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 1035: 1987, Domain Names &#8211; Implementation and specification.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">4:Identification and addressing of objects on the network.</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 1738: 1994, Uniform Resource Locators (URL).</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 3986: 2005, Uniform Resource Identifiers (URI), Generic Syntax.(updates IETF RFC 1738)</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Namespaces within XML documents shall use unique URLs or URIs for the namespace designation.</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">5:Infrastructure Storage Services:  storing and accessing information about the time of events and transactions</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <p>ISO/IEC 9075 (Parts 1 to-14):2011, Information technology - Database languages - SQL</p>
+                                    				
+                                    <p>Databases shall stores date and time values everything in TIMESTAMP WITH TIME ZONE or TIMESTAMPTZ</p>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Missions might conduct transactions across different time zones.  Timestamps are essential for auditing purposes. It is important
+                                    that the integrity of timestamps is maintained across all Mission Network Elements.  From Oracle 9i, PostgreSQL 7.3 and MS
+                                    SQL Server 2008 onwards, the time zone can be stored with the time directly by using the TIMESTAMP WITH TIME ZONE (Oracle,
+                                    PostgreSQL) or datetimeoffset (MS-SQL) data types.
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">6:<span class="underline">Infrastructure IA Services</span>: Facilitate the access and authorization between FMN users and services.
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				  
+                                    <p>Directory access and management service: 
+                                                         
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 4510: 2006, Lightweight Directory Access Protocol   (LDAP) Technical Specification Road Map (LDAPv3).</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4511-4519:2006, LDAP Technical Specification.()</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 2849: 2000, The LDAP Interchange Format 9 (LDIF).</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       				  
+                                    </p>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Options available to FMN members when joining their network element to a FMN instance: 
+                                                      
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>1) Establish a separate forest.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>2) Join Forest of another Mission Network Contributing Participant</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    					
+                                    <p>For cross application/service authentication between separate forests claims based authentication mechanisms (SAML 2.0 or
+                                       WS-trust/WS-Authentication) shall be used.
+                                    </p>
+                                    <p>Whilst LDAP is a vendor independent standard, in practice Microsoft Active Directory (AD) is a common product providing directory
+                                       services on national and NATO owned Mission Network elements. AD provides additional services aside from LDAP like functionality.
+                                    </p>
+                                    				
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">7:<span class="underline">Infrastructure IA Services: Digital Certificate Services</span></td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                    				
+                                    <p>ITU-T X.509 (11/2008), Information technology - Open systems interconnection - The Directory: Public-key and attribute certificate
+                                       frameworks 
+                                                         
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>the version of the encoded public-key certificate shall be v3.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>the version of the encoded certificate revocation list (CRL) shall be v2.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       				
+                                    </p>
+                                    				
+                                    <p>NATO Public Key Infrastructure (NPKI) Certificate Policy (CertP) Rev2, AC/322D(2004)0024REV2</p>
+                                    
+                                    <p>Internet X.509 Public Key Infrastructure Certificate and Certificate Revocation List (CRL) Profile &#8211; PKIX (IETF: RFC 5280,
+                                       2008)
+                                    </p>
+                                    <p>
+                                       <span class="underline">Recommended</span>:
+                                    </p> 
+                                    				
+                                    <p>X.509 Internet Public Key Infrastructure Online Certificate Status Protocol &#8211; OCSP (IET: RFC 6960, 2013)</p>
+                                    			  
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">8:<span class="underline">Infrastructure IA Services: Authentication Services</span></td>
+                                 <td style="border-right: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                    			  
+                                    <p>IETF RFC 1510:1993, The Kerberos Network Authentication Service (V5).</p>
+                                    			  
+                                 </td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p></p>
+                  </div><br class="table-break"></section>
+               <section class="sect2" id="d0e11370">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.10.2.&nbsp;SOA Platform Services</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>419. SOA Platform Services provide a foundation to implement web-based services in a loosely coupled environment, where flexible
+                     and agile service orchestration is a requirement. They offer generic building blocks for SOA implementation (e.g. discovery,
+                     message busses, orchestration, information abstraction and access, etc.) and can be used as a capability integration platform
+                     in a heterogeneous service-provisioning ecosystem.
+                  </p>
+                  <div class="table" id="v3t-id-fmn-reftable6">
+                     <div class="table-title">Table&nbsp;G.6.&nbsp;SOA Platform Services and Data Standards</div>
+                     <div class="table-contents">
+                        <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 20%; ">
+                              <col style="width: 50%; ">
+                              <col style="width: 30%; ">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>ID:Service/Purpose</strong></span>
+                                                    
+                                 </th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Standard</strong></span>
+                                                    
+                                 </th>
+                                 <th style="border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Implementation Guidance</strong></span>
+                                                    
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Web Platform Services</span></td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 2616: 1999, Hypertext Transfer Protocol HTTP/1.1.()</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 2817: 2000,Upgrading to TLS Within HTTP/1.1.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 3986: 2005, Uniform Resource Identifier (URI): Generic Syntax.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>HTTP shall be used as the transport protocol for information without 'need-to-know' caveats between all service providers
+                                       and consumers (unsecured HTTP traffic).
+                                    </p>
+                                    				
+                                    <p>HTTPS shall be used as the transport protocol between all service providers and consumers to ensure confidentiality requirements
+                                       (secured HTTP traffic).
+                                    </p>
+                                    				
+                                    <p>Unsecured and secured HTTP traffic shall share the same port.</p>
+                                    				
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2:Publishing information including text, multimedia, hyperlink features, scripting languages and style sheets on the network</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <p>HyperText Markup Language (HTML) 4.01 (strict)</p>
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>ISO/IEC 15445:2000, Information technology -- Document description and processing languages -- HyperText Markup Language (HTML).</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC2854:2000, The 'text/html' Media Type.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>HyperText Markup Language, Version 5 (HTML 5), W3C Candidate Recommendation, Aug 2013</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Scripting Media Types, IETF: RFC 4329, 2006  (Java Script)</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>OASIS Standard, Web Services for Remote Portlets Specification v2.0, 1 April 2008</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				<span class="underline">Emerging (2015)</span>:
+                                    				
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3:Providing a common style sheet language for describing presentation semantics (that is, the look and formatting) of documents
+                                    written in markup languages like HTML.
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <p>Cascading Style Sheets (CSS), Level 2 revision 1 (CSS 2.1), W3C Recommendation, September 2009.</p>
+                                    				
+                                    <p><span class="underline">Emerging (2014)</span>:
+                                    </p>
+                                    				
+                                    <p>Cascading Style Sheets (CSS) Level 3:</p>
+                                    					  
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>Cascading Style Sheets (CSS), Level 2 revision 1 (including errata) (CSS 2.1), W3C Recommendation, June 2011.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>CSS Style Attributes, W3C Candidate Recommendation, 12 October 2010</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Media Queries, W3C Recommendation, 19 June 2012.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>CSS Namespaces Module, W3C Recommendation, 29 September 2011.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Selectors Level 3, W3C Recommendation, 29 September 2011.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>CSS Color Module Level 3, W3C Recommendation, 07 June 2011.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">4:General formatting of information for sharing or exchange.</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>Extensible Markup Language (XML) 1.0 (Fifth Edition), W3C Recommendation, 26 November 2008.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>XML Schema Part 1: Structures Second Edition, W3C Recommendation, 28 October 2004.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>XML Schema Part 2: Datatypes Second Edition, W3C Recommendation, 28 October 2004.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>The application/json Media Type for JavaScript Object Notation (JSON), IETF: RFC 4627, July 2006</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">XML shall be used for data exchange to satisfy those IERs within a FMN instance that are not addressed by a specific information
+                                    exchange standard. XML Schemas and namespaces are required for all XML documents.
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">5:Providing web content or web feeds for syndication to web sites as well as directly to user agents.</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 4287: 2005, The Atom Syndication Format. (Atom 1.0)</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 5023: 2007, TheAtom Publishing Protocol.()</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                    <p><span class="underline">Recommended</span>:
+                                    </p>
+                                    				
+                                    <p>(Really Simple Syndication) RSS 2.0 Specification Version 2.0.11, 30 March 2009.</p>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">For backwards compatibility it is recommended to also implement RSS 2.0.</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">6:Encoding of location as part of web feeds</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&shy;	GeoRSS: Geographically Encoded Objects for RSS feeds:
+                                    				<span class="underline">Mandatory</span>: 
+                                                      
+                                    <p>GeoRSS Simple encoding for &lt;georss:point&gt;, &lt;georss:line&gt;, &lt;georss:polygon&gt;, &lt;georss:box&gt;.</p>
+                                    				<span class="underline">Recommended</span>: 
+                                                      
+                                    <p>GeoRSS GML Profile 1.0 a GML subset for &lt;gml:Point&gt;, &lt;gml:LineString&gt;, &lt;gml:Polygon&gt;, &lt;gml:Envelope&gt; of 
+                                       				  
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>OGC 03-105r1: 2004-02-07, OpenGIS Geography Markup Language (GML) Implementation Specification version 3.1.1.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>GML allows you to specify a coordinate reference system (CRS) other than WGS84 decimal degrees (think lat/long). If there
+                                       is a need to express geography in a CRS other than WGS84, it is recommended to specify the geographic object multiple times,
+                                       one in WGS84 and the others in your other desired CRSes.
+                                    </p>
+                                    				
+                                    <p>Schema location for GeoRSS GML Profile 1.0: http://georss.org/xml/1.0/gmlgeorss.xsd</p>
+                                    				
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">7:Message Security for web services</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Conditional</span>: When classified data is processed.
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>WS-Security: SOAP Message Security 1.1.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>XML Encryption Syntax and Processing, W3C Recommendation, 10 December2002.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>XML Signature Syntax and Processing (Second Edition), W3C Recommendation, 10 June 2008. </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>OASIS WS-I Basic Security Profile Version 1.1, 24 January 2010.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    
+                                    <p><span class="underline">Emerging (2015)</span>:
+                                    </p>
+                                    
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>OAuth 2.0 [IETF RFC 6749, 2012] Internet Engineering Task Force (on-line) http://www.ietf.org Request for Comments 6749, &#8220;The
+                                                OAuth 2.0 Authorization Framework&#8221;, D. Hardt, at http://tools.ietf.org/html/rfc6749, October 2012.
+                                             </p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    
+                                    <p><span class="underline">Recommended</span>:
+                                    </p>
+                                    
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>Web Services Security - SAML Token Profile 1.1, OASIS Standard incorporating Approved Errata, 01 November 2006 (move from
+                                                8:Security token format)
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Web Services Security - X.509 Certificate Token Profile 1.1, OASIS Standard incorporating Approved Errata, 01 November 2006</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Specifies how integrity and confidentiality can be enforced on messages and allows the communication of various security token
+                                    formats, such as SAML, Kerberos, and X.509v3. Its main focus is the use of XML Signature and XML Encryption to provide end-to-end
+                                    security.
+                                    				
+                                    <p>Specifies a process for encrypting data and representing the result in XML. Referenced by WS-Security specification.</p>
+                                    				
+                                    <p>Specifies XML digital signature processing rules and syntax. Referenced by WS-Security specification.</p>
+                                    
+                                    <p>For Securing RESTful Services use the OAuth standard.</p>
+                                    
+                                    <p>Easier to implement than SAML Token Profile. Suitable for service to service interactions only.
+                                       Guidance for properly labelling and binding data objects for transport using SOAP, JSON, etc. are provided in the emerging
+                                       Technical and Implementation Standard for Confidentiality Labelling of NATO Information (AC/322-(2014)xxxx)
+                                    </p>
+                                    				
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">8:Security token format</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>OASIS Standard, Security Assertion Markup Language (SAML) 2.0), March 2005. </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>OASIS Standard, Web Services Security: SAML Token Profile 1.1 incorporating approved errata 1, Nov 2006.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Provides XML-based syntax to describe users security tokens containing assertions to pass information about a principal (usually
+                                    an end-user) between an identity provider and a web service.
+                                                      
+                                    <p>Describes how to use SAML security tokens with WS-Security specification.</p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">9:Security token issuing</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>OASIS Standard, WS-Trust 1.4, incorporating Approved Errata 01, 25 April 2012.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Web Services Federation Language (WS-Federation) Version 1.1, December 2006.<a href="#ftn.d0e11665" class="footnote"><sup class="footnote" id="d0e11665">[a]</sup></a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>NPKI Certificate Policy(CertP), Rev2, AC/322D(2004)0024REV2</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <span class="underline">Recommended</span>:
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>SAML Protocol (from OASIS Standard, Security Assertion Markup Language (SAML) 2.0), March 2005.)</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Web Services Policy 1.5 &#8211; Framework, W3C Recommendation, 04 September 2007.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>WS-Security Policy 1.3, OASIS Standard incorporating Approved Errata 01, 25 April 2012.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Uses WS-Security base mechanisms and defines additional primitives and extensions for security token exchange to enable the
+                                    issuance and dissemination of credentials within different trust domains. Extends WS-Trust to allow federation of different
+                                    security realms.
+                                                      
+                                    <p>Used to describe what aspects of the federation framework are required/supported by federation participants and that this
+                                       information is used to determine the appropriate communication options.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">10:Transforming XML documents into other XML documents</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XSL Transformations (XSLT) Version 2.0, W3C Recommendation 23 Jan 2007</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Developer best practice for the translation of XML based documents into other formats or schemas.</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">11:Configuration management of structured data standards, service descriptions and other structured metadata.</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ebXML v3.0: Electronic business XML Version 3.0, Registry Information Model 
+                                                      (ebRIM), OASIS Standard, 2 May 2005
+                                                      
+                                    <p>Registry Services and Protocols (ebRS), OASIS Standard</p>
+                                                      
+                                    <p>Universal Description, Discovery, and Integration Specification (UDDI v 3.0), OASIS Standard.</p>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Used as foundation for setup, maintenance and interaction with a (FMN) Metadata Registry and Repository for sharing and configuration
+                                    management of XML metadata. Also enables federation among metadata registries/repositories.
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">12:Exchanging structured information in a decentralized, distributed 
+                                                      environment via web services
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>Simple Object Access Protocol  (SOAP) 1.1, W3C Note, 8 May 2000</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>WSDL v1.1: Web Services Description Language (WSDL) 1.1, W3C Note, 15 March 2001.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                    <p><span class="underline">Conditional</span>:
+                                       				
+                                    </p>
+                                    				
+                                    <p>Representational State Transfer (REST) in accordance with:
+                                       				University of California, Roy Thomas Fielding, Architectural Styles and the Design of Network-based Software Architectures:
+                                       2000, Irvine, CA.
+                                       				
+                                    </p>
+                                    				
+                                    <p><span class="underline">Emerging (2014)</span>:
+                                       				
+                                    </p>
+                                    				
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>SOAP Version 1.2 Part 1: Messaging Framework (Second Edition), W3C Recommendation, 27 April 2007.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>SOAP Version 1.2 Part 2: Adjuncts (Second Edition), W3C Recommendation, 27 April 2007.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>SOAP Version 1.2 Part 3: One-Way MEP, W3C Working Group Note, 2 July 2007</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    				
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">The preferred method for implementing web-services are SOAP, however, there are many use cases (mash-ups etc.) where a REST
+                                    based interface is easier to implement and sufficient to meet the IERs.
+                                    <p>Restful services support HTTP caching, if the data the Web service returns is not altered frequently and not dynamic in nature.
+                                       REST is particularly useful for restricted-profile devices such as mobile phones and tablets for which the overhead of additional
+                                       parameters like headers and other SOAP elements are less.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">13:Secure exchange of data objects and documents across multiple security domains</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                    
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>NC3A TN-1456 REV1"NATO Profile for the XML Confidentiality Label Syntax, version 1.1"</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>NC3A TN-1455 REV1 "NATO Profile for the Binding of Metadata to Data Objects, version 1.1"</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <span class="underline">Recommended (2015)</span>:
+                                    
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>Technical and Implementation Directive for Confidentiality Labelling of NATO Information (AC/322-D(2014)nnnn)</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Technical and Implementation Standard for Confidentiality Labelling of NATO Information (AC/322-(2014)xxxx)</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>Guidance for properly labelling and binding data objects is provided in the emerging Technical and Implementation Standard
+                                       for Confidentiality Labelling of NATO Information (AC/322-(2014)xxxx)
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">14:Topic based publish / subscribe web services communication</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Notification 1.3 including: 
+                                                      
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>OASIS, Web Services Base Notification 1.3 (WS-BaseNotification), OASIS Standard, 1 October 2006</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>OASIS, Web Services Brokered Notification 1.3 (WS-BrokeredNotification), OASIS Standard, 1 October 2006</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>OASIS, Web Services Topics 1.3 (WS-Topics), OASIS Standard, 1 October 2006</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Enable topic based subscriptions for web service notifications,
+                                                      with extensible filter mechanism and support for message brokers
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">15:Providing transport-neutral mechanisms to address web services</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <span class="underline">Mandatory</span>:
+                                    
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>WS-Addressing 1.0 &#8211; Core, 9 May 2006</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    
+                                    <p>Web Services Addressing 1.0 &#8211; Core, W3C Recommendation, 9 May 2006</p>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Required for WS-Security</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">16:Reliable messaging for web services</td>
+                                 <td style="border-right: 0.5pt solid ; "><span class="underline">Recommended</span>:
+                                    				
+                                    <p>OASIS, Web Services Reliable Messaging (WS-Reliable Messaging) Version 1.2, OASIS Standard, February 2009.</p>
+                                    				
+                                 </td>
+                                 <td>Describes a protocol that allows messages to be transferred reliably between
+                                                      nodes implementing this protocol in the presence of software component, system, 
+                                                      or network failures.
+                                 </td>
+                              </tr>
+                           </tbody>
+                           <tbody class="footnotes">
+                              <tr>
+                                 <td colspan="3">
+                                    <div id="ftn.d0e11665" class="footnote">
+                                       <p><a href="#d0e11665" class="para"><sup class="para">[a] </sup></a>This specification is subject to the following copyright: (c) 2001-2006 BEA Systems, Inc., BMC Software, CA, Inc., International
+                                          Business Machines Corporation, Layer 7 Technologies, Microsoft Corporation, Inc., Novell, Inc. and VeriSign, Inc. All rights
+                                          reserved.
+                                       </p>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p></p>
+                  </div><br class="table-break"></section>
+               <section class="sect2" id="d0e11826">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.10.3.&nbsp;Enterprise Support Services</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>420. Enterprise Support Services are a set of Community Of Interest (COI) independent 
+                                 services that must be available to all members within a FMN instance. Enterprise Support
+                                 Services facilitate other service and data providers on network elements by providing 
+                                 and managing underlying capabilities to facilitate collaboration and information management
+                                 for end-users.
+                  </p>
+                  <section class="sect3" id="d0e11831">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title">G.10.3.1.&nbsp;Unified Communication and Collaboration Services</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>421. Unified Communication and Collaboration Services provide users with a range of interoperable
+                                    collaboration capabilities, based on standards that fulfill NATO and Coalition operational
+                                    requirements. They will enable real-time situational updates to time-critical planning activities
+                                    between coalition partners, communities of interest (e.g. the Intel community or the Logistics 
+                                    community), and other agencies. Levels of collaboration include awareness, shared information, 
+                                    coordination and joint product development.
+                     </p>
+                     <p>422. Different use cases require different levels of protection of these communication and
+                                    collaboration services. For voice or audio-based collaboration services, the FMN profile
+                                    provides interoperability standards for three different scenarios: 
+                     </p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>Voice over IP (VoIP) network services</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Voice over Secure IP (VoSIP) network services</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Network agonistic Secure Voice Services (such as 3G, IP/4G, ISDN)</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="figure" id="v3i-fmn-audio">
+                        <p></p>
+                        <div class="figure-contents">
+                           <div class="mediaobject"><img src="../figures/fmn-audio-collaboration.png" alt="Audio-based Collaboration Services"></div>
+                        </div>
+                        <div class="figure-title">Figure&nbsp;G.3.&nbsp;Audio-based Collaboration Services</div>
+                     </div><br class="figure-break"><p>423. Depending on the security classification of a FMN instance, Scenario A or B are mandatory.
+                                    If a member choses to use network agnostic Secure Voice services in addition to VoSIP, then 
+                                    SCIP specifications as defined for audio-based collaboration services (end-to-end protected 
+                                    voice) should be used.
+                     </p>
+                     <p>424. For text-based collaboration there is also a basic profile sufficient for operating
+                                    this service with reduced protection requirements as well as an enhanced XMPP profile 
+                                    that includes additional security mechanisms.
+                     </p>
+                     <div class="table" id="v3t-id-fmn-reftable7">
+                        <div class="table-title">Table&nbsp;G.7.&nbsp;Unified Communication and Collaboration Services and Data Standards</div>
+                        <div class="table-contents">
+                           <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                              <colgroup>
+                                 <col style="width: 20%; ">
+                                 <col style="width: 50%; ">
+                                 <col style="width: 30%; ">
+                              </colgroup>
+                              <thead>
+                                 <tr>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>ID:Service/Purpose</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>Standard</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>Implementation Guidance</strong></span>
+                                                       
+                                    </th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1:Video-based Collaboration Services (VTC)</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory (VTCoIP)</span>:
+                                       				
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>ITU-T H.323 v7 (12/2009) Packet-based multimedia communications systems;</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>ITU-T G.722.1 (2005) Corrigendum 1 (06/2008) Low-complexity coding at 24 and 32 kbit/s for hands-free operation in systems
+                                                   with low frame loss;
+                                                </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>ITU-T H.263 (01/2005) Video coding for low bit rate communication</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2:Audio-based Collaboration Services</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">VoIP numbering:
+                                       				
+                                       <p>STANAG 4705 Ed. 1 Ratification Draft, International Network Numbering for Communications Systems in use in NATO
+                                          				
+                                       </p>
+                                       				
+                                       <p><span class="underline">Mandatory (VoIP)</span>: 
+                                          				
+                                       </p>
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>SIP (IETF RFC 3261) + RTP (IETF RFC 3550);</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>Audio encoding: ITU-T Recommendation G.729 Annex A (11/96), Coding of speech at 8 kbit/s using conjugate-structure algebraic-code-excited
+                                                   linear prediction (CS-ACELP)
+                                                </p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <p>
+                                          				
+                                       </p>
+                                       				
+                                       <p><span class="underline">Emerging (2015)</span>: 
+                                          				
+                                       </p>
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>G.729 (06/12): Coding of speech at 8 kbit/s using conjugate-structure algebraic-code-excited linear prediction (CS-ACELP)</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <p>
+                                          				
+                                       </p>
+                                       				
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">VoIP refers to unprotected voice communication services running on unclassified IP networks e.g. conventional IP telephony
+                                       (see scenario A in Figure above)
+                                                         
+                                       <p>VoSIP refers to non-protected voice service running on a classified IP networks  (see scenario B in Figure above)</p>
+                                                         
+                                       <p>Voice sampling Interval 40ms</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3:Audio-based Collaboration Services (end-to-end protected voice)</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Conditional</span>: 
+                                       				
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>ITU-T V.150.1 (03/2004), Modem-over-IP networks: Procedures for the end-to-end connection of V-series DCEs,  incorporating
+                                                   changes introduced by Corrigendum 1 and 2.
+                                                </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>SCIP-210, SCIP signaling plan.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>SCIP-214, Interface requirements for SCIP devices to circuit switched networks.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>SCIP-215, Interface requirements for SCIP devices to IP networks.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>SCIP-216: Minimum Essential Requirements (MER) for V.150.1 recommendation.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>SCIP-220: Requirements for SCIP.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>SCIP-221: SCIP Minimum Implementation Profile (MIP).</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>SCIP-233: NATO interim cryptographic suite (NATO and coalition)</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Secure voice services (see scenario C in Figure above) 
+                                                         
+                                       <p>V.150.1 support must be end-to-end supported by unclassified voice network</p>
+                                                         
+                                       <p>SCIP-214 only applies to gateways</p>
+                                                         
+                                       <p>Note that SCIP-216 requires universal implementation.</p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">4:Informal messaging services (e-mail)</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                       				
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>IETF RFC 1870:1995, SMTP Service Extension for Message Size Declaration.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 2821:2001, Simple Mail Transfer Protocol (SMTP) ()</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 2822:2001, Simple Internet Messages.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 2821:2001, Simple Mail Transfer Protocol (SMTP).</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 1870:1995, SMTP Service Extension for Message Size Declaration.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 2822:2001, Simple Internet Messages.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				
+                                       <p>Emerging (2016):</p>
+                                       				
+                                       <p>IETF RFC 5321: 2008, Simple Mail Transfer Protocol which obsoletes: IETF RFC 2821: 2001</p>
+                                       				
+                                       <p>IETF RFC 5321: 2008, Simple Mail Transfer Protocol which obsoletes IETF RFC 2821: 2001</p>
+                                       				
+                                       <p>Emerging (2017):</p>
+                                       				
+                                       <p>IETF RFC 6477: 2012, Registration of Military Message Handling System (MMHS) Header Fields for Use in Internet Mail</p>
+                                       
+                                       <p>IETF RFC 6477: 2012, Registration of Military Message Handling System (MMHS) Header Fields for Use in Internet Mail</p>
+                                       				
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Conditional: Depending on the protection requirements within the particular FMN instance messages must be marked in the message
+                                       header field &#8220;Keywords&#8221;(IETF RFC 2822) and first-line-of-text in the message body according to the following convention:
+                                       <p>[MMM] [CLASSIFICATION], Releasable to [MISSION]</p>
+                                       
+                                       <p>Where CLASSIFICATION is the classification {SECRET, CONFIDENTIAL, RESTRICTED, UNCLASSIFIED} and MMM is the alpha-3 country
+                                          code e.g. DEU, GBR, as defined in Table 8.ID2 with the exception that NATO will be identified by the four letter acronym &#8220;NATO&#8221;.
+                                           The &#8220;releasable to&#8221; list shall include the short-name of the mission and may be extended to include other entities.
+                                       </p>
+                                       
+                                       <p><span class="emphasis"><em>Example:</em></span></p>
+                                       
+                                       <p>Keywords: <span class="emphasis"><em>ITA UNCLASSIFIED, Releasable to XFOR</em></span></p>
+                                       
+                                       <p>Conditional (if the mission network operates at classified level).
+                                          messages must be labelled and bound to the email transport using the SMTP Binding Profile defined in Technical and Implementation
+                                          Standard for Confidentiality Labelling of NATO Information (AC/322-(2014)xxxx
+                                       </p>
+                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">5:Content encapsulation within bodies of internet messages</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Multipurpose Internet Mail Extensions (MIME) specification:
+                                       		
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>IETF RFC 2045:1996, Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 2046: 1996, Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 2047: 1996, MIME (Multipurpose Internet Mail Extensions) Part Three: Message Header Extensions for Non-ASCII Text.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 2049: 1996, Multipurpose Internet Mail Extensions (MIME) Part Five: Conformance Criteria and Examples.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 4288: 2005, Media Type Specifications and Registration Procedures.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">10 MB max message size limit
+                                                         
+                                       <p>Minimum Content-Transfer-Encoding: </p>
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>7bit</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>base64</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>binary BINARYMIME SMTP extension [RFC 3030]</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                                         
+                                       <p>Minimum set of media and content-types:</p>
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>text/plain [RFC1521]</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>text/enriched [RFC1896]</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>text/html [RFC1866]</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>multipart/mixed [RFC 2046]</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>multipart/signed</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">6:text-based collaboration services</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: basic FMN XMPP profile (see 6.1)
+                                                         
+                                       <p><span class="underline">Recommended</span>: enhanced FMN XMPP profile (see 6.2)
+                                       </p>
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Near-real time text-based group collaboration capability for time 
+                                                         critical reporting and decision making in military operations.
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">6.1:text-based collaboration services (basic FMN XMPP profile)</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">IETF RFC 6120: 2011, Extensible Messaging and Presence Protocol (XMPP): Core.
+                                                          
+                                       <p>IETF RFC 6121: 2011, Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence.</p>                         
+                                                         
+                                       <p>The following XMPP Extension Protocols (XEP) defined by the XMPP Standards Foundation shall also be supported:</p>
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>XEP-0004: Data Forms, August 2007.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0030: Service Discovery, February 2007.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0045: Multi-User Chat (MUC), July 2008.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0049: Private XML Storage, March 2004.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0050: Ad Hoc Commands, June 2005.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0054: vCard Profiles, March 2003.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0065: SOCKS5 Bytestreams, April 2011.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0092: Software Version, February 2007.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0096: SI File Transfer, April 2004.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0114: Jabber Component Protocol, March 2005.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0115: Entity Capabilities, February 2008.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0203: Delayed Delivery, September 2009.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0220: Server Dialback, December 2007.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0288: Bidirectional Server-to-Server Connections, October 2010.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p>Fading:</p>
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>XEP-0078: Non-SASL Authentication, October 2008.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0091: Legacy Delayed Delivery, May 2009.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; ">6.2:text-based collaboration services (enhanced FMN XMPP profile)</td>
+                                    <td style="border-right: 0.5pt solid ; ">The enhanced profile requires compliance with the basic profile as defined above plus: 
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>XEP-0033: Extended Stanza Addressing, September 2004.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0079: Advanced Message Processing, November 2005.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0122: Data Forms Validation, September 2004.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0199: XMPP Ping, June 2009. </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0249: Direct MUC Invitation, September 2011.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0258: Security Labels in XMPP, March 2009.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-0289: Federated MUC for Constrained Environments, May 2012.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p>Emerging</p>
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>XEP-0311: MUC Fast Reconnect, January 2012.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-131 Stanza Headers and Internet Metadata (SHIM)</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-198 Stream Management</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-227 Portable Import/Export Format for XMPP-IM Servers</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-313 Message Archive Management (MAM)</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-346 Form Discovery and Publishing (FDP)</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>XEP-350: Data Forms Geolocation Element</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                    </td>
+                                    <td>Developers are also advised to consult the following IETF RFCs:
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>IETF RFC 6122: 2011, Extensible Messaging and Presence Protocol (XMPP): Address Format.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 6125: 2011, Representation and Verification of Domain-Based Application Service Identity within Internet Public Key
+                                                   Infrastructure Using X.509 (PKIX) Certificates in the Context of Transport Layer Security (TLS).
+                                                </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 3923: 2004, End-to-End Signing and Object Encryption for the Extensible Messaging and Presence Protocol (XMPP).</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 4854: 2007, A Uniform Resource Name (URN) Namespace for Extensions to the Extensible Messaging and Presence Protocol
+                                                   (XMPP).
+                                                </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 4979: 2007, IANA Registration for Enumservice 'XMPP'</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 3761: 2004, The E.164 to Uniform Resource Identifiers (URI) Dynamic Delegation Discovery System (DDDS) Application
+                                                   (ENUM).
+                                                </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>IETF RFC 5122: 2008, Internationalized Resource Identifiers (IRIs) and Uniform Resource Identifiers (URIs) for the Extensible
+                                                   Messaging and Presence Protocol (XMPP).
+                                                </p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <p>Many XMPP extensions are still in draft. Implementations should use caution i.e. XEP-0065: SOCKS5 Bytestreams, April 2011.
+                                          XMPP Extension Label syntax should follow the emerging NATO standard: Technical and Implementation Standard for Confidentiality
+                                          Labelling of NATO Information (AC/322 (2014)xxxx)
+                                       </p>
+                                       				
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <p></p>
+                     </div><br class="table-break"></section>
+                  <section class="sect3" id="d0e12268">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title">G.10.3.2.&nbsp;Information Management Services</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>425. Information Management Services provide technical services "...to direct and support
+                                    the handling of information throughout its life-cycle ensuring it becomes the right 
+                                    information in the right form and of adequate quality to satisfy the demands of an
+                                    organization." These services support organizations, groups, individuals and other
+                                    technical services with capabilities to organize, store and retrieve information 
+                                    (in any format, structured or unstructured) through services and managed processes,
+                                    governed by policies, directives, standards, profiles and guidelines.
+                     </p>
+                     <div class="table" id="v3t-id-fmn-reftable8">
+                        <div class="table-title">Table&nbsp;G.8.&nbsp;Information Management Services and Data Standards</div>
+                        <div class="table-contents">
+                           <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                              <colgroup>
+                                 <col style="width: 20%; ">
+                                 <col style="width: 50%; ">
+                                 <col style="width: 30%; ">
+                              </colgroup>
+                              <thead>
+                                 <tr>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>ID:Service/Purpose</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>Standard</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>Implementation Guidance</strong></span>
+                                                       
+                                    </th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1:<span class="underline">Enterprise Search Services</span>: Automated information resource discover, information extraction and interchange of metadata
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                       				
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>AC/322-N(2014)xxxx - NATO Core Metadata Specification</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>SPARQL 1.1 Query Language, W3C Recommendation, 21 March 2013.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>OWL 2 Web Ontology Language Document Overview (Second Edition), W3C Recommendation, 11 December 2012.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				
+                                       <p><span class="underline">Emerging (2014)</span>:OpenSearch 1.1 Draft 5
+                                          				
+                                       </p>
+                                       				
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The NATO Core Metadata Specification does not define implementation details. However, it describes the format and encoding
+                                       of the values captured for each metadata element.
+                                                         
+                                       <p>The technical implementation specifications are part of the TIDE Transformational Baseline v3.0, however, Query-by-Example
+                                          (QBE), has been deprecated with the TIDE Information Discovery specs v2.3.0 and replaced by SPARQL.
+                                       </p>
+                                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2:<span class="underline">Enterprise Search Services</span>: 
+                                       <p>manual information resource discovery, classification marking and file naming conventions</p>
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Recommended</span>:
+                                       
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>AC322-N(2010)0025 &#8211; Guidance On File Naming</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>AC/322-N(2011)0130 &#8211; Guidance on the marking of NATO information</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Character codes for permissible Classification Markings will be specified for each Mission Network in the IM Annex of the
+                                       OPLAN.
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; ">3:<span class="underline">Enterprise Support Guard Services</span>: General definition of Security and Confidentiality metadata
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>Technical and Implementation Standard for Confidentiality Labelling of NATO Information (AC/322-(2014)xxxx), including Appendices
+                                                   1 &#8211; 4.
+                                                </p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                                       
+                                    </td>
+                                    <td>Services and applications shall implement object level labelling in order to support cross-COI and cross security domain information
+                                       exchange using common enterprise Support Guard Services (e.g. Cross-Domain Solutions or Information Exchange Gateways)
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <p></p>
+                     </div><br class="table-break"><p>426. Metadata shall contain the following elements. Details on the format and encoding of the values for each element are
+                        provided in the NATO Core Metadata Specification, AC/322-N(2014)xxxx.
+                     </p>
+                     <div class="table" id="v3t-id-fmn-reftable9">
+                        <div class="table-title">Table&nbsp;G.9.&nbsp;Minimum Metadata Set</div>
+                        <div class="table-contents">
+                           <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                              <colgroup>
+                                 <col style="width: 24%; ">
+                                 <col style="width: 22%; ">
+                                 <col style="width: 14%; ">
+                                 <col style="width: 40%; ">
+                              </colgroup>
+                              <thead>
+                                 <tr>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>NCMS element name</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>XML element name</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>Obligation</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>Definition</strong></span>
+                                                       
+                                    </th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">metadataConfidentialityLabel</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:metadataConfidentialityLabel</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The confidentiality label assigned to the metadata set associated with the resource.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">originatorConfidentialityLabel</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:originatorConfidentialityLabel</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The confidentiality label assigned to the resource by the originator.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">creator</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:creator</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">An entity primarily responsible for creating the resource, or the originator of the resource.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">date.created</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:created</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The date on which the resource was created.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">identifier</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:identifier</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">An unambiguous reference to the resource within a given context.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">publisher</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:publisher</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The entity responsible for making the resource officially available.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">subject</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:subject</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The topic of the content of the resource.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">title</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:title</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The title is the official name of a resource.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">recordsDispositionDate</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:recordsDispositionDate</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The date when the resource will be archived or destroyed.</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">status</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ncms:status</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">M</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The current status of a resource (active, semi-active, inactive)</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; ">coverage</td>
+                                    <td style="border-right: 0.5pt solid ; ">ncms:coverage, with refinements:
+                                       
+                                       <p>ncms:countryCode</p>
+                                       
+                                       <p>ncms:geographicEncodingSchema</p>
+                                       
+                                       <p>ncms:geographicReference</p>
+                                       
+                                       <p>ncms:placeName</p>
+                                       
+                                       <p>ncms:region</p>
+                                       
+                                       <p>ncms:timePeriod</p>
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; ">O</td>
+                                    <td>The temporal and geospatial extent or scope of the content of the resource.</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <p></p>
+                     </div><br class="table-break"></section>
+                  <section class="sect3" id="d0e12517">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title">G.10.3.3.&nbsp;Geospatial Services</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>427. Geospatial Services deliver network-based access to quality raster, vector 
+                                    and terrain data, available in varying degrees of format and complexity. Geospatial
+                                    Services form a distinct class of information services through their unique 
+                                    requirements for collecting, converting, storing, retrieving, processing, analysing, 
+                                    creating, and displaying geographic data. The generic nature of Geospatial 
+                                    Services - "organizing information by location" - is interdisciplinary and not
+                                    specific to any Community of Interest (COI) or application.
+                     </p>
+                     <div class="table" id="v3t-id-fmn-reftable10">
+                        <div class="table-title">Table&nbsp;G.10.&nbsp;Enterprise Support Services and Data Standards</div>
+                        <div class="table-contents">
+                           <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                              <colgroup>
+                                 <col style="width: 20%; ">
+                                 <col style="width: 50%; ">
+                                 <col style="width: 30%; ">
+                              </colgroup>
+                              <thead>
+                                 <tr>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>ID:Service/Purpose</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>Standard</strong></span>
+                                                       
+                                    </th>
+                                    <th style="border-bottom: 0.5pt solid ; ">
+                                                         <span class="bold"><strong>Implementation Guidance</strong></span>
+                                                       
+                                    </th>
+                                 </tr>
+                              </thead>
+                              <tbody>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1:Geodetic and geophysical model of the Earth.</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                       <p>NIMA Technical Report 8350.2 Third Edition incorporating Amendments 1 and 2:23 June 2004, Department of Defense World Geodetic
+                                          System 1984 Its Definition and Relationships with Local Geodetic Systems.
+                                       </p>
+                                       			  
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2:Electronic format for medium resolution terrain elevation data.</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MIL-PRF-89020 Rev. B, Performance Specification:  Digital Terrain Elevation Data (DTED), 23 May 2000.</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Used to support line-of-sight analyses, terrain profiling, 3D terrain visualization, mission planning/rehearsal, and modeling
+                                       and simulation.
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3:Services to publish geospatial data as maps rendered in raster image formats.</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>ISO 19128:2005, Geographic information - Web map server interface (WMS  v.1.3.0).</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>OGC 02-070, OpenGIS Styled Layer Descriptor (SLD) Profile of the Web Map Service Implementation Specification  v.1.0.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p><span class="underline">Emerging (2018)</span>:
+                                       </p>
+                                       				  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>OGC 05-078r4, OpenGIS Styled Layer Descriptor (SLD) Profile of the Web Map Service Implementation Specification  v.1.1.0,
+                                                   June 2007.
+                                                </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>OGC 07-057r7, OpenGIS Web Map Tile Service Implementation Standard (WMTS) v.1.0.0, April 2010.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">WMTS are to be provided as a complimentary service to WMS to ease access to users operating in bandwidth constraint environments.
+                                       WMTS trades the flexibility of custom map rendering for the scalability possible by serving of static data (base maps) where
+                                       the bounding box and scales have been constrained to discrete tiles which enables the use of standard network mechanisms for
+                                       scalability such as distributed cache systems to cache images between the client and the server, reducing latency and bandwidth
+                                       use.
+                                                       
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">4:Services to publish vector-based geospatial feature data to applications</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>OGC 04-094, Web Feature Service (WFS) v.1.1.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>OGC 10-100r3 Geography Markup Language (GML) simple features profile (with Corrigendum) v 2.0 including OGC 11-044 Geography
+                                                   Markup Language (GML) simple features profile Technical Note v 2.0
+                                                </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>OGC 04-095, Filter Encoding v.1.1</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                                       
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">5:Electronic interchange of geospatial data as coverage, that is, digital geospatial information representing space varying
+                                       phenomena
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>OGC 07-067r2, Web Coverage Service (WCS) v.1.1.1</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p><span class="underline">Emerging (2014)</span>:
+                                       </p>
+                                       				  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>OGC 09-110r4, Web Coverage Service (WCS) v2.0</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p><span class="underline">Fading</span>:
+                                       </p>
+                                       				  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>OGC 03-065r6 OpenGIS Web Coverage Service (WCS) Implementation Specification v 1.0</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                                       
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Web Coverage Service v.1.1.1 is limited to describing and requesting grid (or "simple") coverage.
+                                                         
+                                       <p>OGC Web Coverage Service (WCS) Standard Guidance Implementation Specification 1.0</p>
+                                       				
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">6:Raster Image Storage Service</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Conditional</span>: If all MN Participants confirm that they can ingest DGI/SGI in MrSID_MG3 format.
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>Multi-resolution Seamless Image Database, Generation 3 (MrSID_MG3)</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                                       
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The JPEG 2000 image compression standard offers many of the same advantages as MrSID, plus the added benefits of being an
+                                       international standard (ISO/IEC 15444).
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">7:File based storage and exchange of digital geospatial mapping (raster) data where services based access is not possible</td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>GeoTIFF format specification: GeoTIFF Revision 1, Version 1.8.2, December 2000.</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>OGC 05-047r3: OpenGIS GML in JPEG 2000 for Geographic Imagery (GMLJP2) Encoding Specification 1.0.0, January 2006.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p><span class="underline">Recommended</span>:
+                                       </p>
+                                       				  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>MIL-PRF-89038 (NOTICE 1), Performance Specification Compressed ARC Digitized Raster Graphics (CADRG) incorporating Amendments
+                                                   1 and 2.
+                                                </p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>MIL-STD-2411 (NOTICE 3), Department of Defense Interface Standard: Raster Product Format (31 Mar 2004).</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                                       
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">This is provided for legacy systems, implementers are encouraged to upgrade their systems to consume OGC Web Services.
+                                       
+                                       <p>In practice, the exchange of large geospatial(raster) data sets between Geo organizations of different Mission Network Contributing
+                                          Participant is conducted in the proprietary Multi-resolution seamless image database (MrSid Generation 4) format. Data in
+                                          MrSID format could be transformed to GeoTIFF.
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">8:File based storage and exchange of non-topological geometry and attribute information or digital geospatial feature (vector)
+                                       data
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                                         
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>OGC 07-147r2, Keyhole Markup Language (KML) 2.2.0, April 2008.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p><span class="underline">Fading</span>:
+                                       </p>
+                                       				  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>ESRI White Paper, ESRI Shapefile Technical Description, July 1998.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p><span class="underline">Emerging</span>:
+                                       </p>
+                                       				  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>File Geodatabase (.gdb directories)</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       				  
+                                       <p>NOTE: The current version of the gdb file format is defined via the application programming interface File Geodatabase API
+                                          1.3, which is used in several GIS implementations including the open source Geospatial Data Abstraction Library (GDAL).
+                                       </p>
+                                       				
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">ESRI Shapefiles are used by legacy systems and as file based interchange format. Implementers are encouraged to upgrade their
+                                       systems based on OGC Web  Services.
+                                       <p>File geodatabases store datasets as folders in a file system with each file capable of storing more than 1 TB of information.
+                                          Each file geodatabase can hold any number of these large, individual datasets. File geodatabases can be used across all platforms
+                                          and can be compressed. They support the complete geodatabase information model and are faster than using shapefiles for large
+                                          datasets. Users are rapidly adopting the file geodatabase in place of using shapefiles.
+                                       </p>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">9:<span class="underline">Geospatial Coordinate Services</span>: general positioning, coordinate systems, and coordinate transformations
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Recommended</span>:
+                                       			  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>OGC 01-009, OpenGIS Coordinate Transformation Service Implementation Specification Revision 1.00, January 2001.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       			  
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">10:<span class="underline">GeoWeb Service Interface to GIS Servers</span>: 
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Recommended</span>:
+                                       			  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>Open Esri GeoServices REST specification Version 1.0, September 2010</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       			  
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">There are implementations of the Open Esri GeoServices REST specification from various other vendors. The REST API may be
+                                       used for an easier to implement and rich interface to the server side GIS capabilities.  Functional Services that support
+                                       this interface may take advantage of this interface.
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">11:<span class="underline">Geo-Analytical Functionality as a Service</span>: 
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Recommended</span>:
+                                       			  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>Open Esri GeoServices REST specification Version 1.0, September 2010</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>OGC 05-007r7 Web Processing Service 1.0.0</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       			  
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Instead of retrieving all required spatial data in order to analyse it in a fat client, clients are encouraged to invoke the
+                                       analytical processes where the data resides so that only the analytic result needs to be transmitted from the server to the
+                                       client.
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">12:<span class="underline">Geospatial Coordinate Services: identifying Coordinate Reference Systems (CRS)</span>: 
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Fading</span>:
+                                       			  
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>&#8220;DGIWG Geodetic Codes and Parameters Registry&#8221;, https://portal.dgiwg.org/files/?artifact_id=3071
+                                                   Last updated, Sept 2000
+                                                </p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <p>
+                                          			  <span class="underline">Recommended</span>:
+                                          			  
+                                       </p>
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>EPSG registry http://www.epsg-registry.org/ &#8220;, current version 8.2, dated 29 November 2013</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       			  
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">The European Petrol Survey Group maintains the most comprehensive and accurate register of international geodetic codes and
+                                       parameters for CRS. To identify the CRS for the exchange of geospatial data a standard naming convention and reference repository
+                                       is required
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">13:<span class="underline">3D Perspective Viewer as a GeoWeb-Service</span>: 
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Recommended</span>:
+                                       <p>
+                                          			  
+                                       </p>
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>KML network link as part of OGC OGC 07-147r2 KML</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       			  
+                                    </td>
+                                    <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; ">14:<span class="underline">Geospatial Frames of Reference</span>: 
+                                    </td>
+                                    <td style="border-right: 0.5pt solid ; ">
+                                       <p>
+                                          			  
+                                       </p>
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>STANAG 2211:GEODETIC DATUMS, PROJECTIONS, GRIDS AND GRID REFERENCES GEOREF, MGRS</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>AGeoP-7 / STANAG 2577 NATO SPECIFICATIONS FOR GLOBAL AREA REFERENCE SYSTEM (GARS),  Edition A Version 1 
+                                                   Oct 2012:GEODETIC DATUMS, PROJECTIONS, GRIDS AND GRID REFERENCES GEOREF, MGRS
+                                                </p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       <p>Conditional: Only to be used for operational-level air-to-ground coordination, deconfliction, integration, and synchronization.
+                                           GARS shall not be used
+                                          			  
+                                       </p>
+                                       <div class="itemizedlist">
+                                          <ul class="itemizedlist">
+                                             <li class="listitem">
+                                                <p>To define exact geographic locations,</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>in systems that require precise position data, (e.g., weapon systems).</p>
+                                             </li>
+                                             <li class="listitem">
+                                                <p>to define either a fire support coordination measure or airspace coordinating measure.</p>
+                                             </li>
+                                          </ul>
+                                       </div>
+                                       			  
+                                    </td>
+                                    <td>&nbsp;</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <p></p>
+                     </div><br class="table-break"></section>
+               </section>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apgs09.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="apg.html"><i class="foundicon-up-arrow"></i></a></td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apgs11.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2014 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

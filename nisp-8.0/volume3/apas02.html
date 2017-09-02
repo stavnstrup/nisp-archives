@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>A.2.&nbsp;Minimum Interoperability profile</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="apa.html" title="Appendix&nbsp;A.&nbsp;Agreed Profiles">
+      <link rel="next" href="apas03.html" title="A.3.&nbsp;X-TMS-SMTP profile">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Agreed Profiles">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Tactical ESB (Tact ESB) Profile">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Federated Mission Networking Interoperability Standards Profile for Mission Execution Environments">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;External Profiles">
+      <link rel="subsection" href="apas02.html#d0e528" title="A.2.1.&nbsp;Architectural Assumptions">
+      <link rel="subsection" href="apas02.html#d0e545" title="A.2.2.&nbsp;Shared Services">
+      <link rel="subsection" href="apas02.html#d0e596" title="A.2.3.&nbsp;Minimum Architecture">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li class="active"><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                           <li><a href="../volume4/index.html" title="Volume 4 - Design Rules">Design Rules</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apa.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apas03.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="sect1" id="d0e521">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title">A.2.&nbsp;Minimum Interoperability profile</h2>
+                     </div>
+                  </div>
+               </div>
+               <p>49. NATO, through its interoperability directive, has recognized that
+                  widespread interoperability is a key component in achieving effective
+                  and efficient operations. In many of the operations world-wide in which
+                  NATO nations are engaged, they participate together with a wide variety
+                  of other organizations on the ground. Such organizations include
+                  coalition partners from non-NATO nations, Non-Governmental Organization
+                  (NGOs - e.g. Aid Agencies) and industrial partners. It is clear that the
+                  overall military and humanitarian objectives of an operation could
+                        usefully be supported if a basic level of system interoperability
+                        existed to enhance the exchange of information.
+               </p>
+               <p>50. To support the goal of widespread interoperability this section
+                        defines a minimum profile of services and standards that are sufficient
+                        to provide a useful level of interoperability. This profile uses only
+                        those services and standards that are already part of the NISP, however
+                        it presents them as a simple and easy to follow, yet comprehensive
+                        protocol and service stack.
+               </p>
+               <section class="sect2" id="d0e528">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">A.2.1.&nbsp;Architectural Assumptions</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>51. This document assumes that all participants are using IP v4 or IP v6
+                             packet-switched, routed networks (at least at the boundaries to their
+                             networks) and that interoperability will be supported through tightly
+                             controlled boundaries between component networks and systems; these
+                             may be connected directly or via a third-party WAN
+                     	(see <a class="xref" href="apas02.html#v2f-ar-as" title="Figure&nbsp;A.1.&nbsp;NATO to National Connectivity">Figure&nbsp;A.1</a> below). A limited set of services will
+                     	be supported at the boundary, these requiring server-to-server
+                     	interactions only. Each nation/organization will be responsible for the
+                     	security of information exchanged.
+                  </p>
+                  <div class="figure" id="v2f-ar-as">
+                     <p></p>
+                     <div class="figure-contents">
+                        <div class="mediaobject"><img src="../figures/ar-as.png" alt="NATO to National Connectivity"></div>
+                     </div>
+                     <div class="figure-title">Figure&nbsp;A.1.&nbsp;NATO to National Connectivity</div>
+                  </div><br class="figure-break"><p>52. Users will attach and authenticate to their local system/network. Information will only be shared using the limited set
+                     of services provided. It is also assumed that the National information to be exchanged is releasable to NATO.
+                  </p>
+               </section>
+               <section class="sect2" id="d0e545">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">A.2.2.&nbsp;Shared Services</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>53. The complete set of shared services will be a combination of the
+                             user-level services supported across the boundary and the
+                             infrastructure services necessary to deliver them. The user-level
+                             services that realistically can be shared are:
+                  </p>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist">
+                        <li class="listitem">
+                           <p>Voice</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Mail</p>
+                        </li>
+                        <li class="listitem">
+                           <p>FAX</p>
+                        </li>
+                        <li class="listitem">
+                           <p>C2 information</p>
+                        </li>
+                        <li class="listitem">
+                           <p>E-mail with attachments</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Web publishing/access</p>
+                        </li>
+                        <li class="listitem">
+                           <p>News (Usenet)</p>
+                        </li>
+                        <li class="listitem">
+                           <p>File transfer</p>
+                        </li>
+                        <li class="listitem">
+                           <p>VTC</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Instant Messaging</p>
+                        </li>
+                     </ul>
+                  </div>
+                  <p>54. To implement these services in a network enabled environment,
+                             the following must also be defined:
+                  </p>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist">
+                        <li class="listitem">
+                           <p>NNEC Application Services</p>
+                        </li>
+                        <li class="listitem">
+                           <p>COI Services</p>
+                        </li>
+                        <li class="listitem">
+                           <p>NNEC Core Enterprise Services</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Network and Information Infrastructure Services</p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="d0e596">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">A.2.3.&nbsp;Minimum Architecture</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>55. The following table defines the service areas, classes and
+                             standards that make up the minimum architecture. They represent a
+                             subset of the NISP.
+                  </p>
+                  <div class="table" id="v2t-nisp-lite">
+                     <div class="table-title">Table&nbsp;A.1.&nbsp;NISP Lite</div>
+                     <div class="table-contents">
+                        <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 15%; ">
+                              <col style="width: 20%; ">
+                              <col style="width: 35%; ">
+                              <col style="width: 30%; ">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Service Area</strong></span>
+                                                    
+                                 </th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Class</strong></span>
+                                                    
+                                 </th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Mandatory
+                                                          Standard</strong></span>
+                                                    
+                                 </th>
+                                 <th style="border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Comments</strong></span>
+                                                    
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>NNEC Application
+                                                          Services</strong></span>
+                                                    
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>COI Services</strong></span>
+                                                    
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>NNEC Core Enterprise
+                                                          Services</strong></span>
+                                                    
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Messaging</strong></span>
+                                                    
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SMTP (RFC 1870:1995, 2821:2001, 5321:2008)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Application</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">FTP (IETF STD 9, RFC 959:1985 updated by 2228:1997,
+                                                    2640:1999, 2773:2000, 3659:2007)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">HTTP v1.1 (RFC 2616:1999 updated by 2817:2000), URL
+                                                    (RFC 4248:2005, 4266:2005), URI (RFC 3938:2005)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Network News Transfer Protocol NNTP (RFC 3977:2006)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MPEG-1 (ISO 11172:1993)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MPEG-2 (ISO 13818:2000)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MP3 (MPEG1 - Layer 3)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">The audio compression format used in MPEG1</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Translator</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">7-bit Coded Character-set for Info Exchange (ASCII)
+                                                    (ISO 646:1991)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">8-bit Single-Byte Coded Graphic Char Sets (ISO/IEC
+                                                    8859-1-4-9:98/98/99)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Universal Multiple Octet Coded Char Set (UCS) - Part 1
+                                                    (ISO 10646-1:2003)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Representation of Dates and Times (ISO 8601:2004)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Data encoding</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UUENCODE (UNIX 98), MIME (RFC 2045:1996 updated by 2231:1997, 5335:2008:
+                                    		2046:1996, updated by 3676:2004, 3798:2004, 5147:2008, 5337:2008;
+                                    		2047:1996, updated by 2231:1997; 2049:1996, 4288:2005, 4289:2005)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Base64 is used by some email products to encode
+                                                    attachments. It is part of the MIME std.
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Mediation</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Scalable Vector Graphics (SVG) 1.1 20030114,
+                                                    W3C
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">JPEG (ISO 10918:1994)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">PNG vers. 1.0 (RFC 2083:1997)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XML 1.0 3rd ed:2004, W3C</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">HTML 4.01 (RFC 2854:2000)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">PDF (Adobe Specification 5.1)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Rich Text Format (RTF)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Comma Separated Variable (CSV)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">For spreadsheets</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Zip</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Network and Information
+                                                          Infrastructure Services</strong></span>
+                                                    
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Directory</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">DNS (IETF STD 13, RFC 1034:1987+1035:1987 updated by
+                                                    1101:1989, 1183:1990, 1706:1994, 1876:1996, 1982:1996,
+                                                    1995:1996, 1996:1996, 2136:1997, 2181:1997, 2308:1998, 
+                                    		2845:2000, 2931:2000, 3007:2000, 3425:2002, 3597:2003, 
+                                    		3645:2003, 4033:2005, 4034:2005, updated by 4470:2006;
+                                    		4035:2005, updated by 4470:2006; 4566:2006, 4592:2006,
+                                    		5395:2008, 5452:2009)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Transport</strong></span>
+                                                    
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">TCP (IETF STD 7, RFC 793:1981 updated by
+                                                    1122: 1989, 3168:2001)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UDP (IETF STD 6, RFC 768:1980)</td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                      <span class="bold"><strong>Network</strong></span>
+                                                    
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">IPv4 (STD 5, RFC 791:1981, 792:1981, 894:1984,
+                                                    919:1984, 922:1984, 1112:1989 updated by RFC 950:1985,
+                                                    2474:1998, 3168:2001, 3260:2002, 3376:2002, 4604:2006,
+                                    		4884:2007)
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Boundary/advertised addresses must be valid public
+                                                    addresses (i.e. no private addresses to be routed across
+                                                    boundary)
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; ">&nbsp;</td>
+                                 <td style="border-right: 0.5pt solid ; ">Border Gateway Protocol (BGP4) (RFC 4271:2006)</td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p></p>
+                  </div><br class="table-break"></section>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apa.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="apa.html"><i class="foundicon-up-arrow"></i></a></td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apas03.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2014 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

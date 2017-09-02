@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>G.3.&nbsp;FMN Spiral 1 Profile</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="apgs02.html" title="G.2.&nbsp;Overview">
+      <link rel="next" href="apgs04.html" title="G.4.&nbsp;Related Information">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Minimum Interoperability Profile">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;X-TMS-SMTP profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Web Services Profiles">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Federated Mission Networking Spiral 1.1 Standards Profile">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;Profile for the Long Term Preservation of NATO Digital Information of Permanent value">
+      <link rel="subsection" href="apgs03.html#d0e6615" title="G.3.1.&nbsp;Scope">
+      <link rel="subsection" href="apgs03.html#d0e6624" title="G.3.2.&nbsp;Interoperability">
+      <link rel="subsection" href="apgs03.html#d0e6631" title="G.3.3.&nbsp;Standards and Profiles">
+      <link rel="subsection" href="apgs03.html#d0e6655" title="G.3.4.&nbsp;Sources">
+      <link rel="subsection" href="apgs03.html#d0e6688" title="G.3.5.&nbsp;Federated Communications and Networking Profile">
+      <link rel="subsection" href="apgs03.html#d0e7307" title="G.3.6.&nbsp;Federated Human-to-Human Communications Profile">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta name="pubsnummer" content="v9.0.2-final">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li class="active"><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apgs02.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apgs04.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="sect1" id="d0e6612">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title">G.3.&nbsp;FMN Spiral 1 Profile</h2>
+                     </div>
+                  </div>
+               </div>
+               <section class="sect2" id="d0e6615">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.3.1.&nbsp;Scope</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>168. The Federated Mission Networking (FMN) Spiral 1 standards profile defines interface standards for the services that are
+                     required to deploy a Mission Network Elements (FMN capability option A). Mission Network Extensions (option B) and Hosted
+                     Users (option C) may not meet these minimum service and service interoperability requirements. Connectivity and service provision
+                     throughout the federation is regulated by hosting agreements between participants.
+                  </p>
+                  <p>169. FMN Spiral 1 refers to an FMN maturity level in which separate physical infrastructures exist per mission and per security
+                     classification level. This spiral is an evolution of the fielded baseline of the Afghanistan Mission Network (AMN). Notably,
+                     biometrics interoperability standards were removed and the network architecture has changed from a hub-and-spoke to a
+                     meshed concept.
+                  </p>
+                  <p>170. Mission Network Extensions must be provided with their local area networks (including IP management) within the physical
+                     and cyber security boundaries of the hosting Mission Network Element. The services must function in a network environment
+                     that contains firewalls and various routing and filtering schemes; therefore, developers must use standards and well-known
+                     port specifications wherever possible, and document non-standard configurations as part of their service interface.
+                  </p>
+               </section>
+               <section class="sect2" id="d0e6624">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.3.2.&nbsp;Interoperability</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>171. In the context of Federated Mission Networking, the purpose of standardization is to enable interoperability in a multi-vendor,
+                     multi-network, multi-service environment. Technical interoperability must be an irrefutable and inseparable element in capability
+                     development and system implementation - without it, it is not possible to realize connections and service deliveries across
+                     the federation and hence, information sharing will not be achieved.
+                  </p>
+                  <p>172. Within NATO, interoperability is defined as "the ability to act together coherently, effectively and efficiently to achieve
+                     allied tactical, operational and strategic objectives". In the context of information exchange, interoperability means that
+                     a system, unit or forces of any service, nation can transmit data to and receive data from any other system, unit or forces
+                     of any service
+                     or nation, and use the exchanged data to operate effectively together.
+                  </p>
+               </section>
+               <section class="sect2" id="d0e6631">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.3.3.&nbsp;Standards and Profiles</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>173. For successful Federated Mission Networking, technical
+                         interface standards are critical enablers that have to be
+                         collectively followed and for which conformity by all
+                         participating members is important.
+                  </p>
+                  <p>174. Standards are aggregated in profiles. A standards profile is
+                         a set of standards for a particular purpose, covering certain
+                         services in the C3 taxonomy, with a guidance on implementation
+                         when and where needed. As profiles serve a particular purpose,
+                         they can be used in different environments, and therefore, they
+                         are not specific to a single overarching operational or technical
+                         concept. Profiles for Federated Mission Networking may and will be
+                         reused in other profiles.
+                  </p>
+                  <p>175. Generally, the scope of a profile in the EM Wiki is limited:
+                         it will focus on only a few services and a limited scope of
+                         functionality. Therefore, a full profile with a wider scope
+                         (ranging to an environment, a system or a concept) will have to
+                         consist of a selection of profiles, that together cover the full
+                         capability of that overarching profile. For organization of these
+                         standards and profiles, the overarching profile - in this case the
+                         FMN Spiral 1 Profile - is broken down in a hierarchical tree that
+                         forms a number of functional branches, ending in the leaves that
+                         are the profiles which contain the actual assignments of standards
+                         and their implementation guidance.
+                  </p>
+                  <p>176. In the profiles, interoperability standards fall into four
+                         obligation categories:
+                  </p>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist">
+                        <li class="listitem">
+                           <p>Mandatory - Mandatory interoperability standards must be met to enable Federated Mission Networking</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Conditional - Conditional interoperability standards must be present under certain specific circumstances</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Recommended - Recommended interoperability standards may be excluded for valid reasons in particular circumstances, but the
+                              full implications must be understood and carefully weighed
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>Optional - Optional interoperability standards are truly optional</p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="d0e6655">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.3.4.&nbsp;Sources</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>177. The interoperability standards profile in this document is derived from standards that are maintained by a selection
+                     of
+                     standardization organizations and conformity and interoperability resources. Some of these are included in the NATO
+                     Interoperability Standards and Profiles. Furthermore, standards are used from:
+                  </p>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist">
+                        <li class="listitem">
+                           <p>International Organization for Standardization (ISO) standards</p>
+                        </li>
+                        <li class="listitem">
+                           <p>International Electrotechnical Commission (IEC) standards</p>
+                        </li>
+                        <li class="listitem">
+                           <p>International Telecommunication Union (ITU) Radiocommunication (R) Recommendations</p>
+                        </li>
+                        <li class="listitem">
+                           <p>International Telecommunication Union (ITU) Telecommunication (T) Recommendations</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Internet Engineering Task Force (IETF) Requests for Comments (RFC)</p>
+                        </li>
+                        <li class="listitem">
+                           <p>World Wide Web Consortium (W3C) Recommendations</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Multilateral Interoperability Programme (MIP) standards</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Secure Communications Interoperability Profiles (SCIP)</p>
+                        </li>
+                        <li class="listitem">
+                           <p>Extensible Messaging and Presence Protocol (XMPP) Extension Protocols (XEP)</p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="d0e6688">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.3.5.&nbsp;Federated Communications and Networking Profile</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>178. The Federated Communications and Networking Profile arranges
+                         standards profiles for the facilitation of the platform and
+                         communications infrastructure of federated mission
+                         networks.
+                  </p>
+                  <section class="sect3" id="d0e6693">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title">G.3.5.1.&nbsp;Federated Communications Profile</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>179. The Federated Communications Profile arranges standards profiles for the addressing, routing, forwarding, quality and
+                               security of IP traffic over federated mission networks.
+                     </p>
+                     <div class="informaltable">
+                        <p></p>
+                        <table style="width: 100%; border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 18%; " class="c1">
+                              <col style="width: 44%; ">
+                              <col style="width: 38%; " class="c3">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Service</th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard</th>
+                                 <th style="border-bottom: 0.5pt solid ; ">Implementation Guidance</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Inter-Autonomous Systems IP Transport Profile</strong></span></p>
+                                    <p>The Inter-Autonomous Systems IP Transport Profile provides standards and guidance for Edge Transport Services between autonomous
+                                       systems, using Internet Protocol (IP) over point-to-point Ethernet links on optical fibre.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>IP-based Transport Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Section 3 - Clause 58 - 1000BASE-LX10, nominal transmit wavelength 1310nm</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://standards.ieee.org/about/get/802/802.3.html" target="_top">IEEE 802.3-2012 - Single-mode fiber using 1,310 nm wavelength</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/catalogue_detail?csnumber=36491" target="_top">ISO/IEC 11801 - Generic cabling for customer premises</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Standards for IP version 4 (IPv4) over Ethernet</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc826.txt" target="_top">IETF RFC 826 - Ethernet Address Resolution Protocol</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The use of LC-connectors is required
+                                                            for network interconnections inside shelters (or
+                                                            inside other conditioned infrastructure). If the
+                                                            interconnection point is outside a shelter in a
+                                                            harsh environment, the interconnection shall
+                                                            follow STANAG 4290 connector
+                                                            specification.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/ITU-T/recommendations/rec.aspx?rec=10389" target="_top">ITU-T G.652 - Optical Fibre Cable</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="https://webstore.iec.ch/publication/5827" target="_top">IEC 61754-20 - Interface standard for LC connectors with protective housings related to IEC 61076-3-106</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="https://nso.nato.int/" target="_top">NSO STANAG 4290 - Standard for Gateway Multichannel Cable Link (Optical)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>Use 1Gb/s Ethernet over single-mode optical fibre (SMF).</p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>IP Routing Information Profile</strong></span></p>
+                                    <p>The IP Routing Information Profile provides standards and guidance for support of the Routing Information Protocol (RIP) to
+                                       expand the amount of useful information carried in RIP messages and to add a measure of security.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>IP-based Transport Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Optional</em></span></p>
+                                    <p>Under the condition that
+                                                           interconnecting partners support
+                                                           auto-configuration, this standard applies as an
+                                                           optional capability to support automatic
+                                                           configuration. Otherwise, partners by default will
+                                                           following the manual configuration
+                                                           process.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2453.txt" target="_top">IETF RFC 2453 - RIP Version 2</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Inter-Autonomous Systems Multicast Routing Profile</strong></span></p>
+                                    <p>The Inter-Autonomous Systems Multicast Routing Profile provides standards and guidance for multicast routing between inter-autonomous
+                                       systems.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Packet Routing Services, </p>
+                                    <p>IPv4 Routed Access Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards shall apply for all IP interconnections</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://tools.ietf.org/html/rfc4601" target="_top">IETF RFC 4601 - Protocol Independent Multicast - Sparse Mode (PIM-SM): Protocol Specification (Revised)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc1112.txt" target="_top">IETF RFC 1112 - Host Extensions for IP Multicasting</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3376.txt" target="_top">IETF RFC 3376 - Internet Group Management Protocol, Version 3</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>MNEs, as well as MNXs with their own multicast capability, shall provide a Rendezvous Point (RP) supporting the following
+                                       IP multicast protocol standards
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3618.txt" target="_top">IETF RFC 3618 - Multicast Source Discovery Protocol (MSDP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4760.txt" target="_top">IETF RFC 4760 - Multiprotocol Extensions for BGP-4</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards shall apply to multicast routing</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2908.txt" target="_top">IETF RFC 2908 - The Internet Multicast Address Allocation Architecture</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3171.txt" target="_top">IETF RFC 3171 - IANA Guidelines for IPv4 Multicast Address Assignments</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2365.txt" target="_top">IETF RFC 2365 - Administratively Scoped IP Multicast</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>IP Quality of Service Profile</strong></span></p>
+                                    <p>The IP Quality of Service Profile provides standards and guidance to establish and control an agreed level of performance
+                                       for IP services in federated networks.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>IP-based Transport Services, </p>
+                                    <p>IPv4 Routed Access Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Utilize Quality of Service capabilities of the network (Diffserve, no military precedence on IP)</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2474.txt" target="_top">IETF RFC 2474 - Definition of the Differentiated Services Field (DS Field) in the IPv4 and IPv6 Headers</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4594.txt" target="_top">IETF RFC 4594 - Configuration Guidelines for DiffServ Service Classes</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-Y.1540" target="_top">ITU-T Y.1540 - IP packet transfer and availability performance parameters</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-Y.1541" target="_top">ITU-T Y.1541 - Network performance objectives for IP-based services</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-Y.1542" target="_top">ITU-T Y.1542 - Framework for achieving end-to-end IP performance objectives</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-M.2301" target="_top">ITU-T M.2301 - Performance objectives and procedures for provisioning and maintenance of IP-based networks</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-J.241-200504-I/en" target="_top">ITU-T J.241 - Quality of service ranking and measurement^methods for digital video services delivered over broadband IP networks</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Conditional</em></span></p>
+                                    <p>The following normative standards shall apply for             IP Quality of Service (QoS)</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="https://nso.nato.int/" target="_top">NSO STANAG 4711 - Internet Protocol Quality of Service</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>For NATO-led Mission Network deployments, the
+                                                   following governing policies apply:
+                                                   
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>AC/322(SC/6)WP(2009)0002-REV2 - "NC3B
+                                                Policy on the Federation of Networks and
+                                                Provision of Communications Services within
+                                                the Networking Information Infrastructure"
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>NATO Policy for Standardization</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                                         
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Inter-Autonomous Systems Routing Profile</strong></span></p>
+                                    <p>The Inter-Autonomous Systems Routing Profile provides standards and guidance for routing between inter-autonomous systems</p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Packet Routing Services, </p>
+                                    <p>IPv4 Routed Access Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Recommended</em></span></p>
+                                    <p>Additionally, the following standard applies for                   32-bit autonomous system numbers (ASN)</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc5668.txt" target="_top">IETF RFC 5668 - 4-Octet AS Specific BGP Extended Community</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standard applies for unicast                   routing</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4632.txt" target="_top">IETF RFC 4632 - Classless Inter-domain Routing (CIDR):           The Internet Address Assignment and Aggregation Plan</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards apply for all IP                   interconnections</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc1997.txt" target="_top">IETF RFC 1997 - BGP Communities Attribute</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4360.txt" target="_top">IETF RFC 4360 - BGP Extended Communities Attribute</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3392.txt" target="_top">IETF RFC 3392 - Capabilities Advertisement with BGP-4</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4271.txt" target="_top">IETF RFC 4271 - Border Gateway Protocol 4 (BGP-4)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4760.txt" target="_top">IETF RFC 4760 - Multiprotocol Extensions for BGP-4</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>Border Gateway Protocol (BGP) deployment
+                                       guidance in IETF RFC 1772:1995, Application of
+                                       the Border Gateway Protocol in the Internet.
+                                    </p>
+                                    <p>BGP sessions must be authenticated, through a
+                                       TCP message authentication code (MAC) using
+                                       a one-way hash function (MD5), as described in
+                                       IETF RFC 4271.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Routing Encapsulation Profile</strong></span></p>
+                                    <p>The Routing Encapsulation Profile provides standards and guidance for generic routing encapsulation functions between    
+                                                                                network interconnection points (NIPs)
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p>IP-based Transport Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2890.txt" target="_top">IETF RFC 2890 - Key and Sequence Number Extensions to GRE</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4303.txt" target="_top">IETF RFC 4303 - IP Encapsulating Security Payload (ESP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2784.txt" target="_top">IETF RFC 2784 - Generic Routing Encapsulation (GRE)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Conditional</em></span></p>
+                                    <p>Depending on whether authentication of IPSec
+                                       sessions is based on pre-shared keys or
+                                       certificates is used. If pre-shared keys are used,
+                                       standard for IKE is the IKEv1, If authentication is
+                                       done via certificates, then IKEv2 is used.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2409.txt" target="_top">IETF RFC 2409 - The Internet Key Exchange (IKE)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc7296.txt" target="_top">IETF RFC 7296 - Internet Key Exchange Protocol Version 2 (IKEv2)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc7427.txt" target="_top">IETF RFC 7427 - Signature Authentication in the Internet Key Exchange Version 2 (IKEv2)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <p></p>
+                     </div>
+                  </section>
+                  <section class="sect3" id="d0e7042">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title">G.3.5.2.&nbsp;Federated Networking Profile</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>180. The Federated Networking Profile arranges standards
+                              profiles for the establish network logic above the
+                              communications layer of federated mission networks.
+                     </p>
+                     <div class="informaltable">
+                        <p></p>
+                        <table style="width: 100%; border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 18%; " class="c1">
+                              <col style="width: 44%; ">
+                              <col style="width: 38%; " class="c3">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Service</th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard</th>
+                                 <th style="border-bottom: 0.5pt solid ; ">Implementation Guidance</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Directory Data Structure Profile</strong></span></p>
+                                    <p>The Directory Data Structure Profile provides standards and guidance in support of the definition of the namespace of a federated
+                                       mission network on the basis of the Lightweight Directory Access Protocol (LDAP)
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Directory Storage Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2798.txt" target="_top">IETF RFC 2798 - Definition of the inetOrgPerson LDAP Object Class</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4519.txt" target="_top">IETF RFC 4519 - LDAP: Schema for User Applications</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Network Authentication Profile</strong></span></p>
+                                    <p>The Network Authentication Profile provides standards and guidance for to provide strong authentication for client/server
+                                                                                     applications by using secret-key cryptography on the basis of the Kerberos authentication
+                                       protocol
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Infrastructure IA Services (In v2 of the taxonomy this service is listed as Authentication Services)</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Strong authentication using Simple Authentication and Security Layer (SASL).</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4121.txt" target="_top">IETF RFC 4121 - The Kerberos Version 5 Generic Security Service Application Program Interface (GSS-API) Mechanism: Version
+                                                   2</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4422.txt" target="_top">IETF RFC 4422 - Simple Authentication and Security Layer (SASL)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4505.txt" target="_top">IETF RFC 4505 - Anonymous Simple Authentication and Security Layer (SASL) Mechanism</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4616.txt" target="_top">IETF RFC 4616 - The PLAIN Simple Authentication and Security Layer (SASL) Mechanism</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4752.txt" target="_top">IETF RFC 4752 - The Kerberos v5 Simple Authentication and Security Layer (SASL) Mechanism</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4120.txt" target="_top">IETF RFC 4120 - The Kerberos Network Authentication Service (V5)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Digital Certificate Profile</strong></span></p>
+                                    <p>The Digital Certificate Profile provides standards and guidance in support of a Public Key Infrastructure (PKI) on federated
+                                       mission networks.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Infrastructure IA Services (In v2 of the taxonomy this service is listed as Digital Certificate Services)</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-X.509/en" target="_top">ITU-T x.509 - Information technology - Open Systems Interconnection - The Directory: Public-key and attribute certificate
+                                                   frameworks</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc5280.txt" target="_top">IETF RFC 5280 - Internet X.509 Public Key Infrastructure Certificate and CRL Profile</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4523.txt" target="_top">IETF RFC 4523 - LDAP: X.509 Certificate Schema</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Optional</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="https://tools.ietf.org/html/rfc6960" target="_top">IETF RFC 6960 - X.509 Internet Public Key Infrastructure Online Certificate Status Protocol - OCSP</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>The version of the encoded public key certificate
+                                       shall be version 3. The version of the encoded
+                                       certificate revocation list (CRL) shall be version
+                                             2.
+                                    </p>
+                                    <p>Additional Implementation Guidance:
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>AC/322-D(2004)0024-REV2-ADD2 - "NATO
+                                                Public Key Infrastructure (NPKI) Certificate
+                                                Policy"
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>AC/322-D(2010)0036 - "NATO Cryptographic
+                                                  Interoperability Strategy"
+                                             </p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                                         
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Directory Data Exchange Profile</strong></span></p>
+                                    <p>The Directory Data Exchange Profile provides standards and guidance in support of a mechanism used to connect to,        
+                                                                              search, and modify Internet directories on the basis of the Lightweight Directory Access
+                                       Protocol (LDAP).
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Directory Storage Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4510.txt" target="_top">IETF RFC 4510 - LDAP: Technical Specification Road Map</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4511.txt" target="_top">IETF RFC 4511 - LDAP: The Protocol</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4512.txt" target="_top">IETF RFC 4512 - LDAP: Directory Information Models</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4513.txt" target="_top">IETF RFC 4513 - LDAP: Authentication Methods and Security Mechanisms</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4514.txt" target="_top">IETF RFC 4514 - LDAP: String Representation of Distinguished Names</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4515.txt" target="_top">IETF RFC 4515 - LDAP: String Representation of Search Filters</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4516.txt" target="_top">IETF RFC 4516 - LDAP: Uniform Resource Locator</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4517.txt" target="_top">IETF RFC 4517 - LDAP: Syntaxes and Matching Rules</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4518.txt" target="_top">IETF RFC 4518 - LDAP: Internationalized String Preparation</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4519.txt" target="_top">IETF RFC 4519 - LDAP: Schema for User Applications</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2849.txt" target="_top">IETF RFC 2849 - LDAP Data Interchange Format (LDIF)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Domain Naming Profile</strong></span></p>
+                                    <p>The Domain Naming Profile provides standards and guidance to support the hierarchical distributed naming system for      
+                                                                      computers, services, or any resource connected to a federated mission network.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Domain Name Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc1034.txt" target="_top">IETF RFC 1034 - Domain names - concepts and facilities</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc1035.txt" target="_top">IETF RFC 1035 - Domain names - implementation and specification</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2181.txt" target="_top">IETF RFC 2181 - Clarifications to the DNS Specification</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2782.txt" target="_top">IETF RFC 2782 - A DNS RR for specifying the location of services (DNS SRV)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Time Synchronization Profile</strong></span></p>
+                                    <p>The Time Synchronization Profile provides standards and guidance to support the synchronization of clocks across a       
+                                                                            network or a federation of networks and the safeguard of the accurate use of time stamps.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p>Distributed Time Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Mission Network Elements must provide a time server either directly connected to a stratum-0 device or over a network path
+                                       to a stratum-1 time server of another Mission Network Element. All other entities in the federation must use the time service
+                                       of their host.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc5905.txt" target="_top">IETF RFC 5905 - Network Time Protocol (NTP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/dms_pubrec/itu-r/rec/tf/R-REC-TF.460-6-200202-I!!PDF-E.pdf" target="_top">ITU-R TF 460-6 - Standard-frequency and time-signal emissions. Annex 1: Coordinated universal time (UTC)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <p>A stratum-1 time server is directly linked (not
+                                       over a network path) to a reliable source of UTC
+                                       time (Universal Time Coordinate) such as GPS,
+                                       WWV, or CDMA transmissions through a modem
+                                       connection, satellite, or radio.
+                                    </p>
+                                    <p>Stratum-1 devices must implement IPv4 so that
+                                       they can be used as timeservers for IPv4 Mission
+                                             Network Elements.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <p></p>
+                     </div>
+                  </section>
+               </section>
+               <section class="sect2" id="d0e7307">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.3.6.&nbsp;Federated Human-to-Human Communications Profile</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>181. The Federated Human-to-Human Communications Profile arranges
+                         standards profiles for the facilitation of information sharing and
+                         exchange on user platforms.
+                  </p>
+                  <section class="sect3" id="d0e7312">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title">G.3.6.1.&nbsp;Federated Unified Collaboration Profile</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>182. The Federated Unified Collaboration Profile arranges
+                              standards profiles for a range of interoperable collaboration
+                              capabilities to support real-time situational updates to
+                              time-critical planning activities between coalition partners,
+                              communities of interest and other participants. Levels of
+                              collaboration include awareness, shared information,
+                              coordination and joint product development.
+                     </p>
+                     <div class="informaltable">
+                        <p></p>
+                        <table style="width: 100%; border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 18%; " class="c1">
+                              <col style="width: 44%; ">
+                              <col style="width: 38%; " class="c3">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Service</th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard</th>
+                                 <th style="border-bottom: 0.5pt solid ; ">Implementation Guidance</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Content Encapsulation Profile</strong></span></p>
+                                    <p>The Content Encapsulation Profile provides standards and guidance for content encapsulation within bodies of internet    
+                                                                                  messages, following the Multipurpose Internet Mail Extensions (MIME) specification.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Informal Messaging Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2045.txt" target="_top">IETF RFC 2045 - MIME - Part 1: Format of Internet Message Bodies</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2046.txt" target="_top">IETF RFC 2046 - MIME - Part 2: Media Types</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2047.txt" target="_top">IETF RFC 2047 - MIME - Part 3: Message Header Extensions for Non-ASCII Text</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2049.txt" target="_top">IETF RFC 2049 - MIME - Part 5: Conformance Criteria and Examples</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.rfc-editor.org/rfc/rfc4288.txt" target="_top">IETF RFC 4288 - Media Type Specifications and Registration Procedures</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>10 MB max message size limit</p>
+                                    <p>Minimum Content-Transfer-Encoding:
+                                               
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>7bit</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>base64</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>binary BINARYMIME SMTP extension (RFC
+                                                3030)
+                                             </p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                                         
+                                    </p>
+                                    <p>Minimum set of media and content-types:
+                                               
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>text/plain (RFC 1521)</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>text/enriched (RFC 1896)</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>text/html (RFC 1866)</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>multipart/mixed (RFC 2046)</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>multipart/signed</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                                         
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Informal Messaging Profile</strong></span></p>
+                                    <p>The Informal Messaging Profile provides standards and guidance for SMTP settings and the marking and classification of   
+                                                                                informal messages.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Informal Messaging Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Regarding Simple Mail Transfer Protocol (SMTP), the following standards are mandated for interoperability of e-mail services
+                                       within the Mission Network.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://tools.ietf.org/html/rfc5321" target="_top">IETF RFC 5321 - Simple Mail Transfer Protocol</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc1870.txt" target="_top">IETF RFC 1870 - SMTP Service Extension for Message Size Declaration</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc1985.txt" target="_top">IETF RFC 1985 - SMTP Service Extension for Remote Message Queue Starting</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2034.txt" target="_top">IETF RFC 2034 - SMTP Service Extension for Returning Enhanced Error Codes</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2920.txt" target="_top">IETF RFC 2920 - SMTP Service Extension for Command Pipelining</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3207.txt" target="_top">IETF RFC 3207 - SMTP Service Extension for Secure SMTP over TLS</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3461.txt" target="_top">IETF RFC 3461 - SMTP Service Extension for Delivery Status Notifications</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3798.txt" target="_top">IETF RFC 3798 - Message Disposition Notification</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3885.txt" target="_top">IETF RFC 3885 - SMTP Service Extension for Message Tracking</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4954.txt" target="_top">IETF RFC 4954 - SMTP Service Extension for Authentication</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>Depending on the protection requirements within
+                                       the particular FMN instance, messages must be
+                                       marked in the message header field "Keywords"
+                                       (IETF RFC 2822) and firstline-of-text in the
+                                       message body according to the following
+                                       convention: [PPP] [CLASSIFICATION],
+                                       Releasable to [MISSION].
+                                    </p>
+                                    <p>
+                                                            
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>"PPP" is a short-name/code for identification
+                                                of a security policy.
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>"CLASSIFICATION" is the classification
+                                                {SECRET, CONFIDENTIAL, RESTRICTED}
+                                                or UNCLASSIFIED
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>"MISSION" is a name/acronym for identifying
+                                                the mission.
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>"Releasable to" list shall include the
+                                                name/acronym of the mission and may be
+                                                extended to include other entities.
+                                             </p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                                         
+                                    </p>
+                                    <p>The use of a short-name/code does not imply
+                                       that NATO or one or more member Nations
+                                       recognize those entities.
+                                    </p>
+                                    <p>Example: Keywords: ITA UNCLASSIFIED,
+                                       Releasable to XFOR.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Numbering Plans Profile</strong></span></p>
+                                    <p>The Numbering Plans Profile provides standards and guidance for the facilitation of numbering plans of                   
+                                                            telecommunications, audio and video networks.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Audio-based Collaboration Services, </p>
+                                    <p>Video-based Collaboration Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="https://nso.nato.int/" target="_top">NSO STANAG 4705 - International Network Numbering for Communications Systems in use in NATO</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="https://nso.nato.int/" target="_top">NSO STANAG 5046 ed.4 - The NATO Military Communications Directory System</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-E.164-201011-I" target="_top">ITU E.164 - The international public telecommunication numbering plan</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Audio-based Collaboration Profile</strong></span></p>
+                                    <p>The Audio-based Collaboration Profile provides standards and guidance for the implementation of an interoperable voice   
+                                                                                      system (telephony) on federated mission networks.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Audio-based Collaboration Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards are used for VoIP and                    VoSIP signaling.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3261.txt" target="_top">IETF RFC 3261 - Session Initialisation Protocol</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3262.txt" target="_top">IETF RFC 3262 - Reliability of Provisional Responses                in the Session Initiation Protocol (SIP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3264.txt" target="_top">IETF RFC 3264 - An Offer/Answer Model with the Session Description Protocol (SDP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3311.txt" target="_top">IETF RFC 3311 - The Session Initiation Protocol (SIP) UPDATE Method</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3428.txt" target="_top">IETF RFC 3428 - Session Initiation Protocol (SIP) Extension for Instant Messaging</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4028.txt" target="_top">IETF RFC 4028 - Session Timers in the Session Initiation Protocol (SIP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4412.txt" target="_top">IETF RFC 4412 - Communications Resource Priority for the Session Initiation Protocol (SIP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4566.txt" target="_top">IETF RFC 4566 - SDP: Session Description Protocol</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards are used for voice media streaming.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3550.txt" target="_top">IETF RFC 3550 - RTP: A Transport Protocol for Real-Time Applications</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards are used for audio                    protocols.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-G.729/e" target="_top">ITU G.729 - Coding of speech at 8 kbit/s using conjugate-structure algebraic-code-excited linear prediction (CS-ACELP)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>Voice over IP (VoIP) refers to unprotected voice
+                                       communication services running on unclassified
+                                       IP networks e.g. conventional IP telephony.
+                                       Voice over Secure IP (VoSIP) refers to
+                                       non-protected voice service running on a
+                                       classified IP networks. Depending on the security
+                                       classification of a FMN instance, VoIP or VoSIP
+                                       is mandatory. If a member choses to use
+                                       network agnostic Secure Voice services in
+                                       addition to VoSIP, then SCIP specifications as
+                                       defined for audio-based collaboration services
+                                       (end-to-end protected voice) should be used.
+                                    </p>
+                                    <p>The voice sampling interval is 40ms.</p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Secure Voice Profile</strong></span></p>
+                                    <p>The Secure Voice Profile provides standards and guidance for the facilitation of secure telephony and other protected    
+                                                                        audio-based collaboration on federated mission networks.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Audio-based Collaboration Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Conditional</em></span></p>
+                                    <p>Secure voice services (end-to-end protected voice). V.150.1 support must be end-to-end supported by unclassified voice network.
+                                       SCIP-214 only applies to gateways. SCIP-216 requires universal implementation.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/ITU-T/recommendations/rec.aspx?rec=6223" target="_top">ITU-T V.150.1 - Modem-over-IP networks: Procedures for the end-to-end connection of V-series DCEs, incorporating changes introduced
+                                                   by Corrigendum 1 and 2.</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IICWG SCIP-210 - SCIP Signalling Plan rev.3.3</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IICWG SCIP-214 - Network-Specific Minimum Essential Requirements (MERs) for SCIP Devices, rev.1.2</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IICWG SCIP-215 - U.S. SCIP/IP Implementation Standard and MER Publication rev.2.2</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IICWG SCIP-216 - Minimum Essential Requirements (MER) for V.150.1 Gateways Publication rev.2.2</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IICWG SCIP-220 - Requirement Document</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IICWG SCIP-221 - Mimimum Implementation Profile (MIP) rev.3.0</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IICWG SCIP-233 - SCIP Cryptography Specification - Main Module rev.1.1</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Video-based Collaboration Profile</strong></span></p>
+                                    <p>The Video-based Collaboration Profile provides standards and guidance for the implementation and configuration of        
+                                                                                 Video Tele Conferencing (VTC) systems and services in a federated mission network.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Video-based Collaboration Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Conditional</em></span></p>
+                                    <p>Not required at this time, but when available it can be implemented between MNE&#8217;s after approval from the MN administrative
+                                       authority.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4582.txt" target="_top">IETF RFC 4582 - The Binary Floor Control Protocol (BFCP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://handle.itu.int/11.1002/1000/12235" target="_top">ITU-T H.239 - Role management and additional media channels for H.300-series terminals</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards are required for VTC services.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-G.722-201209-P/en" target="_top">ITU-T G.722 - 7 kHz Audio-Coding within 64 kbit/s</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards are required for VTC                  over Internet Protocol (VTCoIP) networking.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-H.223-200107-I" target="_top">ITU-T H.323 - Packet-based Multimedia Communication System</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-H.225.0-200912-I" target="_top">ITU-T H.225.0 - Call signalling protocols and media stream packetization for packet-based multimedia communication systems</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-H.245-201105-P" target="_top">ITU H.245 - Control protocol for multimedia communication</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-H.264/e" target="_top">ITU-T H.264 - Advanced video coding for generic audiovisual services</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-H.263/e" target="_top">ITU-T H.263 - Video coding for low bit rate communication</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.itu.int/rec/T-REC-G.722-201209-P/en" target="_top">ITU-T G.722 - 7 kHz Audio-Coding within 64 kbit/s</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3550.txt" target="_top">IETF RFC 3550 - RTP: A Transport Protocol for Real-Time Applications</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>It Is recommended that dynamic port ranges are
+                                       constrained to a limited and agreed number. This
+                                       is an activity that needs to be performed at the
+                                       mission planning stage. Different vendors have
+                                       different limitations on fixed ports. However
+                                       common ground can always be found.
+                                    </p>
+                                    <p>As a Minimum G.722.1 is to be used. Others are
+                                       exceptions and need to be agreed by the MN
+                                       administrative authority for video calls.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Basic Text-based Collaboration Profile</strong></span></p>
+                                    <p>The Basic Text-based Collaboration Profile provides standards and guidance to establish a basic near-real time           
+                                                                                   text-based group collaboration capability (chat) for time critical reporting and
+                                       decision making in military operations.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p>Text-based Collaboration Services, </p>
+                                    <p>Presence Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Optional</em></span></p>
+                                    <p>Bidirectional Server-to-Server Connections may be supported, i.e. stanzas are sent and received on the same TCP connection.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0288.html" target="_top">XMPP XEP-0288 - Bidirectional Server-to-Server Connections</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards are required to achieve compliance for an XMPP Server and an XMPP Client dependent upon the categorisation
+                                       of presenting a core or advanced instant messaging service interface.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0004.html" target="_top">XMPP XEP-0004 - XEP-0004: Data Forms</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0030.html" target="_top">XMPP XEP-0030 - XEP-0030: Service Discovery</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0045.html" target="_top">XMPP XEP-0045 - XEP-0045: Multi-User Chat</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0049.html" target="_top">XMPP XEP-0049 - XEP-0049: Private XML Storage</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0050.html" target="_top">XMPP XEP-0050 - XEP-0050: Ad-Hoc Commands</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0054.html" target="_top">XMPP XEP-0054 - XEP-0054: vcard-temp</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0092.html" target="_top">XMPP XEP-0092 - XEP-0092: Software Version</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0096.html" target="_top">XMPP XEP-0096 - XEP-0096: SI File Transfer</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0114.html" target="_top">XMPP XEP-0114 - XEP-0114: Jabber Component Protocol</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0115.html" target="_top">XMPP XEP-0115 - XEP-0115: Entity Capabilities</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0203.html" target="_top">XMPP XEP-0203 - XEP-0203: Delayed Delivery</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://xmpp.org/extensions/xep-0220.html" target="_top">XMPP XEP-0220 - XEP-0220: Server Dialback</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>The following standards are the base IETF             protocols for interoperability of chat services.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3920.txt" target="_top">IETF RFC 3920 - Extensible Messaging and Presence Protocol (XMPP): Core</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3921.txt" target="_top">IETF RFC 3921 - Extensible Messaging and Presence Protocol (XMPP): Instant Messaging and Presence</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <p></p>
+                     </div>
+                  </section>
+                  <section class="sect3" id="d0e7801">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title">G.3.6.2.&nbsp;Federated Information Management Profile</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>183. The Federated Information Management Profile arranges standards profiles for the handling of information throughout its
+                        life-cycle and the support of capabilities to organize, store and retrieve information through services and managed processes,
+                        governed by policies, directives, standards, profiles and guidelines.
+                     </p>
+                     <div class="informaltable">
+                        <p></p>
+                        <table style="width: 100%; border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 18%; " class="c1">
+                              <col style="width: 44%; ">
+                              <col style="width: 38%; " class="c3">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Service</th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard</th>
+                                 <th style="border-bottom: 0.5pt solid ; ">Implementation Guidance</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>File Format Profile</strong></span></p>
+                                    <p>The File Format Profile provides standards and guidance for the collaborative generation of spreadsheets, charts,        
+                                                                    presentations and word processing documents.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Web Hosting Services, </p>
+                                    <p>Informal Messaging Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>For still image coding.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=18902" target="_top">ISO/IEC 10918-1 - Digital compression and coding of continuous-tone still images: Requirements and guidelines</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=25037" target="_top">ISO/IEC 10918-3 - Digital compression and coding of continuous-tone still images: Extensions</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Recommended</em></span></p>
+                                    <p>For word processing documents, spreadsheets and presentations.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=43485" target="_top">ISO/IEC 26300 - Open Document Format (ODF) for Office Applications (OpenDocument) v1.1</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>For word processing documents, spreadsheets and presentations.<a href="#ftn.d0e7863" class="footnote"><sup class="footnote" id="d0e7863">[a]</sup></a>
+                                                            
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=61750" target="_top">ISO/IEC 29500-1 - Office Open XML File Formats -- Part 1: Fundamentals and Markup Language Reference</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/catalogue_detail?csnumber=38920" target="_top">ISO 19005-1 - Electronic document file format for long-term preservation -- Part 1: Use of PDF 1.4 (PDF/A-1)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=50655" target="_top">ISO 19005-2 - Electronic document file format for long-term preservation -- Part 2: Use of ISO 32000-1 (PDF/A-2)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/home/store/catalogue_tc/catalogue_detail.htm?csnumber=51502" target="_top">ISO 32000-1 - Document management -- Portable document format -- Part 1: PDF 1.7</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>ISO/IEC 29500 and ISO/IEC 26300 are both
+                                       open document formats for XML-based saving
+                                       and exchanging word processing documents,
+                                       spreadsheets and presentations. They differ in
+                                       design and scope.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Internationalization Profile</strong></span></p>
+                                    <p>The Internationalization Profile provides standards and guidance for the design and development of content and (web) applications,
+                                       in a way that ensures it will work well for, or can be easily adapted for, users from any culture, region, or language.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Web Hosting Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Recommended</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2005/REC-charmod-20050215/" target="_top">W3C REC-charmod-20050215 - Character Model for the World Wide Web 1.0: Fundamentals</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2007/REC-its-20070403/" target="_top">W3C REC-its-20070403 - Internationalization Tag Set (ITS) Version 1.0</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2013/REC-its20-20131029/" target="_top">W3C REC-its20-20131029 - Internationalization Tag Set (ITS) Version 2.0</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2001/REC-ruby-20010531/" target="_top">W3C REC-ruby-20010531 - Ruby Annotation</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>Best practices and tutorials on
+                                       internationalization can be found at:
+                                       http://www.w3.org/International/articlelist.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Character Encoding Profile</strong></span></p>
+                                    <p>The Character Encoding Profile provides standards and guidance for the encoding of character sets.</p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p>Web Hosting Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Use of UTF-8 for complete Unicode support,
+                                       including fully internationalized addresses is
+                                       mandatory.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3629.txt" target="_top">IETF RFC 3629 - UTF-8, a transformation format of ISO/IEC 10646</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                           <tbody class="footnotes">
+                              <tr>
+                                 <td colspan="3">
+                                    <div id="ftn.d0e7863" class="footnote">
+                                       <p><a href="#d0e7863" class="para"><sup class="para">[a] </sup></a>In the published FMN Spiral specification 1.1, the reference to ISO/IEC 29500 is incomplete. As a result, the respective part
+                                          of the standard and the title do not show up in the FMN 1.1 profile.
+                                       </p>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <p></p>
+                     </div>
+                  </section>
+                  <section class="sect3" id="d0e7949">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title">G.3.6.3.&nbsp;Federated Web Hosting Profile</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>184. The Federated Web Hosting Profile arranges standards profiles for the facilitation of web-based services in a loosely
+                        coupled
+                        environment, where flexible and agile service orchestration is a requirement on the basis of a Service Oriented Architecture
+                        (SOA).
+                     </p>
+                     <div class="informaltable">
+                        <p></p>
+                        <table style="width: 100%; border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 18%; " class="c1">
+                              <col style="width: 44%; ">
+                              <col style="width: 38%; " class="c3">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Service</th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Standard</th>
+                                 <th style="border-bottom: 0.5pt solid ; ">Implementation Guidance</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Web Platform Profile</strong></span></p>
+                                    <p>The Web Platform Profile provides standards and guidance to enable web technology on federated mission networks.</p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Web Hosting Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2616.txt" target="_top">IETF RFC 2616 - HyperText Transfer Protocol (HTTP), version 1.1</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2817.txt" target="_top">IETF RFC 2817 - Upgrading to TLS Within HTTP/1.1</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc3986.txt" target="_top">IETF RFC 3986 - Uniform Resource Identifiers (URI): Generic Syntax</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc1738.txt" target="_top">IETF RFC 1738 - Uniform Resource Locators (URL)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>HTTP shall be used as the transport protocol for
+                                       information without 'need-to-know' caveats
+                                       between all service providers and consumers
+                                       (unsecured HTTP traffic). HTTPS shall be used
+                                       as the transport protocol between all service
+                                       providers and consumers to ensure
+                                       confidentiality requirements (secured HTTP
+                                       traffic). Unsecured and secured HTTP traffic
+                                       should use their standard well-known ports by
+                                       default, i.e. 80 for HTTP and 443 for HTTPS.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Web Feeds Profile</strong></span></p>
+                                    <p>The Web Feeds Profile provides standards and guidance for the delivery of content to web sites as well as directly to user
+                                                                          agents.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Web Hosting Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Providing web content.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4287.txt" target="_top">IETF RFC 4287 - Atom Syndication Format, v1.0</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc5023.txt" target="_top">IETF RFC 5023 - Atom Publishing Protocol</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.rssboard.org/rss-specification" target="_top">RSS 2.0 - RSS 2.0 Specification</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>RSS and Atom documents may reference related
+                                       OpenSearch description documents via the Atom
+                                       1.0 "link" element, as specified in Section 4.2.7
+                                       of RFC 4287.
+                                    </p>
+                                    <p>The "rel" attribute of the link element should
+                                       contain the value "search" when referring to
+                                       OpenSearch description documents. This
+                                       relationship value is pending IANA registration.
+                                       The reuse of the Atom link element is
+                                       recommended in the context of other syndication
+                                       formats that do natively support comparable
+                                       functionality.
+                                    </p>
+                                    <p>The following restrictions apply:
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>The "type" attribute must contain the value
+                                                "application/opensearchdescription+xml".
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>The "rel" attribute must contain the value
+                                                "search".
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>The "href" attribute must contain a URI that
+                                                resolves to an OpenSearch description
+                                                document.
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>The "title" attribute may contain a
+                                                human-readable plain text string describing
+                                                the search engine.
+                                             </p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                                         
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Web Content Profile</strong></span></p>
+                                    <p>The Web Content Profile provides standards and guidance for the processing, sharing and presentation of web content on federated
+                                       mission networks. Web presentation services must be based on a fundamental set of basic and widely understood protocols, such
+                                       as those listed below. Proprietary or compiled components shall be avoided (e.g. Microsoft Web Parts, Microsoft Silverlight
+                                       or Adobe Flash).
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Web Hosting Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Publishing information including text, multi-media, hyperlink features, scripting languages and style sheets on the network.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.iso.org/iso/iso_catalogue/catalogue_tc/catalogue_detail.htm?csnumber=27688/" target="_top">ISO/IEC 15445 - HyperText Markup Language (HTML)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2854.txt" target="_top">IETF RFC 2854 - The 'text/html' Media Type</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="www.w3.org/TR/2014/REC-html5-20141028/" target="_top">W3C REC-html5-20141028 - Hypertext Markup Language revision 5 (HTML5)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4329.txt" target="_top">IETF RFC 4329 - Scripting Media Types</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/" target="_top">W3C REC-css3-mediaqueries-20120619 - Media Queries</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2011/REC-css3-selectors-20110929/" target="_top">W3C REC-css3-selectors-20110929 - Selectors Level 3</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2616.txt" target="_top">IETF RFC 2616 - HyperText Transfer Protocol (HTTP), version 1.1</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc2817.txt" target="_top">IETF RFC 2817 - Upgrading to TLS Within HTTP/1.1</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Providing a common style sheet language for describing presentation semantics (that is, the look and formatting) of documents
+                                       written in markup languages like HTML.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2011/REC-CSS2-20110607" target="_top">W3C REC-CSS2-2011067 - Cascading Style Sheets, level 2 revision 1</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2010/CR-css-style-attr-20101012/" target="_top">W3C CR-css-style-attr-20101012 - CSS Style Attributes</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2014/REC-css-namespaces-3-20140320/" target="_top">W3C REC-css-namespaces-3-20140320 - CSS Namespaces Module Level 3</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2011/REC-css3-color-20110607/" target="_top">W3C REC-css3-color-20110607 - CSS Color Module Level 3</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>Applications must support the following
+                                       browsers: Microsoft Internet Explorer v9.0 and
+                                       newer, and Mozilla Firefox 16.0 and newer.
+                                       When a supported browser is not true to the
+                                       standard, choose to support the browser that is
+                                       closest to the standard.
+                                    </p>
+                                    <p>Some organizations or end user devices do not
+                                       allow the use of proprietary extensions such as
+                                       Microsoft Web Parts, Microsoft Silverlight or
+                                       Adobe Flash. Those technologies shall be
+                                       avoided. Implementers shall use open standard
+                                       based solutions (HTML5 / CSS3) instead.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Geospatial Web Feeds Profile</strong></span></p>
+                                    <p>The Geospatial Web Feeds Profile provides standards and guidance for the delivery of geospatial content to web sites and to
+                                       user agents, including the encoding of location as part of web feeds. Feed processing software is required to either read
+                                       or ignore these extensions and shall not fail if these extensions are present, so there is no danger of breaking someone's
+                                       feed reader (or publisher) by including this element in a feed.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Web Hosting Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Recommended</em></span></p>
+                                    <p>GeoRSS GML Profile 1.0 a GML subset for point 'gml:Point', line 'gml:LineString', polygon 'gml:Polygon', and box 'gml:Envelope'.
+                                       In Atom feeds, location shall be specified using Atom 1.0's official extension mechanism in combination with the GeoRSS GML
+                                       Profile 1.0 whereby a 'georss:where' element is added as a child of the element.
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://portal.opengeospatial.org/files/?artifact_id=15755" target="_top">OGC 06-050r3 - A Standards Based Approach for Geo-enabling RSS feeds, v1.0</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>GeoRSS Simple encoding for "georss:point",
+                                       "georss:line", "georss:polygon", "georss:box".
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://portal.opengeospatial.org/files/?artifact_id=43999" target="_top">OGC 11-044 - Geography Markup Language (GML) simple features profile Technical Note v 2.0</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>Geography Markup Language (GML) allows to
+                                       specify a coordinate reference system (CRS)
+                                       other than WGS84 decimal degrees (lat/long). If
+                                       there is a need to express geography in a CRS
+                                       other than WGS84, it is recommended to specify
+                                       the geographic object multiple times, one in
+                                       WGS84 and the others in your other desired
+                                       CRSs.
+                                    </p>
+                                    <p>For backwards compatibility it is recommended
+                                       to also implement RSS 2.0.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Web Services Profile</strong></span></p>
+                                    <p>The Web Services Profile provides standards and guidance for transport-neutral mechanisms to address structured exchange of
+                                       information in a decentralized, distributed environment via web services.
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>Web Hosting Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>Provide the elements a web service needs to deliver a suitable UI service, such as remote portlet functionality.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2013/CR-cors-20130129/" target="_top">W3C CR-cors-20130129 - Cross-Origin Resource Sharing</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2000/NOTE-SOAP-20000508/" target="_top">W3C NOTE-SOAP-20000508 - Simple Object Access Protocol (SOAP)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/wsdl?bcsi_scan_4092FEF5654FCCED=lU4g7nt10c2Je+f+rBVb2wMAAABD+a0A" target="_top">W3C NOTE-wsdl-20010315 - Web Service Description Language (WSDL) 1.1</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2007/NOTE-wsdl20-soap11-binding-20070626/" target="_top">W3C NOTE-wsdl20-soap11-binding-20070626 - Web Services Description Language (WSDL) Version 2.0 SOAP 1.1 Binding</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2006/REC-ws-addr-core-20060509" target="_top">W3C REC-ws-addr-core-20060509 - Web Services Addressing 1.0 - Core</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p><span class="emphasis"><em>Conditional</em></span></p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm" target="_top">ACM 2002-REST-TOIT - Representational State Transfer (REST)</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>The preferred method for implementing
+                                       web-services are SOAP, however, there are
+                                       many use cases (mashups etc.) where a REST
+                                       based interface is easier to implement and
+                                       sufficient to meet the IERs.
+                                    </p>
+                                    <p>Restful services support HTTP caching, if the
+                                       data the Web service returns is not altered
+                                       frequently and not dynamic in nature. REST is
+                                       particularly useful for restricted-profile devices
+                                       such as mobile phones and tablets for which the
+                                       overhead of additional parameters like headers
+                                       and other SOAP elements are less.
+                                       Web
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-bottom: 0.5pt solid ; " colspan="3">
+                                    <p><span class="bold"><strong>Structured Data Profile</strong></span></p>
+                                    <p>The Structured Data Profile provides standards and guidance for the structuring of web content on federated mission networks.
+                                       Web Hosting
+                                    </p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p>Web Hosting Services</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; ">
+                                    <p><span class="emphasis"><em>Mandatory</em></span></p>
+                                    <p>General formatting of information for sharing or exchange.</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist compact">
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/2008/REC-xml-20081126/" target="_top">W3C REC-xml-20081126 - eXtensible Markup Language (XML) version 1.0 (Fifth Edition)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.ietf.org/rfc/rfc4627.txt" target="_top">IETF RFC 4627 - The application/json Media Type for JavaScript Object Notation (JSON)</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/xmlschema-1/" target="_top">W3C REC-xmlschema-1-20041028 - XML Schema Part 1: Structures Second Edition</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="http://www.w3.org/TR/xmlschema-2/" target="_top">W3C REC-xmlschema-2-20041028 - XML Schema Part 2: Datatypes Second Edition</a></p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p><a class="ulink" href="www.w3.org/TR/2002/NOTE-xhtml1-schema-20020902" target="_top">W3C NOTE-xhtml1-schema-20020902 - XHTML&#8482; 1.0 in XML Schema</a></p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </td>
+                                 <td>
+                                    <p>XML shall be used for data exchange to satisfy
+                                       those Information Exchange Requirements within
+                                       a FMN instance that are not addressed by a
+                                       specific information exchange standard. XML
+                                       Schemas and namespaces are required for all
+                                       XML documents.
+                                    </p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <p></p>
+                     </div>
+                  </section>
+               </section>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apgs02.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="apg.html"><i class="foundicon-up-arrow"></i></a></td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apgs04.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a> |
+                            <a href="https://nhqc3s.hq.nato.int/Apps/Architecture/NISP2/">Search NISP DB</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2016 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

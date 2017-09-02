@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>D.11.&nbsp;Battlespace Management Interoperability</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.77.1">
+      <link rel="prev" href="apds10.html" title="D.10.&nbsp;Geospatial Interoperability">
+      <link rel="next" href="apds12.html" title="D.12.&nbsp;Joint Intelligence, Surveillance, and Reconaissance Interoperability">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Agreed Profiles">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Tactical ESB (Tact ESB) Profile">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;External Profiles">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;The Combined Endeavor Mission Network (CEMN) Profile of NATO Interoperability Standards">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Near Term">Near Term</a></li>
+                           <li><a href="../volume3/index.html" title="Volume 3 - Mid to Far Term">Long Term</a></li>
+                           <li class="active"><a href="../volume4/index.html" title="Volume 4 - Interoperability Profiles and Guidance">Profiles</a></li>
+                           <li><a href="../volume5/index.html" title="Volume 5 - Design Rules">Design Rules</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apds10.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apds12.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="sect1" id="d0e5356">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title">D.11.&nbsp;Battlespace Management Interoperability</h2>
+                     </div>
+                  </div>
+               </div>
+               <div class="table" id="v4battlespace-mgmt">
+                  <p></p>
+                  <div class="table-contents">
+                     <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                        <colgroup>
+                           <col style="width: 30%; ">
+                           <col style="width: 35%; ">
+                           <col style="width: 35%; ">
+                        </colgroup>
+                        <thead>
+                           <tr>
+                              <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                 <span class="bold"><strong>ID:Purpose</strong></span>
+                                               
+                              </th>
+                              <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                 <span class="bold"><strong>Standard</strong></span>
+                                               
+                              </th>
+                              <th style="border-bottom: 0.5pt solid ; ">
+                                                 <span class="bold"><strong>Guidance</strong></span>
+                                               
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1:Digital exchange of semantically rich information about Battlespace
+                                                 Objects such as units, their structural composition, Plans and Orders 
+                                                 etc.
+                              </td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">STANAG 5523 &#8211; C2 Information Exchange model in conjunction with MIP Data Exchange Mechanism (DEM) Block 2 and the AMN MIP
+                                 Implementation Profile (published in Annex A to NC3A RD-3188 - AMN MIP Workshop Final Report).
+                              </td>
+                              <td style="border-bottom: 0.5pt solid ; ">C2IEDM Bussiness Rule F11.2 b is not applicable in the AMN scope. 
+                                                 Implementations shall ensure that the use of CONTEXT-ASSOCIATION does 
+                                                 not create circular references between CONTEXTs.Currently most AMN 
+                                                 members use C2IEDM (MIP-Block 2). 
+                                                 
+                                 <p>Any addition or expansion of this data model or data dictionaries
+                                                      that is deemed to be of general interest shall be submitted as a 
+                                                      change proposal within the configuration control process to be 
+                                                      considered for inclusion in the next version of the specification.
+                                                    
+                                 </p>
+                                               
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2:Expressing digital geographic annotation and visualization on, 
+                                                 two-dimensional maps and three-dimensional globes
+                              </td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">TIDE Transformational Baseline Vers. 3-0, NATO Vector Graphics 
+                                                 (NVG)
+                                                 
+                                 <p>Mandatory: NVG 1.5</p>
+                                                 
+                                 <p>Fading (Dec 2011): NVG 1.4</p>
+                                                 
+                                 <p>Retired: NVG 0.3 </p>
+                                                 
+                                 <p>Open Geospatial Consortium (OGC), Keyhole Markup Language 
+                                                      (KML 2.2)
+                                 </p>
+                                               
+                              </td>
+                              <td style="border-bottom: 0.5pt solid ; ">NVG shall be used as the standard Protocol and Data Format for 
+                                                 encoding and sharing of information layers between Situational Awareness 
+                                                 and C2 systems.
+                                                 
+                                 <p>NVG and KML are both XML-based language schemas for expressing
+                                                      geographic annotations.
+                                 </p>
+                                               
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3:Exchanging information on Significant Activities (SIGACTs) 
+                                                 in support of current operations
+                              </td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">U.S.PM Battle Command SIGACT Schema<a href="#ftn.d0e5421" class="footnote"><sup class="footnote" id="d0e5421">[a]</sup></a></td>
+                              <td style="border-bottom: 0.5pt solid ; ">This schema is used via PASS, webservices and XMPP to exchange
+                                                 SIGACT information at Regional Command level and below.
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">4:Exchanging information on Incident and Event information to
+                                                 support information exploitation.
+                              </td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Emerging (Jul 2011): Draft EVENTEXPLOITREP XML schema. Under 
+                                                 development. Rationale: The coordination between NC3A and US on this work has been stalled due to the lack
+                                 of funding.
+                              </td>
+                              <td style="border-bottom: 0.5pt solid ; ">This schema will be used to exchange rich and structured incident/
+                                 event information between C2 and Exploitation systems like JOCWatch and CIDNE. National capability developers are invited
+                                 to contribute to the development of the final EVENTEXPLOITREP XML Schema<a href="#ftn.d0e5433" class="footnote"><sup class="footnote" id="d0e5433">[b]</sup></a>
+                                 Until the EVENTEXPLOITREP XML Schema definition is finalised, it is recommended to use the current draft schema also known
+                                 as OIR (Operational Incident Report).
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">5:Real time automated data exchange such as radar tracking information 
+                                                 among airborne and land-based tactical data systems beyond line of sight.
+                                                 
+                                 <p>Message exchange Over Tactical Data Links</p>
+                                               
+                              </td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">STANAG 5516, Ed.4:2008 - Tactical Data Exchange (Link 16)
+                                                 
+                                 <p>STANAG 5511, Feb 28, 2006 - Tactical Data Exchange (Link 11/11B); 
+                                                      see also US MIL-STD 6011
+                                 </p>
+                                                 
+                                 <p>STANAG 5616 Ed 4:2008 - Standards for Data Forwarding between 
+                                                      Tactical Data Systems employing Link 11/11B, Link 16 and Link 22.
+                                                      
+                                 </p>
+                                               
+                              </td>
+                              <td style="border-bottom: 0.5pt solid ; ">AMN members shall follow the specifications for automatic data 
+                                                 exchange of tactical information with and among NATO tactical data 
+                                                 systems, using the data transmission Links designated as Link 11/11B 
+                                                 and Link 16.
+                                                 
+                                 <p>Edition 5 of 5516 is ratified, implementation in ISAF needs
+                                                      to be coordinated via the AMN OPT.
+                                 </p>
+                                               
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">6:Exchange of digital Friendly Force Information such as positional 
+                                                 tracking information amongst airborne and land-based tactical data
+                                                 systems and C2 systems.
+                              </td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AC/322-D(2006)0066 Interim NFFI Standard for Interoperability 
+                                                 of Force Tracking Systems
+                              </td>
+                              <td style="border-bottom: 0.5pt solid ; ">All positional information of friendly ground forces (e.g. ground
+                                                 forces of Troop Contributing Nations or commercial transport companies 
+                                                 working in support of ISAF Forces) shall be as a minimum made available
+                                                 in a format that can be translated into the NFFI V1.3 format. 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">7:Message formats for exchanging information in low bandwidth 
+                                                 environment between systems enabled for processing Military Message
+                                                 Format
+                              </td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">STANAG 7149 Ed. 4 - NATO Message Catalogue - APP-11(C)
+                                 
+                                 <p>Minimum set of messages supported by AMN Core:</p>
+                                               
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>INCIDENT REPORT (A078)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>SARIR (J012)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>EVENTREP (J092)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>EODINCREP (J069)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>AIR SUPPORT REQUEST (F091)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>AIR TASKING ORDER (F058)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>AIRSPACE CONTROL ORDER (F011)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>PRESENCE REPORT (A009)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>SITREP (J095)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>ENEMY CONTACT REP (A023)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>CASEVACREQ (A015)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>KILLBOX MESSAGE (F083)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>INCIDENTSPOTREP (J006)</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 		
+                                 <p>Emerging Dec 2012</p>
+                                               
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>SALTATIC (A073)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>CASEVACREQ (A015)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>MEDEVAC MESSAGE (A012)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>FRIENDLY FORCE INFORMATION (J025) is the ADatP-3 representation of NFFI</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>OPSITREP IRREGULAR ACTOR (A011)</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 
+                              </td>
+                              <td style="border-bottom: 0.5pt solid ; ">The following messages that are not compliant with STANAG 7149 
+                                                 Ed 4. will be accepted by the AMN Core:
+                                               
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>UXO IED REPORT 10-LINER (UXOIED) (A075)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>Joint Tactical Air Strike Request (JTAR) - US DD Form 1972</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>ROZ Status / KILLBOX MESSAGE (F083)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>SALUTE (Size, Activity, Location, Unit/Uniform, Time, Equipment)</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>ENEMY CONTACT REP (A023)</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                                 
+                                 <p>Change request proposals reflecting the requirements for those non-standard messages should be submitted within the configuration
+                                    management process of ADatP-3 by those nations that are the primary originators of those messages.
+                                 </p>
+                                               
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">8:Military Symbology interoperability</td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">STANAG 2019, Ed.5:2008, Joint Smbology- APP-6(B)
+                                                 
+                                 <p>U.S. MIL-STD 2525 B Change 2, Common Warfighting Symbology</p>
+                                               
+                              </td>
+                              <td style="border-bottom: 0.5pt solid ; ">Note that both standards are not fully compatible with each other.
+                                                 A translation service may need to be provided at the AMN integration core.
+                                               
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; ">9:Providing a standard software interface for exchanging information about sensor planning, including information about capabilities
+                                 of sensors, tasking of a sensors and status of sensor planning requests.
+                              </td>
+                              <td style="border-right: 0.5pt solid ; ">Emerging (July 2012): OGC 09-000: OGC Sensor Planning Service Implementation Standard V.2.0, dated 2011-03-28</td>
+                              <td>For the AMN, Sensor Planning Service implementations shall adhere to the SOAP binding as defined in OGC 09-000.</td>
+                           </tr>
+                        </tbody>
+                        <tbody class="footnotes">
+                           <tr>
+                              <td colspan="3">
+                                 <div id="ftn.d0e5421" class="footnote">
+                                    <p><a href="#d0e5421" class="para"><sup class="para">[a] </sup></a>Document currently 
+                                                       not included in NISP Vol.2 (ed.E), as it was not available from the 
+                                                       author.
+                                    </p>
+                                 </div>
+                                 <div id="ftn.d0e5433" class="footnote">
+                                    <p><a href="#d0e5433" class="para"><sup class="para">[b] </sup></a>See http://tide.act.nato.int/tidepedia/index.php?title=TP_112:_Event_Exploitation_Reports_(EVENTEXPLOITREP)
+                                    </p>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class="table-title">Table&nbsp;D.9.&nbsp;Battlespace Management Interoperability</div>
+               </div><br class="table-break"></section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apds10.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="apd.html"><i class="foundicon-up-arrow"></i></a></td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apds12.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2013 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

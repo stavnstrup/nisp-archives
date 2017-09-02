@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>E.3.&nbsp;NNEC SOA Baseline Profile Quick Reference</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="apes02.html" title="E.2.&nbsp;Sources of Recommendations">
+      <link rel="next" href="apes04.html" title="E.4.&nbsp;ISO/IEC SOA Emerging Standards">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Minimum Interoperability Profile">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;X-TMS-SMTP profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Web Services Profiles">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Federated Mission Networking Spiral 1.1 Standards Profile">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;Profile for the Long Term Preservation of NATO Digital Information of Permanent value">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta name="pubsnummer" content="v9.0.2-final">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li class="active"><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apes02.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apes04.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="sect1" id="d0e5661">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title">E.3.&nbsp;NNEC SOA Baseline Profile Quick Reference</h2>
+                     </div>
+                  </div>
+               </div>
+               <p>143. This section details the mandated functionality and standards for each 
+                  of the &#8220;Spiral 1&#8221;. This &#8220;profile&#8221; of SOA specifications is summarised in the 
+                  following table. In the cases where a version of a standard in the table 
+                  deviates from the version of the standard in the WS-I profiles, the version 
+                        of the standard explicitly defined in the table replaces the related version
+                        of the standard in the profile.
+               </p>
+               <p>144. The last column of the table indicates in which WS-I profile(s) the standard
+                        or profile is referenced (if any).  Therefore if a profile is quoted, it is 
+                        mandatory to use it when implementing that service. The WS-I Profiles used are:
+                      
+               </p>
+               <div class="itemizedlist">
+                  <ul class="itemizedlist">
+                     <li class="listitem">
+                        <p>WS-I Basic Profile 1.1</p>
+                     </li>
+                     <li class="listitem">
+                        <p>WS-I Basic Security Profile 1.1</p>
+                     </li>
+                     <li class="listitem">
+                        <p>WS-I Simple SOAP Binding Profile 1.0</p>
+                     </li>
+                     <li class="listitem">
+                        <p>WS-I Attachments Profile 1.0</p>
+                     </li>
+                  </ul>
+               </div>
+               <div class="table" id="v3t-CES-Stds1">
+                  <div class="table-title">Table&nbsp;E.1.&nbsp;CES Standards</div>
+                  <div class="table-contents">
+                     <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                        <colgroup>
+                           <col style="width: 25%; " class="col1">
+                           <col style="width: 25%; " class="col2">
+                           <col style="width: 25%; " class="col3">
+                           <col style="width: 25%; " class="col4">
+                        </colgroup>
+                        <thead>
+                           <tr>
+                              <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                 <span class="bold"><strong>Purpose</strong></span>
+                                               
+                              </th>
+                              <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                 <span class="bold"><strong>Standard Name</strong></span>
+                                               
+                              </th>
+                              <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                 <span class="bold"><strong>Mandated Version</strong></span>
+                                               
+                              </th>
+                              <th style="border-bottom: 0.5pt solid ; ">
+                                                 <span class="bold"><strong>Relationship with the WS-I profiles</strong></span>
+                                               
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " rowspan="4"><span class="bold"><strong>XML</strong></span></td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Extensible Markup Language (XML)</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0 (Second Edition)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                 
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Simple SOAP Binding Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Attachments Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Namespaces in XML</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                 
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Simple SOAP Binding Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Attachments Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XML Schema Part 1: Structures</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; ">WS-I Basic Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XML Schema Part 2: Datatypes</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; ">WS-I Basic Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " rowspan="7"><span class="bold"><strong>Messaging Service</strong></span></td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">HTTP</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                   
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Simple SOAP Binding Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">HTTP State Management Mechanism</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 2965</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SOAP</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                   
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Simple SOAP Binding Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-I Simple SOAP Binding Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-I Attachments Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Reliable Messaging</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.2</td>
+                              <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Addressing</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="bold"><strong>Pub/Sub Service</strong></span></td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Notification</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.3</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " rowspan="4"><span class="bold"><strong>Translation Service</strong></span></td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XSLT</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XQuery</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XML Schema</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XPath</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " rowspan="2"><span class="bold"><strong>Service Discovery Service</strong></span></td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">UDDI</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3.0.2</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">Deviation from WS-I Basic Profile
+                                                   1.1 (second edition). UDDI version 2 is not to be used.
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WSDL</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                   
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Simple SOAP Binding Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Attachments Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="bold"><strong>Metadata Registry Service</strong></span></td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">ebXML</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " rowspan="31"><span class="bold"><strong>Security Service</strong></span></td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">HTTP over TLS</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 2818</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                   
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Attachments Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">TLS</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0 (RFC 2246)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                   
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Basic Security Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SSL</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3.0</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">SSL is not to be used.</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">X.509 Public Key Infrastructure Certificate and CRL Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 2459</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                   
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Basic Security Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Security: SOAP Message Security</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1 (OASIS Standard Specification, 1 Feb. 2006)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Services Security: UsernameToken Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1 (OASIS Standard Specification, 1 Feb. 2006)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Services Security: X.509 Certificate Token Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1 (OASIS Standard Specification, 1 Feb. 2006)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Services Security: Rights Expression Language (REL) Token Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1 (OASIS Standard Specification, 1 Feb. 2006)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Services Security: Kerberos Token Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1 (OASIS Standard Specification, 1 Feb. 2006)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Services Security: SAML Token Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1 (OASIS Standard Specification, 1 Feb. 2006)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Web Services Security: SOAP Messages with Attachments (SwA) Profile</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1 (OASIS Standard Specification, 1 Feb. 2006)</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">
+                                                   
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>WS-I Basic Profile</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>WS-I Basic Security Profile</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XML Encryption Syntax and Processing</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">W3C Recommendation 10 Dec. 2002</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XML Signature Syntax and Processing</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0 (Second Edition) W3C Rec. 10 June 2008</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XPointer Framework</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">W3C Recommendation, 25 Mar. 2003</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Information technology "Open Systems Interconnection" The Directory: Public-key and attribute certificate frameworks</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Technical Corrigendum 1</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Lightweight Directory Access Protocol : String Representation of Distinguished Names</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 4514</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Addressing</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">MIME Encapsulation of Aggregate Documents, such as HTML (MHTML)</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 2555</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Attachments Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Multipurpose Internet Mail Extensions (MIME) Part One: Format of Internet Message Bodies</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 2045</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Attachments Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Multipurpose Internet Mail Extensions (MIME) Part Two: Media Types</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 2046</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Attachments Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Content-ID and Message-ID Uniform Resource Locators</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 2392</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Attachments Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Security Utility</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Trust</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.4</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Federation</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Metadata Exchange</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Policy</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.5</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-SecurityPolicy</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.3</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SAML</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XACML</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">XML Confidentiality Label Syntax</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">NC3A TN 1456</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Binding of Metadata to Information Objects</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">NC3A TN 1455</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="bold"><strong>Enterprise Service Management</strong></span></td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">WS-Management</td>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; " rowspan="3"><span class="bold"><strong>Enterprise Directory Service</strong></span></td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">LDAP</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3.0 (RFC 4510)</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">TLS</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.0</td>
+                              <td style="text-align: left; border-bottom: 0.5pt solid ; ">WS-I Basic Security Profile</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SASL using Kerberos v5 (GSSAPI)</td>
+                              <td style="text-align: left; border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">RFC 4422, RFC 4752</td>
+                              <td style="border-bottom: 0.5pt solid ; " class="auto-generated">&nbsp;</td>
+                           </tr>
+                           <tr>
+                              <td style="text-align: left; border-right: 0.5pt solid ; "><span class="bold"><strong>Collaboration Service</strong></span></td>
+                              <td style="border-right: 0.5pt solid ; ">XMPP</td>
+                              <td style="border-right: 0.5pt solid ; ">1.0 (RFC 3920, RFC 3921)</td>
+                              <td class="auto-generated">&nbsp;</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <p></p>
+               </div><br class="table-break"></section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apes02.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="ape.html"><i class="foundicon-up-arrow"></i></a></td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apes04.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a> |
+                            <a href="https://nhqc3s.hq.nato.int/Apps/Architecture/NISP2/">Search NISP DB</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2016 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

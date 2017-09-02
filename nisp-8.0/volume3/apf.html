@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="apes03.html" title="E.3.&nbsp;NNEC SOA Baseline Profile Quick Reference">
+      <link rel="next" href="apfs02.html" title="F.2.&nbsp;Background">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Agreed Profiles">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Tactical ESB (Tact ESB) Profile">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Federated Mission Networking Interoperability Standards Profile for Mission Execution Environments">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;External Profiles">
+      <link rel="section" href="apf.html#d0e10012" title="F.1.&nbsp;References">
+      <link rel="section" href="apfs02.html" title="F.2.&nbsp;Background">
+      <link rel="section" href="apfs03.html" title="F.3.&nbsp;Scope">
+      <link rel="section" href="apfs04.html" title="F.4.&nbsp;Service Interface Profile Relationships to Other Documents">
+      <link rel="section" href="apfs05.html" title="F.5.&nbsp;Guiding principles for a consolidated SIP/SDS Profile">
+      <link rel="section" href="apfs06.html" title="F.6.&nbsp;Proposed structure for a consolidated SIP/SDS Profile">
+      <link rel="section" href="apfs07.html" title="F.7.&nbsp;Testing">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li class="active"><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                           <li><a href="../volume4/index.html" title="Volume 4 - Design Rules">Design Rules</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apes03.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apfs02.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="appendix" id="v3-sip">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h1 class="title">Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document
+                             
+                        </h1>
+                     </div>
+                  </div>
+               </div>
+               <section class="sect1" id="d0e10012">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h2 class="title">F.1.&nbsp;References</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist">
+                        <li class="listitem">
+                           <p>[C3 Taxonomy] C3 Classification Taxonomy v. 1.0, AC/322-N(2012)0092</p>
+                        </li>
+                        <li class="listitem">
+                           <p>[CESF 1.2] Core Enterprise Services Framework v. 1.2, AC/322-D(2009)0027</p>
+                        </li>
+                        <li class="listitem">
+                           <p>[DEUeu SDS] Technical Service Data Sheet. Notification Broker v.002, IABG</p>
+                        </li>
+                        <li class="listitem">
+                           <p>[NAF 3.0] NATO Architectural Framework v. 3.0, AC/322-D(2007)0048</p>
+                        </li>
+                        <li class="listitem">
+                           <p>[NC3A RD-3139] Publish/Subscribe Service Interface Profile Proposal v.1.0,
+                                        NC3A RD-3139
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>[NDMS] Guidance On The Use Of Metadata Element Descriptions For Use In
+                                        The NATO Discovery Metadata Specification (NDMS). Version 1.1, AC/322-D(2006)0007
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>[NISP] NATO Interoperability Standards and Profiles</p>
+                        </li>
+                        <li class="listitem">
+                           <p>[NNEC FS] NNEC Feasibility Study v. 2.0</p>
+                        </li>
+                        <li class="listitem">
+                           <p>[RFC 2119] Key words for use in RFCs to Indicate Requirement Levels, IETF</p>
+                        </li>
+                        <li class="listitem">
+                           <p>[SOA Baseline] Core Enterprise Services Standards Recommendations. The
+                                        Service Oriented Architecture (SOA) Baseline Profile, AC/322-N(20122)0205
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p><a class="ulink" href="http://ws-i.org/Profiles/BasicProfile-1.2-2010-11-09.html#philosophy" target="_top">[WS-I Basic Profile]</a></p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apes03.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center">&nbsp;</td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apfs02.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2014 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

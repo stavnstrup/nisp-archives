@@ -1,0 +1,1829 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>2.2. Design Rule</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css" />
+      <meta name="generator" content="DocBook XSL Stylesheets V1.76.1" />
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles" />
+      <link rel="up" href="ch02.html" title="Chapter 2. International Military Interoperability for information exchange in the NNEC context" />
+      <link rel="prev" href="ch02.html" title="Chapter 2. International Military Interoperability for information exchange in the NNEC context" />
+      <link rel="next" href="ch02s03.html" title="2.3. Motivation" />
+      <link rel="chapter" href="ch01.html" title="Chapter 1. NISP Design Rules" />
+      <link rel="chapter" href="ch02.html" title="Chapter 2. International Military Interoperability for information exchange in the NNEC context" />
+      <link rel="subsection" href="ch02s02.html#d0e1000" title="2.2.1. Context" />
+      <link rel="subsection" href="ch02s02.html#v6s-problem" title="2.2.2. Problem" />
+      <link rel="subsection" href="ch02s02.html#v6s-solution" title="2.2.3. Solution" />
+      <link rel="subsection" href="ch02s02.html#d0e1928" title="2.2.4. Rejected solutions" />
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      <meta http-equiv="Content-Language" content="en-uk" />
+      <meta name="MSSmartTagsPreventParsing" content="true" />
+      <meta name="author" content="Interoperability Capability Team (IP CaT)" />
+      <meta http-equiv="Expires" content="0" />
+   </head>
+   <body>
+      <div id="header">
+         <div id="tophead"><span id="quickMenu"><a href="../index.html">Home</a> | 
+                       <a href="../acronyms/index.html">Acronyms</a> | <a href="../member.html">Contact</a></span></div>
+         <div id="bottomhead"><span>NATO Interoperability Standards &amp; Profiles</span></div>
+      </div>
+      <div id="menubar"><a href="../index.html">About NISP</a><a href="../userinfo.html">User Information</a><a href="../introduction.html">Introduction</a></div>
+      <div id="container">
+         <div id="nav">
+            <ul>
+               <li id="menuhead">NISP Volumes</li>
+               <li class="pdf"><span class="h">Download </span><a href="../pdf/NISP-Vol5-v6-release.pdf">PDF of V5</a></li>
+               <li><a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a></li>
+               <li><a href="../volume2/index.html" title="Near Term">V2 - Near Term</a></li>
+               <li><a href="../volume3/index.html" title="Mid to Far Term">V3 - Mid to Far Term</a></li>
+               <li><a href="../volume4/index.html" title="Interoperability Profiles and Guidance">V4 - Interoperability Profiles and Guidance</a></li>
+               <li>V5 - Design Rules
+                  <ul id="navSubMenu">
+                     <li>1 - <a href="ch01.html">NISP DESIGN RULES</a></li>
+                     <li>2 - <a href="ch02.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+                             THE NNEC CONTEXT</a></li>
+                  </ul>
+               </li>
+               <li><img src="../images/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72" /></li>
+            </ul>
+         </div>
+         <div id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="ch02.html">&lt; Prev</a> 
+                     </td>
+                     <th width="60%" align="center"> </th>
+                     <td width="20%" align="right"> <a accesskey="n" href="ch02s03.html">Next &gt;</a></td>
+                  </tr>
+               </table>
+               <hr />
+            </div>
+            <div class="sect1" title="2.2. Design Rule">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title" id="d0e975">2.2. Design Rule</h2>
+                     </div>
+                  </div>
+               </div>
+               <p>64. This design rule is developed for use in NATO Interoperability
+                      Standards &amp; Profiles (NISP) version 4. It is based on experiences from
+                      the Swedish Network Based Defence initiative where it extends the design
+                      rule for Interoperability <a class="xref" href="ch02.html#dr-mil-ref-drinteroperability" title="DR Interoperability">[2]</a>
+                  
+                  
+                      and the IEAT concept developed within the frame of Multinational
+                      Experiment 5<a class="xref" href="ch02.html#dr-mil-ref-ieat" title="IEAT Concept">[3]</a>. The design rule also
+                      considers the NATO Information Exchange Gateway (IEG) concept<a class="xref" href="ch02.html#dr-mil-gwimpl" title="Guidance Document on the Implementation of Gateways for Information Exchange between NATO and External CIS Communities">[10]</a>.
+               </p>
+               <p>65. The design rule is applicable for collaborative federations in the
+                      coming 2-6 years which means that it covers both existing systems which
+                      won't be replaced as well as new systems which are developed and
+                      implemented during this time period.
+               </p>
+               <p>66. The technical scope for the design rule is the highlighted areas of
+                      <a class="xref" href="ch02s02.html#v6f-simpleNNECframework" title="Figure 2.1. Simplified NNEC Technical Services framework with design rule scope">Figure 2.1</a>. The design rule does not
+                      describe how to achieve interoperability on the Transport/Network level.
+                      Furthermore, it does not cover interoperability on the Community of
+                      Interest level. However, when design rules for these levels are created,
+                      this design rule will be used as the basis for enabling information
+                      exchange via services.
+               </p>
+               <div class="figure"><a id="v6f-simpleNNECframework"></a><p></p>
+                  <div class="figure-contents">
+                     <div class="mediaobject"><img src="../figures/dr-mil-simpleNNECtsf.png" alt="Simplified NNEC Technical Services framework with design rule scope" /></div>
+                  </div>
+                  <p class="title"><strong>Figure 2.1. Simplified NNEC Technical Services framework with design rule
+                              scope</strong></p>
+               </div><br class="figure-break" /><div class="sect2" title="2.2.1. Context">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title" id="d0e1000">2.2.1. Context</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="sect3" title="2.2.1.1. Introduction">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="d0e1003">2.2.1.1. Introduction</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>67. The design rule should be used when there is a need for several
+                                different military actors to cooperate in a federative manor in order
+                                to solve a common mission. The key capabilities that this design rule
+                                will help enable are:
+                     </p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>Collaborative planning between multiple actors in a
+                                             federation
+                              </p>
+                           </li>
+                           <li class="listitem">
+                              <p>Collaborative synchronization of execution between multiple
+                                             actors in a federation
+                              </p>
+                           </li>
+                           <li class="listitem">
+                              <p>Collaborative assessment between multiple actors in a
+                                             federation
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <p>68. The design rule does not address the operational activities
+                                needed to achieve the above capabilities, nor does it address the
+                                Community Of Interest (COI) technical services which supports these
+                                activities. Instead the design rule describes a set of principles,
+                                technologies and activities needed to create a technical platform
+                                which enables information exchange between the actors and can act as a
+                                foundation for the COI specific technical services when these are to
+                                be developed and deployed.
+                     </p>
+                     <p>69. Since the design rule captures knowledge from previous
+                                experiences in this area it can save time and money for the involved
+                                actors. If the design rule is applied when defining the profile for
+                                such a mission, less time will be spent on getting to agreement on
+                                which services and underpinning technologies shall be used in the
+                                mission.
+                     </p>
+                     <p>70. Many of the activities and technologies described in this design
+                                rule can also be applied when exchanging information and services with
+                                other actors than military organizations. However, there are specific
+                                aspects of collaborating with this type of organizations which are not
+                                covered by this design rule.
+                     </p>
+                     <p>71. A suitable definition of interoperability in this design rule
+                                context (i.e. technical context) is: The ability of technical systems
+                                and/or organizations using technical systems to operate together by
+                                making (necessary) data &amp; information and/or services produced by
+                                one system or organization available to the others, in an agreed
+                                format.
+                     </p>
+                  </div>
+                  <div class="sect3" title="2.2.1.2. The International Military Federation">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="v6s-intmilfed">2.2.1.2. The International Military Federation</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>72. There are many challenges that have to be overcome in order to
+                                make collaborative work and knowledge sharing among the actors in an
+                                operation successful. In <a class="xref" href="ch02s02.html#v6s-solution" title="2.2.3. Solution">Section 2.2.3</a> of this
+                                design rule mainly addresses the technical aspects of the
+                                establishment of federation in which collaborating actors can exchange
+                                information. However, organizational, process and legislation aspects
+                                must be covered to some extent since all of these needs to be
+                                harmonized in order to make the collaboration effective. Therefore, a
+                                number of non-technical issues are described in <a class="xref" href="ch02s02.html#v6s-problem" title="2.2.2. Problem">Section 2.2.2</a>.
+                     </p>
+                     <p>73. The federation, depicted in <a class="xref" href="ch02s02.html#v6f-fedoverview" title="Figure 2.2. Federation Overview">Figure 2.2</a>,
+                                is where the collaborating actors provide services which the other
+                                actors can consume. To create a federation, the actors need to create
+                                a federation agreement which defines the rules of the federation, such
+                                as which data formats, information classifications should be used.
+                                Rules regarding information ownership and service levels (including
+                                quality of service) are also included in the federation
+                                agreement.
+                     </p>
+                     <p>74. Collaboration in multilateral operations has previously been
+                                based on bi-lateral agreements between all participants, but in order
+                                to achieve the speed and flexibility needed today, there is a need to
+                                establish a baseline federation agreement which can be used as a
+                                starting point when creating new missions.
+                     </p>
+                     <p>75. Actors which participate in the federation connect networks and
+                                systems within their responsibility (i.e. domain) to other actors in
+                                order to be able to exchange information. To protect the internal
+                                information and control which information is being exchanged one or
+                                more Information Exchange Gateways (IEG) are stood up between the
+                                federation and the actors' network. In the IEG, one or more
+                                service interfaces are physically instantiated. This is referred to as
+                                a Service Interoperability Point (SIOP) according to the NATO C3
+                                System Architecture Framework <a class="xref" href="ch02.html#dr-mil-ref-nc3saf" title="NATO C3 System Architecture Framework">[6]</a>.
+                     </p>
+                     <p>76. Within an actor's domain there can be one or more
+                                networks where information is stored. The decision which internal
+                                networks shall be connected is taken by each actor (Federation member)
+                                independently of the other actors. In <a class="xref" href="ch02s02.html#v6f-fedoverview" title="Figure 2.2. Federation Overview">Figure 2.2</a> two example networks are depicted, one
+                                federation network which holds information only relevant to the
+                                federation and one which is the actors' internal network. In
+                                this case, the IEG handles information exchange between these two
+                                networks as well as information exchange with other actors
+                                IEGs.
+                     </p>
+                     <div class="figure"><a id="v6f-fedoverview"></a><p></p>
+                        <div class="figure-contents">
+                           <div class="mediaobject"><img src="../figures/dr-mil-fed-overview.png" alt="Federation Overview" /></div>
+                        </div>
+                        <p class="title"><strong>Figure 2.2. Federation Overview</strong></p>
+                     </div><br class="figure-break" /><p>77. The remainder of the design rule describes the challenges the
+                                actors face and how they can cooperate in order to create a federation
+                                to exchange information in a secure manor.
+                     </p>
+                  </div>
+                  <div class="sect3" title="2.2.1.3. Related design rule areas">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="d0e1059">2.2.1.3. Related design rule areas</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>78. Interoperability is closely linked to the following other design
+                                rule areas:
+                     </p>
+                     <p>79. <span class="bold"><strong>Flexibility</strong></span>: The requirements
+                                on interoperability will change over time. Also, in some situations,
+                                very limited time will be available for making the necessary
+                                modifications of the system in order to fulfil the new requirements.
+                                This means that the organization, security and technical systems need
+                                to be very flexible with respect to configuration and modifiability in
+                                order to be able to adapt to changing and extended interoperability
+                                requirements. For more information, refer to <a class="xref" href="ch02.html#dr-mil-ref-flex" title="Design Rule Flexibility">[4]</a>.
+                     </p>
+                     <p>80. <span class="bold"><strong>Information security</strong></span>: With
+                                interoperability follows information security risks that must be
+                                handled. The connection of external systems must be done in such a way
+                                that the information security of each nation or organisation is not
+                                compromised. However information security mechanisms cannot be allowed
+                                to be static. In each specific case the need to protect information
+                                must be balanced against the possible consequences from not sharing
+                                the information. The three aspects of security; confidentiality
+                                integrity and availability, must all be considered.
+                     </p>
+                  </div>
+               </div>
+               <div class="sect2" title="2.2.2. Problem">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title" id="v6s-problem">2.2.2. Problem</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>81. There are several challenges to the effort of creating a
+                           federation for collaboration between military partners, both related to
+                           technology, but also related to how organizations, humans and
+                           legislation systems work.
+                  </p>
+                  <p>82. This chapter summarizes the basic requirements for the federation
+                           and identifies the challenges which must be overcome in order to
+                           establish the federation. The issues identified for these challenges are
+                           given an answer to in <a class="xref" href="ch02s02.html#v6s-solution" title="2.2.3. Solution">Section 2.2.3</a>.
+                  </p>
+                  <p><span class="bold"><strong>Basic requirements for information
+                                 exchange</strong></span></p>
+                  <p>83. The intent of this section is to identify a few of the most
+                           elementary (information exchange) requirements which are set on all
+                           international military federations. This is not a complete list, but
+                           these requirements acts as a driver for identifying the basic set of
+                           technologies needed in a federation.
+                  </p>
+                  <div class="variablelist">
+                     <dl>
+                        <dt><a id="ier1"></a><span class="term">[IER 1]</span></dt>
+                        <dd>
+                           <p>People from the different organisational actors SHALL be
+                                          able to communicate with each other using voice or text
+                                          communication.
+                           </p>
+                        </dd>
+                        <dt><a id="ier2"></a><span class="term">[IER 2]</span></dt>
+                        <dd>
+                           <p>It SHALL be possible to discover and retrieve information
+                                          (i.e. search) provided to the federation by different
+                                          actors.
+                           </p>
+                        </dd>
+                     </dl>
+                  </div>
+                  <p><span class="bold"><strong>Challenges based on international
+                                 agreements and regulations</strong></span></p>
+                  <p>84. Information and services exchange between nations and
+                           organisations (e.g. unclassified, restricted, secret and top secret
+                           classification) is based on government agreement between nations and
+                           organisations. Qualified information and services exchange can only take
+                           place if such agreement exists. To achieve this agreement is a lengthy
+                           process that often takes many months to finalize. It has also been
+                           proven complicated to negotiate and sign such an agreement between more
+                           than two nations and organisations at a time (multilateral). Nations are
+                           willing to share more information and services with some parties and
+                           less with others. This creates complicated situations during
+                           multilateral operations.
+                  </p>
+                  <div class="variablelist">
+                     <dl>
+                        <dt><a id="issue1"></a><span class="term">[Issue_1]</span></dt>
+                        <dd>
+                           <p>How can a common, agreed description for analyzing and
+                                          describing international military interoperability be
+                                          created?
+                           </p>
+                        </dd>
+                     </dl>
+                  </div>
+                  <p><span class="bold"><strong>Challenges based on national law,
+                                 national integrity and regulations</strong></span></p>
+                  <p>85. Differing laws, rules and regulations together with different
+                           cultures regarding information sharing are likely to impact willingness
+                           to share information and slow down process of getting agreements on what
+                           to share.
+                  </p>
+                  <p>86. Parties participating in a multilateral operation are likely to
+                           have different requirements and priorities which will imply different
+                           scope and granularity of information exchange for each party. The
+                           parties will be required to protect their national integrity while
+                           sharing information with the other parties. By this, it is likely that
+                           the parties wish to get access to more information and services than
+                           they are willing to provide themselves. It is also so that the parties
+                           will need to limit the possibilities for others to control how and what
+                           information is provided.
+                  </p>
+                  <div class="variablelist">
+                     <dl>
+                        <dt><a id="issue2"></a><span class="term">[Issue_2]</span></dt>
+                        <dd>
+                           <p>How can the impact of national laws and regulations in
+                                          coming to agreement of what information to share be minimized in
+                                          order to support the requirements of flexibility and ability to
+                                          change?
+                           </p>
+                        </dd>
+                        <dt><a id="issue3"></a><span class="term">[Issue_3]</span></dt>
+                        <dd>
+                           <p>How can parties participating in a multilateral operation
+                                          protect their national integrity by using mechanisms to protect
+                                          internal information and be able to control what information is
+                                          released to others?
+                           </p>
+                        </dd>
+                        <dt><a id="issue4"></a><span class="term">[Issue_4]</span></dt>
+                        <dd>
+                           <p>How can the parties in a multilateral operation jointly come
+                                          to agreement of what information shall be exchanged, how it shall
+                                          be exchanged and how it shall be handled by receiving
+                                          parties?
+                           </p>
+                        </dd>
+                     </dl>
+                  </div>
+                  <p><span class="bold"><strong>Challenges based on interpretation of
+                                 information content</strong></span></p>
+                  <p>87. Semantic differences, i.e. differences in languages and the
+                           meaning of words and expressions, are likely to be an issue when
+                           exchanging information. If the collaborating parties cannot understand
+                           the information being communicated, the information will not be of any
+                           use and the trust of accessible information will be challenged. There is
+                           a need for the parties to eventually meet in a combined opinion, a
+                           common and agreed set of descriptions in order to reach wanted
+                           effects.
+                  </p>
+                  <p>88. In order to solve the semantic challenge there is a need to
+                           understand the content of information and services exchanged between
+                           different systems/actors to be able to come to an agreement of the
+                           meaning of the information. However, the increasing requirements of the
+                           ability to rapidly change directions of the flow of information, as well
+                           as the actual content, means that the work with defining models and
+                           requirements for information exchange must be done continuously and
+                           during the whole lifecycle of an operation.
+                  </p>
+                  <div class="variablelist">
+                     <dl>
+                        <dt><a id="issue5"></a><span class="term">[Issue_5]</span></dt>
+                        <dd>
+                           <p>How can the parties in a multilateral operation agree on
+                                          what information shall be exchanged?
+                           </p>
+                        </dd>
+                        <dt><a id="issue6"></a><span class="term">[Issue_6]</span></dt>
+                        <dd>
+                           <p>How can differences in semantics and information models be
+                                          handled in order to minimize the risk of the parties not
+                                          understanding each other?
+                           </p>
+                        </dd>
+                        <dt><a id="issue7"></a><span class="term">[Issue_7]</span></dt>
+                        <dd>
+                           <p>How can it be ensured that the work with understanding
+                                          others semantics and information models is done in all stages of
+                                          the development lifecycle?
+                           </p>
+                        </dd>
+                     </dl>
+                  </div>
+                  <p><span class="bold"><strong>Challenges based on technical
+                                 issues</strong></span></p>
+                  <p>89. Architecture and technical implementations of information systems
+                           will be different in most of the cases. The complete technical system
+                           will probably not be homogenous, rather a federation of heterogeneous
+                           systems and therefore hard to govern and manage.
+                  </p>
+                  <p>90. Agreeing on standards, formats and mechanisms for information
+                           exchange is a critical success factor, however the sovereignty of the
+                           parties will increase the complexity of this task since there is no
+                           governing organ that can make the decisions.
+                  </p>
+                  <p>91. A common understanding and agreement on the architecture and
+                           design for the federation is vital in order to succeed with agreeing on
+                           how information shall be exchanged. A major challenge in this
+                           perspective is that the maturity of using architecture and design as
+                           governing tools is likely to vary greatly among collaborating parties,
+                           thus slowing down the agreement process.
+                  </p>
+                  <p>92. Since each actor has huge amounts of data of various kinds within
+                           their internal networks there is a need to have the means to organize
+                           and prioritize what to share. Also, when information has been shared
+                           within the federation, there must be mechanisms to be able to verify the
+                           authenticity, track usage of and prevent that the information is used by
+                           actors which are not meant to use it.
+                  </p>
+                  <div class="variablelist">
+                     <dl>
+                        <dt><a id="issue8"></a><span class="term">[Issue_8]</span></dt>
+                        <dd>
+                           <p>Which architecture can enable governance and structure to
+                                          mechanisms for information exchange between heterogeneous
+                                          systems?
+                           </p>
+                        </dd>
+                        <dt><a id="issue9"></a><span class="term">[Issue_9]</span></dt>
+                        <dd>
+                           <p>Which standards, formats and mechanisms for information
+                                          exchange should be used?
+                           </p>
+                        </dd>
+                        <dt><a id="issue10"></a><span class="term">[Issue_10]</span></dt>
+                        <dd>
+                           <p>What does a common architecture description framework for
+                                          multilateral operations contain?
+                           </p>
+                        </dd>
+                        <dt><a id="issue11"></a><span class="term">[Issue_11]</span></dt>
+                        <dd>
+                           <p>What mechanisms shall be used in order to control what
+                                          information to make available to partners in an international
+                                          military operation?
+                           </p>
+                        </dd>
+                        <dt><a id="issue12"></a><span class="term">[Issue_12]</span></dt>
+                        <dd>
+                           <p>What mechanisms can be used to maintain information security
+                                          and system safety, e.g. weapon safety, when external systems are
+                                          connected to a nation's internal network?
+                           </p>
+                        </dd>
+                     </dl>
+                  </div>
+                  <p><span class="bold"><strong>Challenges based on culture, lack of
+                                 trust and organizational issues</strong></span></p>
+                  <p>93. Even if we have solved "challenges based on international
+                           agreements and regulations" we will still most likely hesitate to
+                           share information since the organizational culture does not foster
+                           incentives to share information<a class="xref" href="ch02.html#dr-mil-ref-gov-ee" title="Federated Governance of Information Sharing Within the Extended Enterprise">[7]</a>.
+                           This is understandable, but not very efficient from an operational
+                           perspective. We have to overcome these limitations and see the goal of
+                           the operations as more important than the individual organizations
+                           ego.
+                  </p>
+                  <p>94. Today's military organizations are experienced and usually
+                           organized around various stovepipe principles. This is a convenient,
+                           straight forward way of defining requirements, responsibilities and
+                           timetables for implementing new and enhanced systems. Operations were
+                           information is expected to be exchanged between both organizations and
+                           technical systems will set new requirements on the procurement process,
+                           working methods and the organizations working those issues.
+                  </p>
+                  <div class="variablelist">
+                     <dl>
+                        <dt><a id="issue13"></a><span class="term">[Issue_13]</span></dt>
+                        <dd>
+                           <p>Data are not generally created to support enterprise needs.
+                                          There are typically technical and political boundaries that
+                                          inhibit this. To "line" applications development organizations,
+                                          enterprise-level requirements for data are typically viewed as
+                                          "external", as their direct customers, and typically the sponsor
+                                          of the application, is not rewarded for serving the greater good,
+                                          but for locally optimizing the performance of their
+                                          organization<a class="xref" href="ch02.html#dr-mil-ref-gov-ee" title="Federated Governance of Information Sharing Within the Extended Enterprise">[7]</a>.
+                           </p>
+                        </dd>
+                     </dl>
+                  </div>
+               </div>
+               <div class="sect2" title="2.2.3. Solution">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title" id="v6s-solution">2.2.3. Solution</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="sect3" title="2.2.3.1. Architecture for interoperability">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="d0e1228">2.2.3.1. Architecture for interoperability</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>95. The most important instrument in resolving the issue of creating
+                                a description for analyzing and describing international military
+                                interoperability as described in <a class="xref" href="ch02s02.html#issue1">[Issue_1]</a> is to
+                                create an architecture. This design rule outlines an architecture
+                                which provides the means to create a foundation for the federation in
+                                which information exchange among parties can take place.
+                     </p>
+                     <p>96. The architecture is described by:</p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>Governing aspects (design principles and rules) used to
+                                             explain and develop architectural principles and structures in
+                                             important areas of the architecture.
+                              </p>
+                           </li>
+                           <li class="listitem">
+                              <p>Common terminology &amp; definitions.</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Structure. How systems, aspects and terminology/definitions
+                                             are organized and grouped.
+                              </p>
+                           </li>
+                           <li class="listitem">
+                              <p>Systems in terms of mission and/or technical systems.</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Services which describe how systems interact.</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <p>97. It is absolutely vital that the architecture addresses both
+                                operational and technical aspects so that there is a clear description
+                                of what purpose the technical implementation has <a class="xref" href="ch02s02.html#principle4">[Principle_4]</a>.
+                     </p>
+                     <div class="sect4" title="2.2.3.1.1. Service Oriented Architecture">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1257">2.2.3.1.1. Service Oriented Architecture</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>98. The Architecture outlined in this Design rule is Service
+                                     Oriented <a class="xref" href="ch02s02.html#principle5">[Principle_5]</a>. The aim of this is to
+                                     achieve a loose coupling of services with underlying systems,
+                                     whether it is mission or technical systems. So, instead of
+                                     describing interaction directly between systems, the systems use
+                                     services to interact with each other. By specifying a contract for
+                                     information exchange, a service definition <a class="xref" href="ch02s02.html#principle6">[Principle_6]</a>, the inside of a system can be replaced or
+                                     modified without having to change other systems which interacts with
+                                     it. Thereby the issue of enabling information exchange between
+                                     heterogeneous systems <a class="xref" href="ch02s02.html#issue8">[Issue_8]</a> is resolved.
+                        </p>
+                        <p>99. Services used or provided by technical systems should as far
+                                     as possible be expressed in a common way and contain formal
+                                     descriptions suitable for IT processing.
+                        </p>
+                        <p>100. The Service description shall contain:</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>The allowed service protocols (process) to be used for
+                                                  information exchange.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>The interfaces (or message types) that are used to
+                                                  exchange information between a service consumer and a service
+                                                  producer.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>The definition of the data types that are used in the
+                                                  interfaces (messages) and therefore are in the information
+                                                  exchange model.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>The properties that consumers can use to distinguish
+                                                  between different implementations of a service.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>101. To enable systems to find and connect to each other,
+                                     information about services shall be published and accessible for the
+                                     collaborating parties' IT systems.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.1.2. Architecture description framework">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1287">2.2.3.1.2. Architecture description framework</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>102. In order for all parties to obtain a common
+                                     "language" on how to describe their systems and the
+                                     services they bring to the federation this design rule also covers
+                                     an architecture description framework. The architecture description
+                                     framework does not describe the architecture itself, but rather
+                                     guides how the architecture shall be structured and what it should
+                                     describe.
+                        </p>
+                        <p>103. The current valid description framework within NATO is the
+                                     NATO Architectural Framework (NAF) version 3<a class="xref" href="ch02.html#dr-mil-ref-naf3" title="NATO Architecture Framework (NAF)">[9]</a> which provide the rules, guidance, and
+                                     product descriptions for developing, presenting and communicating
+                                     architectures which includes both operational aspects as well as
+                                     technical aspects <a class="xref" href="ch02s02.html#principle4">[Principle_4]</a>.
+                        </p>
+                        <p>104. In the Framework, there are seven major perspectives (i.e.,
+                                     views) that logically combine to describe the architecture of an
+                                     enterprise. These are the NATO All View (NAV), NATO Capability View
+                                     (NCV), NATO Programme View (NPV), NATO Operational View (NOV), NATO
+                                     Systems View (NSV), NATO Service-Oriented View (NSOV) and NATO
+                                     Technical View (NTV). Each of the seven views depicts certain
+                                     architecture attributes. Some attributes bridge several views and
+                                     provide integrity, coherence, and consistency to architecture
+                                     descriptions.
+                        </p>
+                        <p>105. To support the creation of views and make sure they are
+                                     consistent, NAF v3 defines a metamodel. The NATO Architecture
+                                     Framework Metamodel (NMM) defines the relationships between the
+                                     different components of the framework. It defines the architectural
+                                     objects and components that are permitted in NAF v3 views and their
+                                     relationships with each other.
+                        </p>
+                        <p>106. There are certain views which are more important when
+                                     designing architectures for multinational operations where
+                                     interoperability is in focus <a class="xref" href="ch02s02.html#issue10">[Issue_10]</a>:
+                        </p>
+                        <p>107. <span class="bold"><strong>NATO All-Views (NAV)</strong></span> which
+                                     capture aspects which overarch all other views. These views set the
+                                     scope and context of the architecture, such as goals and vision,
+                                     scenario and environmental conditions as well as time.
+                        </p>
+                        <p>108. <span class="bold"><strong>NATO Capability View (NCV)</strong></span>
+                                     which explain what capabilities are needed in order to fulfil the
+                                     strategic intent for the mission. Specifically, capabilities related
+                                     to interaction between actors are important to identify in these
+                                     views. If produced correctly, these views can already say a lot of
+                                     which services are needed to fulfil the business needs. In
+                                     particular, the NCV-2, Capability Taxonomy and NCV-7, Capability to
+                                     Services Mapping views are important.
+                        </p>
+                        <p>109. <span class="bold"><strong>NATO Operational View (NOV)</strong></span>
+                                     which is a description of the tasks and activities, operational
+                                     elements, and information exchanges required to accomplish NATO
+                                     missions. To design for interoperability all of these views do not
+                                     have to be complete, but it is important to know which operational
+                                     nodes exist and how they interact (NOV-2). Also, the information
+                                     model defined in the NOV-7 view is important, especially for such
+                                     information for which there are no or unclear standards to rely on.
+                                     When going into more details of the architecture, the requirements
+                                     on information exchange (NOV-3) are necessary to understand.
+                        </p>
+                        <p>110. Currently, the operational views in NAF does not fully support
+                                     modelling of services. The authors of this design rule recommends
+                                     that future versions of NAF are complemented with the capabilities
+                                     of using services to describe interaction between operational nodes
+                                     instead of needlines.
+                        </p>
+                        <p>111. <span class="bold"><strong>NATO Service-Oriented View
+                                           (NSOV)</strong></span> focuses strictly on identifying and describing
+                                     services. The view also supports the description of service
+                                     taxonomies, service orchestrations and a mapping of services to
+                                     operational activities. The service description (NSOV-2) is a key
+                                     component of a Service Oriented Architecture <a class="xref" href="ch02s02.html#principle6">[Principle_6]</a>. It is used to detach the functionality
+                                     provided by a system (or services provided by an organizational
+                                     unit) from the actual system. A service description includes
+                                     information on how to interact with the service, what requirements a
+                                     system must fulfil if it implements the service and what information
+                                     model the services uses. Within NSOV-2 a SIOP can be depicted as a
+                                     higher-level service interface. The detailed technical specification
+                                     of a SIOP is contained within a Service Interoperability Profile
+                                     (SIP). SIPs are addressed in NTV-1 Technical Standards
+                                     Profile.
+                        </p>
+                        <p>112. In the <span class="bold"><strong>NATO Systems View
+                                           (NSV)</strong></span>, the NSV-1 view is the most important since it
+                                     describes how the different systems interact to fulfil the
+                                     operational needs. The system descriptions should be kept on a
+                                     black-box level, i.e. it is not relevant to describe the internals
+                                     of the systems.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="sect3" title="2.2.3.2. Key Principles">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="d0e1331">2.2.3.2. Key Principles</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p><span class="bold"><strong>Sovereignty of collaborating
+                                      parties</strong></span></p>
+                     <p>113. The sovereignty of the collaborating parties is fundamental;
+                                organizational right to use organic information systems and working
+                                methodology with various support tools shall in all situations be
+                                respected. The decision to publish information to the federation is
+                                the responsibility, and right, of each actor. Information content and
+                                possible restrictions will always be any actor's sovereign
+                                decision.
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><a id="principle1"></a><span class="term">[Principle_1]</span></dt>
+                           <dd>
+                              <p>Each collaborating party decides which information to
+                                               publish into the federation.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p><span class="bold"><strong>View on
+                                      information</strong></span></p>
+                     <p>114. Information shall be regarded as an operations wide asset and
+                                not be exclusive to any single operational area or function, with
+                                exceptions for agreed confidentiality. Collaborating parties should
+                                avoid over-classification of information. Information should be
+                                provided as a published service.
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><a id="principle2"></a><span class="term">[Principle_2]</span></dt>
+                           <dd>
+                              <p>Information published into the arena is available to all
+                                               parties, if no restrictions have been agreed.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p><span class="bold"><strong>Agreements for Information
+                                      Exchange</strong></span></p>
+                     <p>115. Agreements to facilitate Information Exchange shall exist for
+                                the operation and between the collaborating parties. The agreements
+                                includes which information is required to be exchanged, models for how
+                                exchanged information shall be structured, how information can be
+                                translated between models and the format of the exchanged
+                                information.
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><a id="principle3"></a><span class="term">[Principle_3]</span></dt>
+                           <dd>
+                              <p>Requirements, models, translations and format for
+                                               information exchange in the arena are regulated by
+                                               agreements.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p><span class="bold"><strong>Architecture</strong></span></p>
+                     <p>116. Establishment of a consistent and understandable architecture
+                                should be supported by a common terminology and a common architecture
+                                description framework. In order to ensure that the technical
+                                architecture fully supports the operational needs, there is a need for
+                                a joint architecture.
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><a id="principle4"></a><span class="term">[Principle_4]</span></dt>
+                           <dd>
+                              <p>The operational and technical aspects of the architecture
+                                               are described using a common description framework.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p>117. The architecture of the federation must support exchange of
+                                information between many heterogeneous systems in order to fit all
+                                actors' needs. A Service Oriented Architecture (SOA) achieves
+                                this by separating information exchange capabilities from business
+                                logic and system specific implementations.
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><a id="principle5"></a><span class="term">[Principle_5]</span></dt>
+                           <dd>
+                              <p>The technical architecture for information exchange
+                                               follows the tenets of the Service Oriented Architecture
+                                               concept.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p>118. OASIS (organization) defines Service as "a mechanism to enable
+                                access to one or more capabilities, where the access is provided using
+                                a prescribed interface and is exercised consistent with constraints
+                                and policies as specified by the service description."
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><a id="principle6"></a><span class="term">[Principle_6]</span></dt>
+                           <dd>
+                              <p>Technical services for information exchange are specified
+                                               in a service description.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p><span class="bold"><strong>Technology</strong></span></p>
+                     <p>119. Open and accepted international standards, both civilian and
+                                military should be used. Bespoke and proprietary standards shall only
+                                be considered when it delivers significant higher value.
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><a id="principle7"></a><span class="term">[Principle_7]</span></dt>
+                           <dd>
+                              <p>Technical services for information exchange uses open
+                                               standards whenever possible.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p><span class="bold"><strong>Security</strong></span></p>
+                     <p>120. To achieve information exchange in a secure way using services,
+                                a set of principles which guides the use of security functions is
+                                needed:
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><a id="principle8"></a><span class="term">[Principle_8]</span></dt>
+                           <dd>
+                              <p>Service consumers and service providers use a common
+                                               methods for authentication and authorization of users and
+                                               services.
+                              </p>
+                           </dd>
+                           <dt><a id="principle9"></a><span class="term">[Principle_9]</span></dt>
+                           <dd>
+                              <p>There is a common method to obtain integrity by which a
+                                               service consumer can check that the data sent from another part
+                                               is not changed by a third part.
+                              </p>
+                           </dd>
+                           <dt><a id="principle10"></a><span class="term">[Principle_10]</span></dt>
+                           <dd>
+                              <p>There is a common method to guarantee the confidentiality
+                                               of the information exchanged. This means that it is possible to
+                                               prevent outsiders from getting access to the information that is
+                                               exchanged.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p>121. It is important to remember that these principles only apply
+                                between the borders of the actors in the federation, not end-to-end
+                                between users. The reason for this is that it is very hard and cost
+                                driving to govern how security mechanisms shall be implemented within
+                                an actor.
+                     </p>
+                  </div>
+                  <div class="sect3" title="2.2.3.3. The information aspect">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="v6s-infoaspect">2.2.3.3. The information aspect</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>122. In order to meet operational needs for information exchange and
+                                to build a federation, supported by technical systems serving as
+                                operational nodes, a number of areas must be addressed:
+                     </p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>Information Exchange Requirement specifications</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Information Exchange Models within collaboration areas and
+                                             their relation to international standards, domain Community Of
+                                             Interest (COI) models, semantic structures etc
+                              </p>
+                           </li>
+                           <li class="listitem">
+                              <p>Translation specifications and translation mechanisms</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Specification of information exchange mechanisms in the
+                                             federation e.g. common data management services, mediation
+                                             services and bridges to external systems
+                              </p>
+                           </li>
+                        </ul>
+                     </div>
+                     <p>123. Documenting the above according to <a class="xref" href="ch02s02.html#principle3">[Principle_3]</a>
+                                address issues <a class="xref" href="ch02s02.html#issue1">[Issue_1]</a>, <a class="xref" href="ch02s02.html#issue2">[Issue_2]</a>,
+                                <a class="xref" href="ch02s02.html#issue4">[Issue_4]</a>, <a class="xref" href="ch02s02.html#issue5">[Issue_5]</a>, <a class="xref" href="ch02s02.html#issue6">[Issue_6]</a> and <a class="xref" href="ch02s02.html#issue9">[Issue_9]</a> by creating
+                                agreements of what information is to be exchanged, how to interpret
+                                the information and which mechanisms are utilised to enable the
+                                information exchange.
+                     </p>
+                     <p>124. This chapter covers the definition aspect of information,
+                                technologies which implement these definitions, like for example
+                                mediation, are covered in <a class="xref" href="ch02s02.html#v6s-solution" title="2.2.3. Solution">Section 2.2.3</a>.
+                     </p>
+                     <div class="sect4" title="2.2.3.3.1. Information Exchange Requirements">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1476">2.2.3.3.1. Information Exchange Requirements</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>125. An Information Exchange Requirement (IER) is a specification
+                                     of the required information exchanged between operational nodes.
+                                     IERs are identified in the business modelling process and specify
+                                     the elements of the user information used in support of a particular
+                                     activity. The specification is done according to the NOV-3 view of
+                                     NAF<a class="xref" href="ch02.html#dr-mil-ref-naf3" title="NATO Architecture Framework (NAF)">[9]</a>.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.3.2. Information Exchange Models">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1483">2.2.3.3.2. Information Exchange Models</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>126. An Information Exchange Model (IEM) is a specification of the
+                                     information which are exchanged between operational nodes. IEMs are
+                                     used when deciding which information objects are to be exchanged in
+                                     service interactions. The specification is done according to the
+                                     NOV-7 view of NAF<a class="xref" href="ch02.html#dr-mil-ref-naf3" title="NATO Architecture Framework (NAF)">[9]</a>.
+                        </p>
+                        <p>127. An IEM is constructed top-down based on model elements from
+                                     other existing Information Models e.g. standards as well as
+                                     bottom-up based on information requirements specifications from
+                                     Operational Concepts and Requirements Implications (OCRI)<a class="xref" href="ch02.html#dr-mil-ref-nisp-vol1v3" title="NISP Volume 1">[8]</a>.
+                        </p>
+                        <p>128. When designing Information Exchange Models several different
+                                     approaches exist:
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Model based, e.g. JC3IEDM, ISO19100 series</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Ontology based e.g. Semantic web</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Message based e.g. ADatP-3</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>129. Given the timeframe for this design rule, a model based
+                                     approach is the best approach considering what the technology can
+                                     handle and results from ongoing modelling work. The ontology based
+                                     approach can be adopted at a later stage when the technology and
+                                     methods are more mature while the message based approach is to be
+                                     avoided if possible since it cannot handle the complexity of
+                                     integrated models.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.3.3. Translations">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1508">2.2.3.3.3. Translations</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>130. There may be a large number of translations between two
+                                     information models. Each translation is based on thorough analysis
+                                     and is documented in a translation specification together with
+                                     estimates of information loss.
+                        </p>
+                        <p>131. There are different approaches to making translations between
+                                     the models:
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Manual model mapping, that is when two models are compared
+                                                  and decision are made at element level on how to map and/or
+                                                  translate to the other models. This is often the case when the
+                                                  models to compare are documented according to different
+                                                  standards regarding ontological metadata notation, modelling
+                                                  style etc.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Rule based model mapping that is when two models are
+                                                  compared and mapped to each other based on formalized rules.
+                                                  Automated translation has the potential to be applied in
+                                                  runtime, thus increasing flexibility in information
+                                                  exchange.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>132. Technologies which perform automated translation between
+                                     information models is not yet available to any greater extent.
+                                     Therefore, the translation technologies described in <a class="xref" href="ch02s02.html#v6s-medserv" title="2.2.3.5.6. Mediation Services">Section 2.2.3.5.6</a> focuses on supporting translation rules
+                                     which are based on manual model mappings.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.3.4. Information Exchange Objects">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1526">2.2.3.3.4. Information Exchange Objects</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>133. An information object is a set of data elements that are
+                                     contained and treated as one unit. The content structure may vary in
+                                     complexity from the simplest form with a number of data elements and
+                                     an identifier to complex data structures and large quantities of
+                                     data elements. Examples of information objects are documents,
+                                     messages and data sets such as geographical data sets.
+                        </p>
+                        <p>134. Information objects are created, processed, stored and
+                                     moved/exchanged via services. An information exchange object is a
+                                     standardised view, or an excerpt from, an information exchange model
+                                     which from a technical point of view is suitable to exchange as a
+                                     coherent set. Thus information exchange objects is a subset of all
+                                     information objects which are meant to be exchanged via
+                                     services.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.3.5. Services and the information aspect">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1533">2.2.3.3.5. Services and the information aspect</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>135. In a Service Oriented Architecture <a class="xref" href="ch02s02.html#principle5">[Principle_5]</a>, information objects are created, processed,
+                                     stored and moved/exchanged via services. Therefore it is important
+                                     to understand the architectural relationship between services and
+                                     information. I.e. how are services and information specified in
+                                     order to enable the implementation of a service oriented
+                                     architecture.
+                        </p>
+                        <p>136. As depicted in <a class="xref" href="ch02s02.html#v6f-servinfasp" title="Figure 2.3. Services and the information aspect">Figure 2.3</a>, a service
+                                     has operations. They are used for specification of how a consumer
+                                     can interact with the service, for example create, read, update,
+                                     delete. An operation requires one or more information objects to be
+                                     exchanged between the consumer and provider, for example a message
+                                     or a document. These exchange objects are excerpts from an
+                                     information exchange model.
+                        </p>
+                        <div class="figure"><a id="v6f-servinfasp"></a><p></p>
+                           <div class="figure-contents">
+                              <div class="mediaobject"><img src="../figures/dr-mil-servinfasp.png" alt="Services and the information aspect" /></div>
+                           </div>
+                           <p class="title"><strong>Figure 2.3. Services and the information aspect</strong></p>
+                        </div><br class="figure-break" /><p>137. Translations are use to describe how information exchange
+                                     models relate to each other and can also be used by mechanisms to
+                                     automatically translate exchange objects from different information
+                                     models. Information exchange requirements are set on service
+                                     operations and exchange objects, i.e. what functionality shall the
+                                     service provide and what information shall it handle.
+                        </p>
+                     </div>
+                  </div>
+                  <div class="sect3" title="2.2.3.4. The security aspect">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="d0e1554">2.2.3.4. The security aspect</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>138. When determining appropriate security solutions for a federation
+                                it is of outmost importance to analyse the information which needs to
+                                be assured. This is important in order to avoid a "too
+                                secure" solution, thus introducing higher costs and more
+                                difficult procedures than needed. The flexibility which is introduced
+                                by the NNEC concept requires a constant analysis of the need for
+                                information confidentiality, integrity and availability (CIA). Also,
+                                time needs to be considered in these analyses, i.e. how long does the
+                                information need to be protected.
+                     </p>
+                     <p>139. This design rule does not cover how to perform CIA analyses, but
+                                it is certain that there is a need to be able to handle different
+                                levels of security in the federation. A set of scenarios has been
+                                defined in the IEG concept<a class="xref" href="ch02.html#dr-mil-gwimpl" title="Guidance Document on the Implementation of Gateways for Information Exchange between NATO and External CIS Communities">[10]</a> which are
+                                used in this design rule to handle difference in security
+                                levels.
+                     </p>
+                     <p><span class="bold"><strong>The Information Exchange Gateway
+                                      Concept</strong></span></p>
+                     <p>140. Information Exchange Gateways (IEGs) are used to protect
+                                information assets of the participants in the federation. Since each
+                                participant provides an IEG to protect their assets there is a need to
+                                standardise the services and the architecture of IEGs in order to
+                                enable sharing of IEG components between the participants and use of
+                                commercially available technology. The NATO IEG concept<a class="xref" href="ch02.html#dr-mil-gwimpl" title="Guidance Document on the Implementation of Gateways for Information Exchange between NATO and External CIS Communities">[10]</a> describes that each IEG has three major
+                                services:
+                     </p>
+                     <p>141. "The first is the Node Protection Service (NPS). The NPS
+                                provides protection to the infrastructure; its purpose is to protect
+                                the physical assets of the "node" or nation being
+                                protected by the IEG."
+                     </p>
+                     <p>142. "The second major component/service is the Information
+                                Protection Service (IPS). NATO and each nation are responsible for
+                                protecting the flow of information out of its area (node or network).
+                                The mechanisms used to protect the information flow must satisfy the
+                                organization (nation or NATO) that the IEG is
+                                protecting."
+                     </p>
+                     <p>143. "The third major component/service is the Information
+                                Exchange Service (IES). The IEG must facilitate the flow of
+                                information between the protected node/network and the external
+                                organizations that are authorized (by the Information Protection
+                                Service)."
+                     </p>
+                     <p>144. Together these services provide the solution to issues <a class="xref" href="ch02s02.html#issue3">[Issue_3]</a>, <a class="xref" href="ch02s02.html#issue11">[Issue_11]</a> and <a class="xref" href="ch02s02.html#issue12">[Issue_12]</a>. More details on the implementation of IEGs can
+                                be found in <a class="xref" href="ch02s02.html#v6s-infassserv" title="2.2.3.5.7. Information Assurance Services">Section 2.2.3.5.7</a>.
+                     </p>
+                     <p><span class="bold"><strong>Information zones</strong></span></p>
+                     <p>145. Information Zones is a concept identified and defined  to achieve confidentiality with high assurance, for a gathering
+                                of information within a defined perimeter, and interactions to its
+                                surrounding with a number of services and nodes inside the zone. The
+                                concept gives the advantage to separate assurance on security
+                                mechanisms to meet external and internal threats.
+                     </p>
+                     <p>146. In a federative approach such as the one described in this
+                                design rule, each federation participant (actor) is to be considered
+                                as (at least) one information zone. The reason for this is that there
+                                is a clear responsibility for information and information management
+                                within each actor. At the border of the information zones there are
+                                Information Exchange Gateways (IEG) which protects the information
+                                within the zone and allows controlled sharing of information between
+                                information zones. See <a class="xref" href="ch02s02.html#v6f-fedinfozones" title="Figure 2.4. Informationzones in the federation">Figure 2.4</a>.
+                     </p>
+                     <div class="figure"><a id="v6f-fedinfozones"></a><p></p>
+                        <div class="figure-contents">
+                           <div class="mediaobject"><img src="../figures/dr-mil-fedinfozones.png" alt="Informationzones in the federation" /></div>
+                        </div>
+                        <p class="title"><strong>Figure 2.4. Informationzones in the federation</strong></p>
+                     </div><br class="figure-break" /><p>147. The information classification level in each zone will differ
+                                and therefore the information assurance level needs to be adjusted
+                                accordingly. I.e. the more sensitive information within a zone, the
+                                more protection and dissemination control is needed.
+                     </p>
+                     <p>148. By basing the security on information zones with boundary
+                                protection and controlled information flow and access to the zone, it
+                                is made easier to achieve high assurance since only a few mechanisms,
+                                i.e. the IEG, needs to be inspected/evaluated to meet the security
+                                requirement.
+                     </p>
+                     <p>149. In the federation there may be several information zones
+                                depending on the classification of exchanged information. However, the
+                                number of information zones should be kept to a minimum in order to
+                                avoid unnecessary costs and complexity for implementation and
+                                maintenance of the federation.
+                     </p>
+                  </div>
+                  <div class="sect3" title="2.2.3.5. Technology and profiles">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="v6s-techprofiles">2.2.3.5. Technology and profiles</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>150. As mentioned in <a class="xref" href="ch02s02.html#v6s-intmilfed" title="2.2.1.2. The International Military Federation">Section 2.2.1.2</a>, there is
+                                "a need to establish a baseline federation agreement which can
+                                be used as a starting point when creating new missions". The
+                                technology described in this chapter supports the creation of such an
+                                agreement by addressing <a class="xref" href="ch02s02.html#issue9">[Issue_9]</a> &gt; "Which
+                                standards, formats and mechanisms for information exchange should be
+                                used?"
+                     </p>
+                     <p>151. In other terms, the standards, formats and mechanisms defined in
+                                this chapter shall serve as the baseline for an international military
+                                federation.
+                     </p>
+                     <p>152. There are two basic user requirements defined in <a class="xref" href="ch02s02.html#v6s-problem" title="2.2.2. Problem">Section 2.2.2</a> which acts as drivers for the technology
+                                defined in this chapter. These requirements are:
+                     </p>
+                     <div class="variablelist">
+                        <dl>
+                           <dt><span class="term">[IER 1]</span></dt>
+                           <dd>
+                              <p>People from the different organisational actors SHALL be
+                                               able to communicate with each other using voice or text
+                                               communication.
+                              </p>
+                           </dd>
+                           <dt><span class="term">[IER 2]</span></dt>
+                           <dd>
+                              <p>It SHALL be possible to discover and retrieve information
+                                               (i.e. search) provided to the federation by different
+                                               actors.
+                              </p>
+                           </dd>
+                        </dl>
+                     </div>
+                     <p>153. To be able to fulfil these requirements, a set of technical
+                                capabilities are needed. First of all, there must be network (IP)
+                                connectivity between the actors in the federation; however this is not
+                                covered by this design rule. Once network connectivity is established,
+                                the technical systems of the actors need to be able to publish and
+                                find the services which are to be used. Of course, all communication
+                                in the federation network must be secured by relevant security
+                                mechanisms.
+                     </p>
+                     <p>154. In order to fulfil <a class="xref" href="ch02s02.html#ier1">[IER 1]</a>, users first need to
+                                be able to find each other and once they have done that they can start
+                                collaborating.
+                     </p>
+                     <p>155. To fulfil <a class="xref" href="ch02s02.html#ier2">[IER 2]</a> the Information Discovery
+                                Services are used to find relevant information. To retrieve the
+                                information, Messaging Services can be used. In some cases the
+                                information models used by the different actors does not match and
+                                then the Translation Services are used to translate the
+                                content.
+                     </p>
+                     <p>156. Lastly, it is important for the actors in the federation to know
+                                the status of the services in the federation, especially if there are
+                                mission critical services which are provided by other actors.
+                     </p>
+                     <p>157. The following chapters describe the above in more detail giving
+                                advice how to implement the technologies needed to provide these
+                                services.
+                     </p>
+                     <div class="sect4" title="2.2.3.5.1. Discovery services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1653">2.2.3.5.1. Discovery services</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p><span class="bold"><strong>Service Discovery
+                                           Services</strong></span></p>
+                        <p>158. The Service registry enables the technical systems to discover
+                                     each other. The service registry is a vital part needed for enabling
+                                     the loose coupling between systems since it provides functionality
+                                     for the systems to find each other , with such registry the
+                                     relationships between the systems does not need to be hard coded
+                                     into the systems. This means that it will be easy to add or remove
+                                     participants and services from the federation.
+                        </p>
+                        <p>159. The Service registry SHALL be implemented using UDDI v3
+                                     according to NISP<a class="xref" href="ch02.html#dr-mil-ref-nisp-vol3v3" title="NISP Volume 3, Version 3">[12]</a>. In order
+                                     to achieve high availability and allow each participant to be able
+                                     to publish services, the Service registry shall be implemented using
+                                     a replication pattern. I.e. the service registry is replicated
+                                     between all participants in the federation.
+                        </p>
+                        <p>160. The Service registry SHALL include the following information
+                                     (metadata):
+                        </p>
+                        <p>Service provider</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Unique id, Name, Description</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>Service type</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Unique id, Name, Description, Version</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>Service instance</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Unique id, Name, Description,Service interfaces (bindings
+                                                  e.g. WSDL) and applicable security mechanisms, Endpoint (e.g.
+                                                  URL), Owner - both service provider and human user owning the
+                                                  service, Security Classification - UNCLASS, RESTRICTED
+                                                  etc
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p><span class="bold"><strong>Information Discovery
+                                           Services</strong></span></p>
+                        <p>161. Each actor in a federation holds information which might be
+                                     relevant to other actors. Therefore it is of outmost importance that
+                                     there are mechanisms to discover information across actors. These
+                                     mechanisms have to include the capability for an actor to decide
+                                     which information shall be available to others according to <a class="xref" href="ch02s02.html#principle1">[Principle_1]</a> and <a class="xref" href="ch02s02.html#principle2">[Principle_2]</a>.
+                        </p>
+                        <p>162. There are mainly two ways of making the information discovery
+                                     happen. One is to copy information between actors and let each actor
+                                     make the information searchable, but this is not very efficient
+                                     since it requires a lot of bandwidth and makes it hard to keep track
+                                     of which information has been copied.
+                        </p>
+                        <p>163. The other way of enabling information discovery is to use a
+                                     federated search pattern where each actor provides a search
+                                     interface to its information. This is much more efficient from a
+                                     data distribution point of view, but requires that all actors come
+                                     to agreement on the search interface. There are initiatives ongoing
+                                     to standardise the ability to perform federated search, the most
+                                     prominent one is the OpenSearch initiative<sup>[<a id="d0e1698" href="#ftn.d0e1698" class="footnote">1</a>]</sup>. Even though OpenSearch is not a formal standard it is
+                                     well on its way to be adopted by many of the major tool
+                                     vendors.
+                        </p>
+                        <p>164. In either case, the actors in the federation must implement
+                                     search engines which can index information (if the have any) and
+                                     search clients which can access the search engines. A search client
+                                     is in most cases an ordinary web browser, but can also be a more
+                                     complex application if there are specific needs.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.5.2. Repository Services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1704">2.2.3.5.2. Repository Services</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p><span class="bold"><strong>Metadata Registry
+                                           Services</strong></span></p>
+                        <p>165. A metadata registry is a database which contains information
+                                     about information which is useful for enabling information
+                                     discovery. For example, search engines create metadata registries
+                                     when they index content. But there are also other applications for
+                                     metadata registries, like when an actor has sensitive information
+                                     which needs to be able to be discovered. Say that there is a
+                                     database which contains classified analyses of some sort. The
+                                     analyses are of very good quality and can be of use to many, but it
+                                     is impossible to publish them to everyone in the federation. So in
+                                     order to make other actors aware that the analysis exists,
+                                     unclassified analysis metadata, like what the analysis looks at and
+                                     who has done it, can be published in a metadata repository. Now the
+                                     other actors can discover that there is an analysis and contact the
+                                     author to get approval for getting the contents.
+                        </p>
+                        <p>166. To be able to store the metadata, the NATO Discovery Metadata
+                                     Specification (NDMS) SHALL be used. This specification is based on
+                                     the international standard ISO 15836 the Dublin Core (DC) Metadata
+                                     Element Set.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.5.3. Directory Services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1714">2.2.3.5.3. Directory Services</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p><span class="bold"><strong>Enterprise Directory
+                                           Services</strong></span></p>
+                        <p>167. Sharing information about users is key to a federation since
+                                     it enables people to find each other. The user directory holds
+                                     information which enables authentication of users by certificates
+                                     and public keys, authorization of users by roles and discovery of
+                                     users by contact information which enables collaboration.
+                        </p>
+                        <p>168. Each actor in the network shall provide information about the
+                                     users that represents them. However, it is preferable if the
+                                     federation has one point of access to all user directories.
+                                     Therefore, the implementation of user directories in a federation
+                                     shall follow the federated database pattern. This means that each
+                                     actor provides their own database, but one actor provides a single
+                                     entry point to all databases.
+                        </p>
+                        <p>169. For the user registry LDAP shall be used according to
+                                     NISP<a class="xref" href="ch02.html#dr-mil-ref-nisp-vol3v3" title="NISP Volume 3, Version 3">[12]</a>. Products which can
+                                     provide the single entry point to multiple LDAP databases are often
+                                     referred to as Virtual LDAPs.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.5.4. Collaboration Services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1728">2.2.3.5.4. Collaboration Services</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p><span class="bold"><strong>Audio based conference
+                                           service</strong></span></p>
+                        <p>170. For voice communications standards SHALL be applied as
+                                     according to TACOMS<a class="xref" href="ch02.html#dr-mil-ref-tacoms" title="TACOMS Post 2000 Profile">[13]</a>. Streaming
+                                     voice and video communication cannot be handled by the IEGs, TACOMS
+                                     describes how to implement this functionality without the use of
+                                     IEGs.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.5.5. Messaging Services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="v6s-messserv">2.2.3.5.5. Messaging Services</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p><span class="bold"><strong>Server-to-server e-mail messaging
+                                           service</strong></span></p>
+                        <p>171. E-mail has become one of the most important applications for
+                                     any business or organization of today. The main challenge for using
+                                     e-mail in a federation is to be able to control that no classified
+                                     information is embedded or attached to e-mails going out from an
+                                     actor and protecting the actors from malicious software, such as
+                                     viruses. This means that the IEG needs to be able to scan and filter
+                                     incoming and outgoing messages.
+                        </p>
+                        <p>172. Extra care needs to be taken for outgoing information where
+                                     confidential information can be hidden in document history and
+                                     inside images. Therefore, only text-based attachments (like
+                                     OpenDocument Format or Office Open XML, see NISP<a class="xref" href="ch02.html#dr-mil-ref-nisp-vol3v3" title="NISP Volume 3, Version 3">[12]</a>) without inserted code or images
+                                     shall be allowed through the IEG.
+                        </p>
+                        <p>173. It is also vital to have a manual inspection capability in the
+                                     IEG to be able to assess the degree of confidentiality of the e-mail
+                                     messages leaving an actor.
+                        </p>
+                        <p>174. As described by NISP<a class="xref" href="ch02.html#dr-mil-ref-nisp-vol3v3" title="NISP Volume 3, Version 3">[12]</a>,
+                                     SMTP according to RFC 2821 and others SHALL be used for e-mail. To
+                                     secure communication between SMTP agents, TLS according to RFC 3207,
+                                     SHOULD be used.
+                        </p>
+                        <p><span class="bold"><strong>Instant messaging
+                                           service</strong></span></p>
+                        <p>175. For instant messaging XMPP (IETF RFC3920:2004 -3923:2004)
+                                     SHALL be used according to NISP<a class="xref" href="ch02.html#dr-mil-ref-nisp-vol3v3" title="NISP Volume 3, Version 3">[12]</a>. XMPP is an XML based
+                                     publish/subscribe protocol which is used by most of the dominant
+                                     tool vendors. Using XML enables possibility for inspection and
+                                     control of messages in IEGs which is very important in a
+                                     federation.
+                        </p>
+                        <p>176. There is one important aspect of XMPP which is not covered by
+                                     the current standard specification; there is no security tagging
+                                     options available which is needed when messages shall be passed
+                                     between information zones with different security classifications.
+                                     So if this is required a custom extension to XMPP needs to be
+                                     defined.
+                        </p>
+                        <p>177. Another thing which must be considered in a federation is
+                                     routing of messages. Currently there are no XMPP servers which
+                                     support routing of XMPP messages. This consequence of not being able
+                                     to route messages is that the IEG has to be implemented as a
+                                     transparent proxy, i.e. the systems on the outside of the IEG need
+                                     to know about the systems on the inside. Even though the IEG can be
+                                     used for inspection and filtering of messages in this case; it is
+                                     not always a preferred solution from a security perspective. So, if
+                                     the security requirements say that the IEG needs to act as a
+                                     non-transparent proxy, the XMPP server needs to be modified to be
+                                     able to act as an XMPP server and be able to route messages between
+                                     XMPP domains.
+                        </p>
+                        <p><span class="bold"><strong>Message passing
+                                           service</strong></span></p>
+                        <p>178. In order to achieve an efficient exchange of information
+                                     between the actors in a federation there is a need to be able to
+                                     route and distribute messages. This type of capability is often
+                                     included in the Enterprise Service Bus (ESB) concept.
+                        </p>
+                        <p>179. An ESB refers to a software architecture construct,
+                                     implemented by technologies found in a category of middleware
+                                     infrastructure products usually based on Web services standards that
+                                     provides foundational services for more complex service-oriented
+                                     architectures.
+                        </p>
+                        <p>180. An ESB generally provides an abstraction layer on top of an
+                                     implementation of an Enterprise Messaging System which allows
+                                     integration architects to exploit the value of messaging without
+                                     writing code.
+                        </p>
+                        <p>181. The ESB shall enable endpoints to interact in their native
+                                     interaction modes through the bus. It shall support a variety of
+                                     endpoint protocols and interaction styles. These interaction
+                                     patterns are the least which shall be supported:
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Request/response: Handles request/response-style
+                                                  interactions between endpoints. The ESB is based on a messaging
+                                                  model, so a request/response interaction is handled by two
+                                                  related one-way message flows -- one for the request and one for
+                                                  the response.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Request/multi-response: A variant of the above, where more
+                                                  than one response can be sent. Is often referred to as a
+                                                  subscription pattern.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Event propagation: Events may be anonymously distributed
+                                                  to an ESB-managed list of interested parties. Services may be
+                                                  able to add themselves to the list.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>182. When passing messages in the above patterns, the ESB SHALL be
+                                     able to perform the following:
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Route: Changes the route of a message, selecting among
+                                                  service providers that support the requester's intent. Selection
+                                                  criteria can include message content and context, as well as the
+                                                  targets' capabilities.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Distribute: Distributes the message to a set of interested
+                                                  parties and is usually driven by the subscribers' interest
+                                                  profiles.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>183. The ESB SHALL be able to handle the following formats and
+                                     protocols:
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>SOAP over HTTP for Web Services</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>JMS for Java messages</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>XMPP for Instant messaging and XML based Publish subscribe
+                                                  messaging
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>184. When implementing the ESB concept in federations there are
+                                     some things which must be considered. First, the products which
+                                     realize the messaging and mediation capabilities needs to be the
+                                     same everywhere since there are very small chances of realizing
+                                     integration between two different products due to a lack of
+                                     standardization. This means that the federation agreement must
+                                     include which product to use.
+                        </p>
+                        <p>185. Secondly, the management of rules for transformation of
+                                     messages needs to be considered. ESB and messaging products are
+                                     often built for central management of transformation rules, thus
+                                     enabling a better control over the messaging capabilities in an
+                                     enterprise. However, this can be problematic in a federative
+                                     approach since all actors need to agree on the transformation rules
+                                     or appoint one actor which has the authority to manage these.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.5.6. Mediation Services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="v6s-medserv">2.2.3.5.6. Mediation Services</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p><span class="bold"><strong>Translation
+                                           Services</strong></span></p>
+                        <p>186. Translation is about manipulating messages in-flight between a
+                                     service provider and a consumer (requests or events). This means
+                                     that messages dispatched by a requester are transformed into
+                                     messages understood by a slightly incompatible provider selected
+                                     from a set of potential endpoints.
+                        </p>
+                        <p>187. Translation services are often considered being a part of the
+                                     ESB concept.
+                        </p>
+                        <p>188. The patterns which translation products SHALL be able to
+                                     handle are:
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p><span class="bold"><strong>Protocol switch</strong></span>: Enables
+                                                  service requesters to dispatch their messages using a variety of
+                                                  interaction protocols or APIs, such as SOAP/HTTP and JMS.
+                                                  Transcodes requests into the targeted service provider's format.
+                                                  Can be applied at the requester or the provider end of an
+                                                  interaction, at both ends, or anywhere in between.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p><span class="bold"><strong>Transform</strong></span>: Translates the
+                                                  message payload (content) from the requester's schema to the
+                                                  provider's schema. This may include enveloping, de-enveloping,
+                                                  or encryption.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p><span class="bold"><strong>Enrich</strong></span>: Augments the
+                                                  message payload by adding information from external data
+                                                  sources, such as customization parameters defined by the
+                                                  mediation, or from database queries.
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p><span class="bold"><strong>Correlate</strong></span>: Derives
+                                                  complex events from message or event streams. Includes rules for
+                                                  pattern identification and rules that react to pattern
+                                                  discovery, for example, by generating a complex event derived
+                                                  from content of the triggering event stream.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>189. Also see <a class="xref" href="ch02s02.html#v6s-messserv" title="2.2.3.5.5. Messaging Services">Section 2.2.3.5.5</a> for details in ESB
+                                     implementation.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.5.7. Information Assurance Services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="v6s-infassserv">2.2.3.5.7. Information Assurance Services</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>190. As a minimum baseline for IEGs in a federation, the following
+                                     shall be implemented in order to fulfil <a class="xref" href="ch02s02.html#principle8">[Principle_8]</a>, <a class="xref" href="ch02s02.html#principle9">[Principle_9]</a> and <a class="xref" href="ch02s02.html#principle10">[Principle_10]</a>:
+                        </p>
+                        <p>191. The IEGs shall include a Information Protection Service (IPS).
+                                     This shall provide the following services:
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Authentication to verify the identity of users and systems
+                                                  sending/receiving data
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Authorization to verify rights for users and systems to
+                                                  send/receive data
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Content encryption/decryption capabilities to assure
+                                                  confidentiality and integrity of the data
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Information dissemination control to be able to control
+                                                  which data is passed through the IEG.
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>192. To be able to inspect the data flowing through the IEG, the
+                                     data must be unencrypted. The IEG can send and receive encrypted
+                                     data, but encrypted data must be decrypted by the IEG before it can
+                                     be inspected and decrypted again for further transport.
+                        </p>
+                        <p>193. The Information Exchange Service (IES) which the IEG shall be
+                                     able to handle is described in the other technology sections of
+                                     <a class="xref" href="ch02s02.html#v6s-techprofiles" title="2.2.3.5. Technology and profiles">Section 2.2.3.5</a>.
+                        </p>
+                        <p>194. The requirements for Node Protection Service (NPS) is not
+                                     determined by this design rule, however some type of node protection
+                                     is always needed. Since this design rule does not cover the
+                                     communication layer, there is a need to create a design rule which
+                                     describes this.
+                        </p>
+                     </div>
+                     <div class="sect4" title="2.2.3.5.8. Service Management Services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h5 class="title" id="d0e1884">2.2.3.5.8. Service Management Services</h5>
+                              </div>
+                           </div>
+                        </div>
+                        <p>195. Service management can be divided into managing, where the
+                                     technical systems and services are being controlled, and monitoring
+                                     where information regarding the status of the technical systems and
+                                     services are shared.
+                        </p>
+                        <p>196. In a federation, the participants may be able to managed
+                                     systems and services provided by other participants, but this is
+                                     unlikely due to information responsibility of organizations. I.e. a
+                                     participant which is responsible for the information within its
+                                     information zone will not let another actor have administrative
+                                     privileges to the system where this information resides.
+                        </p>
+                        <p>197. However, sharing monitoring information between the
+                                     participants is essential if the Service Level Agreements (SLAs)
+                                     shall be fulfilled. These SLAs are included in the agreements for
+                                     information exchange as specified by <a class="xref" href="ch02s02.html#principle3">[Principle_3]</a>.
+                        </p>
+                        <p>198. Monitoring information is to be provided using the Simple
+                                     Network Management Protocol version 3 (SNMP v3) standard according
+                                     to NISP<a class="xref" href="ch02.html#dr-mil-ref-nisp-vol3v3" title="NISP Volume 3, Version 3">[12]</a>. Using a non-XML
+                                     based format for monitoring, like SNMP, will require a special
+                                     filtering engine in the IEG IPS (see chapter <a class="xref" href="ch02s02.html#v6s-infassserv" title="2.2.3.5.7. Information Assurance Services">Section 2.2.3.5.7</a>).
+                        </p>
+                        <p>199. It is important to set the monitoring scope properly when
+                                     implementing the monitoring solution in order to avoid dissemination
+                                     of to much information into the federation. Therefore, monitoring
+                                     information SHALL only be provided regarding the services which are
+                                     provided by an actor. Important metrics to provide monitoring
+                                     information about are:
+                        </p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Availability of services, both past, current and future
+                                                  (planned outages)
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Performance in the form of response times and
+                                                  throughput
+                                 </p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Capacity, like for example maximum number of users or used
+                                                  storage space
+                                 </p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="sect3" title="2.2.3.6. Summary">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h4 class="title" id="d0e1913">2.2.3.6. Summary</h4>
+                           </div>
+                        </div>
+                     </div>
+                     <p>200. To summarize, <a class="xref" href="ch02s02.html#v6f-techoverview" title="Figure 2.5. Technology Overview">Figure 2.5</a> depicts all
+                                the technologies mentioned in the chapters above. Together these
+                                technologies provide the foundation for secure information exchange in
+                                a multilateral collaboration federation in the NNEC context.
+                     </p>
+                     <div class="figure"><a id="v6f-techoverview"></a><p></p>
+                        <div class="figure-contents">
+                           <div class="mediaobject"><img src="../figures/dr-mil-techoverview.png" alt="Technology Overview" /></div>
+                        </div>
+                        <p class="title"><strong>Figure 2.5. Technology Overview</strong></p>
+                     </div><br class="figure-break" /></div>
+               </div>
+               <div class="sect2" title="2.2.4. Rejected solutions">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title" id="d0e1928">2.2.4. Rejected solutions</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="footnotes"><br /><hr width="100" align="left" />
+                  <div class="footnote">
+                     <p><sup>[<a id="ftn.d0e1698" href="#d0e1698" class="para">1</a>] </sup>http://www.opensearch.org/
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="navfooter">
+               <hr />
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="ch02.html">&lt; Prev</a> 
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="ch02.html">Up</a></td>
+                     <td width="40%" align="right"> <a accesskey="n" href="ch02s03.html">Next &gt;</a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top"> </td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td>
+                     <td width="40%" align="right" valign="top"> </td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <div id="footer">Copyright © NATO - OTAN 1998-2011 | <a href="../disclaimer.html">Disclaimer</a></div>
+   </body>
+</html>

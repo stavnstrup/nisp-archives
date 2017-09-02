@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Appendix&nbsp;A.&nbsp;STANAG Transformation Framework</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="ch02s06.html" title="2.6.&nbsp;Meta data">
+      <link rel="next" href="apas02.html" title="A.2.&nbsp;Executive Summary">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;NISP Design Rules">
+      <link rel="chapter" href="ch02.html" title="Chapter&nbsp;2.&nbsp;International Military Interoperability for information exchange in the NNEC context">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;STANAG Transformation Framework">
+      <link rel="section" href="apa.html#one-introduction" title="A.1.&nbsp;Introduction">
+      <link rel="section" href="apas02.html" title="A.2.&nbsp;Executive Summary">
+      <link rel="section" href="apas03.html" title="A.3.&nbsp;Recommendations">
+      <link rel="section" href="apas04.html" title="A.4.&nbsp;Document Information">
+      <link rel="section" href="apas05.html" title="A.5.&nbsp;Analysis">
+      <link rel="section" href="apas06.html" title="A.6.&nbsp;Relations to other products">
+      <link rel="section" href="apas07.html" title="A.7.&nbsp;V&amp;V (Verification and Validation)">
+      <link rel="section" href="apas08.html" title="A.8.&nbsp;Methods">
+      <link rel="section" href="apas09.html" title="A.9.&nbsp;Tools">
+      <link rel="section" href="apas10.html" title="A.10.&nbsp;Outstanding questions">
+      <link rel="section" href="apas11.html" title="A.11.&nbsp;Miscellaneous">
+      <link rel="section" href="apas12.html" title="A.12.&nbsp;Future Plans">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                           <li class="active"><a href="../volume4/index.html" title="Volume 4 - Design Rules">Design Rules</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="ch02s06.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apas02.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="appendix" id="v5a-a">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h1 class="title">Appendix&nbsp;A.&nbsp;STANAG Transformation Framework</h1>
+                     </div>
+                  </div>
+               </div>
+               <p>219. This annex describes the STANAG Transformation Framework (STF) included in the NISP.</p>
+               <div class="table" id="d0e2063">
+                  <div class="table-title">Table&nbsp;A.1.&nbsp;Article Metadata</div>
+                  <div class="table-contents">
+                     <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                        <colgroup>
+                           <col style="width: 40%; ">
+                           <col style="width: 60%; ">
+                        </colgroup>
+                        <tbody>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Project name:</td>
+                              <td style="border-bottom: 0.5pt solid ; ">Interoperability &amp; Standardization (ACT Sponsor: Troy Turner)</td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Topic:</td>
+                              <td style="border-bottom: 0.5pt solid ; ">STANAG Transformation Framework (STF)</td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Area of Validity:</td>
+                              <td style="border-bottom: 0.5pt solid ; ">Common framework and methodology to transform textual STANAGs into XML</td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Original Author:</td>
+                              <td style="border-bottom: 0.5pt solid ; ">Dario Cadamuro</td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Original Author:</td>
+                              <td style="border-bottom: 0.5pt solid ; ">Jelle van Zeijl</td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Original Author:</td>
+                              <td style="border-bottom: 0.5pt solid ; ">Mimi Nguyen</td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Maintained by:</td>
+                              <td style="border-bottom: 0.5pt solid ; ">NCI Agency CapDev</td>
+                           </tr>
+                           <tr>
+                              <td style="border-right: 0.5pt solid ; ">Version:</td>
+                              <td>v1.0</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <p></p>
+               </div><br class="table-break"><section class="sect1" id="one-introduction">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h2 class="title">A.1.&nbsp;Introduction</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <section class="sect2" id="one-dot-one-background">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h3 class="title">A.1.1.&nbsp;Background</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <p>220. NATO captures the definition of processes, procedures, terms, and conditions for common
+                              military or technical procedures or equipment between member countries using a Standardization
+                              Agreement (STANAGs).
+                     </p>
+                     <p>221. The NATO Standardization Agency (NSA) and Consultation, Command and Control Board (C3B)
+                              with Capability Panels (CaPs) and Capability Teams (CaTs) develop and maintain STANAGs under
+                              configuration management within NATO.
+                     </p>
+                     <p>222. STANAGs form the basis for enabling technical interoperability between a wide variety of
+                              Communication and Information Systems (CIS). In particular, information exchange STANAGs are
+                              used to standardize the protocols and data formats which regulate the information exchange
+                              between various CISs. Within the NATO APP-15 such types of STANAGs are called Information
+                              Exchange Specifications (IES). In this document, STANAG shall be read as a STANAG related to
+                              an IES within NATO.
+                     </p>
+                     <p>223. STANAGs constantly evolve in line with the evolution of NATO roles and derived
+                              requirements. The evolution implies the enhancement, modification and reduction of their
+                              contents. NATO has identified several gaps and areas for improvement within the current
+                              STANAGs that require action to ensure current and continual interoperability among forces and
+                              to enable the information sharing in a seamless infrastructure.
+                     </p>
+                     <p>224. As NATO and Nations are evolving to achieve the vision of the NATO Network-Enabled
+                              Capability (NNEC) , it has been realized and agreed that the NNEC data strategy goals involve
+                              making data Visible, Accessible, Understandable and Interoperable. In order to support these
+                              goals, traditional text-based information exchange STANAGs need to evolve into an unambiguous,
+                              machine-interpretable format, such as the extensible mark-up language (XML).
+                     </p>
+                     <p>225. A common framework and methodology to transform textual STANAGs into XML have been
+                              developed and are presented here as the STANAG Transformation Framework (STF) set of design
+                              rules.
+                     </p>
+                     <p>226. With the application of the STF, NATO and Nations are provided a mechanism to start
+                              tackling the data strategy vision and facilitating the improvement of current and future
+                              STANAG development efforts.
+                     </p>
+                  </section>
+                  <section class="sect2" id="one-dot-two-scope">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h3 class="title">A.1.2.&nbsp;Scope</h3>
+                           </div>
+                        </div>
+                     </div>
+                     <p>227. The scope of the analysis is to introduce a common framework, the STF, and associated
+                              design rules and methodology to transform textual STANAGs into XML to support the NNEC data
+                              strategy goals to make data Visible, Accessible, Understandable and Interoperable in an NNEC,
+                              service-oriented architecture (SOA) based, environment.
+                     </p>
+                     <p>228. The STF set of design rules also aims to assist in the development of current and future
+                              STANAGs within NATO. The STF, design rules and methodology are applicable to all information
+                              exchange STANAGs related to technical interoperability between systems and services.
+                     </p>
+                     <p>229. Although it may be applicable to all types of information exchanges, it does not aim to
+                              regulate the development of standards used outside of NATO.
+                     </p>
+                     <p>230. The STF is not intended to be used for transforming STANAGs that are unrelated to
+                              information exchange (e.g. STANAG 2832 - Restrictions for the Transport of Military Equipment
+                              by Rail on European Railways).
+                     </p>
+                  </section>
+                  <section class="sect2" id="one-dot-three-abbreviations-and-definitions">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h3 class="title">A.1.3.&nbsp;Abbreviations and
+                                       Definitions
+                              </h3>
+                           </div>
+                        </div>
+                     </div>
+                     <p>231. In this section abbreviations and concepts used in the analysis report are
+                              listed.
+                     </p>
+                     <div class="table" id="d0e2146">
+                        <div class="table-title">Table&nbsp;A.2.&nbsp;<span class="bold">Abbreviations</span></div>
+                        <div class="table-contents">
+                           <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                              <colgroup>
+                                 <col style="width: 20%; ">
+                                 <col style="width: 80%; ">
+                              </colgroup>
+                              <tbody>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">APP</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Allied Procedural Publication</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">AST</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Asset Tracking</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">C3B</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Consultation, Command and Control Board</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CaP</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Capability Panel</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CaT</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Capability Team</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">CIS</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Communication and Information System</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">COI</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Community of Interest</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">FFT</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Friendly Force Tracking</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">IES</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Information Exchange Specification</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">NATO</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">North Atlantic Treaty Organisation</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">NMRR</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">NATO Metadata Registry &amp; Repository</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">NNEC</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">NATO Network Enabled Capability</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">NSA</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">NATO Standardization Agency</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">SOA</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Service-oriented architecture</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">STANAG</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">NATO Standardization Agreement</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">STF</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">STANAG Transformation Framework</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">TDL</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Tactical Data Link</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">V&amp;V</td>
+                                    <td style="border-bottom: 0.5pt solid ; ">Verification &amp; Validation</td>
+                                 </tr>
+                                 <tr>
+                                    <td style="border-right: 0.5pt solid ; ">XML</td>
+                                    <td>Extensible Mark-up Language</td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                        <p></p>
+                     </div><br class="table-break"></section>
+               </section>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="ch02s06.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center">&nbsp;</td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apas02.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2014 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>

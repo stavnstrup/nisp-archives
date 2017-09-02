@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>G.9.&nbsp;Communication Services</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
+      <link rel="prev" href="apgs08.html" title="G.8.&nbsp;Interoperability Standards">
+      <link rel="next" href="apgs10.html" title="G.10.&nbsp;Core Enterprise Services">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Interoperability Profile Guidance">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Agreed Profiles">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;NRF Generic Interface Profile">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Tactical ESB (Tact ESB) Profile">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;The Afghanistan Mission Network (AMN) Profile of NATO Interoperability Standards">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Core Enterprise Services Implementation Specification">
+      <link rel="appendix" href="apf.html" title="Appendix&nbsp;F.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apg.html" title="Appendix&nbsp;G.&nbsp;Federated Mission Networking Interoperability Standards Profile for Mission Execution Environments">
+      <link rel="appendix" href="aph.html" title="Appendix&nbsp;H.&nbsp;External Profiles">
+      <link rel="subsection" href="apgs09.html#d0e10679" title="G.9.1.&nbsp;Edge Transport Services">
+      <link rel="subsection" href="apgs09.html#d0e10974" title="G.9.2.&nbsp;Communications Access Services">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta http-equiv="Expires" content="0"><script type="text/javascript" src="../javascripts/modernizr.foundation.js">
+         <!----></script></head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Standards">Standards</a></li>
+                           <li class="active"><a href="../volume3/index.html" title="Volume 3 - Agreed Profiles">Profiles</a></li>
+                           <li><a href="../volume4/index.html" title="Volume 4 - Design Rules">Design Rules</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="apgs08.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;<a accesskey="n" href="apgs10.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="sect1" id="d0e10669">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title">G.9.&nbsp;Communication Services</h2>
+                     </div>
+                  </div>
+               </div>
+               <p>411. Communications Services interconnect systems and mechanisms for the opaque transfer of selected data between or among
+                  access points, in accordance with agreed quality parameters and without change in the form or content of the data as sent
+                  and received.  Internet Protocol (IP) technology is the enabler of adaptive and flexible connectivity. Its connectionless
+                  structure, with its logical connectivity, provides scalability and manageability and is also future-proof by insulating services
+                  above from the diverse transport technologies below.
+               </p>
+               <p>412. FMN instances are using a converged IP network applying open standards and industry best practices.  For Milestone 1
+                  of the FMN architecture the interconnection between Mission Network Elements (MNE) also referred to as autonomous systems
+                  will be based on IPv4.  However, the next evolution (FMN Milestone 2) will be based on IPv6 for interconnecting autonomous
+                  systems.  Therefore all new equipment, services and applications must support a dual IPv4/IPv6 stack implementation.
+               </p>
+               <p>413. The Communication Services standards of the FMN Profile have been developed based on existing STANAGs such as 5067, 4637,
+                  4640, 4643 and 4644, existing commercial standards used in communications systems and the lessons learned from implementing
+                  and operating the Afghanistan Mission Network.
+               </p>
+               <section class="sect2" id="d0e10679">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.9.1.&nbsp;Edge Transport Services</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>414. The interconnection between Mission Network Elements is based on STANAG 5067 enhanced with a non-tactical connector and
+                     optional 1Gb/s Ethernet.  STANAG 5067 provides additional implementation, security and management guidance.  Depending on
+                     the classification level of the Mission Network dedicated transmission security (crypto) equipment might be used.
+                  </p>
+                  <div class="table" id="v3t-id-fmn-reftable2">
+                     <div class="table-title">Table&nbsp;G.2.&nbsp;Edge Transport Services and Communications Equipment Standards</div>
+                     <div class="table-contents">
+                        <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 20%; ">
+                              <col style="width: 50%; ">
+                              <col style="width: 30%; ">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>ID:Services/Purpose</strong></span>
+                                                  
+                                 </th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>Standard</strong></span>
+                                                  
+                                 </th>
+                                 <th style="border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>Implementation Guidance</strong></span>
+                                                  
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.1:Edge Transport Services between autonomous systems
+                                    <p>(IP over point-to-point Ethernet links on optical fibre)</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p>ISO/IEC 11801: 2002-09, Information technology &#8211;Generic cabling for customer premises, Clause 9.  Single-mode optical fibre
+                                       OS1 wavelength 1310nm.
+                                    </p>
+                                    <p>ITU-T G.652 (11/2009), Characteristics of a single-mode optical fibre and cable. (9/125&#956;m)</p>
+                                    <p>IEC 61754-20: 2012(E), Fibre optic interconnecting devices and passive components - Fibre optic connector interfaces - Part
+                                       20: Type LC connector family.  LC-duplex single-mode connector.
+                                    </p>
+                                    <p>IEEE Std 802.3-2013, Standard for Ethernet- Section 5 - Clause 58 - 1000BASE-LX10, Nominal transmit wavelength 1310nm.</p>
+                                    <p><span class="underline">IPv4 over Ethernet (Mandatory)</span>: IETF STD 37: 1982 / IETF RFC 826: 1982, An Ethernet Address Resolution Protocol.
+                                    </p>
+                                    <p><span class="underline">IPv6 over Ethernet (Optional)</span>: (M) IETF RFC 4861: 2007, Neighbor Discovery for IP version 6 (IPv6)
+                                    </p>
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Use 1Gb/s Ethernet over Single-mode optical fibre (SMF).</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1.2:Edge Transport Services between autonomous systems &shy; (time-division multiplexing wide area network)</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="underline">Mandatory</span>: Fractional E1 (Nx64kbit/s) conformant with: 
+                                       			  
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>ITU-T G.703 (11/2001), Physical/electrical characteristics of hierarchical digital interfaces.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>ITU-T G.704 (10/1998), Synchronous frame structures used at 1544, 6312, 2048, 8448 and 44 736 kbit/s hierarchical levels.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF STD 51: 1994, Point-to-point Protocol (PPP).</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    			  
+                                    <p><span class="underline">Recommended</span>: Full E1 (2.048 Mbit/s) conformant with
+                                       			  
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>ITU-T G.703 (11/2001), Physical/electrical characteristics of hierarchical digital interfaces.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC1994: 1996, PPP Challenge Handshake Authentication Protocol (CHAP).</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       			  
+                                    </p>
+                                    			  
+                                    <p>IPv4: 
+                                       			  
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>(O) IETF RFC 3544: 2003, IP header compression over PPP. ()</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       			  
+                                    </p>
+                                    			  
+                                    <p><span class="underline">IPv6 (Optional)</span>: 
+                                       			  
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>(M) IETF RFC 5072: 2007, IP Version 6 over PPP.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>(M) IETF RFC 4861: 2007, Neighbor Discovery for IP version 6 (IPv6).</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>(O) IETF RFC5172: 2008, Negotiation for IPv6 Datagram Compression Using IPv6 Control Protocol. ()</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       			  
+                                    </p>
+                                    			  
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>This interconnection is based on STANAG 5067, Standard for interconnection of IPv4 networks at Mission Secret and Unclassified
+                                       Security Levels.  STANAG 5067 provides additional implementation, security and management guidance.
+                                    </p>
+                                    			  
+                                    <p>Combined with TRANSEC crypto or other forms of link protection, CHAP (IETF RFC 1994) is not required. Otherwise, CHAP is recommended.</p>
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2:Inter-Autonomous System (AS) routing</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="underline">Mandatory</span>: Border Gateway Protocol V4  
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 1997: 1996, BGP Communities Attribute.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4271: 2006, A Border Gateway Protocol 4 (BGP-4).</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4760: 2007, Multiprotocol Extensions for BGP-4.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 5492: 2009, Capabilities Advertisement with BGP-4.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       
+                                    </p>
+                                    
+                                    <p><span class="underline">Recommended</span> (32-bit autonomous system numbers): 
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 6793: 2012, BGP Support for Four-Octet Autonomous System (AS) Number Space.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4360: 2006, BGP Extended Communities Attribute.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 5668: 2009, 4-Octet AS Specific BGP Extended Community.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       
+                                    </p>
+                                    
+                                    <p><span class="underline">Optional for IPv6</span>: 
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 2545: 1999, Use of BGP-4 Multiprotocol Extensions for IPv6 Inter-Domain Routing.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       
+                                    </p>
+                                    
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    <p>BGP deployment guidance in IETF RFC 1772: 1995, Application of the Border Gateway Protocol in the Internet.</p>
+                                    			  
+                                    <p>BGP sessions must be authenticated, through a TCP message authentication code (MAC) using a one-way hash function (MD5), as
+                                       described in IETF RFC 4271.
+                                    </p>
+                                    		
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">3:Inter-Autonomous System (AS) multicast routing</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                    <p><span class="underline">IPv4 (Mandatory)</span>: 
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 3618: 2003, Multicast Source Discovery Protocol (MSDP).()</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 3376: 2002, Internet Group Management Protocol, Version 3 (IGMPv3).</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4601, Protocol Independent Multicast version 2 (PIMv2) Sparse Mode (SM).</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4760 &#8220;Multiprotocol Extensions for BGP (MBGP)&#8221;</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       
+                                    </p>
+                                    
+                                    <p><span class="underline">Optional</span>: 
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 4604: 2006, Using Internet Group Management Protocol Version 3 (IGMPv3) and Multicast Listener Discovery Protocol
+                                                Version 2 (MLDv2) for Source-Specific Multicast.
+                                             </p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       
+                                    </p>
+                                    
+                                    <p><span class="underline">Note on IPv6</span>: 
+                                       <span class="emphasis"><em>No standard solution for IPv6 multicast routing has yet been widely accepted.  More research and experimentation is required
+                                             in this area.</em></span>
+                                       
+                                    </p>
+                                    			  
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">4:unicast routing</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                    			  
+                                    <p>- Classless Inter Domain Routing (IETF RFC 4632)</p>
+                                    			  
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">&nbsp;</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">5:multicast routing</td>
+                                 <td style="border-right: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                    
+                                    <p>&shy; IETF RFC 1112: 1989, Host Extensions for IP Multicasting.</p>
+                                    
+                                    <p>IETF RFC 2908: 2000, The Internet Multicast Address Allocation Architecture</p>
+                                    
+                                    <p>&shy;	IETF RFC 3171: 2001, IANA Guidelines for IPv4 Multicast Address Assignments.</p>
+                                    
+                                    <p>&shy;	IETF RFC 2365: 1998, Administratively Scoped IP Multicast.</p>
+                                    
+                                 </td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p></p>
+                  </div><br class="table-break"><div class="table" id="v3t-id-fmn-reftable3">
+                     <div class="table-title">Table&nbsp;G.3.&nbsp;Communication IA Services Standards</div>
+                     <div class="table-contents">
+                        <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 20%; ">
+                              <col style="width: 50%; ">
+                              <col style="width: 30%; ">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>ID:Services/Purpose</strong></span>
+                                                  
+                                 </th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>Standard</strong></span>
+                                                  
+                                 </th>
+                                 <th style="border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>Implementation Guidance</strong></span>
+                                                  
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1:Information Assurance during Transmission</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Conditional</span>: 
+                                    
+                                    <p>ACP 176 NATO SUPP 1 (NC)</p>
+                                    
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">ACP 176 NATO SUPP 1 (NC) provides configuration settings necessary to ensure interoperability when different cryptographic
+                                    devices (e.g. KIV-7/KG84/BID1650) are employed together.
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">2:Provide communications security over the network above the Transport Layer</td>
+                                 <td style="border-right: 0.5pt solid ; ">&shy; <span class="underline">Mandatory</span>: 
+                                    
+                                    <p>IETF RFC 5246: 2008, Transport Layer Security (TLS) Protocol Version 1.2.</p>
+                                    
+                                 </td>
+                                 <td>&nbsp;</td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p></p>
+                  </div><br class="table-break"></section>
+               <section class="sect2" id="d0e10974">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">G.9.2.&nbsp;Communications Access Services</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <p>415. Communications Access Services provide end-to-end connectivity of communications or computing devices.  Communications
+                     Access Services can be interfaced directly to Transmission Services (e.g. in the case of personal communications systems)
+                     or to Transport Services, which in turn interact with Transmission Services for the actual physical transport. Communications
+                     Access Services correspond to customer-facing communications services. As such, they can also be referred to as Subscriber
+                     Services, or Customer-Edge (CE) Services.
+                  </p>
+                  <p>416. With respect to the implementation scope of FMN Milestone 1, the following standards for Packet-based Communications
+                     Access services apply:
+                  </p>
+                  <div class="table" id="v3t-id-fmn-reftable4">
+                     <div class="table-title">Table&nbsp;G.4.&nbsp;Packet-based Communications Access Services Standards</div>
+                     <div class="table-contents">
+                        <table style="border-collapse: collapse; border-top: 0.5pt solid ; border-bottom: 0.5pt solid ; border-left: 0.5pt solid ; border-right: 0.5pt solid ; ">
+                           <colgroup>
+                              <col style="width: 20%; ">
+                              <col style="width: 50%; ">
+                              <col style="width: 30%; ">
+                           </colgroup>
+                           <thead>
+                              <tr>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>ID:Services/Purpose</strong></span>
+                                                  
+                                 </th>
+                                 <th style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>Standard</strong></span>
+                                                  
+                                 </th>
+                                 <th style="border-bottom: 0.5pt solid ; ">
+                                                    <span class="bold"><strong>Implementation Guidance</strong></span>
+                                                  
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">1:Host-to-host transport services</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; "><span class="underline">Mandatory</span>: 
+                                    
+                                    <p><span class="underline">Conditional (not to be used with IP encryption)</span>: IETF RFC 3168: 2001, The Addition of Explicit Congestion Notification (ECN) to IP.
+                                       
+                                    </p>
+                                    
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">Despite IETF RFC 793 is updated by IETF RFC 3168, ECN cannot be used in the FMN in parallel to the deployment of IP encryption.</td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">2:host-to-host datagram services</td>
+                                 <td style="border-right: 0.5pt solid ; border-bottom: 0.5pt solid ; ">Internet Protocol (<span class="underline">Mandatory</span>): 
+                                    
+                                    <p>
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 791: 1981, Internet Protocol.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 792: 1981, Internet Control Message Protocol.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 919: 1994, Broadcasting Internet Datagrams.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 922: 1984, Broadcasting Internet Datagrams in the Presence of Subnets.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 950: 1985, Internet Standard Subnetting Procedure.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 1112: 1989, Host Extensions for IP Multicasting.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 1812: 1995, Requirements for IP Version 4 Routers.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 2644: 1999, Changing the Default for Directed Broadcasts in Routers.</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       
+                                    </p>
+                                    
+                                    <p><span class="underline">Internet Protocol version 6 (Recommended)</span>:
+                                       
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 2460: 1998, Internet Protocol, Version 6 (IPv6) Specification.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 3810: 2004, Multicast Listener Discovery Version 2 (MLDv2) for IPv6.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4291: 2006, IP Version 6 Addressing Architecture.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4443: 2006, Internet Control Message Protocol (ICMPv6) for the Internet Protocol Version 6 (IPv6) Specification.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4861: 2007, Neighbor Discovery for IP version 6 (IPv6).</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 5095: 2007, Deprecation of Type 0 Routing Headers in IPv6.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 6724: 2012, Default Address Selection for Internet Protocol Version 6 (IPv6).
+                                                
+                                             </p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       
+                                    </p>
+                                    
+                                 </td>
+                                 <td style="border-bottom: 0.5pt solid ; ">
+                                    
+                                    IP networking. Accommodate both IPv4 and IPv6 addressing.  To accommodate IP crypto tunnelling within autonomous systems and
+                                    avoid packet fragmentation maximum transmission unit (MTU) and maximum segment size (MSS) settings have to be harmonised between
+                                    MNEs<a href="#ftn.d0e11089" class="footnote"><sup class="footnote" id="d0e11089">[a]</sup></a>.
+                                    			  
+                                 </td>
+                              </tr>
+                              <tr>
+                                 <td style="border-right: 0.5pt solid ; ">3:Differentiated host-to-host datagram services 
+                                    <p>(IP Quality of Service)</p>
+                                 </td>
+                                 <td style="border-right: 0.5pt solid ; "><span class="underline">Mandatory</span>:
+                                             
+                                    <p>
+                                                   
+                                    </p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>IETF RFC 2474: 1998, Definition of the Differentiated Services Field (DS Field) in the IPv4 and IPv6 Headers.
+                                                		
+                                             </p>
+                                             <div class="itemizedlist">
+                                                <ul class="itemizedlist">
+                                                   <li class="listitem">
+                                                      <p>updated by IETF RFC 3260: 2002, New Terminology and Clarifications for DiffServ.</p>
+                                                   </li>
+                                                   <li class="listitem">
+                                                      <p>Conditional: updated by IETF RFC 3168: 2001, The Addition of Explicit Congestion Notification (ECN) to IP.</p>
+                                                   </li>
+                                                </ul>
+                                             </div>
+                                             <p>
+                                                	  
+                                             </p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>IETF RFC 4594: 2006, Configuration Guidelines for DiffServ Service Classes.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>ITU-T Y.1540 (03/2011), Internet protocol data communication service &#8211; IP packet transfer and availability performance parameters.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>ITU-T Y.1541 (12/2011), Network performance objectives for IP-based services.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>ITU-T Y.1542 (06/2010), Framework for achieving end-to-end IP performance objectives.</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>ITU-T M.2301 (07/2002), Performance objectives and procedures for provisioning and maintenance of IP-based networks .</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>ITU-T J.241 (04/2005), Quality of service ranking and measurement methods for digital video services delivered over broadband
+                                                IP networks.
+                                             </p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                    <p>
+                                       
+                                    </p>
+                                    
+                                 </td>
+                                 <td>Utilize Quality of Service capabilities of the network (Diffserve, no military precedence on IP)</td>
+                              </tr>
+                           </tbody>
+                           <tbody class="footnotes">
+                              <tr>
+                                 <td colspan="3">
+                                    <div id="ftn.d0e11089" class="footnote">
+                                       <p><a href="#d0e11089" class="para"><sup class="para">[a] </sup></a>For current mission networks in support of ISAF, RSM, NRF 15 and NRF 16: MTU set to 1300 bytes, MSS set to 1260 bytes. Emerging
+                                          in 2016 (e.g. NRF 17) in preparation for IPv6 it is planned to transition to MTU 1280/MSS 1240.
+                                       </p>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <p></p>
+                  </div><br class="table-break"></section>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="apgs08.html"><i class="foundicon-left-arrow"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="apg.html"><i class="foundicon-up-arrow"></i></a></td>
+                     <td width="40%" align="right">&nbsp;<a accesskey="n" href="apgs10.html"><i class="foundicon-right-arrow"></i></a></td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="foundicon-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> | 
+                            <a href="../userinfo.html">User Information</a> | 
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2014 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer><script type="text/javascript" src="../javascripts/jquery.js">
+         <!----></script><script type="text/javascript" src="../javascripts/foundation.min.js">
+         <!----></script><script type="text/javascript" src="../javascripts/app.js">
+         <!----></script></body>
+</html>
