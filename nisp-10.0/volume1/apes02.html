@@ -1,0 +1,1816 @@
+<!DOCTYPE html>
+
+
+<!--paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/-->
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+   
+   
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>E.2.&nbsp;New standards</title>
+      <link rel="stylesheet" type="text/css" href="../css/nisp.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+      <meta name="keywords" content="NISP NATO Interoperability Standards Profiles, ADatP-34, Allied Data Procedure 34, STANAG 5524, STANAG, IP CaT, Interoperability Profiles Capability Team">
+      <link rel="prev" href="ape.html" title="Appendix&nbsp;E.&nbsp;Detailed Changes from NISP Version 9 (I) to NISP Version 10 (J)">
+      <link rel="chapter" href="ch01.html" title="Chapter&nbsp;1.&nbsp;Introduction">
+      <link rel="chapter" href="ch02.html" title="Chapter&nbsp;2.&nbsp;Basic Concepts">
+      <link rel="chapter" href="ch03.html" title="Chapter&nbsp;3.&nbsp;Organization of the NISP Information">
+      <link rel="chapter" href="ch04.html" title="Chapter&nbsp;4.&nbsp;Interoperability in Support of Capability Planning">
+      <link rel="chapter" href="ch05.html" title="Chapter&nbsp;5.&nbsp;Configuration Management">
+      <link rel="chapter" href="ch06.html" title="Chapter&nbsp;6.&nbsp;National Systems Interoperability Coordination">
+      <link rel="chapter" href="ch07.html" title="Chapter&nbsp;7.&nbsp;Interoperability Standards Guidance">
+      <link rel="chapter" href="ch08.html" title="Chapter&nbsp;8.&nbsp;Applicability">
+      <link rel="appendix" href="apa.html" title="Appendix&nbsp;A.&nbsp;Profile Guidance">
+      <link rel="appendix" href="apb.html" title="Appendix&nbsp;B.&nbsp;Interoperability in the context of NATO Defence Planning">
+      <link rel="appendix" href="apc.html" title="Appendix&nbsp;C.&nbsp;Service Interface Profile (SIP) Template Document">
+      <link rel="appendix" href="apd.html" title="Appendix&nbsp;D.&nbsp;Changes from NISP Version 9 (I) to NISP Version 10 (J)">
+      <link rel="appendix" href="ape.html" title="Appendix&nbsp;E.&nbsp;Detailed Changes from NISP Version 9 (I) to NISP Version 10 (J)">
+      <link rel="subsection" href="apes02.html#section" title="E.2.1.&nbsp;">
+      <link rel="subsection" href="apes02.html#bluetooth-sig" title="E.2.2.&nbsp;Bluetooth SIG">
+      <link rel="subsection" href="apes02.html#c3b-cap1" title="E.2.3.&nbsp;C3B CaP/1">
+      <link rel="subsection" href="apes02.html#cceb" title="E.2.4.&nbsp;CCEB">
+      <link rel="subsection" href="apes02.html#ietf" title="E.2.5.&nbsp;IETF">
+      <link rel="subsection" href="apes02.html#iicwg" title="E.2.6.&nbsp;IICWG">
+      <link rel="subsection" href="apes02.html#iso" title="E.2.7.&nbsp;ISO">
+      <link rel="subsection" href="apes02.html#isoiec" title="E.2.8.&nbsp;ISO/IEC">
+      <link rel="subsection" href="apes02.html#itu" title="E.2.9.&nbsp;ITU">
+      <link rel="subsection" href="apes02.html#itu-t" title="E.2.10.&nbsp;ITU-T">
+      <link rel="subsection" href="apes02.html#microsoft" title="E.2.11.&nbsp;Microsoft">
+      <link rel="subsection" href="apes02.html#nato" title="E.2.12.&nbsp;NATO">
+      <link rel="subsection" href="apes02.html#nist" title="E.2.13.&nbsp;NIST">
+      <link rel="subsection" href="apes02.html#nso" title="E.2.14.&nbsp;NSO">
+      <link rel="subsection" href="apes02.html#nso-expected" title="E.2.15.&nbsp;NSO-Expected">
+      <link rel="subsection" href="apes02.html#oasis" title="E.2.16.&nbsp;OASIS">
+      <link rel="subsection" href="apes02.html#ogc" title="E.2.17.&nbsp;OGC">
+      <link rel="subsection" href="apes02.html#omg" title="E.2.18.&nbsp;OMG">
+      <link rel="subsection" href="apes02.html#sip-forum" title="E.2.19.&nbsp;SIP Forum">
+      <link rel="subsection" href="apes02.html#tm-forum" title="E.2.20.&nbsp;TM-FORUM">
+      <link rel="subsection" href="apes02.html#w3c" title="E.2.21.&nbsp;W3C">
+      <link rel="subsection" href="apes02.html#ws-i" title="E.2.22.&nbsp;WS-I">
+      <link rel="subsection" href="apes02.html#xmpp" title="E.2.23.&nbsp;XMPP">
+      <meta name="author" content="Interoperability Capability Team (IP CaT)">
+      <meta name="pubsnummer" content="v10.0.1-final">
+      <meta http-equiv="Expires" content="0">
+   </head>
+   <body>
+      <header id="header" class="hide-for-small">
+         <div class="nisp">NATO Interoperability Standards and Profiles</div>
+         <div class="banner"></div>
+      </header>
+      <div class="nav-container">
+         <div class="row">
+            <div class="twelve columns">
+               <div class="contain-to-grid">
+                  <nav class="top-bar">
+                     <ul>
+                        <li class="name"><a href="../index.html">NISP</a></li>
+                        <li class="toggle-topbar"><a href="#"></a></li>
+                     </ul>
+                     <section>
+                        <ul class="left">
+                           <li class="active"><a href="../volume1/index.html" title="Volume 1 - Introduction and Management">Introduction</a></li>
+                           <li><a href="../volume2/index.html" title="Volume 2 - Agreed Interoperability Standards and Profiles">Agreed</a></li>
+                           <li><a href="../volume3/index.html" title="Volume 3 - Candidate Standards and Profiles">Candidate</a></li>
+                        </ul>
+                     </section>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="row" id="container">
+         <div class="twelve columns" id="docbook">
+            <div class="navheader">
+               <table width="100%" summary="Navigation header">
+                  <tr>
+                     <td width="20%" align="left"><a accesskey="p" href="ape.html"><i class="fa fa-arrow-left"></i></a>&nbsp;
+                     </td>
+                     <th width="60%" align="center">&nbsp;</th>
+                     <td width="20%" align="right">&nbsp;</td>
+                  </tr>
+               </table>
+               <hr>
+            </div>
+            <section class="sect1" id="new-standards">
+               <div class="titlepage">
+                  <div>
+                     <div>
+                        <h2 class="title">E.2.&nbsp;New standards</h2>
+                     </div>
+                  </div>
+               </div>
+               <section class="sect2" id="section">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.1.&nbsp;</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                              INFOSEC Technical and Implementation Directive on
+                                        Cryptographic Security and Cryptographic Mechanisms
+                                        (AC/322-D/0047-REV2 (INV))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        WS-Federation: Passive Requestor Profile (2003)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Connectors, Fiber Optic, Circular, Environmental Resistant,
+                                        Hermaphroditic, General Specification for. D (DTL 83526:2006)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="bluetooth-sig">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.2.&nbsp;Bluetooth SIG</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Bluetooth 4.2 (Bluetooth SIG bluetooth42:2014)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="c3b-cap1">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.3.&nbsp;C3B CaP/1</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Web Service Messaging Profile (WSMP) (C3B CaP/1 :2016)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="cceb">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.4.&nbsp;CCEB</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Allied Call Sign and Address Group System - Instructions and
+                                        Assignments (CCEB ACP 100 (F))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Call Sign Book for Ships (CCEB ACP 113 (AD))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Call Sign Book for Ships (CCEB ACP 113 (AJ))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Allied Routing Indicator Book (CCEB ACP 117 (K))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Allied Routing Indicator Book (CCEB ACP 117 (O))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Comms Instructions - General (CCEB ACP 121 (I))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Information Assurance for Allied Communications and
+                                        Information Systems (CCEB ACP 122 (D))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Information Assurance for Allied Communications and
+                                        Information Systems (CCEB ACP 122 (G))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Communication Instructions - Signaling Procedures in the
+                                        Visual Medium (CCEB ACP 130 (A))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Communication Instructions - Operating Signals (CCEB ACP 131
+                                        (F))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Communication Instructions - Distress and Rescue Procedures
+                                        (CCEB ACP 135 (F))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        IFF/SIF Operational Procedures (CCEB ACP 160 (E))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Glossary of C-E Terms (CCEB ACP 167 (G))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Glossary of C-E Terms (CCEB ACP 167 (K))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Guide to Spectrum Management in Military Operations (CCEB ACP
+                                        190 (A))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Instructions for the Preparation of ACPs (CCEB ACP 198 (N))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Mobile Tactical Wide Area Networking (MTWAN) in the Maritime
+                                        Environment - Operating Guidance (CCEB ACP 200 V1 (D))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Mobile Tactical Wide Area Networking (MTWAN) Technical
+                                        Instructions (CCEB ACP 200 V2 (C) )
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Mobile Tactical Wide Area Networking (MTWAN) Technical
+                                        Instructions (CCEB ACP 200 V2 (D) )
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Communications Instructions Internet Protocol (IP) Services
+                                        (CCEB ACP 201 (Orig))
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="ietf">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.5.&nbsp;IETF</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        MIME (Multipurpose Internet Mail Extensions) Part One:
+                                        Mechanisms for Specifying and Describing the Format of
+                                        Internet Message Bodies (IETF RFC 1521:1993)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Hypertext Markup Language - 2.0 (IETF RFC 1866:1995)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        The text/enriched MIME Content-type (IETF RFC 1896:1996)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        An Aplication of the BGP Community Attribute in Multi-Home
+                                        Routing (IETF RFC 1998:1996)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        FTP Security Extensions (IETF RFC 2228:1997)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        PPP LCP Internationalization Configuration Option (IETF RFC
+                                        2484:1999)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        HTTP Authentication: Basic and Digest Access Authentication
+                                        (IETF RFC 2617)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Internationalization of the File Transfer Protocol (IETF RFC
+                                        2640:1999)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Encryption using KEA and SKIPJACK (IETF RFC 2773:2000)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        XML Media Types (IETF RFC 3023)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Distributing Authoritative Name Servers via Shared Unicast
+                                        Addresses (IETF RFC 3258:2002)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        More Modular Exponential (MODP) Diffie-Hellman groups for
+                                        Internet Key Exchange (IKE) (IETF RFC 3536:2003)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        A Flexible Method for Managing the Assignment of Bits of an
+                                        IPv6 Address Block (IETF RFC 3531:2003)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Extensions to FTP (IETF RFC 3659:2007)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        The Secure Shell (SSH) Transport Layer Protocol (IETF RFC
+                                        4253:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        A Framework for Conferencing with the Session Initiation
+                                        Protocol (SIP) (IETF RFC 4353:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Extending the Session Initiation Protocol (SIP) Reason Header
+                                        for Preemption Events (IETF RFC 4411:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Considerations for Internet group Management protocols (IGMP)
+                                        and Multicast listener Discovery Snooping Switches (IETF RFC
+                                        4541:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        SPNEGO-based Kerberos and NTLM HTTP Authentication in
+                                        Microsoft Windows (IETF RFC 4559)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Session Description Protocol (SDP) Security Descriptions for
+                                        Media Streams (IETF RFC 4568:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Session Initiation Protocol (SIP) Call Control - Conferencing
+                                        for User Agents (IETF RFC 4579:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Source-Specific Multicast for IP (IETF RFC 4607:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Source-Specific Protocol Independent Multicast in 232/8 (IETF
+                                        RFC 4608:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        RTP Payload for DTMF Digits, Telephony Tones, and Telephony
+                                        Signals (IETF RFC 4733:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Operation of Anycast Services (IETF RFC 4786:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        IPv6 Stateless Address Autoconfiguration (IETF RFC 4862:2007)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        The Generalized TTL Security Mechanism (GTSM) (IETF RFC
+                                        5082:2007)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Conference Establishment Using Request-Contained Lists in the
+                                        Session Initiation Protocol (SIP) (IETF RFC 5366:2008)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Extended MKCOL for Web Distributed Authoring and Versioning
+                                        (WebDAV) (IETF RFC 5689:2009)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        IANA Guidelines for IPv4 Multicast Address Assignments (IETF
+                                        RFC 5771:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        FTP Command and Extension Registry (IETF RFC 5797:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Requirements from Session Initiation Protocol (SIP) Session
+                                        Border Control (SBC) Deployments (IETF RFC 5853:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Elliptic Curve Groups modulo a Prime (ECP Groups) for IKE and
+                                        IKEv2 (IETF RFC 5903:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        DNS Zone Transfer Protocol (AXFR) (IETF RFC 5936:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        DNS Transport over TCP - Implementation Requirements (IETF RFC
+                                        5966:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        SMTP Service Extension for 8-bit MIME Transport (IETF RFC
+                                        6152:2011)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        RTP Payload Format for H.264 Video (IETF RFC 6184:2011)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Autonomous-System-Wide Unique BGP Identifier for BGP-4 (IETF
+                                        RFC 6286:2011)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Overview of the Internet Multicast Addressing Architecture
+                                        (IETF RFC 6308:2011)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        SIP-Specific Event Notification (IETF RFC 6665:2012)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        The OAuth 2.0 Authorization Framework: Bearer Token Usage
+                                        (IETF RFC 6750:2012)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Update to Internet Message Format to Allow Group Syntax in the
+                                        From: and Sender: Header Fields (IETF RFC 6854:2013)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Extension Mechanisms for DNS (EDNS(0)) (IETF RFC 6891:2013)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        A Taxonomy of Session Initiation Protocol (SIP) Back-to-Back
+                                        User Agents (IETF RFC 7092:2013)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Architectural Considerations of IP Anycast (IETF RFC
+                                        7094:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        File Transfer Protocol HOST Command for Virtual Hosts (IETF
+                                        RFC 7151:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        IANA Registries for BGP Extended Communities (IETF RFC
+                                        7153:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Sender Policy Framework (SPF) for Authorizing Use of Domains
+                                        in Email, Version 1 (IETF RFC 7208:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Hypertext Transfer Protocol (HTTP/1.1): Message Syntax and
+                                        Routing (IETF RFC 7230:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Cryptographic Algorithm Implementation Requirements and Usage
+                                        Guidance for Encapsulating Security Payload (ESP) and
+                                        Authentication Header (AH) (IETF RFC 7321:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        BGP Operations and Security (IETF RFC 7454:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Assertion Framework for OAuth 2.0 Client Authentication and
+                                        Authorization Grants (IETF RFC 7521:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Security Assertion Markup Language (SAML) 2.0 Profile for
+                                        OAuth 2.0 Client Authentication and Authorization Grants (IETF
+                                        RFC 7522:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Revised Error Handling for BGP UPDATE Messages (IETF RFC
+                                        7606:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        The NULL Authentication Method in the Internet Key Exchange
+                                        Protocol Version 2 (IKEv2) (IETF RFC 7619:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        A Taxonomy of Semantics and Mechanisms for Real-Time Transport
+                                        Protocol (RTP) Sources (IETF RFC 7656:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        RTP Topologies (IETF RFC 7667:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Generic Raw Public-Key Support for IKEv2 (IETF RFC 7670:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Protocol Independent Multicast - Sparse Mode (PIM-SM):
+                                        Protocol Specification (Revised) (IETF RFC 7761:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Negotiated Finite Field Diffie-Hellman Ephemeral Parameters
+                                        for Transport Layer Security (TLS) (IETF RFC 7919:2016)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="iicwg">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.6.&nbsp;IICWG</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        NATO Elliptic Curve (EC) Key Material Specification Rev. 1.0.
+                                        (IICWG SCIP-233.102)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Pre Placed Key (PPK) Key Material Format and Fill Checks
+                                        Specification Rev.1.0 (IICWG SCIP-233.104)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Universal Elliptic Curve (EC) Key Material Specification Rev.
+                                        1.0 (IICWG SCIP-233.105)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Universal Multi-Point Pre Placed Key (PPK) Material Format and
+                                        Fill Specification Rev. 1.0 (IICWG SCIP-233.108)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Unencrypted Key Fill Specification Rev. 1.0. (IICWG
+                                        SCIP-233.150)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        CRC Calculations Specifications Rev. 1.0. (IICWG SCIP-233.151)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Universal Call-Setup Encryption (CSE) Specification Rev. 1.0.
+                                        (IICWG SCIP-233.201)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO EC Agreement and TEK Derivation Specification Rev. 1.0.
+                                        (IICWG SCIP-233.302)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Universal ECMQV Key Agreement and TEK Derivation Specification
+                                        Rev. 1.0 (IICWG SCIP-233.303)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Point-to-Point and Multipoint PPK-Processing
+                                        Specification Rev.1.0 (IICWG SCIP-233.304)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Universal Multipoint PPK-Processing Specification Rev. 1.0.
+                                        (IICWG SCIP-233.305)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Call Set-Up encryption (CSE) State Vector Processing
+                                        Specification Rev. 1.0. (IICWG SCIP-233.402)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Fixed Filler Generation Specification Rev. 1.0. (IICWG
+                                        SCIP-233.422)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Universal Fixed Filler Generation Specification Rev. 1.0.
+                                        (IICWG SCIP-233.423)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Point-to-Point Cryptographic Verification Specification Rev.
+                                        1.1. (IICWG SCIP-233.441)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Multipoint Cryptographic Verification Specification Rev. 1.0.
+                                        (IICWG SCIP-233.442)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Point-to-Point Cryptographic verification W/HMAC Specification
+                                        Rev. 1.0. (IICWG SCIP-233.443)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Secure G.729D Voice Specification Rev. 1.1. (IICWG
+                                        SCIP-233.502)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Secure Reliable Transport (RT) Asynchronous Data Specification
+                                        Rev. 1.1. (IICWG SCIP-233.516)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Secuer Best effort Transport (BET) Asynchronous Data Transfer
+                                        Rev. 1.1. (IICWG SCIP-233.517)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Secure Dial Processing Specification Rev. 1.1. (IICWG
+                                        SCIP-233.546)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        MONGOOSE Encryption Algorithm Specification Rev. 1.0. (IICWG
+                                        SCIP-233.563)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        AES-256 Encryption Algorithm Specification Rev. 1.0. (IICWG
+                                        SCIP-233.601)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        MEDLEY Encryption Algorithm Specification Rev. 1.0. (IICWG
+                                        SCIP-233.603)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="iso">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.7.&nbsp;ISO</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Geographic information - Web Feature Service (ISO 19142:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Systems and software engineering -- Architecture description
+                                        (ISO 42010:2011)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Systems and software engineering -- Architecture Processes
+                                        (ISO CD42020:2016)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="isoiec">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.8.&nbsp;ISO/IEC</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Information technology -- Metadata registries (MDR) -- Part 3:
+                                        Registry metamodel and basic attributes (ISO/IEC 11179-3:2013)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Information technology -- Open Distributed Processing --
+                                        Interface Definition Language (ISO/IEC 14750:1999)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Information technology &#8212; Document description and processing
+                                        languages &#8212; HyperText Markup Language (HTML) (ISO/IEC
+                                        15455:2000)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Biometric data interchange formats -- Part 14: DNA Data
+                                        (ISO/IEC 19794-6:2013)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Open Document Format for Office Applications (OpenDocument)
+                                        v1.2 -- Part 1: OpenDocument Schema (ISO/IEC
+                                        26300-1:2015:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Open Document Format for Office Applications (OpenDocument)
+                                        v1.2 -- Part 2: Recalculated Formula (OpenFormula) Format
+                                        (ISO/IEC 26300-2:2015:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Open Document Format for Office Applications (OpenDocument)
+                                        v1.2 -- Part 3: Packages (ISO/IEC 26300-3:2015:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Information technology - Open Systems Interconnection - Basic
+                                        Reference Model: The Basic Model (ISO/IEC 7498-1:1994)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="itu">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.9.&nbsp;ITU</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Notation for national and international telephone numbers,
+                                        e-mail addresses and web addresses (ITU E.123:2001)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="itu-t">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.10.&nbsp;ITU-T</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Pulse code modulation (PCM) of voice frequencies (ITU-T
+                                        G.711:1988)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="microsoft">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.11.&nbsp;Microsoft</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Rich Text Format (RTF) Specification, Version 1.9.1 (Microsoft
+                                        RTF 1.9.1:2008)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="nato">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.12.&nbsp;NATO</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        NII Communications Reference Architecture Edition 1, Version
+                                        1.2 (NATO AC/322-D(2010)0035)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Allied Call Sign and Address Group System - Instructions and
+                                        Assignments, NATO Supplement-1 (NATO ACP 100 NS-1(P))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Allied Call Sign and Address Group System - Instructions and
+                                        Assignments, NATO Supplement-1 (NATO ACP 100 NS-1(Q))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Address Groups and Call Signs, Instructions and Assignments,
+                                        NATO Supplement-2 (NATO ACP 100 NS-2(A))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Routing Indicator Book, NATO Supplement-1 (NATO ACP 117
+                                        NS-1 (S))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Routing Indicator Book, NATO Supplement-1 (NATO ACP 117
+                                        NS-1 (T))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Subject Indicator System (NASIS), NATO Supplement-2 (NATO
+                                        ACP 117 NS-2 (B))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Subject Indicator System (NASIS), NATO Supplement-2 (NATO
+                                        ACP 117 NS-2 (C) )
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Handling of ATOMAL Information Within Classified
+                                        Communications Centres, NATO Supplement-2 (NATO ACP 122 NS-2
+                                        (A))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Handling of ATOMAL Information Within Classified
+                                        Communications Centres, NATO Supplement-2 (NATO ACP 122 NS-2
+                                        (B))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Policy and Procedures for the Management of IFF/SIF, NATO
+                                        Supplement-1 (NATO ACP 160 NS-1 (F))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Allied Naval and Maritime Air Communications Instructions,
+                                        NATO Supplement-1 (NATO ACP 176 NS-1 (E))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Allied Naval and Maritime Air Communications Instructions,
+                                        NATO Supplement-1 (NATO ACP 176 NS-1 (F))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Guide to Spectrum Management in Military Operations, NATO
+                                        Supplement-1 (NATO ACP 190 NS-1 (C) )
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Guide to Spectrum Management in Military Operations, NATO
+                                        Supplement-2 (NATO ACP 190 NS-2 (C) )
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Guide to Spectrum Management in Military Operations, NATO
+                                        Supplement-2 (NATO ACP 190 NS-2 (D))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Instructions for the Life Cyle Management of Allied
+                                        Communications Publications (ACPs) - General &amp; NATO Supps
+                                        (NATO ACP 198 NS-1 (G))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Instructions for the Life Cyle Management of Allied
+                                        Communications Publications (ACPs), NATO Supplement-1 (NATO
+                                        ACP 198 NS-1 (H))
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Certificate Revocation List Transfer Extension, v.1.0.4
+                                        (NATO NINE-CRL-Transfer)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Remote Cryptography Ignition Key Client, v.1.0.4 (NATO
+                                        NINE-Ign-Key-Clt)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Remote Cryptography Ignition Key Net Controller, v.1.0.4
+                                        (NATO NINE-Ign-Key-Net Ctrl)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE- IPSec Minimum Essential Interoperability Requirements
+                                        v.1.0.4. (NATO NINE-IPSEC-MER)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Traffic Protection Internet Key Exchange version 2 Suite
+                                        A MEDLEY Cryptography, v.1.0.4 (NATO NINE-TP-IKEv2-SA-MED)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Traffic Protection Internet Key Exchange version 2 Suite
+                                        A MERCATOR Cryptography, v.1.0.4 (NATO NINE-TP-IKEv2-SA-MER)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Traffic Protection Suite A MERCATOR Cryptography, v.1.0.5
+                                        (NATO NINE-TP-SA-MED)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Traffic Protection Suite A MEDLEY Cryptography, v.1.0.4
+                                        (NATO NINE-TP-SA-MER)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Traffic Protection Suite B Cryptography, v.1.0.4 (NATO
+                                        NINE-TP-SB)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Render useless - Zeroization Client, v.1.0.4 (NATO
+                                        NINE-Zero-Net-Clt)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NINE-Render useless - Zeroization Net Controller, v.1.0.4
+                                        (NATO NINE-Zero-Net-Ctrl)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="nist">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.13.&nbsp;NIST</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Secure Hash Standard (NIST FIPS 180-4:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Recommendation for Pair-Wise Key Establishment Schemes Using
+                                        Discrete Logarithm Cryptography (NIST SP 800-56A Rev 2:2013)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Recommendation for Pair-Wise KeyEstablishment Schemes Using
+                                        Integer Factorization Cryptography (NIST SP 800-56B Rev
+                                        1:2014)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="nso">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.14.&nbsp;NSO</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Standard Operating Procedures for Link 1 (NSO ADatP-31
+                                        (C):2009)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO FRIENDLY FORCE INFORMATION (FFI) STANDARD FOR
+                                        INTEROPERABILITY OF FRIENDLY FORCE TRACKING SYSTEMS (FFTS)
+                                        (NSO ADatP-36A)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Specifications for Naval Mine Warfare Information and for Data
+                                        Transfer - AMP-11 (Supplement) Edition A (NSO STANAG 1116 Ed
+                                        10:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Military Oceanographic and Rapid Environmental Assessment
+                                        Support Procedures - ATP-32 Edition E (NSO STANAG 1171 Ed
+                                        10:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Joint Brevity Words - APP-7 Edition F (NSO STANAG 1401 Ed
+                                        15:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Warning and Reporting and Hazard Prediction of Chemical,
+                                        Biological, Radiological and Nuclear Incidents (Operators
+                                        Manual) - ATP-45 Edition E (NSO STANAG 2103 Ed 11:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Geodetic Datums, Projections, Grids and Grid References -
+                                        AGeoP-21 Edition A (NSO STANAG 2211 Ed 7:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Air Reconnaissance Intelligence Report Forms ed. 6 (NSO STANAG
+                                        3377:2002)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Digital Interoperability between UHF satellite communications
+                                        terminals (NSO STANAG 4231 Ed 5:2011)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Super High Frequency (SHF) Military Satellite Communications
+                                        (MILSATCOM) Frequency Division Multiple Access (FDMA) Non-EPM
+                                        Modem for Services Conforming to Class-B Of STANAG 4484 -
+                                        AComP-4486 Edition A (NSO STANAG 4486 Ed 4:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Advanced SATCOM Network Management and Control (NSO STANAG
+                                        4494 (RD) Ed 1:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Digital Motion Imagery Standard (- NNSTD MISP-2015.1)
+                                        (NSO STANAG 4609 Ed 4:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        DISMOUNTED SOLDIER SYSTEMS STANDARDS AND PROTOCOLS FOR
+                                        COMMAND, CONTROL, COMMUNICATIONS AND COMPUTERS (C4)
+                                        INTEROPERABILITY (DSS C4 INTEROPERABILITY) (NSO STANAG
+                                        4677:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Multi-hop IP Networking with legacy UHF Radios: Mobile ad hoc
+                                        relay Line of Sight Networking (MARLIN) - AComP-4691 Edition A
+                                        (NSO STANAG 4691 Ed 2:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Joint Consultation, Command and Control Information Exchange
+                                        Data Model (JC3IEDM) (NSO STANAG 5525:2007)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Standards for Interface of Data Links 1, 11, and 11B Through a
+                                        Buffer - ATDLP-6.01 Edition A (NSO STANAG 5601 Ed 7:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        NATO Message Catalogue, APP-11 Edition D v2 (NSO STANAG 7149
+                                        Ed 6/APP-11 Edition D v2:2017)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="nso-expected">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.15.&nbsp;NSO-Expected</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Super High Frequency (SHF) Medium Data Rate (MDR) Military
+                                        Satellite COMmunications (MILSATCOM) jam-resistant modem
+                                        interoperability standards (NSO-Expected STANAG 4606 Ed 4)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="oasis">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.16.&nbsp;OASIS</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Common Alerting Protocol Version 1.2 (OASIS CAP 1.2:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Web Services Base Faults 1.2 (OASIS
+                                        wsrf-ws_base_faults-1.2-spec-os :2006)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="ogc">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.17.&nbsp;OGC</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Web Services Common Implementation Specification v2.0.0 (OGC
+                                        06-121r9:2010)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        OpenGIS Web Feature Service 2.0 Interface Standard (OGC
+                                        09-025r2:2006)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Corrigendum 1 for OGC Web Services Common Standard v2.0.0 &#8211;
+                                        Multilingual (OGC 11-157:2011)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        OGC GeoPackage Encoding Standard Version 1.1 (OGC
+                                        12-128r12:2015)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="omg">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.18.&nbsp;OMG</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        BPML Business Process Model and Notation version 2.0.2:2014
+                                        (OMG formal/2011-01-03:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Service Oriented Architecture Modeling Language (SOAML),
+                                        Version 1.0.1 (OMG formal-2012-05-10:2012)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        OMG Systems Modeling Language (OMG SysML) 1.4 (OMG
+                                        formal-2015-06-03:2015)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="sip-forum">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.19.&nbsp;SIP Forum</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        SIP Connect v.1.1. - Technical Recommendation (2011) (SIP
+                                        Forum SIP Connect v.1.1. )
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        SIP Connect v.2.0. - Technical Recommendation (2016/2017) (SIP
+                                        Forum SIP Connect v.2.0. )
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="tm-forum">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.20.&nbsp;TM-FORUM</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        Trouble Ticket REST API Specification R14.5.1 Interface
+                                        (TM-FORUM TMF621:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Product Ordering API REST Specification R14.5.1 Interface
+                                        (TM-FORUM TMF622:2015)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        API REST Conformance Guidelines R15.5.1 Standard (TM-FORUM
+                                        TR250:2016)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="w3c">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.21.&nbsp;W3C</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        CSS Style Attributes (W3C REC-css-style-attr-20131107:2013)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="ws-i">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.22.&nbsp;WS-I</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        WS-I Basic Profile 1.2 (WS-I BP 1.2:2010)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+               <section class="sect2" id="xmpp">
+                  <div class="titlepage">
+                     <div>
+                        <div>
+                           <h3 class="title">E.2.23.&nbsp;XMPP</h3>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="itemizedlist">
+                     <ul class="itemizedlist compact">
+                        <li class="listitem">
+                           <p>
+                                        In-Band Bytestreams (XMPP XEP-0047:2012)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Bookmarks (XMPP XEP-0048:2007)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        XMPP Registrar Function (XMPP XEP-0053:2008)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Jabber Search (XMPP XEP-0055:2009)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Field Standardization for Data Forms (XMPP XEP-0068:2012)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        User Location (XMPP XEP-0080:2014)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Common Alerting Protocol (CAP) Over XMPP (XMPP XEP-0127:2004)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Data Forms Layout (XMPP XEP-0141:2005)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Best Practices for Handling Offline Messages (XMPP
+                                        XEP-0160:2016)
+                                      
+                           </p>
+                        </li>
+                        <li class="listitem">
+                           <p>
+                                        Last Activity in Presence (XMPP XEP-0256:2009)
+                                      
+                           </p>
+                        </li>
+                     </ul>
+                  </div>
+               </section>
+            </section>
+            <div class="navfooter">
+               <hr>
+               <table width="100%" summary="Navigation footer">
+                  <tr>
+                     <td width="40%" align="left"><a accesskey="p" href="ape.html"><i class="fa fa-arrow-left"></i></a>&nbsp;
+                     </td>
+                     <td width="20%" align="center"><a accesskey="u" href="ape.html"><i class="fa fa-arrow-up"></i></a></td>
+                     <td width="40%" align="right">&nbsp;</td>
+                  </tr>
+                  <tr>
+                     <td width="40%" align="left" valign="top">&nbsp;</td>
+                     <td width="20%" align="center"><a accesskey="h" href="index.html"><i class="fa fa-home"></i></a></td>
+                     <td width="40%" align="right" valign="top">&nbsp;</td>
+                  </tr>
+               </table>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="twelve columns centered">
+               <div class="footernav"><a href="../index.html">Home</a> |
+                            <a href="../userinfo.html">User Information</a> |
+                            <a href="../introduction.html">Introduction</a> |
+                            <a href="../acronyms/index.html">Acronyms</a> |
+                            <a href="../PDFcoverdoc.html">Get NISP in PDF</a> |
+                            <a href="https://nhqc3s.hq.nato.int/Apps/Architecture/NISP2/">Search NISP DB</a></div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="twelve columns">
+               <div class="copyright">Copyright &copy; NATO - OTAN 1998-2017 | <a href="../disclaimer.html">Disclaimer</a></div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
