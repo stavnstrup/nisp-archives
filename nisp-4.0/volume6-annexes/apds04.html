@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>D.4. Enterprise Service Bus / Messaging System Profile</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <meta name="keywords" content="ADatP-34, STANAG 5524, NOSWG, NATO Open System Working Group"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="prev" href="apds03.html" title="D.3. Web Service Fundamentals"/>
+      <link rel="next" href="apds05.html" title="D.5. Appendix: ESB Requirements in a Military Environment"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. Annexes"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. Services and Interoperability Points in Platform Oriented and SOA Environments"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NATO, National and Industry NEC Implementation Approaches"/>
+      <link rel="appendix" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="appendix" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="appendix" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="appendix" href="apf.html" title="Appendix F. International Military Interoperability for information exchange in the NNEC context"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol6-v4-release.pdf">PDF of V6</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>
+                           <a href="../volume5-rationale/index.html" title="NISP Design Rules">V5 - NISP Design Rules</a>
+                        </li>
+                        <li>V6 - NISP - Annexes<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">ANNEXES</a>
+                              </li>
+                              <li>A - <a href="apa.html">SERVICES AND INTEROPERABILITY POINTS IN PLATFORM ORIENTED AND SOA ENVIRONMENTS</a>
+                              </li>
+                              <li>B - <a href="apb.html">NATO, NATIONAL AND INDUSTRY NEC IMPLEMENTATION APPROACHES</a>
+                              </li>
+                              <li>C - <a href="apc.html">REFERENCE MODELS</a>
+                              </li>
+                              <li>D - <a href="apd.html">ENTERPRISE SERVICE BUS (ESB) PROFILE IN THE SERVICE ORIENTED
+    ARCHITECTURE (SOA) CONTEXT</a>
+                              </li>
+                              <li>E - <a href="ape.html">GUIDELINES USING DESIGN RULES IN NATO NEC FEDERATED
+  ENVIRONMENT</a>
+                              </li>
+                              <li>F - <a href="apf.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+  THE NNEC CONTEXT</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apds03.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apds05.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="sect1" title="D.4. Enterprise Service Bus / Messaging System Profile">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="d0e4412" style="display:none"> </a>D.4. Enterprise Service Bus / Messaging System Profile</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <p>455. An <span class="emphasis">
+                           <em>Enterprise Messaging System (EMS)
+    </em>
+                        </span> is a set of published Enterprise-wide standards that allows
+    sending of semantically precise messages between computer systems. EMS
+    systems promote loosely coupled architectures that allow changes in the
+    formats of messages to have minimum impact on message subscribers. EMS
+    systems are facilitated by the use of XML messaging, SOAP and Web
+    services.</p>
+                     <p>456. An <span class="emphasis">
+                           <em>Enterprise Service Bus (ESB) </em>
+                        </span>
+    generally provides an abstraction layer on top of an implementation of an
+    enterprise messaging system, which allows integration architects to
+    exploit the value of messaging without writing code. Contrary to the more
+    classical enterprise application integration (EAI) approach of a
+    monolithic stack in a hub and spoke architecture, the foundation of an
+    enterprise service bus is built of base functions broken up into their
+    constituent parts, with distributed deployment where needed, working in
+    harmony as necessary.</p>
+                     <p>457. The following figure shows a layer model for the "Enterprise
+    Messaging System (EMS) / Enterprise Service Bus (ESB)" based on the
+    chapter: "Web Service Fundamentals".</p>
+                     <div class="figure">
+                        <a id="v6f-esb-ems" style="display:none"> </a>
+                        <p/>
+                        <div class="figure-contents">
+                           <div class="mediaobject">
+                              <img src="../figures/esb-ems.png" alt="ESB / EMS Layer Model"/>
+                           </div>
+                        </div>
+                        <p class="title">
+                           <b>Figure D.20. ESB / EMS Layer Model</b>
+                        </p>
+                     </div>
+                     <br class="figure-break"/>
+                     <p>458. Based on the Standards (signed in an ESB / EMS Profile) every Client
+    and Server can be integrated into the ESB system.</p>
+                     <p>459. <span class="emphasis">
+                           <em>WS-I Basic Profilee </em>
+                        </span>
+                     </p>
+                     <p>460. The WS-I Basic Profile V1.0 specifies a set of usage scenarios and
+    Web services standards that can be used to integrate systems. It focuses
+    on the core foundation technologies upon which Web services are based.
+    Basic Profile V1.0 was approved unanimously on July 22, 2003, by the WS-I
+    board of directors and members.</p>
+                     <p>461. The WS-I Basic Profile V1.0 &#8211; Profile Specification consists of the
+    following non-proprietary Web services related specifications:</p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>SOAP V1.1</p>
+                           </li>
+                           <li class="listitem">
+                              <p>WSDL V1.1</p>
+                           </li>
+                           <li class="listitem">
+                              <p>UDDI V2.0</p>
+                           </li>
+                           <li class="listitem">
+                              <p>XML V1.0 (Second Edition)</p>
+                           </li>
+                           <li class="listitem">
+                              <p>XML Schema Part 1: Structures</p>
+                           </li>
+                           <li class="listitem">
+                              <p>XML Schema Part 2: Datatypes</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2246: The Transport Layer Security Protocol Version
+        V1.0</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2459: Internet X.509 Public Key Infrastructure Certificate
+        and CRL Profile</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2616: HyperText Transfer Protocol V1.1</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2818: HTTP over TLS</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2965: HTTP State Management Mechanism</p>
+                           </li>
+                           <li class="listitem">
+                              <p>The Secure Sockets Layer Protocol Version V3.0</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <p>462. UPDATE: A combined claim of conformance to the <span class="bold">
+                           <strong> WS-I Basic Profile 1.1</strong>
+                        </span> and the <span class="bold">
+                           <strong>Simple SOAP Binding Profile 1.0</strong>
+                        </span> is roughly
+    equivalent to a claim of conformance to the <span class="emphasis">
+                           <em>WS-I
+    Basic Profile 1.0 plus published errata. </em>
+                        </span>
+                     </p>
+                     <p>463. Additional there are many successful implementations of the basic
+    Web services standards, particularly SOAP and WSDL but many aspects of
+    service interaction and integration are not directly supported by those
+    basic standards, such as security, transactional, delivery assurance, and
+    process modelling &#8211; for example WS-Security, WS-Trust, WS-Privacy, and
+    WS-Policy. It also accommodated existing security technologies such as
+    Kerberos, XML Digital Signatures, and XML Encryption.</p>
+                     <p>464. Because of this an "ESB / EMS Profile" proposal is defined on the
+    next page.</p>
+                     <p>465. <span class="emphasis">
+                           <em>ESB / EMS Profile proposal:</em>
+                        </span>
+                     </p>
+                     <p>466. A proposal for an ESB / EMS Profile could be based on the WS-I
+    profiles:</p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>WS-I Web Service Basic Profile, v1.1:2nd ed. 2006</p>
+                           </li>
+                           <li class="listitem">
+                              <p>WS-I Simple SOAP Binding Profile v1.0:2004</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <p>467. With the following parts of the WS-I profiles:</p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>Simple Object Access Protocol (SOAP) 1.1</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2616: Hypertext Transfer Protocol &#8211; HTTP/1.1</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2965: HTTP State Management Mechanism</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Extensible Markup Language (XML) 1.0 (Second Edition)</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Namespaces in XML 1.0</p>
+                           </li>
+                           <li class="listitem">
+                              <p>XML Schema Part 1: Structures</p>
+                           </li>
+                           <li class="listitem">
+                              <p>XML Schema Part 2: Datatypes</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Web Services Description Language (WSDL) 1.1</p>
+                           </li>
+                           <li class="listitem">
+                              <p>UDDI Version 2.04 API Specification, Dated 19 July 2002</p>
+                           </li>
+                           <li class="listitem">
+                              <p>UDDI Version 2.03 Data Structure Reference, Dated 19 July
+        2002</p>
+                           </li>
+                           <li class="listitem">
+                              <p>UDDI Version 2 XML Schema</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2818: HTTP Over TLS</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2246: The TLS Protocol Version 1.0</p>
+                           </li>
+                           <li class="listitem">
+                              <p>The SSL Protocol Version 3.0</p>
+                           </li>
+                           <li class="listitem">
+                              <p>RFC2459: Internet X.509 Public Key Infrastructure Certificate
+        and CRL Profile</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <p>468. And with the following additional parts included in the ADaP-34
+    NISP-Vol2-v2 Draft, but not in the WS-I profiles:</p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>TCP (IETF STD 7:1981, RFC0793:1981 updated by
+        RFC3168:2001)</p>
+                           </li>
+                           <li class="listitem">
+                              <p>UDP (IETF STD 6:1980, RFC0768:1980)</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <p>469. And with the following additional parts (not in the WS-I profiles
+    and not in the ADaP-34 NISP-Vol2-v2 Draft):</p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>XML Encryption Syntax and Processing (W3C Recommendation 10
+        December 2002)</p>
+                           </li>
+                           <li class="listitem">
+                              <p>XML Signature Syntax and Processing Second Edition (W3C
+        Recommendation 10 June 2008)</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Security Assertion Markup Language, SAML v1.1 (OASIS)</p>
+                           </li>
+                           <li class="listitem">
+                              <p>XKMS: XML Key Management Specification (W3C Note 30 March
+        2001)</p>
+                           </li>
+                           <li class="listitem">
+                              <p>XACML eXtensible Access Control Markup Language Version 2.0
+        (OASIS Standard, 1 Feb 2005)</p>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apds03.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="u" href="apd.html">Up</a>
+                           </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apds05.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>

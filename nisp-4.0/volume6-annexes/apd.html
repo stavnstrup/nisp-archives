@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <meta name="keywords" content="ADatP-34, STANAG 5524, NOSWG, NATO Open System Working Group"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="prev" href="apcs07.html" title="C.7. Transition from Platform Oriented to Service Oriented Models"/>
+      <link rel="next" href="apds02.html" title="D.2. References"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. Annexes"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. Services and Interoperability Points in Platform Oriented and SOA Environments"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NATO, National and Industry NEC Implementation Approaches"/>
+      <link rel="appendix" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="appendix" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="appendix" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="appendix" href="apf.html" title="Appendix F. International Military Interoperability for information exchange in the NNEC context"/>
+      <link rel="section" href="apd.html#d0e3856" title="D.1. Introduction"/>
+      <link rel="section" href="apds02.html" title="D.2. References"/>
+      <link rel="section" href="apds03.html" title="D.3. Web Service Fundamentals"/>
+      <link rel="section" href="apds04.html" title="D.4. Enterprise Service Bus / Messaging System Profile"/>
+      <link rel="section" href="apds05.html" title="D.5. Appendix: ESB Requirements in a Military Environment"/>
+      <link rel="section" href="apds06.html" title="D.6. Appendix: Federated ESB Reference Architecture"/>
+      <link rel="section" href="apds07.html" title="D.7. List of Abbreviations"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol6-v4-release.pdf">PDF of V6</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>
+                           <a href="../volume5-rationale/index.html" title="NISP Design Rules">V5 - NISP Design Rules</a>
+                        </li>
+                        <li>V6 - NISP - Annexes<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">ANNEXES</a>
+                              </li>
+                              <li>A - <a href="apa.html">SERVICES AND INTEROPERABILITY POINTS IN PLATFORM ORIENTED AND SOA ENVIRONMENTS</a>
+                              </li>
+                              <li>B - <a href="apb.html">NATO, NATIONAL AND INDUSTRY NEC IMPLEMENTATION APPROACHES</a>
+                              </li>
+                              <li>C - <a href="apc.html">REFERENCE MODELS</a>
+                              </li>
+                              <li>D - <a href="apd.html">ENTERPRISE SERVICE BUS (ESB) PROFILE IN THE SERVICE ORIENTED
+    ARCHITECTURE (SOA) CONTEXT</a>
+                              </li>
+                              <li>E - <a href="ape.html">GUIDELINES USING DESIGN RULES IN NATO NEC FEDERATED
+  ENVIRONMENT</a>
+                              </li>
+                              <li>F - <a href="apf.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+  THE NNEC CONTEXT</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apcs07.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apds02.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="appendix" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="v6d-esb" style="display:none"> </a>Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented
+    Architecture (SOA) context</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="toc">
+                        <dl>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apd.html#d0e3856">D.1. Introduction</a>
+                              </span>
+                           </dt>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apds02.html">D.2. References</a>
+                              </span>
+                           </dt>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apds03.html">D.3. Web Service Fundamentals</a>
+                              </span>
+                           </dt>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apds04.html">D.4. Enterprise Service Bus / Messaging System Profile</a>
+                              </span>
+                           </dt>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apds05.html">D.5. Appendix: ESB Requirements in a Military Environment</a>
+                              </span>
+                           </dt>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apds06.html">D.6. Appendix: Federated ESB Reference Architecture</a>
+                              </span>
+                           </dt>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apds07.html">D.7. List of Abbreviations</a>
+                              </span>
+                           </dt>
+                        </dl>
+                     </div>
+                     <div class="sect1" title="D.1. Introduction">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h2 class="title">
+                                    <a id="d0e3856" style="display:none"> </a>D.1. Introduction</h2>
+                              </div>
+                           </div>
+                        </div>
+                        <p>399. The aim of the document is to give at first an overview about Web
+    Service Fundamentals with the focus to define after this a layer model for
+    a common Enterprise Service Bus (ESB). Furthermore a draft proposal of an
+    Enterprise Service Bus (ESB) / Enterprise Message System (EMS) Profile is
+    defined based on this common ESB / EMS layer model.</p>
+                        <p>400. At the end the document contains some hints related of the usage of
+    an ESB in the military environment with a look-out on a federated ESB
+    architecture.</p>
+                     </div>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apcs07.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center"> </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apds02.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>

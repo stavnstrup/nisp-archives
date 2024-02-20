@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>D.3. Web Service Fundamentals</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <meta name="keywords" content="ADatP-34, STANAG 5524, NOSWG, NATO Open System Working Group"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="prev" href="apds02.html" title="D.2. References"/>
+      <link rel="next" href="apds04.html" title="D.4. Enterprise Service Bus / Messaging System Profile"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. Annexes"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. Services and Interoperability Points in Platform Oriented and SOA Environments"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NATO, National and Industry NEC Implementation Approaches"/>
+      <link rel="appendix" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="appendix" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="appendix" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="appendix" href="apf.html" title="Appendix F. International Military Interoperability for information exchange in the NNEC context"/>
+      <link rel="subsection" href="apds03.html#d0e3956" title="D.3.1. SOA: Service Oriented Architecture"/>
+      <link rel="subsection" href="apds03.html#d0e3994" title="D.3.2. UDDI: Universal Description Discovery and Integration"/>
+      <link rel="subsection" href="apds03.html#d0e4027" title="D.3.3. WSDL: Web Services Description Language"/>
+      <link rel="subsection" href="apds03.html#d0e4094" title="D.3.4. SOAP: Simple Object Access Protocol"/>
+      <link rel="subsection" href="apds03.html#d0e4139" title="D.3.5. WEB Service Security"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol6-v4-release.pdf">PDF of V6</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>
+                           <a href="../volume5-rationale/index.html" title="NISP Design Rules">V5 - NISP Design Rules</a>
+                        </li>
+                        <li>V6 - NISP - Annexes<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">ANNEXES</a>
+                              </li>
+                              <li>A - <a href="apa.html">SERVICES AND INTEROPERABILITY POINTS IN PLATFORM ORIENTED AND SOA ENVIRONMENTS</a>
+                              </li>
+                              <li>B - <a href="apb.html">NATO, NATIONAL AND INDUSTRY NEC IMPLEMENTATION APPROACHES</a>
+                              </li>
+                              <li>C - <a href="apc.html">REFERENCE MODELS</a>
+                              </li>
+                              <li>D - <a href="apd.html">ENTERPRISE SERVICE BUS (ESB) PROFILE IN THE SERVICE ORIENTED
+    ARCHITECTURE (SOA) CONTEXT</a>
+                              </li>
+                              <li>E - <a href="ape.html">GUIDELINES USING DESIGN RULES IN NATO NEC FEDERATED
+  ENVIRONMENT</a>
+                              </li>
+                              <li>F - <a href="apf.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+  THE NNEC CONTEXT</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apds02.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apds04.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="sect1" title="D.3. Web Service Fundamentals">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="d0e3951" style="display:none"> </a>D.3. Web Service Fundamentals</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <p>401. This chapter gives an overview about the Web Service Fundamentals
+    and about some Definitions.</p>
+                     <div class="sect2" title="D.3.1. SOA: Service Oriented Architecture">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="d0e3956" style="display:none"> </a>D.3.1. SOA: Service Oriented Architecture</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>402. Service-oriented architecture (SOA) is a software architecture
+      where functionality is grouped around business processes and packaged as
+      interoperable services. SOA also describes IT infrastructure which
+      allows different applications to exchange data with one another as they
+      participate in business processes. The aim is a loose coupling of
+      services with operating systems, programming languages and other
+      technologies which underly applications. SOA separates functions into
+      distinct units, or services, which are made accessible over a network in
+      order that they can be combined and reused in the production of business
+      applications. These services communicate with each other by passing data
+      from one service to another, or by coordinating an activity between two
+      or more services.</p>
+                        <p>403. The following figure shows an overview about the internal and
+      external Web Service Architecture:</p>
+                        <div class="figure">
+                           <a id="v6f-wsa" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/wsa-overv.png" alt="Overview &#8211; Internal and External Web Service Architecture"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.1. Overview &#8211; Internal and External Web Service Architecture</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                        <p>404. There are multiple definitions of SOA. The OASIS group and the
+      Open Group have created formal definitions which can be applied to both
+      the technology and business domains.</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Open Group SOA Definition (SOA-Definition)</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>OASIS SOA Reference Model (SOA-RM)</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>405. In addition, SOA is an approach to architecture whereby business
+      services are the key organizing principles that drive the design of IT
+      to be aligned with business needs.</p>
+                        <p>406. The following figure shows the Web Service Specification in an OSI
+      Stack Model.</p>
+                        <div class="figure">
+                           <a id="v6f-wsa-osi" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/wsa-osi.png" alt="Web Service Architecture &#8211; OSI Stack Model"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.2. Web Service Architecture &#8211; OSI Stack Model</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                        <p>407. On top of there are the applications (Server or Client
+      applications). In the Web Service Architecture the UDDI (Universal
+      Description Discovery and Integration) is signed as an
+      application.</p>
+                     </div>
+                     <div class="sect2" title="D.3.2. UDDI: Universal Description Discovery and Integration">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="d0e3994" style="display:none"> </a>D.3.2. UDDI: Universal Description Discovery and Integration</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>408. The Universal Description, Discovery, and Integration (UDDI)
+      protocol defines a standard method for publishing and discovering the
+      network-based software components of a service-oriented architecture
+      (SOA). The standard specifies protocols for accessing a registry for Web
+      services, methods for controlling access to the registry, and a
+      mechanism for distributing or delegating records to other registries. In
+      short, a UDDI registry provides a standard based approach to locate a
+      software service, to invoke that service, and to manage metadata about
+      that service. The following figure shows the principle of the UDDI
+      Architecture with SOAP (messaging) for the methods of the "Inquiry and
+      Publisher API".</p>
+                        <div class="figure">
+                           <a id="v6f-uddi-soap" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/uddi-soap.png" alt="UDDI Overview Architecture based on SOAP"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.3. UDDI Overview Architecture based on SOAP</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                        <p>409. The next figure shows the main extract of the UDDI Data Model
+      (used in the "Data Pool").</p>
+                        <div class="figure">
+                           <a id="v6f-uddi-dm" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/uddi-dm.png" alt="Main extract of the UDDI Data Model"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.4. Main extract of the UDDI Data Model</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                        <p>410. An other very important feature is to exchange UDDI Data between
+      different UDDI Registries for example as show in the next figure. In
+      addition, it is necessary to distinguish between internal services and
+      external offered services.</p>
+                        <div class="figure">
+                           <a id="v6f-uddi-tpc" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/uddi-tpc.png" alt="UDDI illustration of Trading Partner Collaboration"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.5. UDDI illustration of Trading Partner Collaboration</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                     </div>
+                     <div class="sect2" title="D.3.3. WSDL: Web Services Description Language">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="d0e4027" style="display:none"> </a>D.3.3. WSDL: Web Services Description Language</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>411. Web Services Description Language (WSDL) is an XML-based Service /
+      Interface Definition Language that separates function from
+      implementation and enables design by SOA.</p>
+                        <p>412. The value of WSDL is that it enables development tools and
+      middleware for any platform and language to understand service
+      operations and invocation mechanisms. For example, given the WSDL
+      interface to a service that is implemented in Java, running in a
+      HTTP-Server environment, and offering invocation through HTTP.</p>
+                        <p>413. With SOAP, the WSDL specification is extensible and provides for
+      additional aspects of service interactions to be specified, such as
+      security and transactional.</p>
+                        <p>414. The following figure shows the principle structure of a WSDL
+      Document and its usage:</p>
+                        <div class="figure">
+                           <a id="v6f-wsdl" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/wsdl.png" alt="WSDL Document Structure (with usage)"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.6. WSDL Document Structure (with usage)</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                        <p>415. WSDL description contain:</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>
+                                    <span class="emphasis">
+                                       <em>Types</em>
+                                    </span> &#8211; a container for data
+          type definitions using some type system (such as XSD).</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>
+                                    <span class="emphasis">
+                                       <em>Message</em>
+                                    </span> &#8211; an abstract, typed
+          definition of the data being communicated.</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>
+                                    <span class="emphasis">
+                                       <em>Operation</em>
+                                    </span> &#8211; an abstract
+          description of an action supported by the service.</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>
+                                    <span class="emphasis">
+                                       <em>Port Type</em>
+                                    </span> &#8211; an abstract set of
+          operations supported by one or more endpoints.</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>
+                                    <span class="emphasis">
+                                       <em>Binding </em>
+                                    </span> &#8211; a concrete protocol
+          and data format specification for a particular port type.</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>
+                                    <span class="emphasis">
+                                       <em>Port </em>
+                                    </span> &#8211; a single endpoint
+          defined as a combination of a binding and a network address.</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>
+                                    <span class="emphasis">
+                                       <em>Service </em>
+                                    </span> &#8211; a collection of
+          related endpoints.</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>416. The WSDL Document format is based on XML as illustrated in the example figure below.</p>
+                        <div class="figure">
+                           <a id="v6f-wsdl-docstruc" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/wsdl-docstruc.png" alt="Example of a WSDL Document Structure"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.7. Example of a WSDL Document Structure</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                     </div>
+                     <div class="sect2" title="D.3.4. SOAP: Simple Object Access Protocol">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="d0e4094" style="display:none"> </a>D.3.4. SOAP: Simple Object Access Protocol</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>417. SOAP is an XML&#8211;based format for constructing messages in a
+      transport PDU independent way and a standard on how the message should
+      be handled. SOAP messages consist of an envelope that contains a header
+      and a body. It also defines a mechanism for indicating and communicating
+      problems that occurred while processing the message, which are known as
+      SOAP faults.</p>
+                        <div class="figure">
+                           <a id="v6f-soap-msg" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/soap-msg1.png" alt="SOAP Message Structure"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.8. SOAP Message Structure</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                        <div class="figure">
+                           <a id="v6f-soap-msg2" style="display:none"> </a>
+                           <p/>
+                           <div class="figure-contents">
+                              <div class="mediaobject">
+                                 <img src="../figures/soap-msg2.png" alt="SOAP Message Example"/>
+                              </div>
+                           </div>
+                           <p class="title">
+                              <b>Figure D.9. SOAP Message Example</b>
+                           </p>
+                        </div>
+                        <br class="figure-break"/>
+                        <p>418. The <span class="emphasis">
+                              <em>headers</em>
+                           </span> section of a SOAP message is
+      extensible and can contain many different headers that are defined by
+      different schemas. The extra headers can be used to modify the behaviour
+      of the middleware infrastructure. For example, the headers can include
+      information about transactions that can be used to ensure that actions
+      performed by the service consumer and service provider are
+      coordinated.</p>
+                        <p>419. The <span class="emphasis">
+                              <em>body</em>
+                           </span> section contains the content of the
+      SOAP message. When used by Web services, the SOAP body contains
+      XML &#8211; formatted data. This data is specified in the WSDL that describes
+      the Web service.</p>
+                        <p>420. <span class="emphasis">
+                              <em>Remark:</em>
+                           </span>The Header
+      Block and the Body Block are in XML format, but contain
+      customer designed content. SOAP doesn't define this content. For having
+      standards it is necessary to define data models (including metadata of
+      the content).</p>
+                        <p>421. When talking about SOAP, it is common to talk about SOAP in
+      combination with the transport protocol that is used to communicate the
+      SOAP message. For example, SOAP that is transferred using HTTP is
+      referred to as SOAP over HTTP or SOAP/HTTP.</p>
+                        <p>422. The most common transport protocol that is used to communicate
+      SOAP messages is HTTP. This is expected because Web services are
+      designed to make use of Web technologies.</p>
+                        <p>423. However, SOAP can also be communicated using JMS as a transport
+      service. When using JMS, the address of the Web service is expressed in
+      terms of a JMS connection factory and a JMS destination. Although using
+      JMS provides a more reliable transport mechanism, it is not an open
+      standard, requires extra and potential expensive investment, and does
+      not interoperate.</p>
+                        <p>424. SOAP is just XML and HTTP combined to send and receive messages
+      over the Internet. It is not constrained by the application language
+      (Java, C#, Perl) or the platform (Windows, UNIX, Mac), and this makes it
+      much more versatile than other solutions.</p>
+                        <p>425. There are many successful implementations of the basic Web
+      services standards, particularly SOAP and WSDL but many aspects of
+      service interaction and integration are not directly supported by basic
+      standards, such as security, transactional, delivery assurance, and
+      process modelling &#8211; for example.</p>
+                     </div>
+                     <div class="sect2" title="D.3.5. WEB Service Security">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="d0e4139" style="display:none"> </a>D.3.5. WEB Service Security</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sect3" title="D.3.5.1. XML Encryption">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e4142" style="display:none"> </a>D.3.5.1. XML Encryption</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>426. XML Encryption is a W3C Standard to encrypt XML. It is done in
+        such a way that the encrypted data remains and can be treated as XML.
+        It uses both asymmetric and symmetric encryption algorithms, symmetric
+        to encrypt the data and asymmetric to encrypt the symmetric session
+        key. Both the session key and the cipher data are stored together in
+        an XML element called EncryptedData. The EncryptedData element
+        contains a series of child elements that describe the algorithms used
+        during the encryption process, as well as containing key information
+        and the cipher data.</p>
+                           <p>427. The followings XML example illustrates a simple example of the
+        XML Encryption:</p>
+                           <p>428. Consider the following fictitious payment information, which
+        includes identification information and information appropriate to a
+        payment method (e.g., credit card, money transfer, or electronic
+        check):</p>
+                           <div class="figure">
+                              <a id="v6f-xmlenc1" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/xmlenc1.png" alt="XML Encryption"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure D.10. XML Encryption</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                           <p>429. This markup represents that John Smith is using his credit card
+        with a limit of $5,000USD. Smith's credit card number is sensitive
+        information! If the application wishes to keep that information
+        confidential, it can encrypt the CreditCard element:</p>
+                           <div class="figure">
+                              <a id="v6f-xmlenc2" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/xmlenc2.png" alt="XML Encryption"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure D.11. XML Encryption</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                           <p>430. By encrypting the entire CreditCard element from its start to
+        end tags, the identity of the element itself is hidden. (An
+        eavesdropper doesn&amp;apos;t know whether he used a credit card or
+        money transfer). The CipherData element contains the encrypted
+        serialization of the CreditCard element.</p>
+                        </div>
+                        <div class="sect3" title="D.3.5.2. XML Signature">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e4171" style="display:none"> </a>D.3.5.2. XML Signature</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>431. XML Signature (also called XMLDsig, XML-DSig, XML-Sig) is a W3C
+        recommendation that defines an XML syntax for digital signatures. XML
+        signatures can be used to sign data &#8211;a resource&#8211; of any type, typically
+        XML documents, but anything that is accessible via a URL can be
+        signed. An XML signature used to sign a resource outside its
+        containing XML document is called a detached signature; if it is used
+        to sign some part of its containing document, it is called an
+        enveloped signature; if it contains the signed data within itself it
+        is called an enveloping signature.</p>
+                           <p>432. XML digital signatures are represented by the Signature element
+        which has the following structure (where "?" denotes zero or one
+        occurrence; "+" denotes one or more occurrences; and "*" denotes zero
+        or more occurrences):</p>
+                           <div class="figure">
+                              <a id="v6f-xmlsig" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/xmlsig.png" alt="XML Signature"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure D.12. XML Signature</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                           <p>433. Within an XML document, signatures are related to local data
+        objects via fragment identifiers. Such local data can be included
+        within an enveloping signature or can enclose an enveloped signature.
+        Detached signatures are over external network resources or local data
+        objects that reside within the same XML document as sibling elements;
+        in this case, the signature is neither enveloping (signature is
+        parent) nor enveloped (signature is child). Since a Signature element
+        (and its ID attribute value/name) may co-exist or be combined with
+        other elements (and their IDs) within a single XML document, care
+        should be taken in choosing names such that there are no subsequent
+        collisions that violate the ID uniqueness validity constraint
+        [XML].</p>
+                        </div>
+                        <div class="sect3" title="D.3.5.3. XML Token">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e4188" style="display:none"> </a>D.3.5.3. XML Token</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>434. A security token represents the user's claims and it's used by
+        the Authentication Service for authenticate him. There are two kinds
+        of security tokens:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>X.509 certificate</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>SAML Assertion</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>435. In this document we discuss only the "SAML Assertion" in an
+        additional point (not the X.509 certification).</p>
+                           <p>436. The following XML example shows a SAML Token:</p>
+                           <div class="figure">
+                              <a id="v6f-samltok" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/samltoken.png" alt="SAML Token"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure D.13. SAML Token</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                           <p>437. The following figure shows the three XML security methods code
+        in a SOAP (XML) Message.</p>
+                           <div class="figure">
+                              <a id="v6f-soapencsig" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/soapencsig.png" alt="SOAP Security based on XML Encryption &amp; Signature &amp; Token"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure D.14. SOAP Security based on XML Encryption &amp; Signature &amp;
+          Token</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                        </div>
+                        <div class="sect3" title="D.3.5.4. XKMS: XML Key Management Specification">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e4222" style="display:none"> </a>D.3.5.4. XKMS: XML Key Management Specification</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>438. The XKMS specifies protocols for distributing and registering
+        public keys, suitable for use in conjunction with the proposed
+        standard for XML Signatures [XML-SIG] and an anticipated companion
+        standard for XML encryption. The XML Key Management Specification
+        (XKMS) comprises two parts &#8211; the XML Key Information Service
+        Specification (X-KISS) and the XML Key Registration Service
+        Specification (X-KRSS):</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>
+                                       <span class="emphasis">
+                                          <em>XML Key Information Service
+            Specification (X-KISS)</em>
+                                       </span>: A protocol to support the
+            delegation by an application to a service of the processing of Key
+            Information associated with an XML signature, XML encryption, or
+            other public key. Its functions include the location of required
+            public keys and describing the binding of such keys to
+            identification information.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>
+                                       <span class="emphasis">
+                                          <em>XML Key Registration Service
+            Specification (X-KRSS):</em>
+                                       </span> A protocol to support the
+            registration of a key pair by a key pair holder, with the intent
+            that the key pair subsequently is usable in conjunction with the
+            XML Key Information Service Specification or higher level trust
+            assertion service such as XML Trust Assertion Service
+            Specification (XTASS).</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>439. <span class="emphasis">
+                                 <em>The underlying PKI may be based upon a
+        different specification such as X.509/PKIX, SPKI or PGP &#8211; proposal:
+        X.509/PKIX.</em>
+                              </span>
+                           </p>
+                           <p>440. Example for X-KISS:</p>
+                           <p>441. The client is attempting to send an encrypted XML document and
+        requires the public key encryption parameters of the recipient.</p>
+                           <div class="figure">
+                              <a id="v6f-kiss" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/x-kiss.png" alt="SOAP Security based on XML Encryption &amp; Signature &amp; Token"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure D.15. SOAP Security based on XML Encryption &amp; Signature &amp;
+          Token</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                        </div>
+                        <div class="sect3" title="D.3.5.5. SAML: Security Assertion Markup Language / SAML Architecture">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e4253" style="display:none"> </a>D.3.5.5. SAML: Security Assertion Markup Language / SAML
+        Architecture</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="sect4" title="D.3.5.5.1. SAML: Security Assertion Markup Language">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="d0e4256" style="display:none"> </a>D.3.5.5.1. SAML: Security Assertion Markup Language</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>442. Security Assertion Markup Language (SAML) is an XML-based
+          standard for exchanging authentication and authorization data
+          between security domains, that is between an identity provider (a
+          producer of assertions) and a service provider (a consumer of
+          assertions). SAML is a product of the OASIS Security Services
+          Technical Committee.</p>
+                              <p>443. The normal use case of SAML is support the Single Sign-On
+          (SSO) issue, but SAML is also used for Identity Federation. SSO
+          represents the ability of a user to authenticate in one domain and
+          use resources in another domain WITHOUT re-authenticating. SAML is
+          an XML Framework for exchanging security information over the
+          internet. It enables different security services systems to
+          INTEROPERATE.</p>
+                              <p>444. The core SAML specification defines the structure and content
+          of both assertions and protocol messages used to transfer this
+          information. The next Figure illustrates the relationship between
+          these basic SAML concepts.</p>
+                              <p>445. SAML assertions carry statements about a principal that an
+          asserting party claims to be true. The valid structure and contents
+          of an assertion are defined by the SAML assertion XML schema.
+          Assertions are usually created by an asserting party based on a
+          request of some sort from a relying party, although under certain
+          circumstances, the assertions can be delivered to a relying party in
+          an unsolicited manner. SAML protocol messages are used to make the
+          SAML-defined requests and return appropriate responses. The
+          structure and contents of these messages are defined by the
+          SAML-defined protocol XML schema.</p>
+                              <div class="figure">
+                                 <a id="v6f-saml" style="display:none"> </a>
+                                 <p/>
+                                 <div class="figure-contents">
+                                    <div class="mediaobject">
+                                       <img src="../figures/saml.png" alt="Basic SAML Concepts"/>
+                                    </div>
+                                 </div>
+                                 <p class="title">
+                                    <b>Figure D.16. Basic SAML Concepts</b>
+                                 </p>
+                              </div>
+                              <br class="figure-break"/>
+                              <p>446. An assertion is a claim made by someone about someone else.
+          SAML assertions are structured as a series of statements about a
+          subject: Authentication, Attribute, Authorization Decision, or by an
+          own customized statements. SAML defines three kinds of statements
+          that can be carried within an assertion:</p>
+                              <div class="itemizedlist">
+                                 <ul class="itemizedlist">
+                                    <li class="listitem">
+                                       <p>
+                                          <span class="emphasis">
+                                             <em>Authentication
+              statements:</em>
+                                          </span> These are created by the party that
+              successfully authenticated a user. At a minimum, they describe
+              the particular means used to authenticate the user and the
+              specific time at which the authentication took place.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>
+                                          <span class="emphasis">
+                                             <em>Attribute statements:</em>
+                                          </span>
+              These contain specific identifying attributes about the subject
+              (for example, that user "John Doe" has "Gold" card
+              status).</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>
+                                          <span class="emphasis">
+                                             <em>Authorization decision
+              statements:</em>
+                                          </span> These define something that the subject
+              is entitled to do (for example, whether "John Doe" is permitted
+              to buy a specified item).</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <p>447. The following example shows a common portion Assertion:</p>
+                              <div class="figure">
+                                 <a id="v6f-ass" style="display:none"> </a>
+                                 <p/>
+                                 <div class="figure-contents">
+                                    <div class="mediaobject">
+                                       <img src="../figures/saml-assert.png" alt="Assertion"/>
+                                    </div>
+                                 </div>
+                                 <p class="title">
+                                    <b>Figure D.17. Assertion</b>
+                                 </p>
+                              </div>
+                              <br class="figure-break"/>
+                              <p>448. An assertion contains one or more statements and some common
+          information that applies to all contained statements or to the
+          assertion as a whole. A SAML assertion is typically carried between
+          parties in a SAML protocol response message, which itself must be
+          transmitted using some sort of transport or messaging
+          protocol.</p>
+                              <p>449. The next Figure shows a typical example of containment: a SAML
+          assertion containing a series of statements, the whole being
+          contained within a SAML response, which itself is carried by some
+          kind of protocol.</p>
+                              <div class="figure">
+                                 <a id="v6f-saml-prot" style="display:none"> </a>
+                                 <p/>
+                                 <div class="figure-contents">
+                                    <div class="mediaobject">
+                                       <img src="../figures/saml-prot.png" alt="Relationship of SAML Components and Protocol Container"/>
+                                    </div>
+                                 </div>
+                                 <p class="title">
+                                    <b>Figure D.18. Relationship of SAML Components and Protocol
+            Container</b>
+                                 </p>
+                              </div>
+                              <br class="figure-break"/>
+                              <p>450. The means by which lower-layer communication or messaging
+          protocols (such as HTTP or SOAP) are used to transport SAML protocol
+          messages between participants is defined by the SAML
+          bindings.</p>
+                              <p>451. SAML defines a number of generalized request/response
+          protocols:</p>
+                              <div class="itemizedlist">
+                                 <ul class="itemizedlist">
+                                    <li class="listitem">
+                                       <p>Authentication Request Protocol</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Single Logout Protocol</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Assertion Query and Request Protocol</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Artifact Resolution Protocol</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Name Identifier Management Protocol</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Name Identifier Mapping Protocol</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <p>452. SAML profiles are defined to satisfy a particular business use
+          case, for example the Web Browser SSO profile. Profiles typically
+          define constraints on the contents of SAML assertions, protocols,
+          and bindings in order to solve the business use case in an
+          interoperable fashion.</p>
+                           </div>
+                           <div class="sect4" title="D.3.5.5.2. SAML Architecture (Web Security Architecture)">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="d0e4340" style="display:none"> </a>D.3.5.5.2. SAML Architecture (Web Security Architecture)</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>453. The following figure shows the chain of an access to a Service
+          or to a Resource and the co-operation with the IT Security Services.
+          The main SAML IT Security Services are:</p>
+                              <div class="itemizedlist">
+                                 <ul class="itemizedlist">
+                                    <li class="listitem">
+                                       <p>
+                                          <span class="emphasis">
+                                             <em>Policy Enforcement Point (PEP):
+              </em>
+                                          </span>A Policy Enforcement Point (PEP) at the resource
+              provider formulates an authorization decision request (SAML or
+              XACML) using the attributes and other information in the
+              security context. The PEP sends this request to a Policy
+              Decision Point.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>
+                                          <span class="emphasis">
+                                             <em>Policy Decision Point (PDP):
+              </em>
+                                          </span>The Policy Decision Point (PDP) combines the
+              information in the request with policy obtained from a central
+              policy store. The PDP renders an access control decision, which
+              is returned to the PEP.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>
+                                          <span class="emphasis">
+                                             <em>Policy retrieval point (PRP):
+              </em>
+                                          </span>The component from which applicable policies may be
+              retrieved. The communication protocol between PDP and PRP is
+              XACML.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>
+                                          <span class="emphasis">
+                                             <em>Policy Administration Point (PAP):
+              </em>
+                                          </span>A Policy Administration Point (PAP) maintains
+              authorization policy in a central location. The policy store is
+              made available to the PRP for access control decisions.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>
+                                          <span class="emphasis">
+                                             <em>Policy Information Point (PIP):
+              </em>
+                                          </span>A Policy Information Point validates the specific
+              attributes that are used for authorization.</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="figure">
+                                 <a id="v6f-saml-arch" style="display:none"> </a>
+                                 <p/>
+                                 <div class="figure-contents">
+                                    <div class="mediaobject">
+                                       <img src="../figures/saml-arch.png" alt="SAML Architecture (Overview)"/>
+                                    </div>
+                                 </div>
+                                 <p class="title">
+                                    <b>Figure D.19. SAML Architecture (Overview)</b>
+                                 </p>
+                              </div>
+                              <br class="figure-break"/>
+                              <p>454. The step sequence by an access of a client is:</p>
+                              <div class="itemizedlist">
+                                 <ul class="itemizedlist">
+                                    <li class="listitem">
+                                       <p>1. Login based on a certificate;</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>2. Before an access the user needs may be some keys, which
+              he can get via the Public Key Infrastructure using for example
+              XKISS.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>3. Service Consumer invokes a Service which was published
+              earlier. The user (consumer) sends a request (SOAP message) via
+              the Middleware Service Broker to the Provider. The SOA
+              Middleware forwards the request to the PEP.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>4. The PEP (Policy Enforcement Point) will capture the
+              requirement for a service and pass the SAML onto the PDP for
+              authentication and authorization validation of the obligation
+              service.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>5. The PDP receives the 'Authorization Decision Request'
+              and requests a 'Policy Query' to the PRP. The PRP response with
+              a 'Policy Statement'.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>6. In addition the PDP checks some more, the User,
+              Resource, and/or Context Attributes via some additional
+              'Statement Services'.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>7. Based on the check results (Policy and Statements) the
+              PDP decides the access (permit, deny, not applicable or
+              indeterminate).</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>8. The PEP receives the access result, triggers the
+              logging and the flow control.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>9. If all access requests are valid, the PEP forwards the
+              user request to the provider.</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>10. The Service Provider supports the user request.</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apds02.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="u" href="apd.html">Up</a>
+                           </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apds04.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>E.5. Design rules in a NATO NEC federated environment</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <meta name="keywords" content="ADatP-34, STANAG 5524, NOSWG, NATO Open System Working Group"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="prev" href="apes04.html" title="E.4. Design rules summary"/>
+      <link rel="next" href="apes06.html" title="E.6. Reference architecture - National design rules"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. Annexes"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. Services and Interoperability Points in Platform Oriented and SOA Environments"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NATO, National and Industry NEC Implementation Approaches"/>
+      <link rel="appendix" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="appendix" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="appendix" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="appendix" href="apf.html" title="Appendix F. International Military Interoperability for information exchange in the NNEC context"/>
+      <link rel="subsection" href="apes05.html#d0e5197" title="E.5.1. Problems or opportunity description"/>
+      <link rel="subsection" href="apes05.html#d0e5212" title="E.5.2. Solution"/>
+      <link rel="subsection" href="apes05.html#d0e5376" title="E.5.3. Consequences"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol6-v4-release.pdf">PDF of V6</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>
+                           <a href="../volume5-rationale/index.html" title="NISP Design Rules">V5 - NISP Design Rules</a>
+                        </li>
+                        <li>V6 - NISP - Annexes<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">ANNEXES</a>
+                              </li>
+                              <li>A - <a href="apa.html">SERVICES AND INTEROPERABILITY POINTS IN PLATFORM ORIENTED AND SOA ENVIRONMENTS</a>
+                              </li>
+                              <li>B - <a href="apb.html">NATO, NATIONAL AND INDUSTRY NEC IMPLEMENTATION APPROACHES</a>
+                              </li>
+                              <li>C - <a href="apc.html">REFERENCE MODELS</a>
+                              </li>
+                              <li>D - <a href="apd.html">ENTERPRISE SERVICE BUS (ESB) PROFILE IN THE SERVICE ORIENTED
+    ARCHITECTURE (SOA) CONTEXT</a>
+                              </li>
+                              <li>E - <a href="ape.html">GUIDELINES USING DESIGN RULES IN NATO NEC FEDERATED
+  ENVIRONMENT</a>
+                              </li>
+                              <li>F - <a href="apf.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+  THE NNEC CONTEXT</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apes04.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apes06.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="sect1" title="E.5. Design rules in a NATO NEC federated environment">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="d0e5190" style="display:none"> </a>E.5. Design rules in a NATO NEC federated environment</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <p>520. This guideline document describes a concept and model for how
+    knowledge of proven solutions in the form of design rules can be
+    documented and packaged in order to form a shared basis for the future
+    development of NNEC based systems for NATO.</p>
+                     <p>521. The processes in which design rules are identified, produced and
+    used are not described within this guideline.</p>
+                     <div class="sect2" title="E.5.1. Problems or opportunity description">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="d0e5197" style="display:none"> </a>E.5.1. Problems or opportunity description</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>522. In the development of large systems of systems or federated
+      systems for the future needs of the NATO there are several problems to
+      be solved as well as opportunities to exploit. The problems range from
+      what methods to use for requirements capture and design to how to solve
+      detailed technical matters.</p>
+                        <p>523. In order to be able to establish a set of building blocks that can
+      be used to meet the needs of the future NNEC, design regulations are
+      absolutely essential if the building blocks shall be possible to be used
+      together and combined in different ways, from a technical as well as
+      from a business point of view.</p>
+                        <p>524. Design regulations in this context are the descriptive or
+      normative regulation work necessary for NATO nations to be able to
+      implement, configure and use systems in a federated environment. This
+      includes not only technical and business design, but also the ability to
+      manage and maintain these regulations to be able to provide the NATO
+      nations with flexible component based systems.</p>
+                        <p>525. Moreover, there is a strong incentive to endorse reuse of proven
+      solutions or implementations and thus get a more cost-effective
+      solution. The overall quality is also expected to benefit from this kind
+      of reuse.</p>
+                        <p>526. In this document we will focus on the model for design rules, and
+      the patterns for setting up the SIOP and SIP:s between federations, this
+      in order to be able to exchange information services between
+      parties.</p>
+                        <p>527. Design rules patterns and knowledge for supporting NATO Nations in
+      designing NNEC compliant components and services can also be retrieved
+      from different Nations repositories as reference architectures, Sweden
+      Design rules (releasable to NATO) will be included as one of the Partner
+      nations reference architecture as recommended and proven patterns in
+      order to achieve NNEC interoperability.</p>
+                     </div>
+                     <div class="sect2" title="E.5.2. Solution">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="d0e5212" style="display:none"> </a>E.5.2. Solution</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sect3" title="E.5.2.1. Design rules in the NNEC context">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e5215" style="display:none"> </a>E.5.2.1. Design rules in the NNEC context</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>528. Design rules are about reusing knowledge of proven solutions. In
+        the context of NNEC we are especially interested in reuse of solutions
+        that provide typical NNEC characteristics. In addition to this, the
+        use of design rules aim at making the development of NNEC more
+        cost-effective and improve the quality in the resulting
+        products.</p>
+                           <p>529. As mentioned before, a design rule is in the most general
+        description a three-part rule, which expresses a relation between a
+        certain context, a problem or an opportunity and a solution.</p>
+                           <p>530. Different design rules may be in conflict with each other, e.g.
+        in that the solution of one design rule can be incompatible with the
+        solution of the other.</p>
+                           <p>531. Moreover, design rules can be singular or aggregates meaning
+        that it either is an atomic rule or an aggregate of rules that
+        together constitute the rule. The aggregate may include rules on how
+        to combine the possibly conflicting aggregated rules in order to
+        generate a rule according to the current priorities.</p>
+                           <p>532. Design rules may be implemented for solutions on different
+        levels. There may be design rules for specific technical design
+        problems or rules, how to handle a major business opportunities. It is
+        however anticipated that the majority of design rules valid for an
+        NNEC-system will be focused on the higher levels.</p>
+                           <p>533. Design rules can be used in order to meet functional as well as
+        non-functional needs of the system of interest. It should be clear
+        from all design rules which problem or opportunity it is supposed to
+        solve.</p>
+                        </div>
+                        <div class="sect3" title="E.5.2.2. General guidance for using design rules">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e5230" style="display:none"> </a>E.5.2.2. General guidance for using design rules</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>534. The prime prerequisites for implementing a design rule
+        are:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>The use of the design rule shall make the resulting design
+            &#8220;NNEC-compliant&#8221;, i.e. the design rules shall provide
+            essential NNEC-characteristics such as flexibility,
+            interoperability, security and usability</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>A design rule shall provide a solution to frequently shown
+            problems, to enable reuse of solutions or implementations and thus
+            get a more cost-effective solution.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>A design rule shall provide a solution to difficult
+            problems, or explore an opportunity, i.e. be a part of the
+            corporate or federated memory</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>A design rule shall improve the quality of the resulting
+            product relative a product solution not using the design
+            rule.</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>535. At least one of the mentioned prerequisites should be fulfilled.
+        There may of course be other valid prerequisites, which will be
+        assessed and used to initiate the design of a design rule.</p>
+                           <p>536. Design rules shall consist of either atomic rules or aggregates
+        of rules that together shall constitute the rule. The aggregate may
+        include rules on how to combine the possibly conflicting rules in
+        order to generate a rule according to the priorities.</p>
+                           <p>537. An atomic design rule must not contain solutions for more than
+        one subject area, e.g. mixing of business and technical subjects shall
+        be avoided. Detailed technical rules shall in the same way be
+        separated from rules of information or logical nature.</p>
+                           <p>538. Design rules shall where applicable be based on concepts and
+        rules in an extended NATO Architecture Framework.</p>
+                           <p>539. A design rule shall not be of too low granularity or too trivial
+        in order to avoid an explosion in the number produced of design rules.
+        To achieve the approved mandatory validity, a design rule shall
+        specify the way to solve the problem it is intended for. Rules that
+        can be expressed in single sentences are collected in general sections
+        in the design rule solution part.</p>
+                           <p>540. Great efforts shall be made to ensure that the design rule is
+        maintainable. This is primarily achieved by limiting the problem area
+        that the design rule is intended for. More complex problems or
+        opportunities shall be supported by aggregates of rules.</p>
+                        </div>
+                        <div class="sect3" title="E.5.2.3. Design rule model">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e5260" style="display:none"> </a>E.5.2.3. Design rule model</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="figure">
+                              <a id="d0e5263" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/dr-guide-designrulemodel.png" alt="Design rule model"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure E.1. Design rule model</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                           <p>541. The design rule product consists of:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>The basic design rule which, as already described, is a
+            three part rule consisting of context, problem and solution. This
+            shall also be complemented with one or more rejected solutions,
+            i.e. solutions which shall not be used.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>An analysis and motivation why the solution fits the problem
+            in the given context. This needs to be linked to direct business
+            benefits such as cost savings or increased efficacy in
+            operations.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>A description of the consequences from the proposed solution
+            which is used to create an understanding at what cost the solution
+            comes. This could include financial impacts, but also how people,
+            processes or technology needs to be adjusted in order to achieve
+            the solution. When describing the consequences from a design rule
+            solution the impact on (at least) the following areas should
+            always be considered:</p>
+                                    <div class="itemizedlist">
+                                       <ul class="itemizedlist">
+                                          <li class="listitem">
+                                             <p>Security</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Interoperability</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Cost</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Usability</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Flexibility and</p>
+                                          </li>
+                                          <li class="listitem">
+                                             <p>Procedures</p>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Verification information which explains how the application
+            of the rule can be verified.</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>542. A template for design rules, including guidelines, is defined in
+        a separate document.</p>
+                           <p>543. A design rule product is like Standards in the NISP related to
+        near, mid and far term. A design rule can also exist in different
+        versions with different status. The status of the design rule
+        indicates which state of development the design rule is in.</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Candidates</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Approved</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Disposed</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>544. The solution described in a design rule may refer to other
+        design rules to form an aggregate design rule. This may be the case
+        for instance in a design rule describing a configuration to use in a
+        specific context or for a specific type of system. If so, the validity
+        of the referenced design rule within the current context shall be
+        stated.</p>
+                           <p>545. Each design rule is configured in one, and only one, Design Rule
+        Package.</p>
+                           <p>546. The status of a design rule indicates in which state of
+        development it is.</p>
+                           <p>547. Validity of a design rule is only used when referring as e.g. to
+        form aggregates. The validity labels that can be used are defined in
+        the table below.</p>
+                           <div class="table">
+                              <a id="d0e5327" style="display:none"> </a>
+                              <p/>
+                              <div class="table-contents">
+                                 <table summary="Rule validities" border="1">
+                                    <colgroup>
+                                       <col width="20%"/>
+                                       <col width="80%"/>
+                                    </colgroup>
+                                    <thead>
+                                       <tr>
+                                          <th>
+                                             <p>Validity</p>
+                                          </th>
+                                          <th>
+                                             <p>Description</p>
+                                          </th>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td>
+                                             <p>Mandatory</p>
+                                          </td>
+                                          <td>
+                                             <p>The rule shall be treated as a norm and is
+                mandatory to use.</p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <p>Optional</p>
+                                          </td>
+                                          <td>
+                                             <p>The rule gives good design principles and is
+                recommended for use.</p>
+                                          </td>
+                                       </tr>
+                                       <tr>
+                                          <td>
+                                             <p>Candidate</p>
+                                          </td>
+                                          <td>
+                                             <p>The rule is planned for future use in this
+                context. The design rule exist but is not appropriate to use
+                due to reasons like cost, compatibility etc.</p>
+                                          </td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                              <p class="title">
+                                 <b>Table E.1. Rule validities</b>
+                              </p>
+                           </div>
+                           <br class="table-break"/>
+                           <p>548. The lifecycle for a design rule must be coordinated with
+        profiles and standards in the manner, following the NOSWG NISP
+        model</p>
+                        </div>
+                        <div class="sect3" title="E.5.2.4. Packaging of Rules (Rule Package)">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e5365" style="display:none"> </a>E.5.2.4. Packaging of Rules (Rule Package)</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>549. Design rules are configured in packages named DRP, Design Rule
+        Package. A DRP may also configure other DRPs, thus creating a
+        hierarchy of packages. A design rule or DRP belongs to one, and only
+        one, DRP.</p>
+                           <p>550. DRPs are defined so that each DRP-structure covers rules that
+        are specific to one particular domain defined for a specific subject
+        area of norms.</p>
+                           <p>551. Dependencies between DRPs shall be defined, and the dependencies
+        shall be minimized. Circular dependencies must not exist. The
+        visibility of design rules configured by a DRP may in addition be
+        limited to the DRP only; default is however that only the DRP exposes
+        the external visibility for a design rule.</p>
+                           <p>552. No design rule shall be part of more than one DRP, if necessary
+        cross-references between DRPs according to the rules for dependencies
+        between DRPs shall be used. Common design rules must for this reason
+        be allocated to higher levels in a DRP hierarchy.</p>
+                        </div>
+                     </div>
+                     <div class="sect2" title="E.5.3. Consequences">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="d0e5376" style="display:none"> </a>E.5.3. Consequences</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>553. If the design rule concept is going to be successfully
+      implemented, it is important to understand how they impact the other
+      frameworks and processes used in design. These frameworks and processes
+      also have to be adjusted so it becomes clear as to what is documented
+      where and when.</p>
+                        <div class="sect3" title="E.5.3.1. Standards with the use of design rules">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e5381" style="display:none"> </a>E.5.3.1. Standards with the use of design rules</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>554. Standards is often about WHAT but not always about HOW. A vast
+        number of standards are applicable for NNEC, what are applied where,
+        how and together with what, does not always mean that complex system
+        will work. In order to support profiling development when using NISP,
+        Designrules is adopted by NATO as a complementary set of tools for
+        :</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Helping to choose the right standard</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>How to apply the standard on a specific problem</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Understanding the relations between different
+            standards</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Applicability in different domains</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Helping with best practice and good patters in order to
+            speed up the development of a profile.</p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="sect3" title="E.5.3.2. Profiling with the use of NAF and Standards and Designrules in the NISP">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="d0e5402" style="display:none"> </a>E.5.3.2. Profiling with the use of NAF and Standards and Designrules in
+        the NISP</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>555. The relations between the NISP and NAF objects in focus. The
+        following picture shows the relations between the NISP objects
+        Profile, Standards and Designrules. For more information about Profile
+        guidance document.</p>
+                           <div class="figure">
+                              <a id="d0e5407" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/dr-guide-profiling.png" alt="Releationship between NISP objects Profiles, standards and Designrules"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure E.2. Releationship between NISP objects Profiles, standards and
+          Designrules</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apes04.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="u" href="ape.html">Up</a>
+                           </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apes06.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>

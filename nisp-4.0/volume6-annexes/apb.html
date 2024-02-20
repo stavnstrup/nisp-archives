@@ -1,0 +1,717 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>Appendix B. NATO, National and Industry NEC Implementation Approaches</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <meta name="keywords" content="ADatP-34, STANAG 5524, NOSWG, NATO Open System Working Group"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="prev" href="apas04.html" title="A.4. Service and Interoperability Points"/>
+      <link rel="next" href="apbs02.html" title="B.2. National Network Enabled Efforts"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. Annexes"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. Services and Interoperability Points in Platform Oriented and SOA Environments"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NATO, National and Industry NEC Implementation Approaches"/>
+      <link rel="appendix" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="appendix" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="appendix" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="appendix" href="apf.html" title="Appendix F. International Military Interoperability for information exchange in the NNEC context"/>
+      <link rel="section" href="apb.html#v1s1-int-nnee" title="B.1. NATO Network Enabled Efforts"/>
+      <link rel="section" href="apbs02.html" title="B.2. National Network Enabled Efforts"/>
+      <link rel="section" href="apbs03.html" title="B.3. Industry Network Enabled Efforts"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol6-v4-release.pdf">PDF of V6</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>
+                           <a href="../volume5-rationale/index.html" title="NISP Design Rules">V5 - NISP Design Rules</a>
+                        </li>
+                        <li>V6 - NISP - Annexes<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">ANNEXES</a>
+                              </li>
+                              <li>A - <a href="apa.html">SERVICES AND INTEROPERABILITY POINTS IN PLATFORM ORIENTED AND SOA ENVIRONMENTS</a>
+                              </li>
+                              <li>B - <a href="apb.html">NATO, NATIONAL AND INDUSTRY NEC IMPLEMENTATION APPROACHES</a>
+                              </li>
+                              <li>C - <a href="apc.html">REFERENCE MODELS</a>
+                              </li>
+                              <li>D - <a href="apd.html">ENTERPRISE SERVICE BUS (ESB) PROFILE IN THE SERVICE ORIENTED
+    ARCHITECTURE (SOA) CONTEXT</a>
+                              </li>
+                              <li>E - <a href="ape.html">GUIDELINES USING DESIGN RULES IN NATO NEC FEDERATED
+  ENVIRONMENT</a>
+                              </li>
+                              <li>F - <a href="apf.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+  THE NNEC CONTEXT</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apas04.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apbs02.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="appendix" title="Appendix B. NATO, National and Industry NEC Implementation Approaches">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="v6b-NEC" style="display:none"> </a>Appendix B. NATO, National and Industry NEC Implementation Approaches</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="toc">
+                        <dl>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apb.html#v1s1-int-nnee">B.1. NATO Network Enabled Efforts</a>
+                              </span>
+                           </dt>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apbs02.html">B.2. National Network Enabled Efforts</a>
+                              </span>
+                           </dt>
+                           <dt>
+                              <span class="sect1">
+                                 <a href="apbs03.html">B.3. Industry Network Enabled Efforts</a>
+                              </span>
+                           </dt>
+                        </dl>
+                     </div>
+                     <div class="sect1" title="B.1. NATO Network Enabled Efforts">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h2 class="title">
+                                    <a id="v1s1-int-nnee" style="display:none"> </a>B.1. NATO Network Enabled Efforts</h2>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sect2" title="B.1.1. Transformational Areas">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h3 class="title">
+                                       <a id="v1s2-act" style="display:none"> </a>B.1.1. Transformational Areas</h3>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>28. In August 2004 the NATO Strategic Commanders described the
+      following framework for transformation shown in <a class="xref" href="apb.html#v1f2-framework" title="Figure B.1. Framework for Transformation">Figure B.1</a> which is structured around Transformation
+      Goals and Objectives. A central tenet of this Bi-Strategic Command
+      (Bi-SC) strategic vision is that future operations will be effects-based
+      in that they will involve all instruments of Alliance power, political,
+      diplomatic, economic and military, exercised in an integrated fashion to
+      create a desired effect in order to achieve a strategic objective.
+      Regarding the transformation goals, NATO must be able to achieve
+      Coherent Effects, Decision Superiority and Joint Deployment and
+      Sustainment. In order to achieve these goals, the NNEC Vision &amp;
+      Concept identified specific areas where NATO needs to conduct research
+      and develop concepts to improve capabilities. These are entitled
+      Transformation Areas. NNEC is one of them and is seen as a key enabler
+      to nearly all the others.</p>
+                           <div class="figure">
+                              <a id="v1f2-framework" style="display:none"> </a>
+                              <p/>
+                              <div class="figure-contents">
+                                 <div class="mediaobject">
+                                    <img src="../figures/v1-framework.png" alt="Framework for Transformation"/>
+                                 </div>
+                              </div>
+                              <p class="title">
+                                 <b>Figure B.1. Framework for Transformation</b>
+                              </p>
+                           </div>
+                           <br class="figure-break"/>
+                           <div class="sect3" title="B.1.1.1. NATO Network Enabled Capability (NNEC) Feasibility Study">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h4 class="title">
+                                          <a id="v1s3-NNEC" style="display:none"> </a>B.1.1.1. NATO Network Enabled Capability (NNEC) Feasibility
+        Study</h4>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>29. In November 2002 the NATO C3 Board (NC3B) agreed that there was
+        a need to develop NATO NEC. NNEC is based on adapting national
+        initiatives like the U.S. Network Centric Warfare (NCW) and the UK
+        Network Enabled Capability (NEC).</p>
+                              <p>30. In January 2004, 12 Nations, through the NC3B, sponsored the
+        NNEC Feasibility Study. Version 1.0 of the Feasibility Study was
+        delivered to the sponsoring nations and version 2.0 was delivered to
+        all NATO nations in October 2005. In December 2005 the NC3B endorsed
+        the NNEC Feasibility Study recommendations and its release to Partners
+        and industry.</p>
+                              <p>31. The aims of the Feasibility Study are listed below:</p>
+                              <div class="itemizedlist">
+                                 <ul class="itemizedlist">
+                                    <li class="listitem">
+                                       <p>Support further development of the NNEC concept</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Identify types of C2ISR capabilities required to enable NATO
+            Network Centric Operations</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Develop a strategy and roadmap for realization of a
+            Networking and Information Infrastructure (NII)</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <p>32. Key conclusions in the Feasibility Study included the need for a
+        highly interconnected CIS to support future operational needs of the
+        Alliance; and the need for a NII based on a federation of NATO and
+        National systems. The NISP must be structured to support the
+        development of the NII.</p>
+                              <p>33. Another major conclusion of the NNEC FS is that change is a
+        constant. In order to make change manageable a model for NNEC Maturity
+        Levels has been developed along the structure of four maturity stages.
+        The NISP must be restructured to align with these stages. As a first
+        step alignment with four stages was not yet feasible.</p>
+                              <p>34. The NNEC FS also concluded that the required flexibility for
+        federating NATO and national systems into an NII can only be reached
+        by adopting the service-oriented approach. In practice, this leads to
+        a need for identification of a coherent and comprehensive services
+        framework, including strict interface definitions. The framework
+        should be provided as a result from architecture work (typically
+        Overarching Architecture). The solution patterns for services and
+        interface definitions need to be developed using time-phased standards
+        and technology profiles. Again the NISP needs to be structured to
+        provide the required inputs to this process.</p>
+                           </div>
+                           <div class="sect3" title="B.1.1.2. Networking and Information Infrastructure / Federation of Systems">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h4 class="title">
+                                          <a id="v1s3-NII-FOS" style="display:none"> </a>B.1.1.2. Networking and Information Infrastructure / Federation of
+        Systems</h4>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>35. The Networking and Information Infrastructure (NII) strategy
+        assumes that the NII will be implemented as a Federation of Systems
+        (FoS), involving the use of Service Oriented Architectures
+        (SOAs).</p>
+                              <div class="sect4" title="B.1.1.2.1. Networking and Information Infrastructure (NII)">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-NII" style="display:none"> </a>B.1.1.2.1. Networking and Information Infrastructure (NII)</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>36. The NII can be viewed as an evolving, multi national military
+          "Intranet" - a "Federation-of-Systems" (FoS) - interoperating
+          seamlessly to provide information to anyone, anywhere, anytime; if
+          appropriately authorised. Similar to the Internet-driven Information
+          Age transformation that is occurring world-wide, so will the NII
+          support the transformation of mission capabilities of NATO nations,
+          NATO, and coalition partners. The NII can be defined as:
+          "<span class="emphasis">
+                                       <em>A federation of systems, formed by the synergistic
+          amalgamation of a dynamic set of globally interconnected,
+          multi-national, autonomous systems, each comprised of networking and
+          information infrastructure components, providing information
+          capabilities, associated processes, and personnel for collecting,
+          processing, storing, disseminating and managing information to
+          authorised users on demand, on an end-to-end
+          basis.</em>
+                                    </span>"</p>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.2. Perspectives">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-perspectives" style="display:none"> </a>B.1.1.2.2. Perspectives</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>37. The NII can be looked at from three points of view.</p>
+                                 <div class="orderedlist">
+                                    <ol class="orderedlist" type="1">
+                                       <li class="listitem">
+                                          <p>At a conceptual level the NII captures the vision of the
+              future shared information environment for NATO nations, NATO,
+              and coalition partners.</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>At the planning level, the NII architecture defines the
+              structure of NII systems and components, their relationships,
+              and the principles and guidelines governing their design,
+              operation and evolution over time. The NII Architecture is used
+              to determine interoperability and capability requirements,
+              advance the use of commercial standards, accommodate
+              accessibility and usability requirements, and implement security
+              requirements both within NATO and between federated
+              systems.</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>At the physical level and in the day-to-day environment,
+              the NII will provide information and communication services
+              vital to the effective conduct activities and is the foundation
+              for allowing NATO nations and NATO to achieve their network
+              enabled capabilities.</p>
+                                       </li>
+                                    </ol>
+                                 </div>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.3. Composition and Ownership">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-C-and-O" style="display:none"> </a>B.1.1.2.3. Composition and Ownership</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>38. It is thought that the NII will be comprised of both owned and
+          leased communication an computing systems, information services,
+          software, data, security services, and other associated capabilities
+          necessary to achieve Information Superiority for the Nations and
+          organisations contributing to the NII. The NII includes service
+          interfaces between participants including NATO nations, NATO
+          agencies, coalition partners, and non-NATO users including potential
+          participation from Non-Governmental Organisations (NGOs), civilian
+          police, emergency services, and local governmental groups. The NII
+          provides capabilities from all operating locations (e.g. government
+          facilities, headquarters, posts, camps, stations, facilities, mobile
+          platforms, deployed sites, and agencies).</p>
+                                 <p>39. The NII will also be made of service-based systems provided by
+          multiple sovereign nations as well as NATO itself and will operate
+          on a co-operative basis. It encompasses not only the physical and
+          personnel resources necessary to plan, implement, and operate the
+          actual infrastructure, but also includes the necessary agreed
+          processes to ensure continued coherent evolution and effectiveness
+          of the NII. The infrastructure will be a dynamic heterogeneous
+          entity with configuration changing with the environment and
+          technological advances. This environment is considerably different
+          from a national-only environment and will therefore require greater
+          emphasis on standardisation and interoperability, not only for
+          equipment but also in management methodologies including Service
+          Level Agreement (SLA) management.</p>
+                                 <p>40. Inclusion of a service-based system within the NII does not
+          imply ownership or control by any entity other than the contributor.
+          Contributed systems are independently managed and controlled by
+          their owners within the framework of the Federation-of-Systems
+          (FoS), which is a concept explained later in the Chapter. However
+          inclusion of a system within the NII does imply that the
+          contribution will comply with agreed NII community policies,
+          security requirements, and procedures.</p>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.4. Strategy for the Networking and Information Infrastructure (NII)">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-Strategy-NII" style="display:none"> </a>B.1.1.2.4. Strategy for the Networking and Information Infrastructure
+          (NII)</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>41. The strategy for developing the networking and information
+          sharing aspects of NNEC focuses on the 'joining together' of
+          networking systems and core information systems from NATO and NATO
+          nations, to form a Federation-of-Systems (FoS) capability that
+          implements the NII. The FoS concept is used here to refer to a set
+          of different systems, which are not centrally managed, but are so
+          connected or related so as to produce results beyond those
+          achievable by the individual systems alone. In effect, the NII is to
+          be made up of a combination of national Networking and Information
+          Infrastructures segments and a NATO Networking and Information
+          Infrastructure (NNII), which together will provide capabilities that
+          no one system can provide by itself. The need for the NII is
+          consistent with the tenets of NNEC, which have evolved from earlier
+          concepts<sup>[<a id="d0e554" href="#ftn.d0e554" class="footnote">5</a>]</sup>, which are outlined below:</p>
+                                 <div class="itemizedlist">
+                                    <ul class="itemizedlist">
+                                       <li class="listitem">
+                                          <p>A robustly networked force improves information
+              sharing.</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>Information sharing enhances the quality of information
+              and shared situational awareness.</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>Shared situational awareness enables collaboration and
+              self-synchronisation, and enhances sustainability and speed of
+              command.</p>
+                                       </li>
+                                       <li class="listitem">
+                                          <p>These, in turn, dramatically increase mission
+              effectiveness.</p>
+                                       </li>
+                                    </ul>
+                                 </div>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.5. Federation-of-Systems (FoS)">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-FoS" style="display:none"> </a>B.1.1.2.5. Federation-of-Systems (FoS)</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>42. Definition and term: <span class="bold">
+                                       <strong>Federation-of-Systems (FoS)</strong>
+                                    </span>: <span class="emphasis">
+                                       <em>A
+          Federation-of-Systems is a System-of-systems but one managed without
+          central authority Constituent systems are independently managed and
+          have a purpose of their own.</em>
+                                    </span>
+                                 </p>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.6. Federation-of-Systems Approach">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-FoSApproach" style="display:none"> </a>B.1.1.2.6. Federation-of-Systems Approach</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>43. The strategy for developing the networking and information
+          sharing aspects of NNEC focuses on the "joining together" of
+          networking systems and core information systems from NATO and NATO
+          nations, to form a Federation-of-Systems (FoS) capability that
+          implements the NII. The FoS concept is used here to refer to a set
+          of different systems, which are not centrally managed, but are so
+          connected or related so as to produce results beyond those
+          achievable by the individual systems alone. In effect, the NII is to
+          be made up of a combination of national Networking and Information
+          Infrastructures segments and a NATO Networking and Information
+          Infrastructure (NNII), which together will provide capabilities that
+          no one system can provide by itself.</p>
+                                 <p>44. The Internet is the best known example today of a
+          Federation-of-Systems. There is no central control, and
+          participation is through collaboration and co-operation to meet the
+          objectives of the federation. A FoS is characterised by a greater
+          degree of autonomy, heterogeneity, and distribution than is found in
+          a system-of-systems (SoS) approach, which also involves the "joining
+          together" of systems, but allows for a degree of centralised
+          control. Although it is thought that the NII will operate as a FoS,
+          it is also possible that there may be times when nations may wish to
+          allow for the centralised management of segments of their systems,
+          in order to meet shared operational objectives. It is important that
+          the implementation of the NII allow for this possibility.</p>
+                                 <p>45. The need to support national autonomy in the implementation
+          and operation of the NII forces the adoption of participation models
+          capable of supporting a flexible, adaptable approach to
+          participation in the NII. It is clear that the successful
+          implementation of the NII will require architectures, technical
+          solutions, and operational procedures beyond that which any single
+          nation will require or can provide.</p>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.7. Service Oriented Architecture">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-SOA" style="display:none"> </a>B.1.1.2.7. Service Oriented Architecture</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>46. Definition and term: <span class="bold">
+                                       <strong>Service Oriented
+          Architecture (SOA)</strong>
+                                    </span>: <span class="emphasis">
+                                       <em>An architecture within
+          which functions are defined as independent services with
+          well-defined interfaces which can be called separately or in defined
+          sequences to form business processes. The interface is the focus and
+          is defined in terms of the required parameters and the nature of the
+          result when the service is invoked. A SOA enables services to be
+          published, discovered and utilized.</em>
+                                    </span>
+                                 </p>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.8. Strategy for Future C3 Capabilities">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-Strategy-FutureC3" style="display:none"> </a>B.1.1.2.8. Strategy for Future C3 Capabilities</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>47. The strategy for developing future C3 capabilities is based on
+          the Capability-Based Planning (CBP) approach. A capabilities-based
+          paradigm focuses more on how an adversary might fight than on who
+          the adversary might be and where a war might occur. It requires us
+          to identify capabilities that military forces will need to deter and
+          defeat a particular type of adversary. This approach involves a
+          functional analysis of operational requirements, leading to the
+          identification of capabilities required to accomplish a mission.
+          Once the required capability inventory is defined, the most cost
+          effective and efficient options to satisfy these requirements are
+          sought. This process involves the mapping of operational capability
+          requirements to a supporting set of system functional requirements,
+          which identifies the system capabilities required to support a
+          mission.</p>
+                                 <p>48. The CBP methodology builds on the CBP approach introduced as
+          part of the 2003 NATO Defence Requirements Review processes and the
+          CBP planning approach used within the NATO Overarching Architecture
+          and provides a new approach to conducting NATO C3 planning.</p>
+                                 <p>49. While the concept of CBP is key to the identification of
+          required system functionality, the concept of Service Oriented
+          Architectures (SOAs) is key to meeting those requirements and is an
+          essential part of the overall strategy.</p>
+                                 <p>50. SOAs provide a flexible modular approach for implementing
+          system functional requirements in the form of services. This
+          strategy for developing future C3 capabilities responds to the need
+          to for a flexible, modular approach for meeting future Consultation
+          and C2 requirements.</p>
+                                 <p>51. The use of SOAs has emerged as a major trend within the
+          commercial sector and among nations developing NNEC type
+          capabilities, because of the flexibility they provide in sharing
+          information and information processing capabilities. SOAs provide
+          mechanisms for using existing information services as well as
+          providing a basis for developing new more advanced information
+          services, utilising existing services. Such mechanisms will allow
+          many Consultation and C2 needs to be satisfied by linking together
+          existing information services in a modular, flexible fashion that
+          can be readily adapted to changing operational needs. The
+          flexibility provided through the use of SOAs is particularly well
+          suited to supporting the needs of coalition based Network-Centric
+          Operations.</p>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.9. Key Information and Integration Elements">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-Key-info" style="display:none"> </a>B.1.1.2.9. Key Information and Integration Elements</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>52. The Information and Integration component of the NII is
+          characterised by the use of Service Oriented Architectures to expose
+          software functions as consumable services that can be discovered and
+          invoked across the network. The use of SOAs ease application and
+          data sharing and provide a flexible mechanism for reusing existing
+          services to enable the development of new, value-added information
+          services.</p>
+                                 <p>53. A primary goal of the SOA approach is to make information
+          resources available to all consumers on the network and support the
+          efficient discovery and delivery of that information to the
+          consumer.</p>
+                                 <p>54. The use of the SOA approach requires that we adopt a common
+          Net-Centric Data strateg to ensure that we make information visible,
+          accessible, understandable and interoperable with other sources of
+          information. Trusting the information we get and trusting that the
+          information we supply will be handled correctly will be a key
+          success factor. The ability to provide flexible, secure, role-based,
+          information access that can be quickly configured to support
+          changing policy is foundational to the long-term success of the
+          NII.</p>
+                                 <p>55. Realising the benefits of the SOA approach will require that
+          we agree on a standardised set of foundational services covering
+          such areas as service discovery security, metadata management,
+          identify management, service management and mediation.</p>
+                              </div>
+                              <div class="sect4" title="B.1.1.2.10. SOA, Loose Coupling and Federated Services">
+                                 <div class="titlepage">
+                                    <div>
+                                       <div>
+                                          <h5 class="title">
+                                             <a id="v1s4-SOA-loose" style="display:none"> </a>B.1.1.2.10. SOA, Loose Coupling and Federated Services</h5>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <p>56. The need for improved system interoperability is clearly
+          spelled out in the latest versions of the NATO Interoperability
+          Management Plan (NIMP) and NATO Architecture Framework (NAF).</p>
+                                 <p>57. In order to achieve the principle of flexible
+          interoperability, a change of focus is required: from the idea of
+          standalone, stovepipe systems (i.e. platform-oriented) to the idea
+          of shareable, universal information (i.e. service-oriented).</p>
+                                 <p>58. This "service oriented" architectural view indicates that
+          rather than information being inextricably tied to a particular
+          system, it should be available to all who need it (and have rights
+          to it). Information would still have "consumers" and "producers" but
+          the assignment of these roles would be dynamic and would cross
+          system boundaries.</p>
+                                 <p>59. The guiding principle of information services is the adoption
+          of service oriented architecture (SOA) and where appropriate, the
+          implementation of web services.</p>
+                                 <p>60. A simple definition of an SOA is "a broad set of concepts that
+          enable units of functionality to be provided and consumed as
+          'services'. This essentially simple concept can and should be used,
+          not just for web services, but also at each tier of the
+          architecture, in order to compartmentalise and provide flexibility".
+          For example, an SOA allows the use of 'thin clients' by tailoring
+          the provided services to the needs and capabilities of a consumer.
+          This allows a more flexible use of hardware resources and is more
+          cost-effective (i.e. a reduced number of software licenses).</p>
+                                 <p>61. In an SOA, loosely coupled systems view one another as
+          "services", accessible via a standard interface without knowledge of
+          the underlying implementation of the service. A "registry" manages
+          and directs the interactions between services. Data is exchanged in
+          a common format using standard protocols, which helps to ensure
+          compatibility. All this allows user-to-system or direct
+          system-to-system interactions that have not previously been
+          generally feasible.</p>
+                                 <p>62. The concept of every system viewing others as "services" in a
+          loosely coupled manner is coherent with the concept of NNEC being a
+          FoS. From an SOA perspective, it means that IIS is to be thought of
+          as a federation of services, where any NATO or national information
+          system will be autonomous and provide specific services by means of
+          implementing a standardised service interface.</p>
+                                 <p>63. Thus, it will be necessary not only to define the standards to
+          regulate the implementation of such interfaces but also a set of
+          service interoperability points that will facilitate the
+          interoperation of similar ser ices provided by different nations in
+          a seamless manner.</p>
+                              </div>
+                           </div>
+                           <div class="sect3" title="B.1.1.3. NNEC Strategic Framework">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h4 class="title">
+                                          <a id="v1s3-NNEC-SF" style="display:none"> </a>B.1.1.3. NNEC Strategic Framework</h4>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>64. In June 2005 the Military Committee tasked Allied Command
+        Transformation (ACT) to develop the NNEC Strategic Framework as a
+        means of describing NNEC developmental activities. The Strategic
+        Framework will consist of the following documents: NNEC Vision and
+        Concept, NNEC Roadmap(s), NNEC Business Case(s), Compendium of NNEC
+        related Architectures, and detailed Plan. Although the NNEC
+        Feasibility Study was not identified as Strategic Framework document,
+        it is recognized as providing the technical foundation for NNEC
+        through the NII. The development of the Strategic Framework is
+        depicted in <a class="xref" href="apb.html#v1f3-nnec-sf" title="Figure B.2. NNEC Strategic Framework">Figure B.2</a> below.</p>
+                              <div class="figure">
+                                 <a id="v1f3-nnec-sf" style="display:none"> </a>
+                                 <p/>
+                                 <div class="figure-contents">
+                                    <div class="mediaobject">
+                                       <img src="../figures/v1-nnec-sf.png" alt="NNEC Strategic Framework"/>
+                                    </div>
+                                 </div>
+                                 <p class="title">
+                                    <b>Figure B.2. NNEC Strategic Framework</b>
+                                 </p>
+                              </div>
+                              <br class="figure-break"/>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footnotes">
+                        <br/>
+                        <hr width="100" align="left"/>
+                        <div class="footnote">
+                           <p>
+                              <sup>[<a id="ftn.d0e554" href="#d0e554" class="para">5</a>] </sup>Network Centric Warfare : developing and leveraging
+              information superiority /David S. Alberts, John J. Garstka,
+              Frederick P. Stein. p. cm. -- (CCRP publication series) Includes
+              bibliographical references.ISBN 1-57906-019-6</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apas04.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center"> </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apbs02.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>

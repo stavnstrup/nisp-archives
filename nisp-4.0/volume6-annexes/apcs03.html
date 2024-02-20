@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>C.3. Network-Enabled Operations (NEO-RM)</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <meta name="keywords" content="ADatP-34, STANAG 5524, NOSWG, NATO Open System Working Group"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="prev" href="apcs02.html" title="C.2. Service Oriented Architecture Reference Models"/>
+      <link rel="next" href="apcs04.html" title="C.4. Information Systems Interoperability Reference Model (ISIOP-RM)"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. Annexes"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. Services and Interoperability Points in Platform Oriented and SOA Environments"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NATO, National and Industry NEC Implementation Approaches"/>
+      <link rel="appendix" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="appendix" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="appendix" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="appendix" href="apf.html" title="Appendix F. International Military Interoperability for information exchange in the NNEC context"/>
+      <link rel="subsection" href="apcs03.html#v1e-s58" title="C.3.1. NEO Attributes"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol6-v4-release.pdf">PDF of V6</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>
+                           <a href="../volume5-rationale/index.html" title="NISP Design Rules">V5 - NISP Design Rules</a>
+                        </li>
+                        <li>V6 - NISP - Annexes<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">ANNEXES</a>
+                              </li>
+                              <li>A - <a href="apa.html">SERVICES AND INTEROPERABILITY POINTS IN PLATFORM ORIENTED AND SOA ENVIRONMENTS</a>
+                              </li>
+                              <li>B - <a href="apb.html">NATO, NATIONAL AND INDUSTRY NEC IMPLEMENTATION APPROACHES</a>
+                              </li>
+                              <li>C - <a href="apc.html">REFERENCE MODELS</a>
+                              </li>
+                              <li>D - <a href="apd.html">ENTERPRISE SERVICE BUS (ESB) PROFILE IN THE SERVICE ORIENTED
+    ARCHITECTURE (SOA) CONTEXT</a>
+                              </li>
+                              <li>E - <a href="ape.html">GUIDELINES USING DESIGN RULES IN NATO NEC FEDERATED
+  ENVIRONMENT</a>
+                              </li>
+                              <li>F - <a href="apf.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+  THE NNEC CONTEXT</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apcs02.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apcs04.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="sect1" title="C.3. Network-Enabled Operations (NEO-RM)">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="v1e-s57" style="display:none"> </a>C.3. Network-Enabled Operations (NEO-RM)</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <p>348. A NATO Network Enabled Operations Reference Model (NEO-RM) should
+      be created during the mid-term time frame. The best course of action to
+      create such a document would be build upon similar existing doctrine
+      used at the national level by some NATO members.</p>
+                     <p>349. The NEO RM, describes all of the activities required to establish,
+      use, operate, and manage the network enabled enterprise information
+      environment to include: the generic user-interface, the
+      intelligent-assistant capabilities, the network enabled capabilities
+      (i.e., core services, Community of Interest services, and environment
+      control services), and the enterprise management components. It also
+      describes a selected set of key standards that will be needed as the NEO
+      capabilities of a seamless communications network backbone are
+      realized.</p>
+                     <p>350. The NEO-RM is to describe the evolving NATO enterprise aspects of
+      an objective net-enabled information environment. The NEO-RM, as
+      designed, serves as a common, enterprise-level, reference model for
+      NATO&#8217;s net-enabled operations, such as the expeditionary NATO Response
+      Force (NRF), and for current and future acquisition programs to
+      reference. A shared vision of the enterprise information environment
+      will assist decision makers promote enterprise-wide unity of
+      effort.</p>
+                     <div class="figure">
+                        <a id="v1e-nneo" style="display:none"> </a>
+                        <p/>
+                        <div class="figure-contents">
+                           <div class="mediaobject">
+                              <img src="../figures/v1-fig06.png" alt="NATO Network-Enabled Operations: The Future"/>
+                           </div>
+                        </div>
+                        <p class="title">
+                           <b>Figure C.3. NATO Network-Enabled Operations: The Future</b>
+                        </p>
+                     </div>
+                     <br class="figure-break"/>
+                     <div class="sect2" title="C.3.1. NEO Attributes">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s58" style="display:none"> </a>C.3.1. NEO Attributes</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="table">
+                           <a id="v1e-t2" style="display:none"> </a>
+                           <p/>
+                           <div class="table-contents">
+                              <table summary="Implementation of NEO attributes" border="1">
+                                 <colgroup>
+                                    <col width="21%"/>
+                                    <col width="16%"/>
+                                    <col width="13%"/>
+                                    <col width="12%"/>
+                                    <col width="13%"/>
+                                    <col width="12%"/>
+                                    <col width="13%"/>
+                                 </colgroup>
+                                 <tbody>
+                                    <tr>
+                                       <td>NCOW Attribute</td>
+                                       <td>Features</td>
+                                       <td>Year 2</td>
+                                       <td>Year 3</td>
+                                       <td>Year 4</td>
+                                       <td>Year 5</td>
+                                       <td>Year 6</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Internet Protocol</td>
+                                       <td>Automated Configuration</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>25%</td>
+                                       <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Large Address Space</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>25%</td>
+                                       <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Secure &amp; Available Communications</td>
+                                       <td>Hardened Against Denial of Service</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>10%</td>
+                                       <td>20%</td>
+                                       <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Core Network Encryption</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>20%</td>
+                                       <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Edge to Edge Encryption</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>25%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Only Handle Information Once (OHIO)</td>
+                                       <td>Use Known Repositories</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>25%</td>
+                                       <td>50%</td>
+                                       <td>75%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Post in Parallel</td>
+                                       <td>Post Data Before Processing</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>20%</td>
+                                       <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Smart Pull</td>
+                                       <td> </td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>20%</td>
+                                       <td>40%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Agreements</td>
+                                       <td>Service Contract</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Quality of Service</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Data Centric</td>
+                                       <td>Metadata</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>30%</td>
+                                       <td>60%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Metadata Registry</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Application Diversity</td>
+                                       <td> </td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>10%</td>
+                                       <td>20%</td>
+                                       <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Assured Sharing</td>
+                                       <td> </td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>20%</td>
+                                       <td>40%</td>
+                                       <td>60%</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <p class="title">
+                              <b>Table C.3. Implementation of NEO attributes</b>
+                           </p>
+                        </div>
+                        <br class="table-break"/>
+                        <p>351. The previous table, <a class="xref" href="apcs03.html#v1e-t2" title="Table C.3. Implementation of NEO attributes">Table C.3</a>, is a suggested generalized outline
+        on when NEO attributes should be implemented within the mid-term time
+        frame. A value of zero percent indicates that implementation should
+        begin in that year. Conversely, a value of a hundred percent indicates
+        that implementation should end in that year. Naturally, measurable
+        metrics to quantify progress would have to be agreed upon by the NATO
+        nations.</p>
+                        <div class="sect3" title="C.3.1.1. Internet Protocol (IP)">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s59" style="display:none"> </a>C.3.1.1. Internet Protocol (IP)</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>352. The Internet Protocol (IP) is a protocol used by source and
+          destination hosts for communicating data across a packet-switched
+          inter-network. Data in an IP inter-network are sent in blocks
+          referred to as packets. No setup of "path" is needed before a host
+          tries to send packets to a host it has previously not communicated
+          with.</p>
+                           <p>353. The Internet Protocol provides an unreliable datagram service
+          (also called best effort); i.e. It makes almost no guarantees about
+          the packet. The packet may arrive damaged, it may be out of order
+          (compared to other packets sent between the same hosts), it may be
+          duplicated, or it may be dropped entirely. If an application needs
+          reliability, it is provided by other means, typically by upper level
+          protocols transported on top of IP.</p>
+                           <p>354. Inter-network routers, forward IP packets across
+          interconnected layer 2 networks. The lack of any delivery guarantees
+          means that the design of packet switches is made much simpler. (Note
+          that if the network does drop, reorder or otherwise damage a lot of
+          packets, the performance seen by the user will be poor, so most
+          network elements do try hard to not do these things - hence the best
+          effort term. However, an occasional error will produce no noticeable
+          effect.)</p>
+                           <p>355. In a network-enable NATO, there is a need for support for an
+          unlimited number of site addresses for wireless communications
+          devices, remote sensors, vehicles and precision-guided munitions.
+          Therefore, with any large-scale operation, the current finite number
+          of IP addresses becomes a resource that must be managed and closely
+          monitored.</p>
+                           <p>356. The ad-hoc nature of future NATO operations dictates the need
+          for easily configurable networks. Since most of the devices
+          connected to NATO networks will be mobile devices, a device must be
+          able to arbitrarily change locations on the Internet and still
+          maintain existing connections.</p>
+                        </div>
+                        <div class="sect3" title="C.3.1.2. Secure and Available Communications">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s60" style="display:none"> </a>C.3.1.2. Secure and Available Communications</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>357. Security requires that systems and users are protected against
+          attack, disruptions, and threats. Data must also be kept private and
+          free of malicious or corrupted content as it travels throughout the
+          enterprise. And the network infrastructure itself must be protected
+          against exposure to attacks that impacts internal servers and end
+          user systems. In the mid-term time frame the initial goal is
+          encryption for the core network, and the final goal is edge-to-edge
+          encryption with a network that is hardened against denial of
+          service.</p>
+                           <p>358. Ensuring availability means that systems themselves are always
+          available, and that information is readily accessible to users and
+          other authorized individuals, especially as it relates to regulatory
+          compliance and legal discovery. Migrating older, yet still useful,
+          data poses an added challenge to availability, as users still demand
+          immediate access and IT requires high degrees of ease and automation
+          to achieve this.</p>
+                        </div>
+                        <div class="sect3" title="C.3.1.3. Only Handle Information Once (OHIO)">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s61" style="display:none"> </a>C.3.1.3. Only Handle Information Once (OHIO)</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>359. A key feature of network-enabled NATO is the ability to
+          provide individual soldiers and commanders with relevant timely
+          information. But pushing information to users in the area of
+          operation is difficult because the number of items that can link to
+          the network exceeds the current messaging protocol&#8217;s ability to
+          assign addresses. Technologies that allow wireless systems to plug
+          into tactical and theatre networks seamlessly without straining
+          resources may permit the military to deploy more network-enabled
+          devices.</p>
+                           <p>360. This capability fits into a concept known as &#8220;only handle
+          information once&#8221; (OHIO), where an information producer posts data once
+          but permits authorized users to access it. This approach differs
+          from requiring the producer to know the address of every user that
+          may want the information.</p>
+                        </div>
+                        <div class="sect3" title="C.3.1.4. Post in Parallel">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s62" style="display:none"> </a>C.3.1.4. Post in Parallel</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>361. All NATO participants or business process owners make their
+          data available on the network as soon as it is created. Posting data
+          does not mean just making accessible, it also means tagging
+          (describing) the data appropriately for its content. Processing of
+          data will be done as needed by specialized web services invoked by
+          the data consumer.</p>
+                        </div>
+                        <div class="sect3" title="C.3.1.5. Smart Pull">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s63" style="display:none"> </a>C.3.1.5. Smart Pull</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>362. The two solutions in use for data synchronization are called
+          &#8220;Push&#8221; and &#8220;Pull&#8221;. Smart Pull is just a further refinement of the
+          Pull solution.</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Push solutions involve the server notifying the device
+              that data is available. Solutions to this usually require some
+              type of infrastructure to manage the distribution of
+              notifications to the network enabled-devices. For example, the
+              solution might involve using the mobile phone service provider&#8217;s
+              SMS system or might be a custom built system like that created
+              by Research in Motion (RIM) for their Blackberry communications
+              network.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Pull solutions put the burden on the network-enabled
+              device to go retrieve data. They&#8217;ve historically been simple
+              implementations using techniques like calling the server on some
+              regular time interval or maybe even relying on the user to
+              initiate the data sync.</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>363. Generally the immediate notification of push is desirable,
+          however when building our own applications, the simplicity of pull
+          is more attractive. This is where Smart Pull comes in. An example of
+          the concept of smart pull that has been gained a lot of attention
+          since the announcement is the Microsoft Messaging and Security
+          Feature Pack (MMSF). MMSF provides Windows Mobile 5.0 Smartphone
+          with full connectivity to their Exchange server, keeping Outlook
+          data up-to-date including receiving email as soon as it arrives at
+          the server. The technique used to maintain synchronization is
+          basically a long-running web service call.</p>
+                           <p>364. The smart pull mechanism seems like the kind of solution that
+          will address many common scenarios faced when developing mobile
+          applications that require close synchronization with a server.
+          Applications encourage discovery; users can pull data directly from
+          the network or use value-added discovery services.</p>
+                        </div>
+                        <div class="sect3" title="C.3.1.6. Data Centric Approach">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s64" style="display:none"> </a>C.3.1.6. Data Centric Approach</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>365. In a data-centric approach the data separate from
+          applications, or services. Communications between services occurs by
+          posting data. The steps involved in a data-centric approach
+          are:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Analyze how the data is used and moved as it flows through
+              the system to better understand how to store and use it.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Describe data or tag data to facilitate a system level
+              view. This involves describing data <span class="bold">
+                                          <strong>and</strong>
+                                       </span> describing the context under which it
+              was collected or generated.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Build services around data. Services are just the methods
+              to manage data.</p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.3.1.7. Application Diversity">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s65" style="display:none"> </a>C.3.1.7. Application Diversity</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>366. Users can pull multiple services to access same data (e.g.,
+          for collaboration). This idea reinforces the underlying concept of
+          the data being independent of the services that manipulate the
+          data.</p>
+                        </div>
+                        <div class="sect3" title="C.3.1.8. Assured Sharing">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s66" style="display:none"> </a>C.3.1.8. Assured Sharing</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>367. Assured sharing means trusted accessibility to net resources,
+          such as: data, services, apps, people, collaborative environment,
+          etc. Access is assured for authorized users, but denied for
+          unauthorized users by maintaining thorough security policies.</p>
+                        </div>
+                        <div class="sect3" title="C.3.1.9. Quality of Service">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s67" style="display:none"> </a>C.3.1.9. Quality of Service</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>368. Data timeliness, accuracy, completeness, integrity, and ease
+          of use.</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apcs02.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="u" href="apc.html">Up</a>
+                           </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apcs04.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>

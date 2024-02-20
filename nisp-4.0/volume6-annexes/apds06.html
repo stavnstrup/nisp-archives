@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>D.6. Appendix: Federated ESB Reference Architecture</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <meta name="keywords" content="ADatP-34, STANAG 5524, NOSWG, NATO Open System Working Group"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="prev" href="apds05.html" title="D.5. Appendix: ESB Requirements in a Military Environment"/>
+      <link rel="next" href="apds07.html" title="D.7. List of Abbreviations"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. Annexes"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. Services and Interoperability Points in Platform Oriented and SOA Environments"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NATO, National and Industry NEC Implementation Approaches"/>
+      <link rel="appendix" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="appendix" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="appendix" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="appendix" href="apf.html" title="Appendix F. International Military Interoperability for information exchange in the NNEC context"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol6-v4-release.pdf">PDF of V6</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>
+                           <a href="../volume5-rationale/index.html" title="NISP Design Rules">V5 - NISP Design Rules</a>
+                        </li>
+                        <li>V6 - NISP - Annexes<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">ANNEXES</a>
+                              </li>
+                              <li>A - <a href="apa.html">SERVICES AND INTEROPERABILITY POINTS IN PLATFORM ORIENTED AND SOA ENVIRONMENTS</a>
+                              </li>
+                              <li>B - <a href="apb.html">NATO, NATIONAL AND INDUSTRY NEC IMPLEMENTATION APPROACHES</a>
+                              </li>
+                              <li>C - <a href="apc.html">REFERENCE MODELS</a>
+                              </li>
+                              <li>D - <a href="apd.html">ENTERPRISE SERVICE BUS (ESB) PROFILE IN THE SERVICE ORIENTED
+    ARCHITECTURE (SOA) CONTEXT</a>
+                              </li>
+                              <li>E - <a href="ape.html">GUIDELINES USING DESIGN RULES IN NATO NEC FEDERATED
+  ENVIRONMENT</a>
+                              </li>
+                              <li>F - <a href="apf.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+  THE NNEC CONTEXT</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apds05.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apds07.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="sect1" title="D.6. Appendix: Federated ESB Reference Architecture">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="d0e4628" style="display:none"> </a>D.6. Appendix: Federated ESB Reference Architecture</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <p>489. The following chapter is based on the document "ESB Interop Spec for
+    Federation" from MoD UK, EDS, IBM and ORACLE (a proposal for federated ESB
+    for ESBs based on different technology).</p>
+                     <p>490. The ESB is an architectural component which provides a set of
+    services (or capabilities). The component itself exposes a set of services
+    which are characterised by a protocol, one or more addresses and specifics
+    ways of handling invocations, such as security. It also uses a set of
+    ports to integrate with service providers (such as application functions).
+    The capabilities provided by the ESB may include message format
+    transformation and protocol conversion, and it offers a number of
+    interactions styles including request-response and
+    publish-subscribe.</p>
+                     <p>491. Currently exists a lot of different ESB implementations and the aim
+    is to enable federation of two or more ESB architectures that conform to
+    the common specification for ESBs.</p>
+                     <p>492. The following list of high-level requirements has been used to give
+    an overview for the (Federated) ESB Reference Architecture:</p>
+                     <div class="itemizedlist">
+                        <ul class="itemizedlist">
+                           <li class="listitem">
+                              <p>It should be transparent to Service Consumers and Providers
+        where the services they invoke are being delivered from (i.e. from
+        which ESB).</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Services can be exposed for either internal or external
+        consumption. Service Consumers external to an ESB will not have access
+        to that ESB's internal Service Providers.</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Every message which emanates from a service should be
+        identifiable and traceable back to its origin via a UUID. A component
+        of this UUID is an identifier assigned to the domain when it joins the
+        federation. (Alternatively time to live may need to be applied, so
+        when set to 0 the message is private.) This prevents infinite
+        loops.</p>
+                           </li>
+                           <li class="listitem">
+                              <p>ESBs must provide a mechanism for authenticating Service
+        Consumers and for controlling their access to the services the ESB
+        exposes externally.</p>
+                           </li>
+                           <li class="listitem">
+                              <p>ESBs must provide a facility for managing and publishing
+        up-to-date service end-points for the services governed within the
+        immediate zone and must be capable of storing service end-points for
+        services offered by other governance zones.</p>
+                           </li>
+                           <li class="listitem">
+                              <p>ESBs should audit the processing of a service that it offers and
+        make available the audit records captured, upon request from the
+        Service Consumer that invoked the service.</p>
+                           </li>
+                           <li class="listitem">
+                              <p>Exceptions trapped by services invoked must be handled in a
+        consistent manner across all ESBs within a federation. Whilst each ESB
+        may implement exception handling differently, they must report errors
+        to the Service Consumers following an agreed format and reporting
+        mechanism.</p>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="figure">
+                        <a id="v6f-esbarc" style="display:none"> </a>
+                        <p/>
+                        <div class="figure-contents">
+                           <div class="mediaobject">
+                              <img src="../figures/esbarc.png" alt="Federation ESB Architecture Overview"/>
+                           </div>
+                        </div>
+                        <p class="title">
+                           <b>Figure D.21. Federation ESB Architecture Overview</b>
+                        </p>
+                     </div>
+                     <br class="figure-break"/>
+                     <p>493. The diagram above provides a logical overview of the subsystems that
+    have been used to provide a Service Oriented Infrastructure for delivery
+    of Service Orientated applications.</p>
+                     <p>494. The ESB Gateway acts as a proxy to provide controlled access to the
+    ESB. A principal use of the ESB Gateway is to expose services in a
+    consistent manner across all governance zones. This node allows generic
+    actions to be defined and performed on all calls to services such as
+    logging, auditing, monitoring, security, and threat protection.</p>
+                     <div class="figure">
+                        <a id="v6f-esbgw" style="display:none"> </a>
+                        <p/>
+                        <div class="figure-contents">
+                           <div class="mediaobject">
+                              <img src="../figures/esbgw.png" alt="ESB Gateway"/>
+                           </div>
+                        </div>
+                        <p class="title">
+                           <b>Figure D.22. ESB Gateway</b>
+                        </p>
+                     </div>
+                     <br class="figure-break"/>
+                     <p>495. The ESB Gateway provides the single-point of control for federated
+    service invocations, that either originate with a local Service Consumer
+    call to a remote service (service hosted on external ESB) or a remote
+    Service Consumer call to a local Service Provider.</p>
+                     <p>496. Local Service Providers and Service Consumers are shielded from the
+    federated ESBs (their consumers and providers) by the ESB Gateway, which
+    separates all aspects of external ESB interoperability from how services
+    are provided and consumed locally.</p>
+                     <p>497. ESBs are federated on the basis that each of the zone's ESBs is
+    autonomous, and yet they all have knowledge of the wider enterprise-level
+    services. The next figure shows a topology for federated ESBs in which any
+    consumer can call services in any zone without necessarily having set up
+    the communication paths in advance.</p>
+                     <div class="figure">
+                        <a id="v6f-fedesb" style="display:none"> </a>
+                        <p/>
+                        <div class="figure-contents">
+                           <div class="mediaobject">
+                              <img src="../figures/fedesb.png" alt="Federated ESB"/>
+                           </div>
+                        </div>
+                        <p class="title">
+                           <b>Figure D.23. Federated ESB</b>
+                        </p>
+                     </div>
+                     <br class="figure-break"/>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apds05.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="u" href="apd.html">Up</a>
+                           </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apds07.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>

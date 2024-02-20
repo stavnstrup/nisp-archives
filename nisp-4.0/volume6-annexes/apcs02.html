@@ -1,0 +1,2247 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>C.2. Service Oriented Architecture Reference Models</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <meta name="keywords" content="ADatP-34, STANAG 5524, NOSWG, NATO Open System Working Group"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="prev" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="next" href="apcs03.html" title="C.3. Network-Enabled Operations (NEO-RM)"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. Annexes"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. Services and Interoperability Points in Platform Oriented and SOA Environments"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NATO, National and Industry NEC Implementation Approaches"/>
+      <link rel="appendix" href="apc.html" title="Appendix C. Reference Models"/>
+      <link rel="appendix" href="apd.html" title="Appendix D. Enterprise Service Bus (ESB) Profile in the Service Oriented Architecture (SOA) context"/>
+      <link rel="appendix" href="ape.html" title="Appendix E. Guidelines using design rules in NATO NEC federated environment"/>
+      <link rel="appendix" href="apf.html" title="Appendix F. International Military Interoperability for information exchange in the NNEC context"/>
+      <link rel="subsection" href="apcs02.html#v1e-s12" title="C.2.1. What is SOA?"/>
+      <link rel="subsection" href="apcs02.html#v1e-s13" title="C.2.2. The Benefits of Service Oriented Architecture"/>
+      <link rel="subsection" href="apcs02.html#v1e-s14" title="C.2.3. Overview of the Model"/>
+      <link rel="subsection" href="apcs02.html#v1e-s15" title="C.2.4. The SOA Reference Model"/>
+      <link rel="subsection" href="apcs02.html#v1e-s25" title="C.2.5. Interacting with Services"/>
+      <link rel="subsection" href="apcs02.html#v1e-s34" title="C.2.6. Real World Effect"/>
+      <link rel="subsection" href="apcs02.html#v1e-s35" title="C.2.7. Policies and Contracts"/>
+      <link rel="subsection" href="apcs02.html#v1e-s38" title="C.2.8. Visibility"/>
+      <link rel="subsection" href="apcs02.html#v1e-s42" title="C.2.9. SOA Attributes"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol6-v4-release.pdf">PDF of V6</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>
+                           <a href="../volume5-rationale/index.html" title="NISP Design Rules">V5 - NISP Design Rules</a>
+                        </li>
+                        <li>V6 - NISP - Annexes<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">ANNEXES</a>
+                              </li>
+                              <li>A - <a href="apa.html">SERVICES AND INTEROPERABILITY POINTS IN PLATFORM ORIENTED AND SOA ENVIRONMENTS</a>
+                              </li>
+                              <li>B - <a href="apb.html">NATO, NATIONAL AND INDUSTRY NEC IMPLEMENTATION APPROACHES</a>
+                              </li>
+                              <li>C - <a href="apc.html">REFERENCE MODELS</a>
+                              </li>
+                              <li>D - <a href="apd.html">ENTERPRISE SERVICE BUS (ESB) PROFILE IN THE SERVICE ORIENTED
+    ARCHITECTURE (SOA) CONTEXT</a>
+                              </li>
+                              <li>E - <a href="ape.html">GUIDELINES USING DESIGN RULES IN NATO NEC FEDERATED
+  ENVIRONMENT</a>
+                              </li>
+                              <li>F - <a href="apf.html">INTERNATIONAL MILITARY INTEROPERABILITY FOR INFORMATION EXCHANGE IN
+  THE NNEC CONTEXT</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apc.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apcs03.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="sect1" title="C.2. Service Oriented Architecture Reference Models">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="v1e-s11" style="display:none"> </a>C.2. Service Oriented Architecture Reference Models</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sect2" title="C.2.1. What is SOA?">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s12" style="display:none"> </a>C.2.1. What is SOA?</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>210. Service Oriented Architecture (SOA) is a paradigm for organizing
+        and using distributed capabilities that may be under the control of
+        different ownership domains. It is natural in such a context to think
+        of one person&#8217;s needs being met by capabilities offered by someone
+        else or, in the world of distributed computing, one computer agent&#8217;s
+        requirements being met by a computer agent belonging to a different
+        owner. There is not necessarily a one-to-one correlation between needs
+        and capabilities; the granularity of needs and capabilities vary from
+        fundamental to complex, and any given need may require the combining
+        of numerous capabilities while any single capability may address more
+        than one need. The perceived value of SOA is that it provides a
+        powerful framework for matching needs and capabilities and for
+        combining capabilities to address those needs.</p>
+                        <p>211. Visibility, interaction, and effect are key concepts for
+        describing the SOA paradigm. <span class="bold">
+                              <strong>Visibility</strong>
+                           </span> refers to the capacity for those
+        with needs and those with capabilities to be able to see each other to
+        interact. Visibility is typically enhanced through the use of metadata
+        to describe such aspects as functional and technical requirements,
+        related constraints and policies, and mechanisms for interaction. For
+        maximum visibility, metadata must be in a form in which its syntax and
+        semantics are widely accessible and understandable.</p>
+                        <p>212. Whereas visibility introduces the possibilities for matching
+        needs to capabilities (and vice versa), <span class="bold">
+                              <strong>interaction </strong>
+                           </span> is the activity of using the
+        capability. Typically mediated by the exchange of messages, an
+        interaction proceeds through a series of information exchanges and
+        invoked actions. There are many facets of interaction; but they are
+        all grounded in a particular <span class="bold">
+                              <strong>execution context
+        </strong>
+                           </span> &#8211; the set of technical and business elements that together
+        form a path between those with needs and those with capabilities and
+        that permit information to be exchanged, actions to be performed and
+        provides a decision point for any policies and contracts that may be
+        in force.</p>
+                        <p>213. The purpose of using a capability is to realize one or more
+        <span class="bold">
+                              <strong>real world effects</strong>
+                           </span>. At its core, an
+        interaction is &#8220;an act&#8221; rather than &#8220;an object&#8221; and the result of a
+        interaction is an effect (or a set/series of effects).</p>
+                        <p>214. The expected effects, together with relevant preconditions
+        associated with those effects, should be made visible as part of the
+        capability metadata and form an important part of the assessment as to
+        whether a given capability matches similarly described needs. It is
+        not possible to describe every possible effect of using a capability:
+        indeed a cornerstone of SOA is that such knowledge is not
+        necessary.</p>
+                        <p>215. A concept that is considered central to SOA has not yet been
+        mentioned &#8211; that of <span class="bold">
+                              <strong>service</strong>
+                           </span>. Both
+        needs and capabilities exist outside of SOA. What distinguishes SOA is
+        the perceived improvement in bringing needs and capabilities together.
+        <span class="bold">
+                              <strong>In SOA, services are the mechanism by which
+        needs and capabilities are brought together.</strong>
+                           </span> SOA is not the
+        solution of domain problems but rather a way of organizing a wider
+        array of possibilities to generate a domain solution. By itself, SOA
+        does not provide a solution to a difficult domain problem where a
+        satisfactory solution does not already exist. SOA can, however,
+        provide an organizing and delivery paradigm that enables one to get
+        more value from use of both solutions which are locally &#8220;owned&#8221; and
+        solutions under the control of others. It also enables one to express
+        solutions in a way that makes it easier to modify or evolve the
+        identified solution or to try alternate domain solutions.</p>
+                        <p>216. The concepts of visibility, interaction, and effect apply
+        directly to services in the same manner as these were described for
+        the general SOA paradigm. Visibility is promoted by the <span class="bold">
+                              <strong>service description</strong>
+                           </span> which contains the
+        information necessary to interact with the service and describes this
+        in such terms as the service inputs, outputs, and associated
+        semantics. The service description also conveys what is accomplished
+        when the service is invoked and the conditions for invoking the
+        service. In general, entities (people and organizations) offer
+        capabilities through services and act as <span class="bold">
+                              <strong>service
+        providers</strong>
+                           </span>. Those with needs who make use of capabilities
+        through their associated services are referred to as <span class="bold">
+                              <strong>service consumers</strong>
+                           </span>. The service description
+        allows prospective consumers to decide if the service is suitable for
+        their current needs and establish whether a consumer satisfies the
+        requirements, if any, of the service provider to be permitted
+        access.</p>
+                        <p>217. Having described what is SOA, it is appropriate to note several
+        things which are related but are not necessary attributes or
+        restrictions.</p>
+                        <p>218. SOA identifies necessary aspects of interactions involving
+        multiple ownership domains; however, it does not directly embody
+        concepts relating to ownership.</p>
+                        <p>219. SOA is commonly implemented using Web services, but services can
+        be made visible, support interaction, and generate effects through
+        other implementations.</p>
+                        <p>220. By following a Service-Oriented Architecture NATO nations can
+        then participate in an NNEC environment, by acting as interoperable
+        nodes on a fixed or mobile ad hoc network. Once an element operates as
+        a node, it can discover and register its needs and capabilities on a
+        network, and use that network to communicate, interact and function
+        with other nodes. The ultimate result is greater mission
+        effectiveness.</p>
+                        <p>221. In February of 2005, the Organization for the Advancement of
+        Structured Information Standards (OASIS) started standards work to
+        define an SOA reference model (SOA-RM) by establishing a technical
+        committee for that sole purpose.</p>
+                        <p>222. The goal of OASIS SOA-RM technical committee is to "establish a
+        Reference Model to encourage the continued growth of specific and
+        different SOA implementations whilst preserving a common layer that
+        can be shared and understood between those or future
+        implementations."</p>
+                        <p>223. Achievement of their goals for this reference model will be done
+        by defining the fundamental nature of SOA, and emerge with a common
+        vocabulary and understanding of SOA. As such, it will provide a
+        conforming reference that treats SOA as a powerful abstract model that
+        is independent of the various inevitable technology evolutions.</p>
+                     </div>
+                     <div class="sect2" title="C.2.2. The Benefits of Service Oriented Architecture">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s13" style="display:none"> </a>C.2.2. The Benefits of Service Oriented Architecture</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>224. The main drivers for SOA-based architectures are the requirement
+        to facilitate the manageable growth of large-scale enterprise systems,
+        the requirement to facilitate Internet-scale provisioning and use of
+        services and the requirement to reduce costs in organization to
+        organization cooperation.</p>
+                        <p>225. The value of SOA is that it provides a simple scalable paradigm
+        for organizing large networks of systems that require interoperability
+        to realize the value inherent in the individual components. Indeed,
+        SOA is scalable because it makes the fewest possible assumptions,
+        including about the network and also minimizes any trust assumptions
+        that are often implicitly made in smaller scale systems.</p>
+                        <p>226. An architect using SOA principles is better equipped, therefore,
+        to develop systems that are scalable, evolvable and manageable. It
+        should be easier to decide how to integrate functionality across
+        ownership boundaries. For example, a large company that acquires a
+        smaller company must determine how to integrate the acquired IT
+        infrastructure into its overall IT portfolio.</p>
+                        <p>227. Through this inherent ability to scale and evolve, SOA enables
+        an IT portfolio which is also adaptable to the needs of a specific
+        problem domain or process architecture. The infrastructure SOA
+        encourages is also more agile and responsive than one built on an
+        exponential number of pair-wise interfaces. Therefore, SOA can also
+        provide a solid foundation for business agility and
+        adaptability.</p>
+                     </div>
+                     <div class="sect2" title="C.2.3. Overview of the Model">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s14" style="display:none"> </a>C.2.3. Overview of the Model</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>228. A key concept of SOA is that of <span class="bold">
+                              <strong>service
+        </strong>
+                           </span>. In general, entities (people and organizations) create
+        capabilities to solve or support a solution for the problems they face
+        in the course of their business. SOA is a way to organize the world
+        around this key concept of service. The noun &#8220;service&#8221; is defined in
+        dictionaries as &#8220;The performance of work (a function) by one for
+        another.&#8221; However, service, as the term is generally understood, also
+        combines the following related ideas:</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>The capability to perform work for another</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>The specification of the work offered for another</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>The offer to perform work for another</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>229. These concepts emphasize a distinction between a capability and
+        the ability to bring that capability to bear in the context of SOA,
+        where the capability exists independently of SOA. The term service
+        should, therefore, be understood as a set of separate, yet
+        interrelated and more precise concepts. These concepts are an offer,
+        interaction and effect.</p>
+                        <p>230. The concept of an <span class="bold">
+                              <strong>offer</strong>
+                           </span> follows
+        directly from the dictionary definition of service: 'by one' and 'for
+        another.' In general terms, an offer is a proposal; made by providers
+        which may possess a capability that address a need. In order to use a
+        service, it is necessary to know that it exists, what is accomplished
+        if the service is invoked, how the service is invoked, and other
+        characteristics. Collectively this is the service <span class="bold">
+                              <strong> visibility</strong>
+                           </span>. When given an explicit searchable
+        form, this information allows, for example, prospective consumers to
+        decide if the service is suitable for their current needs and
+        establish whether a consumer satisfies any requirements of the service
+        provider to be permitted access. This information constitutes the
+        <span class="bold">
+                              <strong> service description</strong>
+                           </span>.</p>
+                        <p>231. The convergence of a capability and a need results in an
+        <span class="bold">
+                              <strong>interaction</strong>
+                           </span>. In an SOA, interaction
+        is effected by exchanging information between service providers and
+        consumers. Typically this is achieved by exchanging messages using a
+        standardized protocol; however, there are many modalities possible for
+        interacting with services.</p>
+                        <p>232. At its core, an interaction is &#8220;an act&#8221; rather than &#8220;an object.
+        Therefore, interaction is the focus of the interfaces and behaviour
+        necessary to support the interaction. Recall that interaction may, and
+        typically does, involve crossing ownership boundaries. SOA identifies
+        some of the necessary aspects of interactions involving multiple
+        ownership domains; however, it does not directly embody concepts
+        relating to ownership.</p>
+                        <p>233. The final key concept is the <span class="bold">
+                              <strong>real world
+        effect</strong>
+                           </span> of using services; it is always the case that there
+        is an intended purpose to providing a service and similarly to using a
+        service. Given that there is often an ownership boundary between the
+        service provider and consumer, there is a natural distinction to be
+        drawn between the public interactions with a service and the private
+        actions of both the service provider and consumer. This distinction
+        maintains and encourages independence of each service participant
+        which, in turn, greatly enhances the scalability and security
+        attributes of SOA. Focus can be directed to the public aspects of
+        using a service by examining the <span class="bold">
+                              <strong>conditions</strong>
+                           </span> of using a service and the <span class="bold">
+                              <strong>expectations</strong>
+                           </span> that arise as a result of using
+        the service. Service conditions are loosely associated with the
+        <span class="bold">
+                              <strong>service policies</strong>
+                           </span> and the expectations
+        with <span class="bold">
+                              <strong>service contracts </strong>
+                           </span>.</p>
+                     </div>
+                     <div class="sect2" title="C.2.4. The SOA Reference Model">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s15" style="display:none"> </a>C.2.4. The SOA Reference Model</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.2.4.1. Service">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s16" style="display:none"> </a>C.2.4.1. Service</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>234. A <span class="bold">
+                                 <strong>service</strong>
+                              </span> is a means to
+          access to one or more capabilities, where the access is provided
+          using a prescribed interface and is exercised consistent with
+          constraints and policies as specified by the service description. A
+          service is provided by one entity &#8211; the <span class="bold">
+                                 <strong>service provider </strong>
+                              </span> &#8211; for use by others, but
+          the eventual consumers of the service may not be known to the
+          service provider and may demonstrate uses of the service beyond the
+          scope originally conceived by the provider,</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Information returned in response to a request,</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>A change to the shared state of defined entities,
+              or</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Some combination of the above.</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>235. Note, the <span class="bold">
+                                 <strong>service consumer</strong>
+                              </span> in
+          (1) does not typically know how the information is generated, e.g.
+          whether it is extracted from a database or generated dynamically; in
+          (2), the service consumer does not typically know how the state
+          change is effected. In either case, the service consumer would need
+          to provide input parameters required by the service and the service
+          would return information, status indicators, or error descriptions,
+          where both the input and output are as described by the data model
+          exposed through the published service interface. Note that the
+          service may be invoked without requiring information from the
+          consumer (other than a command to initiate action) and may
+          accomplish its functions without providing any return or feedback to
+          the consumer.</p>
+                           <p>236. The service concept above emphasizes a distinction between a
+          capability that represents some functionality created to address a
+          need and the point of access to bring that capability to bear in the
+          context of SOA. It is assumed that capabilities exist outside of the
+          SOA. In actual use, maintaining this distinction may not be critical
+          (i.e. the service may be talked about in terms of being the
+          capability) but the separation is pertinent in terms of a clear
+          expression of the nature of SOA and the value it provides.</p>
+                        </div>
+                        <div class="sect3" title="C.2.4.2. Service description">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s17" style="display:none"> </a>C.2.4.2. Service description</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>237. The service description represents the information needed in
+          order to use a service. It may be considered part of or the complete
+          set of the metadata associated with a service.
+          In any case, the service description overlaps and shares many common
+          properties with service metadata. In most cases, there is no one
+          &#8220;right&#8221; set of metadata but rather the metadata content depends on
+          the context and the needs of the parties using the associated
+          entity. The same holds for a service description. While there are
+          certain elements that are likely to be part of any service
+          description, most notably the data model, many elements such as
+          function and policy may vary.</p>
+                           <p>238. Best practice suggests that the service description should be
+          represented using a standard, referenceable format. Such a format
+          facilitates the use of common processing tools (such as discovery
+          engines) that can, in turn, capitalize on the service
+          description.</p>
+                           <p>239. While the concept of a SOA supports use of a service without
+          the service consumer needing to know the details of the service
+          implementation, the service description makes available critical
+          information that a consumer needs in order to decide whether or not
+          to use a service. In particular, a service consumer must possess the
+          following items of information:</p>
+                           <div class="orderedlist">
+                              <ol class="orderedlist" type="1">
+                                 <li class="listitem">
+                                    <p>That the service exists and is <span class="bold">
+                                          <strong>
+              reachable</strong>
+                                       </span> (i.e., the service is <span class="bold">
+                                          <strong> visible</strong>
+                                       </span> to the service consumer and
+              there are sufficient mechanisms in place for the service
+              participants to be able to interact);</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>That the service performs a certain function or set of
+              functions;</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>That the service operates under a specified set of
+              constraints and policies;</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>That the service will (to some implicit or explicit
+              extent) comply with policies as prescribed by the service
+              consumer;</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>How to interact with the service in order to achieve
+              the required objectives, including the format and content of
+              information exchanged between the service and the consumer and
+              the sequences of information exchange that may be
+              expected.</p>
+                                 </li>
+                              </ol>
+                           </div>
+                           <p>240. Subsequent sections of this document will deal with these
+          aspects of a service in detail but the following subsections will
+          describe the relationship of these information items to the service
+          description.</p>
+                           <div class="sect4" title="C.2.4.2.1. Service Reachability">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s18" style="display:none"> </a>C.2.4.2.1. Service Reachability</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>241. A service description should include sufficient data to
+            permit a service consumer and service provider to exchange
+            information. This might include metadata (such as the location of
+            the service and what information protocols it supports and
+            requires) and information that allows the service consumer to
+            determine if the service is currently reachable or not.</p>
+                           </div>
+                           <div class="sect4" title="C.2.4.2.2. Service Functionality">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s19" style="display:none"> </a>C.2.4.2.2. Service Functionality</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>242. Item 2 relates to the need to unambiguously express the
+            function(s) of the service and the real world effects that result from it being invoked. This portion of the
+            description needs to be expressed in a way that is generally
+            understandable by service consumers but able to accommodate a
+            vocabulary that is sufficiently expressive for the domain for
+            which the service provides its functionality. The description of
+            functionality may include, among other possibilities, a textual
+            description intended for human consumption or identifiers or
+            keywords referenced to specific machine-processable definitions.
+            For a full description, it may be useful to indicate multiple
+            identifiers or keywords from a number of different collections of
+            definitions.</p>
+                              <p>243. Part of the description of functionality may include
+            underlying technical assumptions that determine the limits of
+            functionality exposed by the service or of the underlying
+            capability.</p>
+                           </div>
+                           <div class="sect4" title="C.2.4.2.3. Policies Related to a Service">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s20" style="display:none"> </a>C.2.4.2.3. Policies Related to a Service</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>244. Items 3 and 4 from Section 2.2.4.2 relate to the service
+            description&#8217;s support for associating constraints and policies
+            with a service and providing necessary information for prospective
+            consumers to evaluate if a service will act in a manner consistent
+            with the consumer&#8217;s constraints and policies.</p>
+                              <p>245. In some situations the consumer may similarly provide an
+            indication of its constraints and policies to support a service&#8217;
+            need to do a similar evaluation of suitability. Thus, both
+            prospective consumers and providers are likely to use the service
+            description to establish what Section 2.2.5.3 refers to as the
+            <span class="bold">
+                                    <strong>execution context</strong>
+                                 </span>.</p>
+                           </div>
+                           <div class="sect4" title="C.2.4.2.4. Service Interface">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s21" style="display:none"> </a>C.2.4.2.4. Service Interface</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>246. The service interface is the means referred to in Item 5 for
+            interacting with a service. It includes the specific protocols,
+            commands, and information exchange by which actions are initiated
+            that result in the real world effects as specified through the
+            service functionality portion of the service description.</p>
+                              <p>247. The specifics of the interface should be syntactically
+            represented in a standard referenceable format. These prescribe
+            what information needs to be provided to the service in order to
+            exercise its functionality and/or the results of the service
+            invocation to be returned to the service consumer. This logical
+            expression of the set of information items associated with the
+            consumption of the service is often referred to as the service
+            data model. It should be noted that the particulars of the
+            standard referenceable format is beyond the scope of the reference
+            model. However, requiring that mechanisms be available (in order
+            to define and retrieve such definitions) is fundamental to the SOA
+            concept.</p>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.2.4.3. Descriptions and Metadata">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s22" style="display:none"> </a>C.2.4.3. Descriptions and Metadata</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>248. One of the hallmarks of a Service Oriented Architecture is the
+          degree of documentation and description associated with it;
+          particularly machine processable descriptions &#8211; otherwise known as
+          metadata.</p>
+                           <p>249. The purpose of this metadata is to facilitate integration,
+          particularly across ownership domains. By providing public
+          descriptions, it makes it possible for potential participants to
+          construct applications that use services and even offer compatible
+          services. Standardizing the formats of such metadata reduces the
+          cost and burden of producing the descriptions necessary to promote
+          reuse and integration.</p>
+                           <div class="sect4" title="C.2.4.3.1. The roles of description">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s23" style="display:none"> </a>C.2.4.3.1. The roles of description</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>250. An important additional benefit of metadata &#8211; as opposed to
+            informal natural language descriptions &#8211; is its potential to
+            facilitate automated software development. Both service providers
+            and service consumers can benefit from such automation &#8211; reducing
+            the cost of developing such systems.</p>
+                              <p>251. For example, metadata can be used as a basis of discovery in
+            dynamic systems. Metadata can assist in managing a service,
+            validating and auditing usage of services which may also be
+            simplified by rich metadata. It can also help ensure that
+            requirements and expectations (regarding the content of any data
+            interchanged) are properly interpreted and fulfilled.</p>
+                           </div>
+                           <div class="sect4" title="C.2.4.3.2. The Limits of Description">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s24" style="display:none"> </a>C.2.4.3.2. The Limits of Description</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>252. There are well-known theoretic limits on the effectiveness
+            of descriptions &#8211; it is simply not possible to specify, completely
+            and unambiguously the precise semantics of a service. There will
+            always be unstated assumptions made by the describer of a service
+            that must be implicitly shared by readers of the description. This
+            applies to machine processable descriptions as well as to human
+            readable descriptions.</p>
+                              <p>253. Fortunately, complete precision is not necessary either &#8211;
+            what is required is sufficient precision to enable required
+            functionality.</p>
+                              <p>254. Another kind of limit of service descriptions is more
+            straightforward: whenever a repository is searched using any kind
+            of query there is always the potential for zero or more responses.
+            There may be many reasons why a multiplicity of responses is
+            returned: there might be several versions of the service, there
+            might be competing services that offer overlapping functionality
+            and there might be services from multiple different
+            providers.</p>
+                              <p>255. In the case that there is more than one response, this set
+            of responses has to be converted into a choice of a single service
+            in order for a service consumer to ensure the required function
+            performed. In a multi-provider scenario, that choice must also
+            take into account real world aspects of the service &#8211; such as
+            whether the service consumer can identify the provider, can or
+            should trust the provider, and whether the provider is reliable
+            and timely in delivering the service offered. It is unlikely that
+            all such factors can be easily and securely encoded in
+            descriptions and search criteria.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="sect2" title="C.2.5. Interacting with Services">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s25" style="display:none"> </a>C.2.5. Interacting with Services</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>256. Interacting with a service involves exchanging information with
+        the service and performing actions against the service. In many cases,
+        this is accomplished by sending and receiving messages, but there are
+        other modes possible that do not involve explicit message
+        transmission. However, for simplicity, we often refer to message
+        exchange as the primary mode of interaction with a service. The forms
+        of information exchanged and understood, together with the mechanisms
+        used to exchange information, constitute the <span class="bold">
+                              <strong>service interface </strong>
+                           </span> &#8211;.</p>
+                        <p>257. The key concepts that are important in understanding what it is
+        involved in interacting with services are the <span class="bold">
+                              <strong>
+        data model</strong>
+                           </span>, the <span class="bold">
+                              <strong>process model
+        </strong>
+                           </span>, the <span class="bold">
+                              <strong>execution context</strong>
+                           </span>
+        and the <span class="bold">
+                              <strong>expectations</strong>
+                           </span> about the
+        interaction.</p>
+                        <div class="sect3" title="C.2.5.1. Data Model">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s26" style="display:none"> </a>C.2.5.1. Data Model</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>258. The data model of a service is a characterization of the
+          information associated with the use of the service.</p>
+                           <p>259. The scope of the data model includes the format of exchanged
+          information, the structural relationships within documents and the
+          definition of terms used. Typically, only information about, and
+          data potentially included in, an exchange with a service are
+          generally considered as being part of that service's data
+          model.</p>
+                           <p>260. There are two important aspects of a data model that are
+          important in interpreting information exchange &#8211; the structure of
+          the information and the meaning assigned to elements of the
+          information. Particularly for information that is exchanged across
+          an ownership boundary, the interpretation of strings and other
+          tokens in the information is a critical part of the semantics of the
+          interaction.</p>
+                           <div class="sect4" title="C.2.5.1.1. Structure">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s27" style="display:none"> </a>C.2.5.1.1. Structure</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>261. Understanding the representation, structure and form of
+            information exchanged is a key initial step in ensuring effective
+            interactions with a service. There are several levels of such
+            structural information; ranging from the encoding of character
+            data, through the use of formats such as XML, SOAP and
+            schema-based representations.</p>
+                              <p>262. A described data model typically has a great deal to say
+            about the form of messages, about the types of the various
+            components of messages and so on. However, pure &#8220;typed&#8221;
+            information is not sufficient to completely describe the
+            appropriate interpretation of data.</p>
+                           </div>
+                           <div class="sect4" title="C.2.5.1.2. Semantics and Ontology">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s28" style="display:none"> </a>C.2.5.1.2. Semantics and Ontology</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>263. The primary task of any communication infrastructure is to
+            facilitate the exchange of information and the exchange of intent.
+            For example, a purchase order combines two somewhat orthogonal
+            aspects: the description of the items being purchased and the fact
+            that one party intends to purchase those items from another party.
+            Even if for exchanges that do not cross any ownership boundaries,
+            exchanges with services have similar aspects: this is an update to
+            the customer profile with these changes.</p>
+                              <p>264. Especially in the case where the exchanges are across
+            ownership boundaries, a critical issue is the interpretation of
+            the data. This interpretation must be consistent between the
+            participants in the service interaction. Consistent interpretation
+            is a stronger requirement than merely type (or structural)
+            consistency &#8211; the tokens in the data itself must also have a
+            shared basis.</p>
+                              <p>265. An ontology is a formal description of terms and the
+            relationships between them in a given context. It will include
+            information about how terms should be interpreted within a given
+            context, constraints on and functions of valid values for the data
+            and associated properties, as well as information about possible
+            relationships of some terms to other terms (hierarchical,
+            class/sub class, associative, dependent, etc.).</p>
+                              <p>266. The role of explicit ontologies in an SOA is to provide a
+            firm basis for selecting correct interpretations for elements of
+            information exchanged.</p>
+                              <p>267. Ontologies also provide a point of context to facilitate the
+            reinterpretation of data. Such a reinterpretation is effectively
+            represented as a particular traversal of the graph of concepts and
+            relationships embodied in the ontology. How much automation of
+            ontology walking is appropriate will depend on the nature of the
+            service and the service participants.</p>
+                              <p>268. Note that, for the most part, it is not expected that
+            service consumers and providers would actually exchange ontologies
+            in their interaction &#8211; the role of the ontology is a background
+            one &#8211; it facilitates sound interactions. Hence ontology references
+            are mostly to be found in <span class="bold">
+                                    <strong>service
+            descriptions</strong>
+                                 </span>.</p>
+                              <p>269. More specifically, and in order for a service to be
+            consistent, the service should make consistent use of terms as
+            defined in an ontology. Specific domain semantics are beyond the
+            scope of this reference model; but there is a requirement that the
+            service interface enable providers and consumers to identify
+            unambiguously those definitions that are relevant to their
+            respective domains.</p>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.2.5.2. Behavioural model">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s29" style="display:none"> </a>C.2.5.2. Behavioural model</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>270. The second key requirement for successful interactions with
+          services is knowledge of the process or temporal aspects of
+          interacting with the service. Loosely, this can be characterized as
+          knowledge of the actions on, responses to and temporal dependencies
+          between actions on the service.</p>
+                           <p>271. For example, in a security-controlled access to a database
+          service, the actions available to a service consumer might include
+          presenting credentials, requesting database updates and reading
+          results of queries. The security may be based on a
+          challenge-response protocol. For example, the initiator presents an
+          initial token of identity, the responder presents a challenge and
+          the initiator responds to the challenge in a way that satisfies the
+          service. Only after the user&#8217;s credentials have been verified will
+          any action that queries and/or updates the database be accepted. The
+          sequences of actions involved are a critical aspect of the knowledge
+          required for successful use of the secured database service.</p>
+                           <p>272. There are other aspects of the behaviour of services that are
+          important. These include, for example, whether the service is
+          transactional, idempotent or long running. As a particular example,
+          a service that supports updating an account balance with a
+          transaction is typically idempotent; i.e., the state of the account
+          would not be affected should a subsequent interaction be attempted
+          for the same transaction.</p>
+                           <div class="sect4" title="C.2.5.2.1. Action model">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s30" style="display:none"> </a>C.2.5.2.1. Action model</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>273. The <span class="bold">
+                                    <strong>action model</strong>
+                                 </span> of a
+            service is about the individual actions that may be invoked
+            against the service. Of course, a great portion of the behaviour
+            resulting from an action may be private; however, the expected
+            public view of a service surely includes the implied effects of
+            actions.</p>
+                           </div>
+                           <div class="sect4" title="C.2.5.2.2. Process Model">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s31" style="display:none"> </a>C.2.5.2.2. Process Model</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>274. The <span class="bold">
+                                    <strong>process model</strong>
+                                 </span>
+            characterizes the temporal relationships between actions and
+            events associated with interacting with the service. It is fairly
+            common to partition the process model associated with a service
+            into two levels: the particular sequences of operations needed to
+            achieve single service exchanges and longer term transactions.
+            These two levels may be nested &#8211; a long running transaction is
+            often composed of sequences of exchange patterns.</p>
+                              <p>275. Note that although the process model is an essential part of
+            this Reference Model, its extent is not completely defined. In
+            some architectures the process model will include aspects that are
+            not strictly part of SOA &#8211; for example, in this reference model we
+            do not address the orchestration of multiple services &#8211; although
+            orchestration and choreography may be part of the process model of
+            a given architecture. At a minimum, the process model must cover
+            the interactions with the service itself.</p>
+                           </div>
+                           <div class="sect4" title="C.2.5.2.3. Higher-order attributes of processes">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s32" style="display:none"> </a>C.2.5.2.3. Higher-order attributes of processes</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>276. Beyond the straightforward mechanics of interacting with a
+            service there are other, higher-order, attributes of services&#8217;
+            process models that are also often important. These can include
+            whether the service is <span class="bold">
+                                    <strong>idempotent</strong>
+                                 </span>, whether the service is
+            <span class="bold">
+                                    <strong>long-running</strong>
+                                 </span> in nature and
+            whether it is important to account for any <span class="bold">
+                                    <strong>transactional</strong>
+                                 </span> aspects of the
+            service.</p>
+                              <p>277. A service is <span class="bold">
+                                    <strong>idempotent</strong>
+                                 </span> if
+            subsequent attempts to perform identical transactions are
+            discounted. For example, it often important that a bank will only
+            cash a check once &#8211; subsequent attempts to cash the same check
+            should be ignored, rejected or initiate an alert process. Note
+            that idempotency is not the same as effect-free or stateless: a
+            service that always returns the same results is idempotent, but
+            only by virtue of the fact that it does not change from invocation
+            to invocation.</p>
+                              <p>278. Idempotency is an important attribute of a service in an
+            environment where there is a significant possibility that the
+            interaction between the service provider and consumer may be
+            interrupted &#8211; whether by a network issue or simply one of the
+            parties dropping out. A strategy for recovering from such a
+            breakdown is to attempt to repeat the interaction &#8211; an idempotent
+            service is required to ignore such repetitions should the
+            transaction have been completed beforehand.</p>
+                              <p>279. A service is <span class="bold">
+                                    <strong>long-running</strong>
+                                 </span>
+            if the activities engendered by an interaction are likely to
+            persist beyond the immediate interaction itself. For example, a
+            classic book selling service might be viewed as a long-running
+            service: the activity started by the purchase of the book may take
+            days or weeks to complete. It can be important to account for a
+            long-running process as it has implications for the kinds of
+            infrastructure needed &#8211; both by the service provider and by the
+            service consumer &#8211; in order to be able to keep track of the
+            progress of the interaction.</p>
+                              <p>280. Often, once a business-level contract has been agreed on, it
+            can be difficult or impossible to simply cancel the consequences
+            of the agreement. This is particularly an issue when the agreement
+            of several parties is necessary simultaneously. For example,
+            booking a vacation may require a flight ticket as well as a hotel
+            room &#8211; without either component the result is not a vacation.
+            However, the airline typically will not have a relationship with
+            the hotel. If there are no hotel rooms available for the proposed
+            vacation then the airline ticket will need to be cancelled.</p>
+                              <p>281. The process of reversing a previously completed transaction
+            &#8211; backing out of the airline booking for example &#8211; is likely to be
+            quite different to the process for the original transaction;
+            possibly even involving a different service. Knowledge of such
+            compensatory actions is a key aspect of interacting with <span class="bold">
+                                    <strong>transactional</strong>
+                                 </span> services.</p>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.2.5.3. Actualized Services">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s33" style="display:none"> </a>C.2.5.3. Actualized Services</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>282. The <span class="bold">
+                                 <strong>execution context</strong>
+                              </span> of a
+          service interaction is the set of infrastructure elements, process
+          entities and policy assertions that are deployed as part of the
+          instantiated service interaction. In effect, the execution context
+          defines the point of contact between abstractions such as service
+          descriptions which are mostly about the potential for interaction
+          and an actually executing service. It is the point of measurement
+          between the service description and reality, between theory and
+          practice.</p>
+                           <p>283. The execution context is not limited to one side of the
+          interaction; rather it concerns the totality of the interaction &#8211;
+          including the service provider, the service consumer and the common
+          infrastructure needed to mediate the interaction.</p>
+                           <p>284. The execution context is central to many aspects of a service
+          interaction. It defines, for example, the decision point for any
+          policy enforcement relating to the service interaction. Note that a
+          policy decision point is not necessarily the same as an enforcement
+          point: an execution context is not by itself something that lends
+          itself to enforcement. On the other hand, any enforcement mechanism
+          of a policy is likely to take into account the particulars of the
+          actual service interaction.</p>
+                           <p>285. The execution context also allows us to distinguish services
+          from one another. Different instances of the same service &#8211; denoting
+          interactions between a given service provider and different service
+          consumers for example &#8211; are distinguished by virtue of the fact that
+          their execution contexts are different.</p>
+                           <p>286. Finally, the execution context is also the context in which
+          the interpretation of data that is exchanged takes place &#8211; it is
+          where the symbol grounding happens as it were. A particular string
+          has a particular meaning in a service interaction in a particular
+          context &#8211; the execution context.</p>
+                        </div>
+                     </div>
+                     <div class="sect2" title="C.2.6. Real World Effect">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s34" style="display:none"> </a>C.2.6. Real World Effect</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>287. There is always a particular purpose associated with interacting
+        with a service. Conversely, a service provider (and consumer) often
+        has a priori conditions that apply to its interactions. The service
+        consumer is trying to achieve some result by interacting with the
+        service, as is the service provider. At first sight, such a goal can
+        often be expressed as &#8220;trying to get the service to do something&#8221; This
+        is sometimes known as the <span class="bold">
+                              <strong>real world effect
+        </strong>
+                           </span> of using a service.</p>
+                        <p>288. The internal actions that a service providers and consumers
+        perform as a result of participation in service interactions are, by
+        definition, private and fundamentally unknowable. By unknowable we
+        mean both that external parties cannot see others&#8217; private actions
+        and, furthermore should not have explicit knowledge of them. Instead
+        we focus on the state that is shared between the parties &#8211; the
+        <span class="bold">
+                              <strong> shared state</strong>
+                           </span>. Actions by service
+        providers and consumers lead to modifications of this shared state;
+        and that in turn leads to modified <span class="bold">
+                              <strong>expectations</strong>
+                           </span> by the participants.</p>
+                        <p>289. Note that there does not need to be a third party to act as a
+        kind of escrow for the shared state between service providers and
+        consumers. The elements of the shared state are inferred from the
+        communication that has occurred between the participants together with
+        other context as necessary. Of course, in the case where adjudication
+        is a possibility, it becomes prudent to record the interaction &#8211; so
+        that disputes can be arbitrated.</p>
+                        <p>290. Although there is not necessarily a one-to-one correspondence,
+        the natural container for the conditions applying to a service is the
+        <span class="bold">
+                              <strong>service policy</strong>
+                           </span>. Similarly, the
+        natural container for the expectations arising from a service is the
+        <span class="bold">
+                              <strong>service contract</strong>
+                           </span>.</p>
+                     </div>
+                     <div class="sect2" title="C.2.7. Policies and Contracts">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s35" style="display:none"> </a>C.2.7. Policies and Contracts</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>291. A <span class="bold">
+                              <strong>policy</strong>
+                           </span> represents some
+        constraint or condition on the use, deployment or description of an
+        owned entity as defined by any participant. A <span class="bold">
+                              <strong>contract</strong>
+                           </span>, on the other hand, represents an
+        agreement by two or more parties. Like policies, agreements are also
+        about the conditions of use of a service; they may also constrain the
+        expected real world effects of using a service. The reference model is
+        focused primarily on the concept of policies and contracts as they
+        apply to services. We are not concerned with the form or
+        expressiveness of any language used to express policies and
+        contracts.</p>
+                        <div class="sect3" title="C.2.7.1. Service Policy">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s36" style="display:none"> </a>C.2.7.1. Service Policy</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>292. A policy is a statement of the obligations, constraints or
+          other conditions of use of a given service that expresses intent on
+          the part of a participant. More particularly, policies are a way for
+          expressing the relationship between the <span class="bold">
+                                 <strong>execution context</strong>
+                              </span> and the <span class="bold">
+                                 <strong>data</strong>
+                              </span> and <span class="bold">
+                                 <strong>behaviour
+          models</strong>
+                              </span> associated with the service.</p>
+                           <p>293. Conceptually, there are three aspects of policies: the policy
+          assertion, the policy owner (sometimes referred to as the policy
+          subject) and policy enforcement.</p>
+                           <p>294. For example, the assertion: &#8220;All messages are triple-DES
+          encrypted is an assertion regarding the forms of messages. As an
+          assertion, it is measurable: it may be true or false depending on
+          whether the traffic is encrypted or not. Policy assertions are often
+          about the way the service is realized; i.e., they are about the
+          relationship between the service and its execution context.</p>
+                           <p>295. A policy always represents a participant&#8217;s point of view. An
+          assertion becomes the policy of a participant when they make it
+          their policy. This linking is normally not part of the assertion
+          itself. For example, if the service consumer declares that &#8220;Al
+          messages are triple-DES encrypted&#8221;, then that reflects the policy of
+          the service consumer. This policy is one that may be asserted by the
+          service consumer independently of any agreement from the service
+          provider.</p>
+                           <p>296. Finally, a policy may be enforced. Techniques for the
+          enforcement of policies depend on the nature of the policy.
+          Conceptually, service policy enforcement amounts to ensuring that
+          the policy assertion is consistent with the real world. This might
+          mean preventing unauthorized actions to be performed or states to be
+          entered into; it can also mean initiating compensatory actions when
+          a policy violation has been detected. An unenforceable constraint is
+          not a policy; it would be better described as a wish.</p>
+                           <p>297. Policies potentially apply to many aspects of SOA: security,
+          privacy, manageability, Quality of Service and so on. Beyond such
+          infrastructure-oriented policies, participants may also express
+          business-oriented policies &#8211; such as hours of business, return
+          policies and so on.</p>
+                           <p>298. Policy assertions should be written in a form that is
+          understandable to, and processable by, the parties to whom the
+          policy is directed. Policies may need to be automatically
+          interpreted, depending on the purpose and applicability of the
+          policy and whether it might affect whether a particular service is
+          used or not.</p>
+                           <p>299. A natural point of contact between service participants and
+          policies associated with the service is in the service description. It would be natural for the service description
+          to contain references to the policies associated with the
+          service.</p>
+                        </div>
+                        <div class="sect3" title="C.2.7.2. Service Contract">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s37" style="display:none"> </a>C.2.7.2. Service Contract</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>300. Where a policy is associated with the point of view of
+          individual participants, a contract represents an agreement between
+          two or more participants. Like policies, contracts can cover a wide
+          range of aspects of services: quality of service agreements,
+          interface and choreography agreements and commercial
+          agreements</p>
+                           <p>301. Thus, following the analysis above, a service contract is a
+          measurable assertion that governs the requirements and expectations
+          of two or more parties. Unlike policy enforcement, which is usually
+          the responsibility of the policy owner, contract enforcement may
+          involve resolving disputes between the parties to the contract. The
+          resolution of such disputes may involve appeals to higher
+          authorities.</p>
+                           <p>302. Like policies, contracts may be expressed in a form that
+          permits automated interpretation. Where a contract is used to codify
+          the results of a service interaction, it is good practice to
+          represent it in a machine processable form. This facilitates
+          automatic service composition, for example. Where a contract is used
+          to describe over-arching agreements between service providers and
+          consumers, then the priority is likely to make such contracts
+          readable by people.</p>
+                        </div>
+                     </div>
+                     <div class="sect2" title="C.2.8. Visibility">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s38" style="display:none"> </a>C.2.8. Visibility</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>303. For a service provider and consumer to interact with each other
+        they have to be able to &#8216;see&#8217; each other. This is true for any
+        consumer/provider relationship &#8211; including in an application program
+        where one program calls another: without the proper libraries being
+        present the function call cannot complete. In the case of SOA
+        visibility needs to be emphasized because it is not necessarily
+        obvious how service participants can see each other to
+        interact.</p>
+                        <p>304. Visibility is the relationship between service consumers and
+        providers that is satisfied when they are able to interact with each
+        other. Preconditions to visibility are awareness &#8211; typically the
+        initiator in a service interaction must be aware of the other parties
+        &#8211; willingness &#8211; the parties must be predisposed to interactions &#8211; and
+        ability &#8211; the participants must be able to exchange information as
+        part of a service interaction.</p>
+                        <div class="sect3" title="C.2.8.1. Awareness">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s39" style="display:none"> </a>C.2.8.1. Awareness</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>305. A key aspect of visibility is awareness &#8211; both the service
+          provider and the service consumer must have information that would
+          lead them to know of the other&#8217;s existence. Technically, the prime
+          requirement is that the initiator of a service interaction has
+          knowledge of the responder. The fact of a successful initiation is
+          often sufficient to inform the responder of the other&#8217;s
+          existence.</p>
+                           <p>306. Awareness of service offerings is often mediated by various
+          discovery mechanisms. For a service consumer (say) to discover a
+          service provider, the service provider must be capable of making
+          details of the service (notably service description and policies)
+          available to potential consumers; and consumers must be capable of
+          finding that information.</p>
+                           <p>307. Service discoverability requires that the service description
+          and policy &#8211; or at least a suitable subset thereof &#8211; be available in
+          such a manner and form that, directly or indirectly, an awareness of
+          the existence and capabilities of the service can become known to
+          potential consumers. The extent to which the discovery is &#8220;pushed by
+          the service provider, &#8220;pulled&#8221; by a potential consumer, subject to a
+          probe or another method, will depend on many factors.</p>
+                           <p>308. For example, a service provider may advertise and promote
+          their service by either including it in a service directory or
+          broadcasting it to all consumers; potential consumers may broadcast
+          their particular service needs in the hope that a suitable service
+          responds with a proposal or offer or a service consumer might also
+          &#8220;probe&#8221; a entire network to determine if suitable services exist.
+          When the demand for a service is higher than the supply, then by
+          advertising their needs, potential consumers are likely to be more
+          effective then service providers advertising offered
+          services.</p>
+                           <p>309. One way or another, the potential consumer must acquire a
+          sufficient description to evaluate whether the service matches their
+          expectations and, if so, the method for the consumer to establish a
+          contract and invoke the service.</p>
+                        </div>
+                        <div class="sect3" title="C.2.8.2. Willingness">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s40" style="display:none"> </a>C.2.8.2. Willingness</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>310. Associated with all service interactions is intent &#8211; it is an
+          intentional act to initiate and to participate in a service
+          interaction. For example, if a service consumer discovers a service
+          via its description in a registry, and the consumer initiates an
+          interaction, if the service provider does not cooperate then there
+          can be no interaction. In some circumstances it is precisely the
+          correct behaviour for a service to fail to respond &#8211; for example, it
+          is the classic defence against certain denial-of-service
+          attacks.</p>
+                           <p>311. The extent of a service participant&#8217;s willingness to engage in
+          service interactions may be the subject of policies. Those policies
+          may be documented in the service description.</p>
+                           <p>312. Of course, willingness on the part of service providers and
+          consumers to interact is not the same as a willingness to perform
+          requested actions. A service provider that rejects all attempts to
+          cause it to perform some action may still be fully willing and
+          engaged in interacting with the consumer.</p>
+                        </div>
+                        <div class="sect3" title="C.2.8.3. Reachability">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s41" style="display:none"> </a>C.2.8.3. Reachability</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>313. A service consumer may have the intention of interacting with
+          a service, and may even have all the information needed to
+          communicate with it. However, if the service is not reachable, for
+          example if there is not communication path between the consumer and
+          provider, then, effectively, the service is not visible to the
+          consumer.</p>
+                           <p>314. Reachability is the relationship between service participants
+          where they are able to exchange information as part of service
+          interactions. Reachability is closely connected to the concept of
+          execution context &#8211; an important requirement
+          for an execution context is to establish that service participants
+          can communicate with each other.</p>
+                        </div>
+                     </div>
+                     <div class="sect2" title="C.2.9. SOA Attributes">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="v1e-s42" style="display:none"> </a>C.2.9. SOA Attributes</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="table">
+                           <a id="v1e-t1" style="display:none"> </a>
+                           <p/>
+                           <div class="table-contents">
+                              <table summary="Implementation of SOA Attributes" border="1">
+                                 <colgroup>
+                                    <col width="22%"/>
+                                    <col width="15%"/>
+                                    <col width="13%"/>
+                                    <col width="12%"/>
+                                    <col width="13%"/>
+                                    <col width="12%"/>
+                                    <col width="13%"/>
+                                 </colgroup>
+                                 <tbody>
+                                    <tr>
+                                       <td>SOA Attribute</td>
+                                       <td>Feature</td>
+                                       <td>Year 2</td>
+                                       <td>Year 3</td>
+                                       <td>Year 4</td>
+                                       <td>Year 5</td>
+                                       <td>Year 6</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Applications</td>
+                                       <td>Enterprise Management</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>15%</td>
+                                       <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Discovery</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>20%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Messaging</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Mediation</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Collaboration</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Security</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>15%</td>
+                                       <td>30%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Storage</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Application</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Assistance</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Catalogue</td>
+                                       <td>Description Language</td>
+                                       <td>0%</td>
+                                       <td>20%</td>
+                                       <td>40%</td>
+                                       <td>60%</td>
+                                       <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Instance</td>
+                                       <td>Definition Language</td>
+                                       <td>0%</td>
+                                       <td>20%</td>
+                                       <td>40%</td>
+                                       <td>60%</td>
+                                       <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Publications</td>
+                                       <td>Unicast</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>25%</td>
+                                       <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Multicast</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>25%</td>
+                                       <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Broadcast</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>25%</td>
+                                       <td>50%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Anycast</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Discovery</td>
+                                       <td>Registry</td>
+                                       <td>0%</td>
+                                       <td>20%</td>
+                                       <td>40%</td>
+                                       <td>60%</td>
+                                       <td>80%</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Directory</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                       <td>30%</td>
+                                       <td>60%</td>
+                                       <td>90%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Data Model</td>
+                                       <td> </td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>0%</td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Contract</td>
+                                       <td>Low Level</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>High Level</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                       <td>-</td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <p class="title">
+                              <b>Table C.1. Implementation of SOA Attributes</b>
+                           </p>
+                        </div>
+                        <br class="table-break"/>
+                        <p>315. The previous table, <a class="xref" href="apcs02.html#v1e-t1" title="Table C.1. Implementation of SOA Attributes">Table C.1</a>, is a suggested generalized outline
+        on when SOA attributes should be implemented within the mid-term time
+        frame. A value of zero percent indicates that implementation should
+        begin in that year. Conversely, a value of a hundred percent indicates
+        that implementation should end in that year. Naturally, measurable
+        metrics to quantify progress would have to be agreed upon by the NATO
+        nations.</p>
+                        <div class="table">
+                           <a id="v1e-t3" style="display:none"> </a>
+                           <p/>
+                           <div class="table-contents">
+                              <table summary="Far-term SOA Attributes" border="1">
+                                 <colgroup>
+                                    <col width="27%"/>
+                                    <col width="20%"/>
+                                    <col width="11%"/>
+                                    <col width="10%"/>
+                                    <col width="11%"/>
+                                    <col width="10%"/>
+                                    <col width="11%"/>
+                                 </colgroup>
+                                 <tbody>
+                                    <tr>
+                                       <td>
+                                          <span class="bold">
+                                             <strong>SOA Attribute</strong>
+                                          </span>
+                                       </td>
+                                       <td>
+                                          <span class="bold">
+                                             <strong>Feature</strong>
+                                          </span>
+                                       </td>
+                                       <td>
+                                          <span class="bold">
+                                             <strong>Year 6</strong>
+                                          </span>
+                                       </td>
+                                       <td>
+                                          <span class="bold">
+                                             <strong>Year 7</strong>
+                                          </span>
+                                       </td>
+                                       <td>
+                                          <span class="bold">
+                                             <strong>Year 8</strong>
+                                          </span>
+                                       </td>
+                                       <td>
+                                          <span class="bold">
+                                             <strong>Year 9</strong>
+                                          </span>
+                                       </td>
+                                       <td>
+                                          <span class="bold">
+                                             <strong>Year 10</strong>
+                                          </span>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Applications</td>
+                                       <td>Enterprise Management</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Discovery</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Messaging</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Mediation</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Collaboration</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Security</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Storage</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Application</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Assistance</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Descriptions</td>
+                                       <td>Description Language</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Definitions</td>
+                                       <td>Definition Language</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Publications</td>
+                                       <td>Unicast</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Multicast</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Broadcast</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Anycast</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Discovery</td>
+                                       <td>Repository</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>Directory</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Data Model</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td>Service Contract</td>
+                                       <td>Low Level</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                    <tr>
+                                       <td> </td>
+                                       <td>High Level</td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                       <td> </td>
+                                    </tr>
+                                 </tbody>
+                              </table>
+                           </div>
+                           <p class="title">
+                              <b>Table C.2. <span class="emphasis">
+                                    <em>Far-term SOA Attributes</em>
+                                 </span>
+                              </b>
+                           </p>
+                        </div>
+                        <br class="table-break"/>
+                        <div class="sect3" title="C.2.9.1. Service Application">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s43" style="display:none"> </a>C.2.9.1. Service Application</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>316. A service is a contractually defined behaviour that can be
+          implemented and provided by a service provider of choice for use by
+          service consumer. The term &#8220;services&#8221; does not imply web services;
+          although, web services are well known implementations of SOA. Other
+          specialized implementations include J2EE<sup>[<a id="d0e3066" href="#ftn.d0e3066" class="footnote">9</a>]</sup> and .NET<sup>[<a id="d0e3070" href="#ftn.d0e3070" class="footnote">10</a>]</sup>.</p>
+                           <p>317. The following service group is called the NATO Information
+          Infrastructure Core Enterprise Services (NII-CES). NII-CES services
+          are available enterprise-wide and are independent of Cross COI
+          Services. They are considered the building blocks upon which Cross
+          COI Services are created.</p>
+                           <p>318. Capability Areas</p>
+                           <p>319. Service Management Control</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Enterprise Management</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Application</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Assistance</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>320. Information Assurance</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Security</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>321. Information and Integration</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Discovery</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Mediation</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Storage</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>322. Communication</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Messaging</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Collaboration</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>323. Community of Interests</p>
+                           <p>324. Users and Missions</p>
+                        </div>
+                        <div class="sect3" title="C.2.9.2. Service Catalogue">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s44" style="display:none"> </a>C.2.9.2. Service Catalogue</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>325. The service catalogue information consists of the constraints
+          and policies that define the usage context and functionality of the
+          service. This enables service consumers, human or another service,
+          to examine the service description and evaluate the following
+          questions:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>What does the service do?</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Is it relevant to my mission?</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>326. The declaration may also include details about any implied
+          process or other legal or business terms that occur when the service
+          is invoked. For example, if a service consumer invokes a service
+          that places a purchase order to the service provider, and the
+          execution is successful, it may result in a financial responsibility
+          to the service provider or some other legal entity.</p>
+                        </div>
+                        <div class="sect3" title="C.2.9.3. Service Type">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s45" style="display:none"> </a>C.2.9.3. Service Type</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>327. Service type information includes all information that is
+          needed to know how to use or how to produce a service of a specific
+          type. It includes information on service interfaces, protocols and
+          achievements.</p>
+                        </div>
+                        <div class="sect3" title="C.2.9.4. Service Instance">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s46" style="display:none"> </a>C.2.9.4. Service Instance</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>328. While the nature of the services themselves may vary, a common
+          standard for declaring a service is desirable when building an
+          infrastructure. The service instance consists of the technical
+          parameters, constraints and policies that define the terms to invoke
+          the service instance. Every service should include a service
+          definition in a standardized format. This enables service consumers,
+          human or another service, to examine the service definition and
+          evaluate the following questions:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>How can I bind to a service?</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>What security protocols (if any) must be used with
+              it?</p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.2.9.5. Service Publication">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s47" style="display:none"> </a>C.2.9.5. Service Publication</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>329. A service must communicate its service description in an
+          accessible manner to potential consumers. It does so by using one of
+          several advertising method; catalogue or webpage publishing,
+          Pulling, or Pushing.</p>
+                           <p>330. In the Pull methodology, potential service consumers request
+          the service provider to send them the service description. This pull
+          methodology may be invoked as a service itself.</p>
+                           <p>331. In the Push methodology, the service provider, or its agent,
+          sends the service description to potential service consumers. The
+          push and pull methodologies may work together to facilitate
+          advertising services through a third party in a pattern of publish
+          and subscribe.</p>
+                           <p>332. Different models for the push methodology include:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Unicast (point-to-point) is a methodology where the
+              service provider sends a message from a single source to a
+              single destination.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Multicast (point-to-multipoint) is a parallel
+              communication pattern in which a source host sends a message to
+              a group of destination hosts. This is different from sending
+              multiple serial unicast (point-to-point) messages to each of the
+              destination hosts.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Broadcast (point-to-all points) is a methodology where the
+              service provider sends a transmission to all message consumers
+              on a fabric.</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Anycast (point-to-point-to-multipoint) is a methodology
+              that assigns a private address to several message consumers on a
+              fabric. The message sender does not know or care who consumes
+              the message or the details of the message&#8217;s distribution
+              list.</p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.2.9.6. Service Discovery">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s48" style="display:none"> </a>C.2.9.6. Service Discovery</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>333. Discovery occurs when a potential consumer obtains information
+          about the existence of a service, its applicable parameters and
+          terms. Discovery does not constitute authorization to execute
+          against the service; although these details may be included in the
+          discovery pattern.</p>
+                           <p>334. Service discovery may include the following steps:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p>Finding and selecting achievements that suits the need of
+              the service consumer</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Finding and selecting service types that produces the
+              selected achievements</p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p>Finding and selecting service instances of the selected
+              service types</p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>335. Finding and using services based on type can be easily
+          automated, while finding and using services based on description or
+          ontology is still difficult to automate.</p>
+                           <div class="sect4" title="C.2.9.6.1. Implementing advertising and discovery">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s49" style="display:none"> </a>C.2.9.6.1. Implementing advertising and discovery</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>336. The publishing and discovery components of SOA may be
+            implemented in many ways, including using a registry/repository or
+            a services directory. Although using these may make discovery
+            easier, an SOA requires neither of them.</p>
+                           </div>
+                           <div class="sect4" title="C.2.9.6.2. Registry/Repository">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s50" style="display:none"> </a>C.2.9.6.2. Registry/Repository</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>337. A Registry/Repository is a component where users can store
+            and manage artefacts required for their enterprise to function.
+            This includes artefacts that require sharing among more than one
+            user (such as XML schemas and web-service descriptions). The
+            repository component provides an intrinsic storage mechanism that
+            is bound to the registry such that the registry knows about any
+            auditable events to the artefacts in the repository.</p>
+                           </div>
+                           <div class="sect4" title="C.2.9.6.3. Services Directory">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s51" style="display:none"> </a>C.2.9.6.3. Services Directory</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>338. A Directory is an interface that provides information to
+            bind to artefacts. Those who own or control the artefacts may make
+            an entry into the directory to reference the artefact and explain
+            how to bind to it. Others may retrieve this information and use it
+            to bind to the artefacts. The main drawback of the directory is
+            that it has no control or notification if an artefact is deleted,
+            changed or replaced, and the directory may not be able to indicate
+            these events to users.</p>
+                              <p>339. Both Registry/Repository and Directory implementations allow
+            for federation (also called replication). This functionality
+            allows content from one implementation to be replicated or
+            referenced from within other implementations.</p>
+                              <p>340. Several standards exist to constrain Registry/Repository and
+            Directory implementations. The most prevalent standards are
+            ISO/IEC 11179 Part 315 (an ISO standard for metadata registries),
+            the OASIS ebXML Registry-Repository Technical Specifications16 and
+            the OASIS Universal Description and Discovery Interface (UDDI)
+            Technical Specification</p>
+                              <p>341. The OASIS UDDI specification is available from the OASIS
+            website under the technical committee&#8217;s home page area at
+            www.oasis-open.org/committees/tc_home.php?wg_abbrev=uddi-spec.</p>
+                              <p>342. Standards such as Bluetooth TM use a broadcast-type
+            methodology to advertise their services to other Bluetooth devices
+            that are within range.</p>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.2.9.7. Service Data Model">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s52" style="display:none"> </a>C.2.9.7. Service Data Model</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>343. When invoking a service, certain parameters may be required to help the service fulfil the service request.  The service may also pass parameters back to the service consumer.  To understand any required parameters serialization, an artefact is required to specify the associated data models for the services.  Even if no parameters are used, SOA requires a base component to declare this in a format that is understandable to service consumers.</p>
+                           <div class="sect4" title="C.2.9.7.1. Known implementations">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s53" style="display:none"> </a>C.2.9.7.1. Known implementations</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>344. The W3C&#8217;s WSDL10 can be used to express that related schema fragments constrain XML instance data being passed in and out of services.  ebXML&#8217;s Collaboration Protocol Profile11 also references a schema for instance data being used in a service or collaboration of services.  Both of these implementations are not specifically dependent on the W3C&#8217;s XML Schema19 format; yet most implementations use it.</p>
+                           </div>
+                        </div>
+                        <div class="sect3" title="C.2.9.8. Service Contract">
+                           <div class="titlepage">
+                              <div>
+                                 <div>
+                                    <h4 class="title">
+                                       <a id="v1e-s54" style="display:none"> </a>C.2.9.8. Service Contract</h4>
+                                 </div>
+                              </div>
+                           </div>
+                           <p>345. A service contract is not an actual legal document. Instead,
+          the service contract specifies a set of technical data, and possibly
+          business information. The contract is between whoever is providing
+          the Web service, and whoever is consuming the Web service. Put in
+          the simplest terms, the contract provides details about the service
+          being offered by the provider. By agreeing to a contract, both sides
+          understand exactly what will be provided.</p>
+                           <div class="sect4" title="C.2.9.8.1. Low Level">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s55" style="display:none"> </a>C.2.9.8.1. Low Level</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>346. A service contract can operate at a lot of different levels.
+            A low-level contract expresses how you communicate, and what the
+            expectations of communications are. But that low-level contract is
+            not nearly as important as the higher-level contracts. At a
+            minimum, will contain:</p>
+                              <div class="itemizedlist">
+                                 <ul class="itemizedlist">
+                                    <li class="listitem">
+                                       <p>Service description</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Service interface details</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Service inputs/outputs</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="sect4" title="C.2.9.8.2. High Level">
+                              <div class="titlepage">
+                                 <div>
+                                    <div>
+                                       <h5 class="title">
+                                          <a id="v1e-s56" style="display:none"> </a>C.2.9.8.2. High Level</h5>
+                                    </div>
+                                 </div>
+                              </div>
+                              <p>347. This higher-level contract is far more important because
+            these contracts frequently have business implications, not just
+            technical implications. For example, a contract may include
+            details of how the service will be authenticated, and so have
+            details about authentication, encryption and authorization. A
+            typical high-level contract could include the following:</p>
+                              <div class="itemizedlist">
+                                 <ul class="itemizedlist">
+                                    <li class="listitem">
+                                       <p>Description of service</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Details interface to the service</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Service inputs/outputs</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>How service will be authenticated</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>How service will be authorized</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>What type of encryption will be used</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Service level agreements (Availability, response time,
+                etc)</p>
+                                    </li>
+                                    <li class="listitem">
+                                       <p>Charges to use the service</p>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footnotes">
+                        <br/>
+                        <hr width="100" align="left"/>
+                        <div class="footnote">
+                           <p>
+                              <sup>[<a id="ftn.d0e3066" href="#d0e3066" class="para">9</a>] </sup>Sun Microsystems® Java 2® Platform, Enterprise Edition
+              (J2EE) defines the standard for developing component-based,
+              multi-tier, enterprise applications.
+              http://java.sun.com/j2ee/</p>
+                        </div>
+                        <div class="footnote">
+                           <p>
+                              <sup>[<a id="ftn.d0e3070" href="#d0e3070" class="para">10</a>] </sup>Microsoft® .NET is a set of Microsoft software
+              technologies for connecting information, people, systems, and
+              devices. www.microsoft.com/net/</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apc.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="u" href="apc.html">Up</a>
+                           </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apcs03.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>

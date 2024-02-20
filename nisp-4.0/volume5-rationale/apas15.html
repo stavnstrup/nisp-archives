@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <title>A.15. Coalition Wide Area Network (CWAN) Management</title>
+      <link rel="stylesheet" href="../style/nc3ta.css" type="text/css"/>
+      <meta name="generator" content="DocBook XSL Stylesheets V1.75.2"/>
+      <link rel="home" href="index.html" title="NATO Interoperability Standards and Profiles"/>
+      <link rel="up" href="apa.html" title="Appendix A. NISP Rationale Document - Supplementary Information"/>
+      <link rel="prev" href="apas14.html" title="A.14. Architectural concepts"/>
+      <link rel="next" href="apas16.html" title="A.16. Deployed CIS"/>
+      <link rel="chapter" href="ch01.html" title="Chapter 1. NISP Scoping Principles"/>
+      <link rel="chapter" href="ch02.html" title="Chapter 2. Assessment of Scope of NISP"/>
+      <link rel="chapter" href="ch03.html" title="Chapter 3. NISP Standards Definition"/>
+      <link rel="chapter" href="ch04.html" title="Chapter 4. NISP Evolution"/>
+      <link rel="chapter" href="ch05.html" title="Chapter 5. Technology Assessment Methodology"/>
+      <link rel="chapter" href="ch06.html" title="Chapter 6. Interoperability Profile Guidance"/>
+      <link rel="appendix" href="apa.html" title="Appendix A. NISP Rationale Document - Supplementary Information"/>
+      <link rel="appendix" href="apb.html" title="Appendix B. NISP Rationale Document - Traceability Matrix"/>
+      <link rel="subsection" href="apas15.html#rd-A-16-cccc" title="A.15.1. CCCC Management Overview"/>
+      <link rel="subsection" href="apas15.html#rd-A-17-cccc" title="A.15.2. CCCC Management Functions"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+      <meta http-equiv="Content-Language" content="en-uk"/>
+      <meta name="MSSmartTagsPreventParsing" content="true"/>
+      <meta name="author" content="NATO Open Systems Working Group (NOSWG)"/>
+      <meta http-equiv="Expires" content="0"/>
+   </head>
+   <body>
+      <div id="taHeader">
+         <div id="tophead">
+            <span id="quickMenu">
+               <a href="../index.html">Home</a> | <a class="noPortal" href="#">Sitemap</a> | 
+        <a href="../acronyms/index.html">ABC</a> | <a href="../member.html">Contact</a>
+            </span>
+         </div>
+         <div id="bottomhead">
+            <div id="searchBox">
+               <form name="form1" method="post" action="">
+                  <input name="textfield" type="text" class="invoerVeld"/>
+                  <img src="../images/cgey/button_search.gif" alt="Search Button" width="48" height="16"/>
+               </form>
+            </div>
+         </div>
+      </div>
+      <div id="menubar">
+         <a class="noPortal" href="#">Facts</a>
+         <a href="../index.html">NISP Volumes</a>
+         <a class="noPortal" href="#">Forum</a>
+         <a class="noPortal" href="#">NOSWG</a>
+      </div>
+      <table id="mainbody" cellspacing="0" cellpadding="0">
+         <tr>
+            <td class="wNavigationBox">
+               <div id="taNavigationBox" class="left mainmenu wNavigationBox">
+                  <div id="navHeader">NISP Volumes</div>
+                  <div id="navMenu">
+                     <ul>
+                        <li>
+                           <a href="../about.html">About the volumes</a>
+                        </li>
+                        <li class="pdf">
+                           <span class="h">Download </span>
+                           <a href="../pdf/NISP-Vol5-v4-release.pdf">PDF of V5</a>
+                        </li>
+                        <li>
+                           <a href="../volume1/index.html" title="Introduction and Management">V1 - Introduction and Management</a>
+                        </li>
+                        <li>
+                           <a href="../volume2/index.html" title="Near Term">V2 - Near Term</a>
+                        </li>
+                        <li>
+                           <a href="../volume3/index.html" title="Mid to Far term">V3 - Mid to Far term</a>
+                        </li>
+                        <li>
+                           <a href="../volume4/index.html" title="Interoperability Profile Guidance">V4 - Interoperability Profile Guidance</a>
+                        </li>
+                        <li>V5 - NISP Design Rules<ul id="navSubMenu">
+                              <li>1 - <a href="ch01.html">NISP SCOPING PRINCIPLES</a>
+                              </li>
+                              <li>2 - <a href="ch02.html">ASSESSMENT OF SCOPE OF NISP</a>
+                              </li>
+                              <li>3 - <a href="ch03.html">NISP STANDARDS DEFINITION</a>
+                              </li>
+                              <li>4 - <a href="ch04.html">NISP EVOLUTION</a>
+                              </li>
+                              <li>5 - <a href="ch05.html">TECHNOLOGY ASSESSMENT METHODOLOGY</a>
+                              </li>
+                              <li>6 - <a href="ch06.html">INTEROPERABILITY PROFILE GUIDANCE</a>
+                              </li>
+                              <li>A - <a href="apa.html">NISP RATIONALE DOCUMENT - SUPPLEMENTARY INFORMATION</a>
+                              </li>
+                              <li>B - <a href="apb.html">NISP RATIONALE DOCUMENT - TRACEABILITY MATRIX</a>
+                              </li>
+                           </ul>
+                        </li>
+                        <li>
+                           <a href="../volume6-annexes/index.html" title="NISP - Annexes">V6 - NISP - Annexes</a>
+                        </li>
+                        <li>
+                           <img src="../images/cgey/menu_icon-onder.gif" alt="NATO Logo" width="195" height="72"/>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </td>
+            <td>
+               <div id="taContents">
+                  <div class="navheader">
+                     <table width="100%" summary="Navigation header">
+                        <tr>
+                           <td width="20%" align="left">
+                              <a accesskey="p" href="apas14.html">&lt; Prev</a> </td>
+                           <th width="60%" align="center"> </th>
+                           <td width="20%" align="right"> <a accesskey="n" href="apas16.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                     </table>
+                     <hr/>
+                  </div>
+                  <div class="sect1" title="A.15. Coalition Wide Area Network (CWAN) Management">
+                     <div class="titlepage">
+                        <div>
+                           <div>
+                              <h2 class="title">
+                                 <a id="rd-A-15-cwan" style="display:none"> </a>A.15. Coalition Wide Area Network (CWAN) Management</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <p>172. The CWAN, along with associated systems, applications, and
+      services; is managed with remote monitoring and control capabilities via
+      the Coalition Communications Control Center (CCCC or QuadC) and the Alt
+      CCCC. It has links that electronically exchange information between
+      management systems at all levels.</p>
+                     <div class="sect2" title="A.15.1. CCCC Management Overview">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="rd-A-16-cccc" style="display:none"> </a>A.15.1. CCCC Management Overview</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>173. The purpose of the CCCC is to provide seamless, secure
+        information products and services to JWID participants, especially
+        warfighters, in support of decision-making and mission
+        accomplishment.</p>
+                        <p>174. Within the Commander-in-Chief(CINC), Service and Agency (C/S/A)
+        organisations today, network, system, application, and service
+        management functions are performed by a wide range of individuals,
+        activities, and organisations. These management and/or controlling
+        functions are performed at all levels. However, in the JWID
+        environment, these functions must be performed at the CCCC and
+        Alternative CCCC (ACCCC). These control centers can be located within
+        any domains. While it can provide virtual presence at any location on
+        the network, each control center can perform independent and
+        integrated management functions supporting communications and
+        information systems. These systems include local area network (LAN)
+        management and the CWAN. Each provides operational support essential
+        to sustaining the CWAN. The CCCC CONOPS is aimed at realigning,
+        consolidating, and integrating these functions to fulfill the
+        following goals:</p>
+                        <p>175. The CCCC structure enables the capability to:</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>reloutionize information exchange accross the CWAN;</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>strengthen the ability to apply computing, communications
+            and information management capabilities effectively to accomplish
+            the JWID mission;</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>significantly reduce information technology burdens on
+            operational and functional staffs; and</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>facilitate the capability for the operational and functional
+            staffs to access, share and exchange information worldwide, with
+            minimal knowledge of communication and computing
+            technologies.</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>176. A wide range of individuals, activities and organizations
+        perform network, system, application and service management functions
+        within C/S/As, at all levels. However, in the JWID environment, these
+        functions must be performed at the CCCC and Alternative CCCC (ACCCC).
+        These control centers can be located within any domain. While it can
+        provide virtual presence at any network location, each control center
+        can perform independent and integrated management functions supporting
+        communications and information systems. These systems, including local
+        area network (LAN) management and the CWAN, provide operational
+        support essential to sustaining the CWAN. The CCCC CONOPS realigns,
+        consolidates and integrates these functions to fulfill the following
+        goals:</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Enhanced C4IFTW support;</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Secure operations;</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Shared management information (status, availability);</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Global visibility;</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Interoperable resources;</p>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="sect2" title="A.15.2. CCCC Management Functions">
+                        <div class="titlepage">
+                           <div>
+                              <div>
+                                 <h3 class="title">
+                                    <a id="rd-A-17-cccc" style="display:none"> </a>A.15.2. CCCC Management Functions</h3>
+                              </div>
+                           </div>
+                        </div>
+                        <p>177. <span class="bold">
+                              <strong>Fault Management</strong>
+                           </span> is the
+        detection, isolation, and correction of problems in, or abnormal
+        operation of, disabled network or information processing system
+        components. Appendix A of the CCCC CONOPS explains the functions
+        associated with fault management.</p>
+                        <p>178. <span class="bold">
+                              <strong>Configuration Management</strong>
+                           </span>
+        identifies, exercises control over, collects data from, and provides
+        data to networks for the purpose of preparing for, initialising,
+        starting, providing for the continuous operation of, and terminating
+        interconnection of processing services. Configuration management
+        functions and tasks may overlap with both fault management and
+        performance management, along with long-term planning of the network's
+        topology, the information processing system's configuration, and
+        inventory. Appendix A of the CCCC CONOPS summarises the functions
+        associated with configuration management.</p>
+                        <p>179. <span class="bold">
+                              <strong>Performance Management</strong>
+                           </span> monitors
+        and controls the quality of network communications or information
+        processing. It involves the processes of monitoring and analysing;
+        tuning and controlling; and reporting on network or information
+        processing system components and on the network or information
+        processing system as a whole. Appendix A of the CCCC CONOPS summarises
+        the functions associated with performance management.</p>
+                        <p>180. <span class="bold">
+                              <strong>Security Management</strong>
+                           </span> includes
+        the confidentiality, authenticity, and integrity of network management
+        data such as routing tables, access lists, audit data protection, and
+        accounting and billing information. Security management is the
+        management of the following network or information processing system
+        security services: authentication, access control, encryption, and
+        audit trail. Security management controls and monitors the mechanisms
+        that protect selected network or information processing system
+        resources and user information, or security objects. Security
+        management includes controlling access to resources, archiving and
+        retrieving security information, and managing the encryption process.
+        The management functions associated with security management are found
+        in Appendix A of the CCCC CONOPS.</p>
+                        <p>181. The CCCC has oversight responsibility for the entire CWAN and
+        interfaces directly with the network participants. The CCCC will
+        provide the overall management control and technical direction of the
+        CWAN. As the direct interface for the customers, the CCCC performs
+        demonstration participant assistance and provides contemporary
+        operational network services. It serves as a central point of contact
+        in operational and emergency provisioning aspects of customer service
+        when the needs are beyond the capability of the site engineers.
+        Operational policies and procedures for the CCCC are under
+        development. Additional C/S/A policies will also apply based on the
+        mission being supported by the CCCC. The CCCC is responsible for the
+        following functional responsibilities and requirements:</p>
+                        <div class="itemizedlist">
+                           <ul class="itemizedlist">
+                              <li class="listitem">
+                                 <p>Providing CWAN policy, standards, and guidance for systems
+            and network management</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Monitoring status, in real-time or near-real-time, of CWAN
+            applications, networks systems, and JJPO concerns</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Providing access to Global CWAN status for authorized users
+            as required</p>
+                              </li>
+                              <li class="listitem">
+                                 <p>Implementing tool suites, processes, and databases that
+            provide the &#8220;global&#8221; view for applications, systems, and network
+            assets</p>
+                              </li>
+                           </ul>
+                        </div>
+                        <p>182. The vulnerabilities of networks to information security attacks
+        dictate that network management and information security management
+        information be shared across multiple communities of interest. The
+        end-user/JWID customer, upon discovering an information security
+        anomaly, would report it to the CCCC, which would report
+        enterprise-level anomalies to the CTFC. Anomalies to circuits or
+        systems that are not of CTFC interest would be processed and resolved
+        at the CCCC. The CCCC and/or ACCCC would be responsible for
+        aggregating information reported to them and passing it to the CTFC
+        and JJPO for fusion. Doctrine associated with such actions are under
+        way to address, refine, and integrate the reporting structures.</p>
+                        <p>183. Successful CCCC operations rely on compatibility,
+        interoperability and integration of policies, procedures, standards
+        and tools.</p>
+                     </div>
+                  </div>
+                  <div class="navfooter">
+                     <hr/>
+                     <table width="100%" summary="Navigation footer">
+                        <tr>
+                           <td width="40%" align="left">
+                              <a accesskey="p" href="apas14.html">&lt; Prev</a> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="u" href="apa.html">Up</a>
+                           </td>
+                           <td width="40%" align="right"> <a accesskey="n" href="apas16.html">Next &gt;</a>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="40%" align="left" valign="top"> </td>
+                           <td width="20%" align="center">
+                              <a accesskey="h" href="index.html">Home</a>
+                           </td>
+                           <td width="40%" align="right" valign="top"> </td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+            </td>
+         </tr>
+      </table>
+      <div id="taFooter">Copyright © NATO - OTAN 1998-2010 | <a href="../disclaimer.html">Disclaimer</a>
+      </div>
+   </body>
+</html>
